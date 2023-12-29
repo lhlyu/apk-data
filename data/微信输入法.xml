@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="25131"
+    android:versionName="1.2.0"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.tencent.wetype"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="31" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="com.tencent.wetype.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.permission.MIPUSH_RECEIVE" />
+
+    <permission
+        android:name="com.tencent.wetype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <permission
+        android:name="com.tencent.wetype.backtrace.warmed_up"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.backtrace.warmed_up" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.manual.dump" />
+
+    <permission
+        android:name="com.tencent.wetype.matrix.permission.PROCESS_SUPERVISOR"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.matrix.permission.PROCESS_SUPERVISOR" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.tencent.wetype.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.tencent.wetype.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.tencent.wetype.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.tencent.wetype.permission.PUSH_PROVIDER" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <application
+        android:theme="@ref/0x7f12013c"
+        android:label="@ref/0x7f1102ab"
+        android:icon="@ref/0x7f0e0003"
+        android:name="com.tencent.wetype.HldApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <meta-data
+            android:name="com.tencent.wetype.BuildInfo.CLIENT_VERSION"
+            android:value="0x20000101" />
+
+        <meta-data
+            android:name="com.tencent.wetype.BuildInfo.BUILD_IS_ARM64"
+            android:value="true" />
+
+        <meta-data
+            android:name="do_not_need_get_installed_apps"
+            android:value="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.tencent.wetype.HldTinkerResultService"
+            android:process=":hld" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.reactnative.activity.ImeMainSettingActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="wetype" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:label="@ref/0x7f1102ab"
+            android:name="com.tencent.wetype.plugin.hld.WxHldService"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":hld">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@ref/0x7f140000" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wetype.external.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140002" />
+        </provider>
+
+        <service
+            android:name="com.tencent.wetype.plugin.hld.model.WxImeInterService"
+            android:process=":hld" />
+
+        <service
+            android:name="com.tencent.wetype.plugin.hld.service.ActivationGuideService"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.mm.sandbox.ExceptionMonitorMMService" />
+
+        <receiver
+            android:name="com.tencent.mm.sandbox.ExceptionMonitorMMBroadcastReceiver" />
+
+        <service
+            android:name="com.tencent.wetype.ipcinvoker.service.HldProcessIPCService"
+            android:exported="false"
+            android:process=":hld" />
+
+        <service
+            android:name="com.tencent.wetype.ipcinvoker.service.MainProcessIPCService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldActivationUI"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldSettingsInputUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldSettingsKeyboardsSettingUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldSettingsSlideInputUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldSettingsInputFuzzyPinyinUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.perform.HldSettingsVibrateAndVolumeUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.perform.HldSettingVibrateActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldSettingsAboutUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.reactnative.test.AboutActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.reactnative.activity.SimpleReactActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120497"
+            android:name="com.tencent.wetype.plugin.hld.ui.ImeTryEditUI"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f120497"
+            android:name="com.tencent.wetype.plugin.hld.ui.ImeNoTryEditUI"
+            android:process=":hld"
+            android:excludeFromRecents="true"
+            android:configChanges="0x200"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f120497"
+            android:name="com.tencent.wetype.plugin.hld.ui.ImeReportExpectWordInDictUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f120497"
+            android:name="com.tencent.wetype.plugin.hld.ui.debug.ImeCloudInputReturnCountUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldWebViewUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldPrivacyInfoUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldChooseKeyboardUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldDebugUI"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldDoublePinSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldWubiSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldWubiSolutionSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.voice.HldVoiceSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldDisplaySettingUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldKeyboardAppearanceUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.ImeKeyboardAppearanceDebugActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldT9CustomSymbolUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.permission.HldPermissionSettingUI"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.voice.HldVoiceLanguageSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldRNBundleInfoUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.ImeSkinTestActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.reactnative.test.HldRNNativeTestUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.feature.ImeFeatureInfoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.abtest.ImeAbTestInfoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.voice.HldVoicePunctuationSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.voice.HldVoiceShowIconSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.feedback.HldFeedbackUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.HldPlusSettingActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.feedback.HldFeedbackChatUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.reactnative.activity.FeedbackChatActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.wetype.plugin.hld.ui.feedback.HldFeedbackScaleImageUI"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12030c"
+            android:name="com.tencent.wetype.plugin.hld.voice.VoicePermissionTipsActivity"
+            android:taskAffinity="com.tencent.wetype.permission"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f110026"
+            android:name="com.tencent.wetype.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:taskAffinity="com.tencent.wetype"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f1102ab"
+            android:name="com.tencent.wetype.plugin.hld.push.DeeplinkActivity"
+            android:exported="true"
+            android:taskAffinity="com.tencent.wetype"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="hwpush"
+                    android:host="com.tencent.wetype"
+                    android:path="/deeplink" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120311"
+            android:name="com.tencent.mm.ui.AlertActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120014"
+            android:name="com.tencent.mm.pluginsdk.permission.PermissionActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f120242"
+            android:name="com.tencent.matrix.batterycanary.stats.ui.BatteryStatsActivity" />
+
+        <service
+            android:name="com.tencent.wetype.push.huawei.HwMessageService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="107455843" />
+
+        <service
+            android:name="com.kwai.koom.javaoom.monitor.analysis.HeapAnalysisService"
+            android:process=":heap_analysis" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wetype.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"
+            android:exported="false"
+            android:authorities="com.tencent.wetype.rmonitor-installer" />
+
+        <service
+            android:name="com.tencent.rfix.lib.engine.TinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.matrix.backtrace.WarmUpService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":backtrace__" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.tencent.wetype.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.tencent.wetype.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.tencent.wetype.permission.PUSH_PROVIDER"
+            android:writePermission="com.tencent.wetype.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.tencent.wetype.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+            android:launchMode="3" />
+
+        <meta-data
+            android:name="tinker_version"
+            android:value="1.9.14.20(RFix)" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wetype.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.9.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:theme="@ref/0x7f120127"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wetype.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="PATCH_ID"
+            android:value="id_1114110307_arm64-v8a" />
+
+        <meta-data
+            android:name="TINKER_ID"
+            android:value="tinker_id_1114110307_arm64-v8a" />
+    </application>
+</manifest>

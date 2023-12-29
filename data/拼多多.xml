@@ -1,0 +1,2663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="69100"
+        android:versionName="6.91.0"
+        android:compileSdkVersion="33"
+        android:compileSdkVersionCodename="13"
+        package="com.xunmeng.pinduoduo"
+        platformBuildVersionCode="33"
+        platformBuildVersionName="13">
+
+    <uses-sdk
+            android:minSdkVersion="15"
+            android:targetSdkVersion="30" />
+
+    <uses-permission
+            android:name="android.permission.INTERNET" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.CAMERA" />
+
+    <uses-permission
+            android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+            android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+            android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+            android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+            android:name="android.hardware.touchscreen"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.software.leanback"
+            android:required="false" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+            android:glEsVersion="0x20000"
+            android:required="true" />
+
+    <uses-permission
+            android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature
+            android:name="android.hardware.camera" />
+
+    <uses-permission
+            android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+            android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+            android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <uses-permission
+            android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <permission
+            android:name="com.xunmeng.pinduoduo.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.xunmeng.pinduoduo.permission.MIPUSH_RECEIVE" />
+
+    <queries>
+
+        <package
+                android:name="com.finshell.wallet" />
+
+        <package
+                android:name="com.finshell.finance" />
+
+        <package
+                android:name="cn.gov.pbc.dcep" />
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.SEND" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.PICK" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.MAIN" />
+
+            <category
+                    android:name="android.intent.category.LAUNCHER" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.INSERT" />
+
+            <data
+                    android:mimeType="vnd.android.cursor.dir/contact" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.INSERT_OR_EDIT" />
+
+            <data
+                    android:mimeType="vnd.android.cursor.item/person" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+
+        <package
+                android:name="com.tencent.mobileqq" />
+
+        <package
+                android:name="com.tencent.mm" />
+
+        <package
+                android:name="com.eg.android.AlipayGphone" />
+
+        <package
+                android:name="com.xunmeng.hutaojie" />
+
+        <package
+                android:name="com.unionpay" />
+    </queries>
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+            android:name="com.bbk.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.bbk.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+            android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+            android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.WIRTE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.samsung.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="net.oneplus.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="net.oneplus.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+            android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+            android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+            android:theme="@ref/0x7f110201"
+            android:label="@ref/0x7f100600"
+            android:icon="@ref/0x7f070784"
+            android:name="com.xunmeng.pinduoduo.app.SampleApplication"
+            android:allowBackup="false"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            android:networkSecurityConfig="@ref/0x7f120004"
+            android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+            android:requestLegacyExternalStorage="true">
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libOpenCL.so"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libGLES_mali.so"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libmali.so"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libOpenCL-pixel.so"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libneuralnetworks.so"
+                android:required="false" />
+
+        <uses-native-library
+                android:name="libnativewindow.so"
+                android:required="false" />
+
+        <meta-data
+                android:name="DATABASE"
+                android:value="pdd.db" />
+
+        <meta-data
+                android:name="VERSION"
+                android:value="13" />
+
+        <meta-data
+                android:name="QUERY_LOG"
+                android:value="false" />
+
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="1075000064.000000" />
+
+        <meta-data
+                android:name="android.vendor.full_screen"
+                android:value="true" />
+
+        <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+        <meta-data
+                android:name="android.vivo_multidisplay_support"
+                android:value="true" />
+
+        <meta-data
+                android:name="EasyGoClient"
+                android:value="true" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.appid"
+                android:value="10374976" />
+
+        <meta-data
+                android:name="fingerprint.system.view"
+                android:value="image" />
+
+        <service
+                android:name="com.xunmeng.basiccomponent.titan.service.ServiceNative"
+                android:process=":titan" />
+
+        <meta-data
+                android:name="volantis.internalNo"
+                android:value="1703600774096L" />
+
+        <meta-data
+                android:name="volantis.subtype"
+                android:value="main" />
+
+        <meta-data
+                android:name="pdd.grayVersionCode"
+                android:value="69100" />
+
+        <provider
+                android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.xunmeng.pinduoduo.lifecycle-trojan" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.MainProcessIPCService"
+                android:exported="false" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.SupportProcessIPCService"
+                android:exported="false"
+                android:process=":support" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.ExperimentProcessIPCService"
+                android:exported="false"
+                android:process=":exp" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.TitanProcessIPCService"
+                android:exported="false"
+                android:process=":titan" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.LifecycleProcessIPCService"
+                android:exported="false"
+                android:process=":lifecycle" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.almighty.ipc.ipcinvoker.service.IMEProcessIPCService"
+                android:exported="false"
+                android:process=":ime" />
+
+        <meta-data
+                android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+                android:value="1" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService0"
+                android:exported="false"
+                android:process=":sandboxed_process0" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService1"
+                android:exported="false"
+                android:process=":sandboxed_process1" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService2"
+                android:exported="false"
+                android:process=":sandboxed_process2" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService3"
+                android:exported="false"
+                android:process=":sandboxed_process3" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService4"
+                android:exported="false"
+                android:process=":sandboxed_process4" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService5"
+                android:exported="false"
+                android:process=":sandboxed_process5" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService6"
+                android:exported="false"
+                android:process=":sandboxed_process6" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService7"
+                android:exported="false"
+                android:process=":sandboxed_process7" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService8"
+                android:exported="false"
+                android:process=":sandboxed_process8" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessService9"
+                android:exported="false"
+                android:process=":sandboxed_process9" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback0"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback0" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback1"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback1" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback2"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback2" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback3"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback3" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback4"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback4" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback5"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback5" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback6"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback6" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback7"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback7" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback8"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback8" />
+
+        <service
+                android:name="org.chromium.content.app.PrivilegedProcessServiceFallback9"
+                android:exported="false"
+                android:process=":sandboxed_process_fallback9" />
+
+        <receiver
+                android:name="meco.core.dex.MecoBroadcastManager"
+                android:enabled="false"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.android.meco.MECO_DEX_PATH_ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService0"
+                android:exported="false"
+                android:process=":sandboxed_process_meco0" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService1"
+                android:exported="false"
+                android:process=":sandboxed_process_meco1" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService2"
+                android:exported="false"
+                android:process=":sandboxed_process_meco2" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService3"
+                android:exported="false"
+                android:process=":sandboxed_process_meco3" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService4"
+                android:exported="false"
+                android:process=":sandboxed_process_meco4" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService5"
+                android:exported="false"
+                android:process=":sandboxed_process_meco5" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService6"
+                android:exported="false"
+                android:process=":sandboxed_process_meco6" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService7"
+                android:exported="false"
+                android:process=":sandboxed_process_meco7" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService8"
+                android:exported="false"
+                android:process=":sandboxed_process_meco8" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessService9"
+                android:exported="false"
+                android:process=":sandboxed_process_meco9" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback0"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback0" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback1"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback1" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback2"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback2" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback3"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback3" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback4"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback4" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback5"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback5" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback6"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback6" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback7"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback7" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback8"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback8" />
+
+        <service
+                android:name="org.chromium.content.app.MecoPrivilegedProcessServiceFallback9"
+                android:exported="false"
+                android:process=":sandboxed_process_meco_fallback9" />
+
+        <service
+                android:name="com.xunmeng.almighty.plugin_debug.LiveloadService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":support" />
+
+        <meta-data
+                android:name="com.xunmeng.pinduoduo.glide.image.PddGlideModule"
+                android:value="GlideModule" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xunmeng.app_upgrade.ui.SolutionActivity" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.volantis.kenithelper.PDDKenitResultService"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f110201"
+                android:name="com.xunmeng.pdd_av_foundation.pddimagekit_android.ImagePreviewActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <service
+                android:name="com.xunmeng.pdd_av_foundation.pdd_live_tab.service.ManufacturerRouteSensitiveService"
+                android:enabled="true" />
+
+        <service
+                android:name="com.xunmeng.pdd_av_foundation.pddplayerkit.services.PlayerSessionService"
+                android:exported="false" />
+
+        <activity
+                android:name="com.xunmeng.pdd_av_foundation.pddvideocapturekit.uno.UnoCameraActivity" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.activity.NewPageActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.ACTION_NEW_PAGE_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110206"
+                android:name="com.xunmeng.pinduoduo.activity.NewPageMaskActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.ACTION_NEW_PAGE_MASK_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:taskAffinity=".WXEntryActivity" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.activity.ErrorInfoActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.activity.TranslinkErrorActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.app_activity.lego.LegoContainerTitanActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.ACTION_LEGO_TITAN_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.activity.MagicWindowActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.activity.NewPageFoldActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f1101fb"
+                android:name="com.xunmeng.pinduoduo.app_address.CreateAddressActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1101fb"
+                android:name="com.xunmeng.pinduoduo.app_address_lego.CreateLegoAddressActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x01030007"
+                android:name="com.xunmeng.pinduoduo.app_album.album.MediaPreviewActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.app_album_camera.newcamera.NewClothesCameraActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f110203"
+                android:name="com.xunmeng.pinduoduo.chat.biz.multiMedia.ViewChatImageActivity"
+                android:exported="false"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f110232"
+                android:name="com.xunmeng.pinduoduo.chat.chatBiz.voiceChat.view.VoiceCallActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.chat.chatBiz.voiceChat.notification.NotificationForegroundService" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.chat.camera.ChatCameraActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xd00" />
+
+        <provider
+                android:name="com.xunmeng.pinduoduo.chat.messagebox.external.MessageboxContentProvider"
+                android:exported="false"
+                android:process=":titan"
+                android:multiprocess="false"
+                android:authorities="com.xunmeng.pinduoduo.notification.record" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.comment.VideoClipActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.debug.AppInfoTestActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f11026d"
+                android:name="com.xunmeng.pinduoduo.goods.gallery.GoodsDetailGalleryActivity"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f110205"
+                android:name="com.xunmeng.pinduoduo.ui.activity.HomeActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.ACTION_MAIN_FRAME_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.login.LoginActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f11020b"
+                android:name="com.xunmeng.pinduoduo.login.QQAuthActivity"
+                android:exported="false"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f11020b"
+                android:name="com.xunmeng.pinduoduo.app_pay.core.PayActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.app_pay.sign.SignActivity"
+                android:exported="false"
+                android:taskAffinity="com.xunmeng.pinduoduo"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.finshellapi.FinShellApiActivity"
+                android:exported="true"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.profile.EditProfileActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0xa0"
+                android:windowSoftInputMode="0x14" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.receiver.NotificationBroadcastReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.NOTIFICATION_CANCEL" />
+
+                <action
+                        android:name="com.aimi.android.NOTIFICATION_CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.base.arch.biz.lifecycle.MsgService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":lifecycle" />
+
+        <meta-data
+                android:name="com.hihonor.push.sdk_version"
+                android:value="7.0.41.301" />
+
+        <service
+                android:name="com.aimi.android.common.push.honor.HonorMsgService"
+                android:enabled="false"
+                android:exported="false"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.hihonor.push.app_id"
+                android:value="103389855" />
+
+        <provider
+                android:name="com.huawei.hms.update.provider.UpdateProvider"
+                android:exported="false"
+                android:process=":titan"
+                android:authorities="com.xunmeng.pinduoduo.hms.update.provider"
+                android:grantUriPermissions="true" />
+
+        <provider
+                android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+                android:exported="false"
+                android:process=":titan"
+                android:authorities="com.xunmeng.pinduoduo.updateSdk.fileProvider"
+                android:grantUriPermissions="true" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:excludeFromRecents="true"
+                android:configChanges="0x40002484"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.huawei.hms.activity.BridgeActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:excludeFromRecents="true"
+                android:configChanges="0x40002484"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f11028a"
+                android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:configChanges="0x480">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f11028a"
+                android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:configChanges="0x4a0">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <receiver
+                android:name="com.aimi.android.common.push.huawei.HwPushReceiver"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.huawei.android.push.intent.RECEIVE" />
+
+                <action
+                        android:name="com.huawei.android.push.intent.CLICK" />
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushEventReceiver"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.huawei.updatesdk.service.deamon.download.DownloadService"
+                android:exported="false"
+                android:process=":titan" />
+
+        <service
+                android:name="com.aimi.android.common.push.oppo.OppoPushCompatibleService"
+                android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.aimi.android.common.push.oppo.OppoPushService"
+                android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                        android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.vivo.push.sdk.service.CommandClientService"
+                android:permission="com.push.permission.UPSTAGESERVICE"
+                android:exported="true"
+                android:process=":titan" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+                android:exported="false"
+                android:process=":titan" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.vipush_component.VivoPushReceiver"
+                android:exported="false"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="com.vivo.push.api_key"
+                android:value="a870d4b2-a46a-452a-a2bb-3e93b54c709b" />
+
+        <meta-data
+                android:name="com.vivo.push.app_id"
+                android:value="10144" />
+
+        <meta-data
+                android:name="sdk_version_vivo"
+                android:value="480" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":titan" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMPushService"
+                android:enabled="true"
+                android:process=":titan" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":titan" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+                android:enabled="true"
+                android:process=":titan" />
+
+        <receiver
+                android:name="com.aimi.android.common.push.xiaomi.MiPushReceiver"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.aimi.android.common.push.xiaomi.proxy.NetworkStatusReceiver"
+                android:enabled="false"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.aimi.android.common.push.xiaomi.proxy.PingReceiver"
+                android:enabled="false"
+                android:exported="false"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.safemode.SafeModeActivity"
+                android:exported="false"
+                android:process=":fix"
+                android:launchMode="3"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xunmeng.pinduoduo.share.qq.QQShareActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f110252"
+                android:name="com.xunmeng.pinduoduo.sku_browse.activity.SkuPhotoBrowseActivity"
+                android:exported="false"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f110207"
+                android:name="com.xunmeng.pinduoduo.ui.activity.MainFrameActivity"
+                android:enabled="true"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.ACTION_NEW_PAGE_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.push.pull_alive" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="content" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <data
+                        android:scheme="qngaccv79cv29i" />
+
+                <data
+                        android:scheme="pddopen" />
+
+                <data
+                        android:scheme="pinduoduo" />
+
+                <data
+                        android:scheme="weixinn" />
+
+                <data
+                        android:scheme="httpssn" />
+
+                <data
+                        android:scheme="float-check-permission-done" />
+
+                <data
+                        android:scheme="alipaycallback" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter
+                    android:autoVerify="true">
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:host="4pn.cn" />
+
+                <data
+                        android:host="y4n.cn" />
+
+                <data
+                        android:host="3p4.cn" />
+
+                <data
+                        android:host="u7x.cn" />
+
+                <data
+                        android:host="4a9.cn" />
+
+                <data
+                        android:host="social.pinduoduo.com" />
+
+                <data
+                        android:host="u.pinduoduo.com" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:host="*.yangkeduo.com" />
+
+                <data
+                        android:host="*.srgnmsrg.com" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.ui.activity.TransparentEntryActivity"
+                android:exported="true"
+                android:taskAffinity=".TransparentEntryActivity">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <data
+                        android:scheme="pinmarket" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.patch.SampleResultReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="ACTION_PDD_PATCH_RESULT" />
+
+                <action
+                        android:name="ACTION_SET_PATCH_CLEAN" />
+
+                <action
+                        android:name="ACTION_ON_PATCH_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f11028f"
+                android:name="com.xunmeng.pinduoduo.wallet.jsapi.WalletApiActivity"
+                android:configChanges="0xfb0" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.web.resourceprefetch.ResourcePrefetchBroadcastReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.uno.TRY_INIT_WEBVIEW_KERNEL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f11020b"
+                android:name="com.xunmeng.pinduoduo.login.sina.SinaAuthActivity" />
+
+        <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0xe0" />
+
+        <activity
+                android:name="com.alipay.sdk.auth.AuthActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0xe0" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="tencent1104790111" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.auth_pay.wxpay.WXPayActivity"
+                android:exported="false"
+                android:taskAffinity="xunmeng.pinduoduo.wxpay"
+                android:excludeFromRecents="true"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.auth_pay.alipay.AlipayCallbackActivity"
+                android:exported="true"
+                android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="pinduoduoalipays" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.auth_pay.qqpay.QQCallbackActivity"
+                android:exported="true"
+                android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="qwallet1104790111" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.auth_pay.ddpay.DDWalletCallbackActivity"
+                android:exported="true"
+                android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="pdd_ddwallet" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.auth_pay.dcepay.DcepayCallbackActivity"
+                android:exported="true"
+                android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="pinduoduodcpay" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.service.AlarmService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":titan" />
+
+        <service
+                android:name="com.bytedance.boost_multidex.OptimizeService"
+                android:exported="false"
+                android:process=":boost_multidex" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.xlog_wrapper.XlogUploadBroadcastReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.hutaojie.XlogUpload" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.service.clothes.coat.CoatService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":titan" />
+
+        <provider
+                android:name="com.aimi.android.common.auth.AuthNotifyProvider"
+                android:exported="false"
+                android:authorities="com.xunmeng.pinduoduo.AuthNotify" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.detector.experiment.ipc.ExperimentProcessIPCService"
+                android:exported="false"
+                android:process=":exp" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.event.receiver.EventTransferReceiver"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f110216"
+                android:name="com.xunmeng.pinduoduo.face_anti_spoofing_ui.ui.FaceAntiSpoofingActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.fastjs.main.FastJSBroadcastReceiver"
+                android:enabled="false"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.uno.TRY_INIT_WEBVIEW_KERNEL" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.app_widget.LowSdkCycleRefreshReceiver"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                        android:name="android.intent.action.SCREEN_ON" />
+
+                <action
+                        android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetOneXOne3"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120001" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetOneXOne2"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120001" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetOneXOne1"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120001" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOne1"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOne2"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOne3"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOne4"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOne5"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetFourXOneSpecial"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120000" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f100cd2"
+                android:name="com.xunmeng.pinduoduo.app_widget.stub.WidgetStubs$StubWidgetTwoXOne1"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120002" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.app_widget.WidgetClickService"
+                android:process=":titan"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x7f11020b"
+                android:icon="@ref/0x7f0704b3"
+                android:name="com.xunmeng.pinduoduo.app_widget.desk_shortcut.activities.DsCkActivity"
+                android:exported="true"
+                android:process=":titan"
+                android:taskAffinity="com.xunmeng.pinduoduo.desk_shortcut.transparent_task"
+                android:excludeFromRecents="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:label="@ref/0x7f100d35"
+                android:name="com.xunmeng.pinduoduo.market_widget.express.ExpressNewsWidgetProvider"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120003" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <receiver
+                android:label="@ref/0x7f1010bf"
+                android:name="com.xunmeng.pinduoduo.market_widget.universal.UniversalMiniScrollProvider"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f120006" />
+
+            <meta-data
+                    android:name="com.vivo.widget.disable"
+                    android:value="1" />
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f110207"
+                android:name="com.xunmeng.pinduoduo.ui.activity.MainFrameActivityAssist"
+                android:enabled="false"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.INFO" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.ACTION_NEW_PAGE_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <data
+                        android:scheme="qngaccv79cv29i" />
+
+                <data
+                        android:scheme="pddopen" />
+
+                <data
+                        android:scheme="pinduoduo" />
+
+                <data
+                        android:scheme="weixinn" />
+
+                <data
+                        android:scheme="httpssn" />
+
+                <data
+                        android:scheme="float-check-permission-done" />
+
+                <data
+                        android:scheme="alipaycallback" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter
+                    android:autoVerify="true">
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:host="4pn.cn" />
+
+                <data
+                        android:host="y4n.cn" />
+
+                <data
+                        android:host="social.pinduoduo.com" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110207"
+                android:name="com.xunmeng.pinduoduo.ui.activity.MainFrameActivityLauncherAssist"
+                android:enabled="false"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.aimi.android.ACTION_NEW_PAGE_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="vivo.launcher.suport.smarticon"
+                    android:value="true" />
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <data
+                        android:scheme="qngaccv79cv29i" />
+
+                <data
+                        android:scheme="pddopen" />
+
+                <data
+                        android:scheme="pinduoduo" />
+
+                <data
+                        android:scheme="weixinn" />
+
+                <data
+                        android:scheme="httpssn" />
+
+                <data
+                        android:scheme="float-check-permission-done" />
+
+                <data
+                        android:scheme="alipaycallback" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter
+                    android:autoVerify="true">
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:host="4pn.cn" />
+
+                <data
+                        android:host="y4n.cn" />
+
+                <data
+                        android:host="social.pinduoduo.com" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f110207"
+                android:label="PandaHm"
+                android:name="com.xunmeng.pinduoduo.ui.activity.PandaHmActivity"
+                android:enabled="false"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1">
+
+            <intent-filter
+                    android:priority="-1">
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.market_ad_common.alarm.MarketAdAlarmReceiver"
+                android:exported="false"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.MarketAdAlarmReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.market_ad_common.scheduler.channel.MarketMsgCenterService"
+                android:exported="false"
+                android:process=":titan" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.market_ad_common.scheduler.channel.MarketCommonService"
+                android:exported="true"
+                android:process=":titan">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.MARKET_AD_COMMON_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.market_ad_forward.TransferActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.market.ad.FORWARD_COMMON" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xunmeng.pinduoduo.market_ad_forward.TransferDeskActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:taskAffinity="com.xunmeng.pinduoduo.msg_floating"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.market.ad.FORWARD_DESK_COMMON" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xunmeng.pinduoduo.market_ad_forward.CSDispatchActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.ACTION_CS_DISPATCH_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:label="消息通知"
+                android:icon="@ref/0x7f070591"
+                android:name="com.xunmeng.pinduoduo.market_ad_forward.CSDispatchTitanActivity"
+                android:exported="false"
+                android:process=":titan"
+                android:taskAffinity="com.xunmeng.pinduoduo.msg_floating"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.ACTION_CS_DISPATCH_TITAN_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.xunmeng.basiccomponent.memorymonitorwrapper.receiver.MemoryReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.hutaojie.MEMORY_MONITOR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.msg_floating.ui.MsgJumpActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xunmeng.pinduoduo.ACTION_MSG_JUMP_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.multitask.MultiTaskNewPageActivity"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f110209"
+                android:name="com.xunmeng.pinduoduo.multitask.SingleTaskActivity"
+                android:exported="false"
+                android:taskAffinity="com.xunmeng.pinduoduo.subtask"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x01030055"
+                android:name="com.xunmeng.pinduoduo.apm.crash.activity.EmptyActivity"
+                android:process=":report"
+                android:taskAffinity=".papm"
+                android:stateNotNeeded="true"
+                android:excludeFromRecents="true"
+                android:launchMode="3"
+                android:windowIsTranslucent="true"
+                android:windowSoftInputMode="0x3"
+                android:noHistory="true" />
+
+        <service
+                android:name="com.xunmeng.pinduoduo.apm.crash.service.CrashReportIntentService"
+                android:exported="false"
+                android:process=":report" />
+
+        <activity
+                android:theme="@ref/0x7f11021f"
+                android:name="com.xunmeng.pinduoduo.permission.request.PermissionRequestActivity"
+                android:exported="false"
+                android:taskAffinity=".noUI"
+                android:excludeFromRecents="true"
+                android:launchMode="1"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f11021f"
+                android:name="com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:launchMode="1"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f11021f"
+                android:name="com.xunmeng.pinduoduo.permission.scene_manager.ScenePermissionRequestActivity"
+                android:exported="false"
+                android:taskAffinity=".noUI"
+                android:excludeFromRecents="true"
+                android:launchMode="1"
+                android:configChanges="0xfa0" />
+
+        <provider
+                android:name="com.xunmeng.pinduoduo.permission.fileprovider.PDDFileProvider"
+                android:exported="false"
+                android:authorities="com.xunmeng.pinduoduo.pdd.fileProvider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f120005" />
+        </provider>
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.process_stats.SandboxReceiver0"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":sandboxed_process0">
+
+            <intent-filter>
+
+                <action
+                        android:name="action.power.com.xunmeng.pinduoduo:sandboxed_process0" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.xunmeng.pinduoduo.process_stats.ExpReceiver"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":exp">
+
+            <intent-filter>
+
+                <action
+                        android:name="action.power.com.xunmeng.pinduoduo:exp" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.xunmeng.pinduoduo.safe_mode_impl.SafeModeKenitResultService"
+                android:exported="false"
+                android:process=":fix" />
+
+        <meta-data
+                android:name="open_sdk_flag"
+                android:value="1" />
+
+        <activity
+                android:theme="@ref/0x7f11020b"
+                android:name="com.xunmeng.pinduoduo.opensdk.EntryActivity"
+                android:exported="true"
+                android:taskAffinity=".opensdk"
+                android:excludeFromRecents="true"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x7f110208"
+                android:name="com.xunmeng.pinduoduo.third_party_web.activity.ThirdPartyActivity"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":third_party_web_process"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x12" />
+
+        <service
+                android:name="xmg.mobilebase.kenit.lib.service.KenitPatchForeService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="xmg.mobilebase.kenit.lib.service.KenitPatchService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="xmg.mobilebase.kenit.lib.service.KenitPatchService$InnerService"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="xmg.mobilebase.kenit.lib.service.DefaultKenitResultService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_00"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_01"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_02"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_03"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_04"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_05"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_06"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_07"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_08"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_09"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_00_T"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_01_T"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTStub_02_T"
+                android:launchMode="1" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_00"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_01"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_02"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_03"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_04"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_05"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_06"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_07"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_08"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_09"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+                android:launchMode="2" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_00"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_01"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_02"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_03"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_04"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_05"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_06"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_07"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_08"
+                android:launchMode="3" />
+
+        <activity
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_09"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_00_T"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_01_T"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="xmg.mobilebase.kenit.loader.hotplug.ActivityStubs$SIStub_02_T"
+                android:launchMode="3" />
+
+        <meta-data
+                android:name="kenit_version"
+                android:value="1.9.14.9" />
+
+        <activity
+                android:theme="@ref/0x7f11028e"
+                android:name="com.xunmeng.pinduoduo.wallet.common.fingerprint.FingerprintPayEnableActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f11028e"
+                android:name="com.xunmeng.pinduoduo.wallet.common.card.BankCardActivity"
+                android:taskAffinity="@string/0x2c"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f11028e"
+                android:name="com.xunmeng.pinduoduo.wallet.common.accountbiz.activity.ForgetPwdActivityV2"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.wallet.common.externaljump.ExternalJumpActivity"
+                android:enabled="true"
+                android:exported="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="pddwallet"
+                        android:host="pinduoduo.com"
+                        android:path="/fast_bind" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f11029a"
+                android:name="com.xunmeng.pinduoduo.wallet.pay.internal.confirm.PayConfirmActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:theme="@ref/0x7f11029a"
+                android:name="com.xunmeng.pinduoduo.wallet.pay.internal.entry.PayEntryActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:theme="@ref/0x7f11029a"
+                android:name="com.xunmeng.pinduoduo.wallet.pay.internal.opensdk.DDPayEntryActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0xfb0" />
+
+        <activity
+                android:name="com.xunmeng.pinduoduo.share.web.subscribe.activity.SubscribeForwardActivity"
+                android:exported="false"
+                android:taskAffinity="com.xunmeng.pinduoduo"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="pinduoduo"
+                        android:host="com.xunmeng.pinduoduo"
+                        android:path="/spi_activity.html" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="KENIT_ID"
+                android:value="kenit_id_48eb7a995df36d981a293dbb61323a3150391dae" />
+    </application>
+</manifest>

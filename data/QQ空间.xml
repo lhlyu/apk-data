@@ -1,0 +1,3550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="139"
+    android:versionName="8.8.2.288"
+    android:installLocation="0"
+    package="com.qzone">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission
+        android:name="oicq.wlogin_sdk.permission.WloginProvider.READ" />
+
+    <uses-permission
+        android:name="oicq.wlogin_sdk.permission.WloginProvider.WRITE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.MEDIA_REMOVED_ACTION" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.DUMP" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="com.qzone.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.qzonex.maxvideo.permission.watermark" />
+
+    <uses-permission
+        android:name="com.tencent.msf.permission.ACCOUNT_NOTICE" />
+
+    <uses-permission
+        android:name="com.tencent.msf.permission.account.sync" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.qzone.theme.permission" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.tencent.mobileqq.permission.Pandora" />
+
+    <uses-permission
+        android:name="com.qzone.msg.permission.pushnotify" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <permission
+        android:name="com.qzone.maxvideo.permission.watermark"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qzone.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qzone.msg.permission.pushnotify"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qzone.theme.permission"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.qzone.permission.TMF_SHARK" />
+
+    <permission
+        android:name="com.qzone.permission.TMF_SHARK"
+        android:protectionLevel="0x2" />
+
+    <application
+        android:theme="@ref/0x7f10006e"
+        android:label="@ref/0x7f0f0051"
+        android:icon="@ref/0x7f07072a"
+        android:name="com.qzonex.app.QZoneFixApplicationImpl"
+        android:alwaysRetainTaskState="true"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="APPKEY"
+            android:value="5" />
+
+        <meta-data
+            android:name="CHANNEL"
+            android:value="push" />
+
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.enable"
+            android:value="@ref/0x7f040002" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="android.min_aspect"
+            android:value="1065353216.000000" />
+
+        <meta-data
+            android:name="TencentGeoLocationSDK"
+            android:value="qzone_loc,NFLCF-SMUWW-QBFKM-O4BWZ-PVIBN" />
+
+        <meta-data
+            android:name="com.qzone.isGray"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.qzone.versioncode"
+            android:value="89" />
+
+        <meta-data
+            android:name="android.allow_multiple_resumed_activities"
+            android:value="true" />
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <uses-library
+            android:name="com.google.android.media.effects"
+            android:required="false" />
+
+        <uses-library
+            android:name="com.motorola.hardware.frontcamera"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x7f1000e2"
+            android:name="com.tencent.sc.activity.SplashActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:alwaysRetainTaskState="true"
+            android:allowTaskReparenting="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.ads.PortraitADActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.ads.LandscapeADActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <provider
+            android:name="com.tencent.component.app.ServiceManager$Provider"
+            android:exported="false"
+            android:authorities="com.qzone.component.service.provider" />
+
+        <provider
+            android:name="com.tencent.component.plugin.PluginManagerService$Provider"
+            android:exported="false"
+            android:authorities="com.qzone.component.plugin.provider">
+
+            <meta-data
+                android:name="lazy"
+                android:value="true" />
+        </provider>
+
+        <service
+            android:name="com.tencent.upload.image.ImageProcessService"
+            android:exported="false"
+            android:process=":image" />
+
+        <service
+            android:name="com.tencent.wns.service.WnsMain"
+            android:exported="false"
+            android:process=":service">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wns.service.WnsMain" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.mcssdk.PushService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.qzonex.module.upgrade.service.YYBService$QQDownloaderInstalledImpl" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.qzone.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130009" />
+        </provider>
+
+        <activity
+            android:name="com.qzonex.module.browser.ui.QzoneGameWebActivity"
+            android:process=":browser"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qzonex.module.browser.ui.QzoneTransparentWebActivity"
+            android:process=":browser"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.browser.ui.QzoneNormalWebActivty"
+            android:process=":browser"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity-alias
+            android:name="com.qzone.ui.global.activity.QZoneEmbeddedWebActivity"
+            android:targetActivity="com.qzonex.module.browser.ui.QzoneNormalWebActivty" />
+
+        <activity
+            android:name="com.qzonex.module.browser.ui.QzoneNormalWebOfflineActivty"
+            android:process=":browser2"
+            android:screenOrientation="5"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.browser.ui.QzoneEmptyWebActivty"
+            android:process=":browser"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.browser.ui.QzoneApkDownloadActivity"
+            android:process=":browser"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.coverstore.ui.QzoneCoverCenterActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverstore.ui.QzoneCoverStoreActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverstore.ui.QzoneCoverMoreActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverstore.ui.QzoneCoverPreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.coverstore.ui.QzoneVideoCoverPreviewActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f100073"
+            android:name="com.qzonex.module.coverstore.ui.QzoneSuperCoverPreviewActiviy" />
+
+        <activity
+            android:name="com.qzonex.module.coverstore.ui.QzoneCoverPhotowallActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.blog.QZoneBlogDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.favor.QZoneFavorDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.message.QZoneMessageDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.photo.QZonePhotoDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.playbar.QZonePlayBarDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.share.QZoneShareDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.shuoshuo.QZoneShuoShuoDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.detail.ui.syncaccount.QZoneSyncAccountDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.detail.ui.component.QzoneCommentListActivity"
+            android:enabled="true"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.face.ui.QzoneMarkFaceActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.feed.ui.QzoneAdaptVideoActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.feed.ui.myfeed.QZoneMyFeedActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.feed.ui.myfeed.QZoneMyParticipateActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.feed.ui.friendfeed.QZoneFriendFeedActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.feed.ui.friendfeed.SpecialCareFeedActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100047"
+            android:name="com.qzonex.module.feed.ui.listpage.FragmentShellActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.hotspot.QzoneHotspotFeedActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.lbsevent.QzoneLBSEventFeedActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.todayinhistory.QzoneTodayInHistoryFeedActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.todayinhistory.QzoneTodayInHistorySetting"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.feed.ui.famous.QZoneFamousFeedActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.famous.QZoneFamousHotRecommFeedActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.famous.QZoneFamousMyFollowActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.friendfeed.QzoneSuggestMoreActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10002c"
+            android:name="com.qzonex.module.feed.ui.listpage.lifemoment.LifeMomentDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10002a"
+            android:label="@ref/0x7f0f0051"
+            android:name="com.qzonex.module.gameengine.ui.GameActivity"
+            android:process=":game"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:alwaysRetainTaskState="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103005f"
+            android:name="com.qzonex.module.lockscreen.ui.LockScreenActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xca4"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f10007c"
+            android:name="com.qzonex.module.lockscreen.ui.LockScreenUnlockActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneMySpaceActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneAnswerQuestionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneVerifyActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneSelectQuestionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneWeiyunPhotoManagerActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZonePhotoManagerActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.myspace.ui.portal.QZoneFamousSpaceShareActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="3FFBZ-XYZCO-CQ6W6-SQVOY-7L5FF-7EFJQ" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZonePersonalAlbumActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZoneSharingOwnersListActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZoneNewAlbumActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZonePersonalPhotoListActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZonePersonalVideoListActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QZonePersonalAlbumAnswerActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzonePhotoCategoryDetailsActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzonePhotoCategoryActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzoneHistoryPhotoGroupActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzoneDLNAConnectIntroduceActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzonePhotoEventSetParamsActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzone.album.ui.activity.QzonePhotoGroupDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.SettingActivity2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.OtherSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.SetGpsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.WnsConfigActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.FontSizeSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.PicSizeSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.LocalTestSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.LocalDebugToastSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.LocalSwitcherActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.MonitorSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.DebugToolsSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.AutoVideoSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.VersionInfoSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.BuildInfoSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.AboutQzoneSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneFlashNickNameSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QzonePhoneLabelSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZonePhoneLabelSettingCustomActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneDescribeLabelSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.setting.customsetting.ui.QzoneCustomSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.customsetting.ui.QzoneCustomSettingSwitcherActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.CommonSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.debug.ServerSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.debug.UploadSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.debug.AnimationPreview"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.UploadQualitySetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.HelpActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneFeedBackActivity"
+            android:launchMode="0"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneFeedBackActivity2"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QzoneFastFeedBackActivity"
+            android:launchMode="0"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneLogActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.QZoneDownloadCheckActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.PushNotificationSetting"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity-alias
+            android:name="com.qzone.ui.setting.PushNotificationSetting"
+            android:exported="true"
+            android:launchMode="1"
+            android:targetActivity="com.qzonex.module.setting.ui.PushNotificationSetting"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZonePermissionSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneAccessSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneGroupAccessSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneExcludeSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneBlockSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneVisitHideListSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneIncomingHideListSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneVisitNotifyListSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneHideSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneAccessVisitorSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QzoneAnswerAccessActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneEditQuestionActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneInfromationManagerSettingActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.InformationManagerSecondPage"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.PersonalizeRecommendSettingSecondPage"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.DeviceInformation"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.PrivacyGuide"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.ApplicationDescriptionAndAuthorize"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.OtherSdkDictionary"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.AdRecommend"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZonePartlyAccessActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.permission.QZoneSomeoneAccessActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.PushNotificationSwitcherSetting"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10007c"
+            android:name="com.qzonex.module.pet.chat.ui.QZonePetChatPanelActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f10007c"
+            android:name="com.qzonex.module.pet.chat.ui.QzonePetImageFloatViewActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.pet.camera.ui.QzonePetCameraActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.qzonex.module.pet.browser.QZonePetChatInputPanel"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f10007c"
+            android:name="com.qzonex.module.pet.camera.ui.QzonePetEditInputActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.pet.service.PetLaunchSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.qzonex.module.magicvoice.ui.Activity.MagicVoiceActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.component.plugin.PluginHostActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="plugin" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.component.plugin.PluginHostSingleProcessActivity"
+            android:process=":plugin"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f10002f"
+            android:name="com.tencent.component.plugin.PluginProxyLiveRecordActivity"
+            android:process=":plugin"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <receiver
+            android:name="com.qzonex.component.process.PluginProcessReceiver"
+            android:exported="false"
+            android:process=":plugin">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.intent.action.ACTION_PRELOAD_PLUGIN" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.qzonex.component.process.PluginProcessService"
+            android:exported="false"
+            android:process=":plugin" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:exported="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwallet100703379" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.guide.QzoneVideoGuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.guide.SingleImageGuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.component.plugin.PluginHostSingleOpenApkProcessActivity"
+            android:exported="false"
+            android:process=":pluginOpenApk"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:name="com.tencent.component.app.task.UIActionFragmentHostActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.operation.ui.QZoneWaterPressActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10007c"
+            android:name="com.qzonex.module.default4deletion.ui.QzoneDefualtActivity4ModuleDeletion"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzone.module.vipcomponent.ui.DiamondYellowOpenActivity"
+            android:exported="false"
+            android:process="com.qzone"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.DiamondGreenOpenActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.open.agent.DownloadHelperActivity"
+            android:exported="true"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.tencent.open.agent.EncryTokenActivity"
+            android:exported="true"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.open.agent.AgentActivity"
+            android:exported="true"
+            android:configChanges="0xda0" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.AuthorityActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.BuddySelectionActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.AppInvitationActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.SendStoryActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.ChallengeActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.BragActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.RequestFreegiftActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity-alias
+            android:name="com.tencent.open.agent.CheckFunctionActivity"
+            android:targetActivity="com.tencent.open.agent.AgentActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.login.ui.QZoneLoginActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.login.ui.QZoneFastAuthorizationLoginActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.guide.QzonePasterGuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.profile.ui.QZoneModifyInfoActivity"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneCountryListActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.maxvideo.activity.QZoneVideoCatListActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.maxvideo.activity.QzoneVideoCategoryActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneEnterTelActivity"
+            android:exported="false"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneEnterCodeActivity"
+            android:exported="false"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneEnterMailActivity"
+            android:exported="false"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneEnterPswActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneRegisterCountryActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneFinishRegActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneFinishInfoActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.register.ui.QZoneFinishRegMailActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="qqpassport"
+                    android:host="reg_end" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.QZonePublishBlogActivity"
+            android:exported="false"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.component.outbox.OutboxActivity"
+            android:exported="false"
+            android:launchMode="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.readcenter.ui.QZoneReadCenterUserHomeActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.QzoneEditImageInfoActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.QZonePhotoListActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.QZoneVideoListActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.QZoneFacePhotoActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.WritePhotoMoodTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.UploadPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.UploadPhotoForPingtuTask"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.FavorPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.operation.ui.photo.task.TakePhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.operation.ui.photo.task.ImmediateUploadPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.operation.ui.photo.task.TakePhotoForUploadTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.operation.ui.photo.task.TakePhotoForMoodTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.operation.ui.photo.task.TakePhotoForTopicGroupTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100036"
+            android:name="com.qzonex.module.operation.ui.photo.task.WaterPressForMoodTask"
+            android:exported="false"
+            android:taskAffinity="com.qzonex.module.operation.ui.photo.task.WaterPressForMoodTask"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.watermark" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100036"
+            android:name="com.qzonex.module.operation.ui.photo.task.WaterPressForUploadTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.SelectPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.SelectNetworkPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.photo.task.EditPhotoTask"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.global.QZonePhotoCropActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.qzonex.module.localalbum.ui.LocalAlbumActivity"
+            android:exported="false"
+            android:process=":localphoto"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qzonex.module.uploadphoto.ui.QZonePhotoPostSelectActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.album.QZoneNetworkAlbumActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.im.ChatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.PrivateMsgActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10003c"
+            android:name="com.qzonex.module.photo.ui.QZonePictureViewer"
+            android:exported="false"
+            android:screenOrientation="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100052"
+            android:name="com.qzonex.module.photo.ui.QZoneSinglePicViewer"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.qzonex.module.feed.ui.friendfeed.QZoneVideoFloatActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QzoneSpecialCareFriendsActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QZoneVisitRequestActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.imagetag.QZoneTagListActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagetag.QZoneImageTagActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagetag.QzonePasterSetListActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f100045"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagetag.QzonePasterSetDetailActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagetag.QzonePetCameraShareActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0">
+
+            <intent-filter>
+
+                <action
+                    android:name="pet_photo_share_action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100045"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagetag.QzonePasterSetHotActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.imagefilter.QZoneFilterActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f10003c"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzone.commoncode.module.videorecommend.ui.QzoneVideoRecommendActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10003c"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzone.commoncode.module.videorecommend.ui.QzoneVideoFullscreenRecommendActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:screenOrientation="4"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.operation.ui.photo.task.UploadPhotoFromUserLocalMachineTask"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="5"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.operation.ui.QZonePublishMoodActivity"
+            android:enabled="true"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+
+                <data
+                    android:mimeType="text/html" />
+
+                <data
+                    android:mimeType="text/xml" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.action.PUBLISH_MOOD" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzone.event.activity.QZoneAddEventTagActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.QZonePublishDynamicActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.qzcamera.QZCameraPublishActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.qzcamera.QZCameraBridgeActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.qzonex.module.qzcamera.QZCameraHostingActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.plugin.CameraActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <provider
+            android:name="com.tencent.ttpic.qzcamera.data.DatabaseManagerProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.ttpic.qzcamera.data.DatabaseManagerProvider"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.trim.TrimVideoActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.music.MaterialLibraryTabActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.plugin.VideoLiteEditorActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.plugin.PhotoLiteEditorActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.plugin.QZPreviewPluginActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.music.search.SearchActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f100040"
+            android:name="com.tencent.ttpic.qzcamera.test.OscarTestActivity"
+            android:process=":qzcamera"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="false" />
+
+        <service
+            android:name="com.qzone.module.camera.CameraInitService"
+            android:exported="false"
+            android:process=":qzcamera" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.QZoneSetMoodPrivActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.QZonePublishAudioActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.message.QZoneLeaveMessageActivity"
+            android:enabled="true"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.friends.ui.QZoneAllFriendsActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzonex.module.plusunion.ui.QZonePlusReceiveActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity-alias
+            android:theme="@ref/0x7f10006f"
+            android:name="com.qzone.ui.plusunion.QZonePlusReceiveActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.qzonex.module.plusunion.ui.QZonePlusReceiveActivity"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10004b"
+            android:name="com.qzonex.app.tab.QZoneTabActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:alwaysRetainTaskState="true"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plusunion.ui.QZoneAddApplicationActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plusunion.ui.QZoneMoreApplicationActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plusunion.ui.QZoneAppIntroActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plusunion.ui.QZonePlusPrivateReceiveActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plugin.ui.QzoneIntermediatePage"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.soload.ui.QzoneSoIntermediatePage"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.favorites.ui.QZoneFavorListActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.favorites.ui.QzoneFavorTextActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QZoneMyVisitorsActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QZoneVisitWhoListActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QZoneRefuseVisitorActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QzoneAlbumVisitorsActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QZoneVisitorTabActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <data
+                    android:scheme="QZoneVisitorTabActivity" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QzoneFeedVisitorActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.visitor.ui.QzoneUgcFeedVisitorActivity"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.visitor.ui.QzoneMedalUpgradePromptActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.album.QZoneNewAlbumActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.album.QZoneAlbumQuestActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.photo.ui.album.QZoneBabyThemeAlbumDateSetActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.lbs.ui.QZoneLocationActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.imagefilter.PhotoPreviewFilterActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QZoneSearchFriendActivity"
+            android:process="com.qzone"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f100072"
+            android:name="com.qzonex.module.friends.ui.QZoneLiveSearchFriendActivity"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.qzonex.module.global.FeedActionPanelActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.qzonex.module.global.LiveActionPanelActivity"
+            android:exported="false"
+            android:process=":livevideo"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.qzonex.module.bullet.ui.BulletActionPanelActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QZoneAutherActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qzonex.module.operation.ui.QZoneShuoshuoEditActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.qzone.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:process=":browser"
+            android:taskAffinity="com.qzone"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QzoneFriendRequestActivity"
+            android:launchMode="0"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.global.QzoneForwardAlbumSelectActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.global.QzoneForwardPhotoSelectActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qzonex.module.login.ui.QZoneOpenSdkLoginActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity-alias
+            android:name="com.qzone.ui.login.QZoneOpenSdkLoginActivity"
+            android:targetActivity="com.qzonex.module.login.ui.QZoneOpenSdkLoginActivity" />
+
+        <activity
+            android:name="com.qzonex.module.gift.ui.QzoneGiftHostActivity"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <receiver
+            android:name="com.qzonex.app.QZoneApplication$EventNotifier$QzoneBootReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.qzonex.app.QzoneExit"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QzoneFriendsTransitActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.friends.ui.QZoneMayKnowActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <receiver
+            android:name="com.qzonex.component.wns.push.ClearPushReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.action.CLEAR_PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.qzonex.component.process.WebProcessReceiver"
+            android:exported="false"
+            android:process=":browser">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.preloadWeb" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.qzonex.component.process.WebProcessReceiver2"
+            android:exported="false"
+            android:process=":browser2">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.preloadWeb" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.qzonex.component.process.WebProcessService"
+            android:exported="false"
+            android:process=":browser">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.preloadService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.qzonex.component.process.WebProcessService2"
+            android:exported="false"
+            android:process=":browser2">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.preloadService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.scheme.ui.SchemeActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.scheme.ui.SchemeDispaterActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzone.intent.action.QZSCHEME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="mqzone" />
+
+                <data
+                    android:scheme="mqzonev2" />
+
+                <data
+                    android:scheme="mqzonev3" />
+
+                <data
+                    android:scheme="mqzonex" />
+
+                <data
+                    android:scheme="mqq" />
+
+                <data
+                    android:scheme="mqzonewx" />
+
+                <data
+                    android:scheme="mqzoneqq" />
+
+                <data
+                    android:scheme="QQ386D411A" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="mqzone" />
+
+                <data
+                    android:scheme="mqzonev2" />
+
+                <data
+                    android:scheme="mqzonev3" />
+
+                <data
+                    android:scheme="mqzonex" />
+
+                <data
+                    android:scheme="mqq" />
+
+                <data
+                    android:scheme="mqzonewx" />
+
+                <data
+                    android:scheme="mqzoneqq" />
+
+                <data
+                    android:scheme="QQ386D411A" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.com.tencent.qzone.profile" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qzonex.module.scheme.ui.SchemeHttpDispaterActivity"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="m.qzone.com"
+                    android:path="/client/fwd" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.scheme.ui.QzoneDispatchActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity-alias
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzone.ui.activity.QZoneDispathActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:targetActivity="com.qzonex.module.scheme.ui.QzoneDispatchActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.scheme.ui.QzoneActivateTaskActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.scheme.countsync.QzoneSyncAccountActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity-alias
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzone.QZoneSyncAccountActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:targetActivity="com.qzonex.module.scheme.countsync.QzoneSyncAccountActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.video.QZonePublishVideoPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.operation.ui.video.QZoneVideoSelectActivity"
+            android:exported="false"
+            android:process="com.qzone"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent100422659" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.sharetoqq.activity.ShareToQQCallBackActivity"
+            android:exported="false"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:exported="false"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.qzonex.module.upgrade.ui.QzoneUpdateVersionActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.readcenter.ui.QZoneReadCenterFeedRecomActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.readcenter.ui.QzoneReadCenterRecommendedActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.readcenter.ui.QzoneReadCenterSubscribedActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100027"
+            android:name="com.qzonex.module.browser.ui.QzoneBrowserChooserActivity"
+            android:process=":browser"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.GameCenterBaseFragment"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.QzoneGameCenterActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.GameCenterHomeActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.MsgInfoActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.QzoneGameInfoActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.QzoneGameRankActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.MyGameActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.card.ui.QzoneCardDecorationActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.card.ui.QzoneCardMoreActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverwidget.ui.QZoneWidgetDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverwidget.ui.QZoneWidgetSettingActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.coverwidget.ui.QZoneWidgetConfigActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.app.activity.QzoneFragmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.plugin.ui.QzonePluginDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <receiver
+            android:name="com.qzonex.module.operation.ui.QZoneWaterPressActivity$CameraBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.qzone.zebra.broadcast.startup" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="A3IK3R1BXK23" />
+
+        <meta-data
+            android:name="ak_webview_sdk_broadcast_permission"
+            android:value="com.qzone.msg.permission.pushnotify" />
+
+        <meta-data
+            android:name="InstallChannel"
+            android:value="debug" />
+
+        <service
+            android:name="com.tencent.component.network.downloader.impl.ipc.DownloadSerice"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.DownloadService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.qzone.commoncode.module.videorecommend.service.QzoneVideoWindowManagerService"
+            android:exported="false" />
+
+        <service
+            android:name="com.qzonex.proxy.localalbum.business.NewPhotoNotificationService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qzonex.localalbum.new_photo_notification_action" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.DiamondYellowPayActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.DiamondGreenPayActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.GameCenterPayActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.GoodsPayActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.vip.ui.FansBarPayActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.maxvideo.activity.QzonePublishVideoActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/3gpp" />
+
+                <data
+                    android:mimeType="video/mp4" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.qzonex.module.maxvideo.activity.QzoneVideoTagActivity"
+            android:enabled="true"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzone.adapter.feed.FeedVideoPlayer"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qzone.adapter.feed.QzoneVideoPlayer"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.qzonex.module.maxvideo.activity.watermark.QZoneVideoWatermarkMarketActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.maxvideo.watermark" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qzonex.module.maxvideo.activity.MusicChooserActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.maxvideo.backgroundmusic" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.qzonex.module.maxvideo.MaxVideoService"
+            android:exported="false"
+            android:process=":maxvideo" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.qzone.adapter.livevideo.QzoneLiveVideoActivity"
+            android:exported="true"
+            android:process=":livevideo"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.qzone.adapter.verticalvideo.QzoneVerticalVideoActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:exported="false"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.qzone.adapter.livevideo.RewardGiftActivity"
+            android:exported="false"
+            android:process=":livevideo"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x30" />
+
+        <service
+            android:name="com.qzone.adapter.oscarcamera.OscarCameraCommonService"
+            android:exported="false"
+            android:process=":qzcamera" />
+
+        <activity
+            android:name="com.qzonex.module.theme.ui.QzoneThemeCenterActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.theme.ui.QzoneThemePreviewActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.global.QZoneSafeModeActivity"
+            android:exported="false"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.qzonex.app.activity.QzoneNoneThemeActivity" />
+
+        <activity
+            android:name="com.qzonex.module.fans.ui.QZoneFansBarActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.SecretFeedListActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.MsgCenterActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.AnnoymousFeedEntryActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.anonymousfeed.ui.detail.SecretDetailActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.qzonex.module.anonymousfeed.ui.detail.SecretActionPanelActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.anonymousfeed.ui.publish.PublishSecretShuoShuoActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qzonex.module.bullet.ui.BulletFullScreenActivity"
+            android:exported="false"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.facade.ui.QzoneFacadeSplashActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.avatar.ui.QzoneAvatarWidgetStoreActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.avatar.ui.QzoneAvatarWidgetStoreATabActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.avatar.ui.QzoneAvatarWidgetStoreBTabActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.avatar.ui.QzoneAvatarWidgetMoreActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.avatar.ui.QzoneAvatarWidgetPreviewActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.search.ui.QZoneSearchActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:name="com.qzonex.module.browser.ui.QZoneSearchWebActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.search.ui.QZoneSearchUGCActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qzonex.module.card.ui.QZoneFeedSkinPreviewActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.card.ui.QZoneFeedSkinMySpaceActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.component.debug.ui.LeakObjectsActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:alwaysRetainTaskState="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.guide.SlidingPagesGuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.qzonex.module.setting.ui.ContactEngineerSetting"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100077"
+            android:name="com.qzonex.module.guide.SlidingVideoPagesActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qzonex.module.video.VideoPlayDataListActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qzonex.module.video.VideoPlayDataDetailActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qzonex.module.gamecenter.ui.QZonePlatoGameBarActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="chunk.ChunkActivity1"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity2"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity4"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity5"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity6"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity7"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity8"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity9"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="chunk.ChunkActivity10"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.tencent.component.app.diskcleanup.cleaner.CleanerActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <service
+            android:name="com.tencent.afc.component.lbs.ipc.LbsRealService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.lbsservice" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tencent.miniqqmusic.basic.audio.QQPlayerService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.miniqqmusic.basic.audio.IQQPlayerService" />
+
+                <action
+                    android:name="com.tencent.miniqqmusic.exit.apadBrowser" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tencent.miniqqmusic.basic.net.ConnectionService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.miniqqmusic.exit.apadBrowser" />
+
+                <action
+                    android:name="com.tencent.miniqqmusic.basic.net.IConnectionService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tencent.tmassistantsdk.downloadservice.TMAssistantDownloadSDKService"
+            android:exported="false"
+            android:process=":TMAssistantDownloadSDKService" />
+
+        <service
+            android:name="com.qzonex.component.wns.push.QzonePushService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="wns.push.to.com.qzone" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.qzonex.module.videocenter.ui.ChannelVideoActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10006e"
+            android:label="@ref/0x7f0f060c"
+            android:icon="@ref/0x7f07072a"
+            android:name="com.tencent.starvideo.ui.QZoneStarVideoPublishActivity"
+            android:enabled="true"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.tencent.starvideo.ui.QZoneStarVideoActivity"
+            android:launchMode="0" />
+
+        <activity
+            android:name="com.qzone.util.JumpActivity"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.qzonex.component.mipush.MiPushMessageReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.qq.e.tg.ADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.WebAdActivity"
+            android:process=":tangramweb"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.PortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.LandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.TransPortraitADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <service
+            android:name="tmsdk.common.KcBaseService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.kingcard.calibration" />
+            </intent-filter>
+
+            <meta-data
+                android:name="kc.v"
+                android:value="6.7.1.6710" />
+        </service>
+
+        <provider
+            android:name="com.tencent.mobileqq.Pandora.util.SharedPreferencesProvider"
+            android:permission="com.tencent.mobileqq.permission.Pandora"
+            android:exported="true"
+            android:authorities="com.tencent.mobileqq.Pandora.com.qzone"
+            android:grantUriPermissions="true" />
+    </application>
+</manifest>

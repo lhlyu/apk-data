@@ -1,0 +1,3441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1007"
+    android:versionName="8.111.0.588"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.tencent.weishi"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <supports-gl-texture
+        android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+
+    <supports-gl-texture
+        android:name="GL_OES_compressed_paletted_texture" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <permission
+        android:name="com.tencent.weishi.theme.permission" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="oicq.wlogin.permission.shareService" />
+
+    <uses-permission
+        android:name="oicq.wlogin.permission.pushService" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_STATUS_BAR" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="com.tencent.applink.sdk.permission.APPLINK_READ_PERMISSION" />
+
+    <uses-permission
+        android:name="com.tencent.applink.sdk.permission.APPLINK_WRITE_PERMISSION" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.theme.permission" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.publish.aidl" />
+
+    <permission
+        android:name="com.tencent.weishi.publish.aidl" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <permission
+        android:name="com.tencent.weishi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-permission
+        android:name="android.permission.ALARM_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <permission
+        android:name="com.tencent.weishi.vfs.broadcast"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.vfs.broadcast" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <permission
+        android:name="com.tencent.weishi.voiceassist.permission.READ"
+        android:protectionLevel="0x0" />
+
+    <permission
+        android:name="com.tencent.weishi.voiceassist.permission.WRITE"
+        android:protectionLevel="0x0" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.XGPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.permission.XGPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.tencent.weishi.permission.TMF_SHARK" />
+
+    <permission
+        android:name="com.tencent.weishi.permission.TMF_SHARK"
+        android:protectionLevel="0x2" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <application
+        android:theme="@ref/0x7f150142"
+        android:label="微视"
+        android:icon="@ref/0x7f080756"
+        android:name="com.tencent.oscar.app.WSHotFixApplication"
+        android:persistent="false"
+        android:allowTaskReparenting="true"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@ref/0x7f170005"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:theme="@ref/0x7f15031f"
+            android:name="com.tencent.weishi.module.landvideo.HorizontalVideoActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:resizeableActivity="true">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.weishi.module.landvideo.LandVideoGuideActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15031d"
+            android:name="com.tencent.weishi.live.audience.mini.LiveMiniSquareActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f15031d"
+            android:name="com.tencent.weishi.live.audience.mini.MiniRecentRecordActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150327"
+            android:name="com.tencent.weishi.live.audience.login.LiveLoginContainerActivity"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.weishi.live.audience.debug.LiveWebDebugActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150145"
+            android:name="com.tencent.weishi.module.drama.square.DramaSquareActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xd00" />
+
+        <activity
+            android:theme="@ref/0x7f150145"
+            android:name="com.tencent.weishi.module.drama.search.DramaSearchActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:theme="@ref/0x7f150145"
+            android:name="com.tencent.weishi.module.drama.theater.DramaTheaterActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.weishi.module.drama.unlock.single.DramaUnlockActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowBackground="@ref/0x0106000d"
+            android:windowIsTranslucent="true"
+            android:windowContentOverlay="@ref/0x00000000" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.weishi.module.drama.unlock.batch.BatchUnlockActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowBackground="@ref/0x0106000d"
+            android:windowIsTranslucent="true"
+            android:windowContentOverlay="@ref/0x00000000" />
+
+        <activity
+            android:theme="@ref/0x7f150322"
+            android:name="com.tencent.weishi.module.drama.mini.MiniSquareActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowBackground="@ref/0x0106000d"
+            android:windowIsTranslucent="true"
+            android:windowContentOverlay="@ref/0x00000000" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f14011c"
+            android:name="com.tencent.oscar.module.discovery.ui.GlobalSearchActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowSoftInputMode="0x22" />
+
+        <meta-data
+            android:name="SupportedShareVideoSdkVersion"
+            android:value="1065353216.000000" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="drafts.db" />
+
+        <meta-data
+            android:name="VERSION"
+            android:value="8" />
+
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.tencent.oscar" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="10097595" />
+
+        <meta-data
+            android:name="APPKEY_DENGTA"
+            android:value="0S000EAOIR285SV7" />
+
+        <meta-data
+            android:name="android.vivo_multidisplay_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="BUGLY_APP_BUILD_NO"
+            android:value="588" />
+
+        <meta-data
+            android:name="TOGGLE_PRODUCT_ID"
+            android:value="57478e2e-2c92-4986-afa7-2cc4eeafb62e" />
+
+        <meta-data
+            android:name="TOGGLE_MODULE_ID"
+            android:value="1" />
+
+        <meta-data
+            android:name="TOGGLE_PRODUCT_NAME_EN"
+            android:value="weishi" />
+
+        <meta-data
+            android:name="com.coloros.ocs.hyper.AUTH_CODE"
+            android:value="ATBFAiEA8iRp8sGAdzSEiSy/vNEFqxoR4umT2p+GkLGPlAGjFvcCIHeaHaozN79ayAnU89FhZkOYuyKOhLsQJIdHwP++Dh1iaRLhqmAAAAA=" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.main.feed.FeedActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xd00"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1501cc"
+            android:name="com.tencent.oscar.module.interact.RichLikeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <service
+            android:name="com.tencent.upload.image.ImageProcessService"
+            android:exported="false"
+            android:process=":image" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10" />
+
+        <service
+            android:label="dexopt"
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:process=":dexopt" />
+
+        <activity
+            android:theme="@ref/0x7f1501a8"
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f1501a8"
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:exported="false"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f1501a8"
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x5a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwallet100703379" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.tencent.headsuprovider.ServiceProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.headsuprovider.ServiceProvider" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.headsuprovider.ServiceDispatchActivity"
+            android:exported="true"
+            android:taskAffinity="com.tencent.weishi.ServiceDispatchActivity"
+            android:excludeFromRecents="true" />
+
+        <activity-alias
+            android:name="com.tencent.headsuprovider.WSServiceDispatchActivity"
+            android:exported="true"
+            android:targetActivity="com.tencent.headsuprovider.ServiceDispatchActivity" />
+
+        <activity-alias
+            android:name="com.tencent.headsuprovider.WSSpareServiceDispatchActivity"
+            android:exported="true"
+            android:targetActivity="com.tencent.headsuprovider.ServiceDispatchActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.headsuprovider.HeadsUpActivity"
+            android:exported="false"
+            android:taskAffinity="com.tencent.weishi.headsuprovider.base.notification.HeadsUpActivity"
+            android:multiprocess="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.HPSDK.SHOW_HEADSUP" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150448"
+            android:name="com.webank.facelight.ui.FaceVerifyActivity"
+            android:exported="false"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xd00" />
+
+        <activity
+            android:theme="@ref/0x7f150448"
+            android:name="com.webank.facelight.ui.FaceProtocalActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="XSHBZ-P45KX-EUJ4D-ZMKUL-6CVHV-7CBQ3" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170000" />
+        </provider>
+
+        <service
+            android:name="com.tencent.oscar.app.activitymanager.publish.PublishActivityService"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.oscar.app.activitymanager.webview.WebViewActivityService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1502cd"
+            android:name="com.tencent.weishi.module.personal.view.QQTmpAuthActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.profile.activity.WorksManageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.profile.activity.UploadVideoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f14048e"
+            android:name="com.tencent.oscar.module.similar.SimilarUserRecAttentionActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@string/0x33"
+            android:name="com.tencent.oscar.module.main.profile.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.main.profile.UserListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.main.profile.ProfileFansActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.profile.activity.ProfileImageViewerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.creator.CreatorSplashActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150321"
+            android:name="com.tencent.oscar.module.videocollection.ui.VideoCollectionDetailActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.workcollection.AllWorkCollectionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.workcollection.CollectionDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f14011c"
+            android:name="com.tencent.oscar.module.main.MainActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150306"
+            android:name="com.tencent.oscar.module.main.checkin.CheckInDialogContainerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="话题列表页"
+            android:name="com.tencent.oscar.module.topic.topiclist.TopicListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.channel.ChannelContainerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.topic.detail.TopicDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15014f"
+            android:name="com.tencent.weishi.live.anchor.WSAnchorLiveStartLoadingActivity"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareToStoryActivity"
+            android:multiprocess="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareResultActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15031d"
+            android:name="com.tencent.oscar.live.LiveChargeContainerActivity"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.weishi.live.core.uicomponent.share.AnchorLiveWXEntryActivity"
+            android:exported="true"
+            android:multiprocess="true"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.live.core.uicomponent.livestart.WeishiLiveStartActivity"
+            android:multiprocess="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.weishi.live.core.login.QQLoginActivity"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <provider
+            android:name="com.tencent.weishi.live.core.db.material.LiveDatabaseManagerProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.provider.LiveDBManager" />
+
+        <service
+            android:name="com.tencent.runcaseinliveprocess.RunLiveCaseService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.runcaseinliveprocess.service" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f150143"
+            android:name="com.tencent.weishi.module.commercial.rewardad.ui.RewardedAdActivity"
+            android:configChanges="0x480">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150143"
+            android:name="com.tencent.weishi.module.commercial.rewardad.ui.RewardedAdHorizontalActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x480">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <provider
+            android:name="com.tencent.bs.provider.FileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.InstallFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170001" />
+        </provider>
+
+        <receiver
+            android:name="com.tencent.weishi.base.commercial.notification.NotificationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="notification_clicked" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f15019a"
+            android:name="com.tencent.weishi.base.commercial.download.manager.DownloadManagerActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.msg.compose.detail.MessageGroupDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weseevideo.preview.wangzhe.WZPreViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x580" />
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.ui.publish.PublishActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.ui.location.NewLocationActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.ui.topic.NewTopicListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.postscheme.CutVideoActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f150199"
+            android:label="处理协议的透明浮层Activity"
+            android:name="com.tencent.weishi.module.publish.postscheme.PostVideoSchemeActivity"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150199"
+            android:label="处理协议的透明浮层Activity"
+            android:name="com.tencent.weishi.module.publish.ui.redpacket.activity.RedPacketBlackActivity"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.ui.redpacket.activity.RedPacketPayActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x580"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwallet1101083114" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.weishi.module.publish.ui.redpacket.activity.RedPacketPaySucActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x580" />
+
+        <activity
+            android:name="com.tencent.oscar.module.main.publish.ThirdPublishFeedActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150326"
+            android:label="@ref/0x7f14011c"
+            android:name="com.tencent.weishi.module.login.WSNewLoginActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:label="@ref/0x7f14011c"
+            android:name="com.tencent.weishi.module.login.WSLoginEmptyActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b2b"
+            android:name="com.tencent.oscar.module.settings.AboutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b40"
+            android:name="com.tencent.oscar.module.settings.ContactOfficialActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b79"
+            android:name="com.tencent.oscar.module.settings.AuthorizeSettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b36"
+            android:name="com.tencent.oscar.module.settings.BindAccountActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@string/0x33"
+            android:name="com.tencent.oscar.module.settings.AvatarCutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b3a"
+            android:name="com.tencent.oscar.module.settings.CameraPublishSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b44"
+            android:name="com.tencent.oscar.module.settings.GeneralSettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140cb9"
+            android:name="com.tencent.oscar.module.settings.profile.ProfileEditingComposeActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b5e"
+            android:name="com.tencent.oscar.module.settings.PrivacySettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b79"
+            android:name="com.tencent.oscar.module.settings.PushSettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b7a"
+            android:name="com.tencent.oscar.module.settings.PushSettingsDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140cba"
+            android:name="com.tencent.oscar.module.settings.SetProfileSelectCityActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140cbb"
+            android:name="com.tencent.oscar.module.settings.industry.SetProfileSelectIndustryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140cbc"
+            android:name="com.tencent.oscar.module.settings.SetProfileWeishiWaterMarkActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140cb8"
+            android:name="com.tencent.weishi.module.setting.SettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140b37"
+            android:name="com.tencent.oscar.module.settings.BlackListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.settings.ReportLogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031c"
+            android:name="com.tencent.oscar.module.settings.SendRecentLogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.settings.UserRecordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.oscar.module.share.ShareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f150185"
+            android:name="com.tencent.oscar.module.share.sina.SinaAuthorizeActivity"
+            android:exported="false"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.oscar.module.main.feed.publishshare.PublishSharePopupActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.oscar.module.main.feed.publishshare.PublishSharePopupActivity2"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f1501ca"
+            android:name="com.tencent.weishi.module.publisher.PublisherMainActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.module.multi.PublisherMultiPageActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f15013d"
+            android:name="com.tencent.weishi.module.im.IMNotificationStubActivity" />
+
+        <receiver
+            android:name="com.tencent.weishi.module.im.IMNotificationStubReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="message_notification_cancel" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f1405b4"
+            android:name="com.tencent.oscar.module.message.immessage.ui.IMMessageListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f1405b4"
+            android:name="com.tencent.oscar.module.message.immessage.ui.IMUnFollowMessageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f1405b4"
+            android:name="com.tencent.weishi.module.im.compose.ImStrangersMessageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.message.immessage.ui.IMConversationActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="申请授权"
+            android:name="com.tencent.weishi.module.omplatform.OmAuthorizeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="企鹅号授权"
+            android:name="com.tencent.weishi.module.omplatform.OmDeauthorizeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f1502cd"
+            android:name="com.tencent.weishi.perm.PermActivity"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@string/0x33"
+            android:name="com.tencent.oscar.module.material.MaterialDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.oscar.module.material.MaterialDetailActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.channel.ChannelSubActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f1501c9"
+            android:label="拍摄"
+            android:name="com.tencent.weishi.module.camera.ui.activity.CameraActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xd00"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:label="模板库"
+            android:name="com.tencent.weishi.module.camera.module.videofunny.VideoFunnyTemplateLibraryActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:label="制作模板"
+            android:name="com.tencent.weishi.module.camera.module.videofunny.PosterInfoActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:label="素材管理"
+            android:name="com.tencent.weishi.module.camera.magic.MaterialLocalManageActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f150146"
+            android:name="com.tencent.oscar.module.splash.SplashActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="com.tencent.weishi.action.PUSH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:icon="@ref/0x7f080756"
+            android:name="com.tencent.oscar.module.splash.SplashActivity.RedDot"
+            android:enabled="false"
+            android:targetActivity="com.tencent.oscar.module.splash.SplashActivity">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="com.tencent.weishi.action.PUSH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f150144"
+            android:name="com.tencent.oscar.module.splash.ForegroundSplashActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:label="推荐关注"
+            android:name="com.tencent.oscar.module.recomuser.RecommendUserDialogActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.select.user.SelectUserActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@ref/0x7f140d2e"
+            android:name="com.tencent.weishi.module.user.view.ui.FriendsMsgListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.weseevideo.camera.mvauto.MvAutoEditorActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.weseevideo.camera.redpacket.ui.RedPacketPreviewActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.weseevideo.camera.redpacket.ui.RedPacketUnderTakeActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.tencent.weseevideo.camera.mvauto.cut.entry.OuterClipEntryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x580" />
+
+        <activity
+            android:label="视频提取音乐-选择视频页面"
+            android:name="com.tencent.weseevideo.camera.mvauto.music.importmusic.localpicker.activity.ImportMusicLocalPickerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="封面和片尾选择页"
+            android:name="com.tencent.weishi.module.edit.cover.CoverAndEndActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="文字模板输入页"
+            android:name="com.tencent.weishi.text.template.TextTemplateInputActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="文字模板入口页"
+            android:name="com.tencent.weishi.text.template.TextTemplateEntActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150214"
+            android:name="com.tencent.videocut.picker.PickerActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150214"
+            android:name="com.tencent.videocut.template.edit.main.TemplateEditActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f150214"
+            android:name="com.tencent.videocut.base.edit.cut.CutActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.draft.WeishiDraftActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150327"
+            android:name="com.tencent.weseevideo.schema.MovieTemplateDownloadActivity"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="微视大片"
+            android:name="com.tencent.weseevideo.camera.mvblockbuster.templateselect.MvBlockbusterActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weseevideo.editor.module.polymerization.VideoPolyActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f150327"
+            android:name="com.tencent.weseevideo.wxaccess.VEThirdEntryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weseevideo.editor.module.publish.ThirdSharePublishActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:name="com.tencent.weseevideo.camera.mvblockbuster.undertake.TemplateUndertakeActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.oscar.module.webview.tenvideo.TenvideoPayWebViewActivityLandscape"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.oscar.module.webview.tenvideo.TenvideoPayWebViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.webview.WebviewBaseActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.webview.MainProcessWebviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031d"
+            android:name="com.tencent.oscar.module.webview.half.HalfWebViewActivity"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.webview.notify.NotifyDialogWebViewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.task.web.ShowLoadWebviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="获得QQ登录信息"
+            android:name="com.tencent.oscar.live.QQTmpAuthActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.weishi.module.switchaccount.SwitchAccountTransparentActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150320"
+            android:name="com.tencent.weishi.module.reauth.ReAuthTransparentActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.tencent.oscar.module.webview.WebService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.base.rank.log.RankLogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xd00"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150006"
+            android:name="com.tencent.oscar.widget.dialog.DialogActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.tencent.oscar.daemon.RestorePushService"
+            android:exported="true" />
+
+        <service
+            android:name="com.tencent.oscar.hwpush.WeishiHmsMessageService"
+            android:permission="com.tencent.weishi.permission.PROCESS_PUSH_MSG"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.oscar.mipush.XiaoMiMessageReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.weishi.TPNSMessageReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.PUSH_MESSAGE" />
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:exported="false"
+            android:process=":xg_vip_service">
+
+            <intent-filter
+                android:priority="0x7fffffff">
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE" />
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="tpns-disable-component-meizu"
+            android:value="false" />
+
+        <meta-data
+            android:name="XG_SERVICE_PULL_UP_OFF"
+            android:value="true" />
+
+        <receiver
+            android:name="com.tencent.oscar.module.message.notification.RedDotAlarmReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="action_reddot_alarm" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f150328"
+            android:name="com.tencent.weseevideo.common.music.MaterialLibraryTabActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150328"
+            android:name="com.tencent.weseevideo.common.music.search.SearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150328"
+            android:label="音乐分类"
+            android:name="com.tencent.weseevideo.common.music.CategoryDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="选图器"
+            android:name="com.tencent.weseevideo.selector.LocalAlbumActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.oscar.action.localalbum" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weseevideo.selector.viewer.SimplePhotoViewerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.weishi.publisher.setting.PublishConfigSettingActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150327"
+            android:name="com.tencent.weishi.publisher.prepare.PrepareMaterialActivity"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f150327"
+            android:name="com.tencent.weishi.publisher.prepare.PrepareActivity"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x7f15013a"
+            android:name="com.tencent.weseevideo.schema.LocalSelectorOrCameraActivity"
+            android:launchMode="1"
+            android:configChanges="0x500" />
+
+        <provider
+            android:name="com.tencent.weseevideo.common.data.DatabaseManagerProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.provider.DatabaseManager" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="@string/0x33"
+            android:name="com.tencent.oscar.module.acttogether.ActTogetherDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <service
+            android:name="com.tencent.weseevideo.camera.cache.MaterialCacheService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150146"
+            android:name="com.tencent.oscar.common.IntentHandleActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="weishi" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150146"
+            android:name="com.tencent.oscar.common.NativeIntentHandleActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/jpeg" />
+
+                <data
+                    android:mimeType="image/png" />
+
+                <data
+                    android:mimeType="video/mp4" />
+
+                <data
+                    android:mimeType="video/3gpp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.module.webview.BrowserMainActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x12"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:label="仅浏览模式"
+            android:name="com.tencent.oscar.readonly.ReadOnlyModeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <service
+            android:name="com.tencent.oscar.module.update.UpdateService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1501a8"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x500"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent1101083114" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.weishi.pullalive.PullAliveActivity"
+            android:exported="true"
+            android:taskAffinity="com.tencent.weishi.PullAliveActivity"
+            android:excludeFromRecents="true" />
+
+        <provider
+            android:name="com.tencent.ipc.MainBinderProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.process_dispatcher.main" />
+
+        <service
+            android:name="com.tencent.weishi.base.push.WnsPushService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="wns.push.to.com.tencent.weishi" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.tencent.wnsnetsdk.base.os.clock.AlarmClockReceiver"
+            android:exported="false"
+            android:process=":wnsnetservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="wns.heartbeat" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f15031e"
+            android:name="com.tencent.oscar.common.security.captcha.TCaptchaPopupActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.weishi.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.weishi.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.weishi.alpha.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x500" />
+
+        <receiver
+            android:name="com.tencent.weishi.wxapi.WXAppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.tencent.publisher.store.PublisherContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.publisher.provider" />
+
+        <activity
+            android:name="com.tencent.qqlive.module.videoreport.scheme.SchemeRouterActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="txdt0s000eaoir285sv7" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1501ac"
+            android:name="com.tencent.weishi.lib.permissions.PermissionActivity"
+            android:multiprocess="true"
+            android:launchMode="0"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f150138"
+            android:name="com.tencent.hudebug.console.HUDConsoleActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.tencent.wnsnetsdk.service.WnsMain"
+            android:exported="false"
+            android:process=":wnsnetservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wnsnetsdk.service.WnsMain" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.tencent.videocut.module.contribute.main.ContributeActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150442"
+            android:name="com.tencent.upgrade.ui.UpgradeDialogActivity" />
+
+        <activity
+            android:name="com.tencent.upgrade.ui.UpgradeActiveActivity" />
+
+        <provider
+            android:name="com.tencent.upgrade.download.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.UpdateFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170006" />
+        </provider>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.FeedbackActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.ResultActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.CategoryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.PictureScrawlActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.WebViewBrowser" />
+
+        <activity
+            android:theme="@ref/0x7f15027c"
+            android:name="com.tencent.feedback.activity.FeedbackWebActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150120"
+            android:name="com.tencent.feedback.activity.CustomDialogActivity"
+            android:launchMode="2"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f150120"
+            android:name="com.tencent.dialog.FeedbackDialogWrapperActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f15012f"
+            android:name="com.tencent.feedback.activity.FeedbackRouterDialogActivity" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tencent.rmonitor.launch.AppLaunchInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f150291"
+            android:name="com.tencent.dcl.mediaselect.media.ui.activity.DVMediaSelectActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150291"
+            android:name="com.tencent.dcl.mediaselect.media.ui.activity.DVSystemCameraActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150291"
+            android:name="com.tencent.dcl.mediaselect.media.ui.activity.DVCameraActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150291"
+            android:name="com.tencent.dcl.mediaselect.media.ui.activity.DVEasyVideoPlayActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15028c"
+            android:name="com.tencent.dcl.mediaselect.media.utils.PermissionUtil$RequestPermissionsActivity" />
+
+        <provider
+            android:name="com.tencent.dcl.mediaselect.media.utils.DVFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.dclfeedbackprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170008" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.tencent.rfix.lib.engine.TinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.screen.activity.ScreenRecordLauncherActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.screen.activity.FloatWindowLauncherActivity" />
+
+        <service
+            android:name="com.tencent.screen.core.ScreenRecordService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.dcl.library.common.download.services.FileDownloadService$SharedMainProcessService" />
+
+        <service
+            android:name="com.tencent.dcl.library.common.download.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.room.RoomActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.audiencepages.room.AudienceRoomActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x40002d80"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.room.AnchorRoomActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.room.LandScapeRoomActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.livestart.LiveStartActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.liveprepare.LivePrepareActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.liveprepare.UpStreamPreparedActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.commonpages.devoption.DevOptionActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.livestart.covercrop.LiveStartPhotoCropActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.liveprepare.activity.AuthWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.liveprepare.activity.CommodityWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.liveprepare.activity.LiveRuleWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.pages.TestActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:exported="false"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.qq.e.tg.ADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.PortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.LandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <meta-data
+            android:name="wb_version_WbCloudFaceLiveSdk"
+            android:value="4.2.0-c2aa557" />
+
+        <activity
+            android:theme="@ref/0x7f150445"
+            android:name="com.webank.facelight.ui.FaceGuideActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+
+        <meta-data
+            android:name="wb_version_WbCloudFaceSdk"
+            android:value="v4.2.0-808b74d4" />
+
+        <meta-data
+            android:name="wb_version_simplewa"
+            android:value="v1.1.3-1ded751" />
+
+        <meta-data
+            android:name="wb_version_wecamera"
+            android:value="v1.0.43-05f435d" />
+
+        <meta-data
+            android:name="wb_version_WbCloudNormal"
+            android:value="v5.0.6-f2277ff" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_OWNER"
+            android:value="tummyhuang" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_HOSTNAME"
+            android:value="VM-34-187-centos" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_TIME"
+            android:value="2022-01-14 18:02:07" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_REV"
+            android:value="721fe46e14de5f6d599334e72e7037f04de7a2df" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_SDK_VERSION"
+            android:value="2.0.0" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_SDK_VERSION_INT"
+            android:value="0x22000001" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_UPSTREAM_CLIENT_VERSION"
+            android:value="0x28000730" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_WEBGL_MAP_COMP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_SUPPORT_GAME"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_USE_MINIFIED_LITEAV_SDK"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.tencent.wmpf.BuildInfo.BUILD_PIPELINE_NUM"
+            android:value="2010" />
+
+        <activity
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.WxaProfileActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.tencent.luggage.wxaapi.internal.ui.WxaScanResultDelegateActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150401"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerActivity0"
+            android:process=":wxa_container0"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerToFrontProxyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150401"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerActivity1"
+            android:process=":wxa_container1"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150401"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerActivity2"
+            android:process=":wxa_container2"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150401"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerActivity3"
+            android:process=":wxa_container3"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150401"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.container.WxaContainerActivity4"
+            android:process=":wxa_container4"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCMainService"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCContainerService0"
+            android:exported="false"
+            android:process=":wxa_container0" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCContainerService1"
+            android:exported="false"
+            android:process=":wxa_container1" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCContainerService2"
+            android:exported="false"
+            android:process=":wxa_container2" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCContainerService3"
+            android:exported="false"
+            android:process=":wxa_container3" />
+
+        <service
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.app.WxaIPCContainerService4"
+            android:exported="false"
+            android:process=":wxa_container4" />
+
+        <service
+            android:name="com.tencent.ilinkservice.IlinkService"
+            android:exported="false"
+            android:process="com.tencent.ilink.ServiceProcess">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.ilinkservice.StartIlinkService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f150319"
+            android:name="com.tencent.mm.ui.AlertActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f15044c"
+            android:name="com.tencent.image_picker.imagepicker.features.TencentImagePickerActivity"
+            android:configChanges="0x480" />
+
+        <provider
+            android:name="com.tencent.image_picker.imagepicker.helper.TencentImagePickerFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.wmpf.imagepicker.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170010" />
+        </provider>
+
+        <meta-data
+            android:name="use_xweb_camera"
+            android:value="true" />
+
+        <meta-data
+            android:name="use_cpu_crop"
+            android:value="false" />
+
+        <service
+            android:name="com.tencent.mm.plugin.appbrand.jsapi.nfc.hce.HCEService"
+            android:permission="android.permission.BIND_NFC_SERVICE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@ref/0x7f170003" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f150319"
+            android:name="com.tencent.mm.plugin.appbrand.jsapi.lbs.LbsProxyActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.tencent.luggage.sdk.customize.impl.FullSdkExternalToolsHelper$SimpleWebViewActivity"
+            android:launchMode="2" />
+
+        <provider
+            android:name="com.tencent.luggage.storage.StandaloneCriticalDataProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.wxa_critical_content" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.luggage.ui.OpenSDKBridgedActivity"
+            android:configChanges="0x4b0" />
+
+        <provider
+            android:name="com.tencent.luggage.opensdk.OpenSDKApiContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.openapidata"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170007" />
+        </provider>
+
+        <activity
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaWebViewActivity"
+            android:configChanges="0xfb0" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.ui.WxaSimpleWebViewActivity"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150319"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaSettingActivity" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.setting.ui.WxaSettingActivity"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaSettingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15029b"
+            android:name="com.tencent.luggage.ui.WxaAlertActivity"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f150316"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaAuthorizeDetailActivity"
+            android:configChanges="0x4a0" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.setting.ui.WmpfAuthorizeDetailUI"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaAuthorizeDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150316"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaUserInfoAuthorizeActivity" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.setting.ui.AppBrandUserInfoAuthorizeUI"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaUserInfoAuthorizeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15044f"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaSubscribeMsgManageActivity" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.setting.ui.BizSubscribeMsgManagerUI"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaSubscribeMsgManageActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150316"
+            android:name="com.tencent.luggage.ui.WxaMusicActivity" />
+
+        <provider
+            android:name="com.tencent.luggage.jsapi.file.LuggageOpenDocFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.shareFileProvide"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170009" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f150284"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaScanCodeActivity"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.scanner.scanner.ui.BaseScanUI"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaScanCodeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150319"
+            android:name="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaLaunchProxyActivity"
+            android:windowSoftInputMode="0x2" />
+
+        <activity-alias
+            android:name="com.tencent.luggage.ui.WxaLaunchProxyActivity"
+            android:enabled="true"
+            android:targetActivity="com.tencent.luggage.wxa.standalone_open_runtime.ui.patched.PatchedWxaLaunchProxyActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150319"
+            android:name="com.tencent.luggage.ui.WxaPreviewImageUI"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="com.tencent.luggage.crash.WxaCrashUploaderService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.tencent.weishi.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.tencent.weishi.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.tencent.weishi.permission.PUSH_PROVIDER"
+            android:writePermission="com.tencent.weishi.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.tencent.weishi.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.3.0.304" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.TpnsActivity"
+            android:exported="true"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.weishi.OPEN_TPNS_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="tpns"
+                    android:host="com.tencent.weishi" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.InnerTpnsActivity"
+            android:exported="false"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.weishi.OPEN_TPNS_ACTIVITY_V2" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="stpns"
+                    android:host="com.tencent.weishi" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.inappmessage.InAppMessageActivity" />
+
+        <service
+            android:name="com.tencent.android.tpush.service.XGVipPushService"
+            android:persistent="true"
+            android:exported="false"
+            android:process=":xg_vip_service" />
+
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.weishi.XGVIP_PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.XGVIP_PUSH_AUTH" />
+
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.TPUSH_PROVIDER" />
+
+        <provider
+            android:name="com.tencent.android.tpush.XGVipPushKAProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.AUTH_XGPUSH_KEEPALIVE" />
+
+        <service
+            android:name="com.tencent.tpns.mqttchannel.services.MqttService"
+            android:exported="false"
+            android:process=":xg_vip_service" />
+
+        <provider
+            android:name="com.tencent.tpns.baseapi.base.SettingsContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.XG_SETTINGS_PROVIDER" />
+
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="1500008880" />
+
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="APBL5EETI9H8" />
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.tencent.android.vivopush.VivoPushMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="483" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="9a8851ad-9773-4de9-95b1-c67181d3eca3" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="10125" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.android.mipush.XMPushMessageReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.android.hms.tpns.HWHmsMessageService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="tmsdk.common.KcBaseService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.kingcard.calibration" />
+            </intent-filter>
+
+            <meta-data
+                android:name="kc.v"
+                android:value="6.7.1.6710" />
+        </service>
+
+        <activity
+            android:name="com.tencent.ilive.uicomponent.anchorinfocomponent.test.AnchorInfoTestActivity" />
+
+        <activity
+            android:name="com.tencent.ilive.uicomponent.chatcomponent.test.ChatTestActivity" />
+
+        <activity
+            android:name="com.tencent.ilive.covercomponent.covercrop.LiveStartPhotoCropActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.tencent.falco.base.downloader.service.DownLoadService"
+            android:exported="false"
+            android:process=":publish" />
+
+        <provider
+            android:name="com.tencent.ilive.pages.liveprepare.PhotoFileProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.tencent.weishi.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170004" />
+        </provider>
+
+        <activity
+            android:name="com.tencent.ilive.weishi.core.web.WSWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.liveprotocolcomponent.activity.LiveRuleWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.ilive.uicomponent.minicardcomponent.test.MiniCardTestActivity" />
+
+        <activity
+            android:name="com.tencent.okweb.permission.ProxyPermissionActivity">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.ilivesdk.photocomponent.activity.AlbumListActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.ilivesdk.photocomponent.activity.PhotoListActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.ilivesdk.photocomponent.activity.PhotoCropActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.falco.base.qqsdk.QQLoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150017"
+            android:name="com.tencent.ilivesdk.webcomponent.activity.WebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.ilivesdk.webcomponent.activity.TransparentTitleWebActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <activity
+            android:name="com.tencent.ilivesdk.webcomponent.activity.SingleTransparentTitleWebActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x500" />
+
+        <uses-library
+            android:name="com.huawei.camerakit.impl"
+            android:required="false" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.3.0.304" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <provider
+            android:name="com.tencent.qmethod.pandoraex.provider.PandoraExProvider"
+            android:permission="com.tencent.qmethod.permission.pandoraex"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.pandoraprovider"
+            android:grantUriPermissions="true" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.4.0.302" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+            android:launchMode="3" />
+
+        <meta-data
+            android:name="tinker_version"
+            android:value="1.9.14.20(RFix)" />
+
+        <activity
+            android:theme="@ref/0x7f150102"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.tencent.weishi.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="PATCH_ID"
+            android:value="id_1225143323" />
+
+        <meta-data
+            android:name="TINKER_ID"
+            android:value="tinker_id_1225143323" />
+    </application>
+</manifest>

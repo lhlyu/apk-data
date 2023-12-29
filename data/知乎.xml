@@ -1,0 +1,3693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="19116"
+        android:versionName="9.33.0"
+        android:compileSdkVersion="30"
+        android:compileSdkVersionCodename="11"
+        package="com.zhihu.android"
+        platformBuildVersionCode="30"
+        platformBuildVersionName="11">
+
+    <uses-sdk
+            android:minSdkVersion="21"
+            android:targetSdkVersion="33" />
+
+    <uses-permission
+            android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+            android:name="android.permission.INTERNET" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+            android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+            android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+            android:name="android.Manifest.permission.DEVICE_POWER" />
+
+    <uses-permission
+            android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+            android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+            android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+            android:name="android.permission.CAMERA" />
+
+    <uses-permission
+            android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+            android:name="android.hardware.location.network"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false" />
+
+    <uses-feature
+            android:name="not_zidane_software_ability"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.Camera"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.camera.front"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.microphone"
+            android:required="false" />
+
+    <permission
+            android:label="@ref/0x7f1211f6"
+            android:name="com.zhihu.android.ReceivePlayerInfo"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.zhihu.android.ReceivePlayerInfo" />
+
+    <queries>
+
+        <package
+                android:name="com.tencent.mm" />
+
+        <package
+                android:name="com.tencent.wework" />
+
+        <package
+                android:name="com.tencent.mobileqq" />
+
+        <package
+                android:name="com.ss.android.ugc.aweme" />
+
+        <package
+                android:name="com.smile.gifmaker" />
+
+        <package
+                android:name="com.sina.weibo" />
+
+        <package
+                android:name="com.xunmeng.pinduoduo" />
+
+        <package
+                android:name="com.UCMobile" />
+
+        <package
+                android:name="com.taobao.taobao" />
+
+        <package
+                android:name="com.eg.android.AlipayGphone" />
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="com.getui.sdk.action" />
+        </intent>
+
+        <package
+                android:name="com.android.creator" />
+
+        <package
+                android:name="com.mdid.msa" />
+
+        <package
+                android:name="com.samsung.android.deviceidservice" />
+
+        <package
+                android:name="com.coolpad.deviceidsupport" />
+
+        <package
+                android:name="com.heytap.openid" />
+
+        <package
+                android:name="com.huawei.hwid" />
+
+        <package
+                android:name="com.huawei.hwid.tv" />
+
+        <package
+                android:name="com.huawei.hms" />
+
+        <package
+                android:name="com.asus.msa.SupplementaryDID" />
+
+        <package
+                android:name="com.zui.deviceidservice" />
+
+        <intent>
+
+            <action
+                    android:name="com.umeng.message.action.notify" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="*" />
+
+            <data
+                    android:scheme="tbopen" />
+        </intent>
+
+        <package
+                android:name="com.eg.android.AlipayGphoneRC" />
+
+        <package
+                android:name="hk.alipay.wallet" />
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-permission
+            android:name="Manifest.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+
+    <uses-permission
+            android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-permission
+            android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+            android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+            android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+            android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+            android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+
+    <permission
+            android:label="account provider read"
+            android:name="com.zhihu.android.account.oauth.PROVIDER_ACCESS_READ"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:label="account provider write"
+            android:name="com.zhihu.android.account.oauth.PROVIDER_ACCESS_WRITE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="android.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+            android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+            android:name="android.permission.BODY_SENSORS" />
+
+    <uses-permission
+            android:name="android.permission.BODY_SENSORS_BACKGROUND" />
+
+    <uses-permission
+            android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_MEDIA_STORAGE" />
+
+    <permission
+            android:name="com.zhihu.android.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.zhihu.android.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+            android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.zhihu.android.push.oppo.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+            android:name="com.zhihu.android.push.permission.MESSAGE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.zhihu.android.push.permission.MESSAGE" />
+
+    <uses-permission
+            android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <permission
+            android:name="com.zhihu.android.permission.C2D_MESSAGE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.zhihu.android.permission.C2D_MESSAGE" />
+
+    <uses-permission
+            android:name="freemme.permission.msa" />
+
+    <uses-permission
+            android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+            android:name="getui.permission.GetuiService.com.zhihu.android" />
+
+    <permission
+            android:name="getui.permission.GetuiService.com.zhihu.android"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission
+            android:name="android.Manifest.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+            android:name="com.google.android.gms.permission.AD_ID" />
+
+    <permission
+            android:name="com.zhihu.android.permission.PROCESS_PUSH_MSG"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.zhihu.android.permission.PUSH_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.zhihu.android.permission.PUSH_WRITE_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.zhihu.android.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+            android:name="com.zhihu.android.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.permission.PUSH" />
+
+    <uses-permission
+            android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+            android:name="com.hihonor.security.permission.ACCESS_THREAT_DETECTION" />
+
+    <supports-screens
+            android:anyDensity="true"
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true" />
+
+    <application
+            android:theme="@ref/0x7f1304f6"
+            android:label="@ref/0x7f12238e"
+            android:icon="@ref/0x7f0f0094"
+            android:name="com.zhihu.android.app.ZhihuApplication"
+            android:allowBackup="false"
+            android:vmSafeMode="@ref/0x7f05000b"
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:networkSecurityConfig="@ref/0x7f15000a"
+            android:roundIcon="@ref/0x7f0f0094"
+            android:appCategory="4"
+            android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+            android:requestLegacyExternalStorage="true"
+            android:allowNativeHeapPointerTagging="false"
+            android:preserveLegacyExternalStorage="true">
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+
+        <meta-data
+                android:name="EasyGoClient"
+                android:value="true" />
+
+        <meta-data
+                android:name="android.allow_multiple_resumed_activities"
+                android:value="true" />
+
+        <meta-data
+                android:name="no_multi_Framework_Bundle"
+                android:value="true" />
+
+        <meta-data
+                android:name="no_perm_za"
+                android:value="true" />
+
+        <meta-data
+                android:name="honor.splashscreen.type"
+                android:value="1" />
+
+        <service
+                android:label="@ref/0x7f12056d"
+                android:name="com.zhihu.android.db.util.upload.DbUploadAsyncService2"
+                android:exported="false"
+                android:description="@ref/0x7f12056c" />
+
+        <service
+                android:name="com.zhihu.android.player.upload2.video.VideoUploadService" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0x40003df4" />
+
+        <receiver
+                android:name="com.zhihu.android.push.receiver.AwakeReceiver"
+                android:exported="false" />
+
+        <meta-data
+                android:name="APPKEY_SHUMENG"
+                android:value="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANc7lrAPh8Vki2+Gf9KQxUbWzTqMvwIe+y9VuHfUPWHlTovg3JwUJnkoTHLCTH2BTMHHRe/lkEFCn7wAXmrisjsCAwEAAQ==" />
+
+        <meta-data
+                android:name="FLAVOR"
+                android:value="market" />
+
+        <receiver
+                android:name="com.zhihu.android.app.ui.widget.download.ApkNotificationUtils$NotificationBroadcastReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="notification_progress_cancelled" />
+
+                <action
+                        android:name="notification_error_cancelled" />
+
+                <action
+                        android:name="notification_progress_clicked" />
+
+                <action
+                        android:name="notification_error_clicked" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f1304f9"
+                android:name="com.zhihu.android.app.ui.activity.RouterPortalActivity"
+                android:exported="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="https"
+                        android:host="activity.zhihu.com"
+                        android:pathPattern="/.*/.*" />
+
+                <data
+                        android:scheme="zhihu"
+                        android:host="activity"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="zhihu"
+                        android:host="activity"
+                        android:pathPattern="/.*/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="zhihu" />
+            </intent-filter>
+
+            <intent-filter
+                    android:autoVerify="true">
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http"
+                        android:host="ms.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="oia.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/question/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/question/.*/answer/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/answer/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/collection/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/people/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/topic/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/roundtable/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/lives/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/org/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="zhuanlan.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="zhuanlan.zhihu.com"
+                        android:pathPattern="/.*/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="promotion.zhihu.com"
+                        android:pathPattern="/p/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/publications/.*/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/zhihu" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/collection/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/book/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pin/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/links/.*" />
+
+                <data
+                        android:scheme="http"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/coupon/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="ms.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="oia.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/question/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/question/.*/answer/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/answer/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/collection/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/people/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/topic/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/roundtable/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/lives/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/org/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="zhuanlan.zhihu.com"
+                        android:pathPattern="/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="zhuanlan.zhihu.com"
+                        android:pathPattern="/.*/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="promotion.zhihu.com"
+                        android:pathPattern="/p/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/publications/.*/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/zhihu" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/collection/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pub/book/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/pin/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/links/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/coupon/.*" />
+
+                <data
+                        android:scheme="https"
+                        android:host="www.zhihu.com"
+                        android:pathPattern="/remix/albums/.*" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.shuwei.location.APP_KEY"
+                android:value="31adba99-fede-471a-abea-b52ff4ff812a" />
+
+        <meta-data
+                android:name="com.shuwei.location.APP_ID"
+                android:value="38002fd01b41" />
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@ref/0x7f080985" />
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@ref/0x7f060761" />
+
+        <activity
+                android:theme="@ref/0x7f1304f9"
+                android:name="com.zhihu.android.push.PushJumpBoardActivity"
+                android:exported="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="zhihu.intent.action.PUSH_SERVICE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="zhihupush"
+                        android:host="com.zhihu.android"
+                        android:path="/push_jump_board" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1304f9"
+                android:label="@ref/0x7f12238e"
+                android:name="com.zhihu.android.app.ui.activity.LauncherActivity"
+                android:exported="true"
+                android:screenOrientation="1"
+                android:configChanges="0xfa7"
+                android:windowSoftInputMode="0x3"
+                android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                        android:name="miui.intent.category.SYSAPP_RECOMMEND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.app.ui.activity.MainActivity" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.app.shortcuts"
+                    android:resource="@ref/0x7f150002" />
+        </activity>
+
+        <activity
+                android:label="@ref/0x7f12238e"
+                android:name="com.zhihu.android.app.ui.activity.MainActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa7"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="true"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:icon="@ref/0x7f0f0094"
+                android:name="com.zhihu.android.app.ui.activity.PortalActivity"
+                android:exported="true"
+                android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.SENDTO" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="zhihu"
+                        android:host="share.to" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="3" />
+
+        <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+        <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape" />
+
+        <activity
+                android:name="com.zhihu.android.db.DbEditorHostActivity"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f13015b"
+                android:name="com.zhihu.android.db.DbMatisseActivity"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:name="com.zhihu.android.db.editor.RxHostActivity" />
+
+        <activity
+                android:name="com.zhihu.android.db.DbWebDetailProfileActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.app.SearchActivity"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.zhihu.android.app.SearchLiteResultActivity"
+                android:configChanges="0xfa0" />
+
+        <receiver
+                android:name="com.zhihu.android.app.appwidget.SearchAppWidgetProvider"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f150010" />
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.market.ui.activity.KMHomeMainActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.market.ui.activity.KMBookListDetailMainActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <receiver
+                android:name="com.zhihu.android.app.market.receiver.MarketAudioReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.PlayerAction" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.zhihu.android.answer.module.continuousconsumption.ContinuousConsumptionActivity"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.zhihu.android.ContentActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f130141"
+                android:name="com.zhihu.android.question.list.activity.TransHostActivity" />
+
+        <activity
+                android:name="com.zhihu.android.mix.activity.ContentMixProfileActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <receiver
+                android:name="com.zhihu.android.article.tts.TTSPlayerReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.PlayerAction" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.zhihu.android.creatorcenter.CreatorCenterHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130547"
+                android:name="com.zhihu.android.panel.ui.attach.PanelAttachActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130546"
+                android:name="com.zhihu.android.panel.ui.attach.PanelAnimationActivity"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130548"
+                android:name="com.zhihu.android.panel.ng.ui.PublishFeedBackActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.panel.ng.ui.PublishFeedLoadingActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.VideoEntityHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.VideoEntitySerialHostActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.VideoEntityAdjustPanActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f13032a"
+                android:name="com.zhihu.android.video_entity.VideoEntityTransHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f13032b"
+                android:name="com.zhihu.android.video_entity.collection.ZVideoCollectionTransparentActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.OgvHostActivity"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.video_black.VideoBlackProfileActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.video_entity.video_black.VideoBlackPluginProfileActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.zvideo_publish.editor.DbEditorHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.zvideo_publish.editor.RxHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13015b"
+                android:name="com.zhihu.android.zvideo_publish.editor.activity.DbMatisseActivity"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:theme="@ref/0x7f130591"
+                android:name="com.zhihu.android.zvideo_publish.editor.panel.ExplorePanelAnimationActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.app.edulive.room.ui.EduLiveRoomActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f13053e"
+                android:name="com.zhihu.android.app.edulive.ui.EduLiveTransHostActivity"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.education.videocourse.VideoCourseActivity"
+                android:launchMode="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.zhihu.android.app.training.detail.EduDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.zhihu.android.edudetail.EduDetailNewActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.eduvideo.ui.EduVideoDetailActivity"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:name="com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130547"
+                android:name="com.zhihu.android.feature.short_container_feature.ui.widget.rnbottomsheet.RectNativeBottomSheetActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.mixshortcontainer.MixShortContainerActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x22"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130553"
+                android:name="com.zhihu.android.premium.VipOpenHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.premium.VipPurchaseHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130542"
+                android:name="com.zhihu.android.kmdetail.KMDetailTransActivity" />
+
+        <activity
+                android:name="com.zhihu.android.kmdetail.KMDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.nextlive.ui.activity.LiveRoomActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:resizeableActivity="false" />
+
+        <receiver
+                android:name="com.zhihu.android.app.nextlive.room.LiveRoomPlayerReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.PlayerAction" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.ebook.activity.EBookHostActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x2a0"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f130542"
+                android:name="com.zhihu.android.app.ebook.activity.EBookFullScreenActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.kmebook.NewEBookHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.kmaudio.player.ui.activity.KMPlayerActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:resizeableActivity="false" />
+
+        <service
+                android:name="com.zhihu.android.km_downloader.DownloadService" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.kmarket.videodetail.ui.KmVideoDetailActivity"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.market.ui.activity.KMSimpleActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.kmarket.rating.ui.MarketRatingShareActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.base.ui.activity.KmHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.base.ui.activity.KmAdjustNothingHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f130542"
+                android:name="com.zhihu.android.app.base.ui.activity.KMTransActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130542"
+                android:name="com.zhihu.android.kmarket.base.ui.AddCollectDialogActivity"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x7f13014a"
+                android:name="com.zhihu.android.app.base.ui.activity.KmSingleFragmentActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13010d"
+                android:name="com.zhihu.android.comment.ui.activity.CommentListActivity"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13010d"
+                android:name="com.zhihu.android.comment.ui.activity.CommentEditorActivity"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.topic.TopicActivity"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.zhihu.android.profile.profile.ui.ProfileOauthActivity"
+                android:configChanges="0xfa7"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13052d"
+                android:name="com.zhihu.android.column.activity.TransHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.videox.VideoXHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13031a"
+                android:name="com.zhihu.android.videox.VideoXBridgeActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.videox.VideoXMiniFollowActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.videox_consult.InfinityHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <service
+                android:name="com.zhihu.android.sdk.launchad.job.AdLaunchUpdateService"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:name="com.zhihu.android.app.ui.activity.AdAlphaVideoActivity"
+                android:exported="true" />
+
+        <activity
+                android:name="com.zhihu.android.morph.debug.StyleDebugListActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa7" />
+
+        <service
+                android:name="com.zhihu.android.app.jobservice.AdTracksPushService"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+                android:name="com.zhihu.android.adbase.tracking.newtrack.AdTrackPushService"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+                android:name="com.zhihu.android.adbase.tracking.oldtrack.TrackPushService"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+                android:name="com.zhihu.android.sdk.launchad.LaunchImageDownloadService"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:label="@ref/0x7f120199"
+                android:name="com.zhihu.android.app.feed.AdTransparentHostActivity"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa7"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:label="@ref/0x7f120199"
+                android:name="com.zhihu.android.app.ui.activity.LaunchAdActivity"
+                android:exported="true"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa7"
+                android:windowFullscreen="true"
+                android:windowSoftInputMode="0x3"
+                android:windowDrawsSystemBarBackgrounds="false"
+                android:resizeableActivity="true" />
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.DeepLinkTrickActivity"
+                android:exported="true"
+                android:launchMode="1"
+                android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                        android:name="ad.activity.action.trick" />
+
+                <category
+                        android:name="ad.activity.category.trick" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.QDFaceActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="qdunionloan"
+                        android:host="faceplus" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.QDAliPayActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="qdunionloan"
+                        android:host="alipay" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.QDHintActivity" />
+
+        <receiver
+                android:name="com.zhihu.android.ad.download.wrapper.AdDwNotificationWrapper$NotificationBroadcastReceiver" />
+
+        <activity
+                android:name="com.zhihu.android.morph.debug.MorphDebugActivity" />
+
+        <activity
+                android:name="com.zhihu.android.morph.debug.MorphStyleDebugEntranceActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa7" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.longto.activity.MCNHostActivity"
+                android:taskAffinity="com.zhihu.android"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ContainerActivity"
+                android:exported="true"
+                android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323" />
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323" />
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="com.alibaba-inc.check.login.status.resume"
+                    android:value="0" />
+        </activity>
+
+        <activity
+                android:name="com.alibaba.alibclinkpartner.smartlink.ALPEntranceActivity"
+                android:exported="true"
+                android:configChanges="0x4e0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.alibaba.intent.action.GETWAY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="tbopen"
+                        android:host="linkpartner"
+                        android:pathPrefix="/entrance" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.consult.ConsultActivity"
+                android:configChanges="0x1d80" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.zhihu.android.player.walkman.activity.TrampolineActivity"
+                android:exported="false"
+                android:excludeFromRecents="true" />
+
+        <service
+                android:name="com.zhihu.android.player.walkman.player.AudioPlayService"
+                android:exported="false"
+                android:foregroundServiceType="0x2" />
+
+        <service
+                android:name="com.zhihu.android.xplayer.service.AudioService"
+                android:exported="false"
+                android:foregroundServiceType="0x2" />
+
+        <provider
+                android:name="com.zhihu.android.floatview.provider.FloatViewProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.AudioProvider" />
+
+        <activity
+                android:theme="@ref/0x7f13056b"
+                android:name="com.zhihu.android.app.activity.WalletTransActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.app.activity.WalletActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.draft.DraftHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130313"
+                android:name="com.zhihu.android.feedback.FeedbackHostActivity" />
+
+        <activity
+                android:name="com.zhihu.android.growth.ui.activity.GrowthActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.growth.ui.activity.PrivacyProtocolActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.growth.ui.activity.PrivacyExplainActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130541"
+                android:name="com.zhihu.android.growth.ui.activity.GrowthInterestAnimationActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.teenager.modules.home.view.TeenagerActivity"
+                android:configChanges="0xfa7" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.community_base.share.WebOnlyShareActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.zh_editor.EditorHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.zh_editor.RxHostActivity" />
+
+        <activity
+                android:name="com.zhihu.android.editor_core.ui.RxMatisseActivity" />
+
+        <activity
+                android:name="com.zhihu.android.editor_core.ui.RxCameraActivity" />
+
+        <activity
+                android:name="com.zhihu.android.editor_core.ui.RxImageEditActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304fb"
+                android:name="com.zhihu.android.app.mercury.card.ShadowActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130529"
+                android:name="com.zhihu.android.vclipe.VClipeMainActivity"
+                android:configChanges="0xfa0"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.meishe.myvideo.activity.DraftEditActivity"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="com.meishe.myvideo.activity.CompileActivity" />
+
+        <activity
+                android:name="com.meishe.myvideo.activity.FullScreenPreviewActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1300f3"
+                android:name="com.meishe.myvideo.activity.CoverEditActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130312"
+                android:name="com.meishe.player.ImageRectCutActivity" />
+
+        <activity
+                android:name="com.meishe.myvideo.activity.MaterialSelectActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130570"
+                android:name="com.meishe.myvideo.mediaedit.PreviewEditActivity"
+                android:configChanges="0x400"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:theme="@ref/0x7f130571"
+                android:name="com.meishe.myvideo.mediaedit.RectCuttingActivity"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:theme="@ref/0x7f130571"
+                android:name="com.meishe.myvideo.mediaedit.crop.ImageCuttingActivity"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="com.zhihu.android.videoentity.publish.ZVideoPublishHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.publish.pluginpool.knowledgeplugin.PublishAdjustPanActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:name="com.zhihu.android.mediatool.activity.MediaToolHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x14"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f13015e"
+                android:name="com.zhihu.mediastudio.lib.MediaStudioActivity"
+                android:screenOrientation="@ref/0x7f0b0012"
+                android:configChanges="0xd00"
+                android:resizeableActivity="false" />
+
+        <activity
+                android:theme="@ref/0x7f13015e"
+                android:name="com.zhihu.mediastudio.lib.newcapture.activity.NewCaptureHostActivity"
+                android:screenOrientation="@ref/0x7f0b0012"
+                android:configChanges="0xd00"
+                android:windowSoftInputMode="0x33"
+                android:resizeableActivity="false" />
+
+        <activity
+                android:theme="@ref/0x7f130579"
+                android:name="com.zhihu.android.vessay.main.VEssayHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x23"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:name="com.zhihu.android.vessay.main.VEssayOutlineHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x13"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:name="com.zhihu.android.vessay.main.VEssayInputHostActivity"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x24"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.zhihu.android.vessay.media.activity.MediaActivity"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:name="com.zhihu.android.react.pages.ReactHostActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x10" />
+
+        <service
+                android:name="com.zhihu.android.media.service.FloatWindowService"
+                android:enabled="true"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f130311"
+                android:name="com.zhihu.android.video.player2.plugin.FullScreenHostActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f13015d"
+                android:name="com.zhihu.android.media.MediaHostActivity"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f13015d"
+                android:name="com.zhihu.android.media.MediaForcePortraitHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.zhihu.android.media.PlayerCoverStyleActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130419"
+                android:name="com.zhihu.android.push.backgroundfree.GreenifyActivity"
+                android:exported="true"
+                android:taskAffinity=":backgroundFreeSettings"
+                android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.oasisfeng.greenify.intent.action.REQUEST_LIMITED_BACKGROUND" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130419"
+                android:name="com.zhihu.android.push.backgroundfree.BackgroundFreeActivity" />
+
+        <activity
+                android:name="com.zhihu.android.push.huawei.PushJumpBoardActivity"
+                android:taskAffinity=":hwPush" />
+
+        <activity
+                android:theme="@ref/0x7f1301be"
+                android:name="com.zhihu.android.push.test.PushTestActivity"
+                android:taskAffinity=":pushTest"
+                android:launchMode="3" />
+
+        <service
+                android:name="com.zhihu.android.push.PushActionService"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" />
+
+        <meta-data
+                android:name="com.oppo.app_key"
+                android:value="0FQXQwuRO7WC00TXhlio3/b3LrwYIH0Slofh0Gr4tVw=" />
+
+        <meta-data
+                android:name="com.oppo.app_secret"
+                android:value="SAhKP91OizI0pFAiokcM8b7gjV7Qj9PxvvBWDGqw6lZ1Jb3FB1ui6K7GsxnseqmR" />
+
+        <meta-data
+                android:name="MI_APP_ID"
+                android:value="ISw2STIvWMVGcKqPLmrIog8jduLVjD0iqK7yIGuU5wM=" />
+
+        <meta-data
+                android:name="MI_APP_KEY"
+                android:value="HcJtloOWu3bgwyrgoJWlBQ==" />
+
+        <meta-data
+                android:name="com.vivo.push.api_key"
+                android:value="d7aa941e-e557-438a-b8e1-54b152b07b65" />
+
+        <meta-data
+                android:name="com.vivo.push.app_id"
+                android:value="10153" />
+
+        <meta-data
+                android:name="MEIZU_APP_ID"
+                android:value="EmvnMiJ5I4sUP4mBhkVprA==" />
+
+        <meta-data
+                android:name="MEIZU_APP_KEY"
+                android:value="RH9mKRum4twukym/I0H/3Z5Fp0NHEBerwuEqe+nD2U8jQwjbE+U5dv/xIWmGkevE" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.appid"
+                android:value="appid=10047082" />
+
+        <meta-data
+                android:name="PUSH_APPID"
+                android:value="PYcmpWAzT46f7UD9xy6UQ2" />
+
+        <meta-data
+                android:name="PUSH_APPKEY"
+                android:value="HGbN8CkmgK8tbUx3553K08" />
+
+        <meta-data
+                android:name="PUSH_APPSECRET"
+                android:value="QkvDEaz3XE7RxthW78sic8" />
+
+        <activity
+                android:theme="@ref/0x7f130501"
+                android:name="com.zhihu.android.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:taskAffinity="com.zhihu.android"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x7f130501"
+                android:name="com.zhihu.explore.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:taskAffinity="com.zhihu.android"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x7f1304f5"
+                android:name="com.tencent.tauth.AuthActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="tencent101118708" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:name="com.zhihu.matisse.ui.MatisseActivity"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.AccountActionActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.intent.action.GUIDE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.intent.action.SETPASSWORD" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.AuthActivity"
+                android:exported="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <data
+                        android:scheme="zhihuoauth2"
+                        android:host="authorize" />
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.AutoAuthActivity"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.AutoAuthHostActivity"
+                android:excludeFromRecents="true" />
+
+        <provider
+                android:name="com.zhihu.android.app.provider.AccountOauthProvider"
+                android:readPermission="com.zhihu.android.account.oauth.PROVIDER_ACCESS_READ"
+                android:writePermission="com.zhihu.android.account.oauth.PROVIDER_ACCESS_WRITE"
+                android:exported="true"
+                android:process=":provider"
+                android:authorities="com.zhihu.android.account.auth.provider" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.ShareHostActivity" />
+
+        <activity
+                android:name="com.zhihu.android.picasa.activity.VideoCoverEditActivity"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.picasa.activity.TextEditActivity"
+                android:windowSoftInputMode="0x32" />
+
+        <receiver
+                android:label="@ref/0x7f120922"
+                android:name="com.zhihu.android.app.appwidget.HotAppWidgetProvider"
+                android:exported="true"
+                android:process=":widgetProvider">
+
+            <meta-data
+                    android:name="miuiWidgetRefresh"
+                    android:value="exposure" />
+
+            <meta-data
+                    android:name="miuiWidgetRefreshMinInterval"
+                    android:value="20000" />
+
+            <meta-data
+                    android:name="miuiWidget"
+                    android:value="true" />
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                        android:name="miui.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@ref/0x7f150009" />
+        </receiver>
+
+        <meta-data
+                android:name="miuiWidgetVersion"
+                android:value="2" />
+
+        <receiver
+                android:label="@ref/0x7f120921"
+                android:name="com.zhihu.android.app.appwidget.HonorWidgetProvider"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.honor.provider"
+                    android:resource="@ref/0x7f150008" />
+
+            <meta-data
+                    android:name="com.hihonor.widget.type"
+                    android:value="honorcard" />
+        </receiver>
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.ActionPortalActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.intent.action.FRAGMENT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.WEB_SEARCH" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.SEARCH" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1304fb"
+                android:label="@ref/0x7f121103"
+                android:icon="@ref/0x7f0f00b3"
+                android:name="com.zhihu.android.app.ui.activity.share.ShareToFeedActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.SEND" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1304fb"
+                android:label="@ref/0x7f121aa2"
+                android:icon="@ref/0x7f0f00b4"
+                android:name="com.zhihu.android.app.ui.activity.share.ShareToMessageActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.SEND" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.app.ui.fragment.image.WebToPosterLoadingActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.library.sharecore.activity.ShareHostActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.collection.activity.CollectionHostActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130109"
+                android:name="com.zhihu.android.collection.activity.CollectionTransparentActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.collection.activity.CollectionRedirectActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1304f8"
+                android:name="com.zhihu.android.safeboot.childprocess.ui.StageOneSafeBootActivity"
+                android:exported="true"
+                android:process=":safeboot1"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f1304f8"
+                android:name="com.zhihu.android.safeboot.childprocess.ui.StageTwoSafeBootActivity"
+                android:exported="true"
+                android:process=":safeboot2"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f1304f7"
+                android:name="com.zhihu.android.safeboot.ReStartAppActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:resizeableActivity="false"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f1304f6"
+                android:name="com.zhihu.android.qrscanner.ui.ScannerActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.library.sharecore.activity.ShareCoreActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1301fe"
+                android:name="com.zhihu.android.library.sharecore.activity.WebRenderActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.library.sharecore.activity.CommentShareActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.library.sharecore.activity.DialogShareActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.library.sharecore.activity.ImageDecorActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f1301fe"
+                android:name="com.zhihu.android.library.sharecore.activity.CardShareActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130202"
+                android:name="com.zhihu.android.library.sharecore.activity.ShareSheetActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.zhihu.android.library.sharecore.activity.WebRenderShareActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130500"
+                android:name="com.zhihu.android.plugin.permission.PermissionRequestActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130500"
+                android:name="com.zhihu.android.plugin.PluginLoaderActivity" />
+
+        <activity
+                android:name="com.zhihu.android.net.detect.ui.DetectNetworkActivity"
+                android:exported="true" />
+
+        <activity
+                android:theme="@ref/0x7f13054c"
+                android:name="com.zhihu.android.app.ui.activity.TransActivity"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f13054c"
+                android:name="com.zhihu.android.app.ui.activity.DealLoginActivity"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f13010f"
+                android:name="com.zhihu.android.app.ui.dialog.ConfirmDialogActivity"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.SocialOauthActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13014b"
+                android:name="com.zhihu.android.lelink.LeLinkLauncherActivity" />
+
+        <activity
+                android:name="com.zhihu.android.fastpreview.GaiaXFastPreviewActivity"
+                android:screenOrientation="1" />
+
+        <receiver
+                android:name="com.zhihu.android.patch.debug.DebugPatchReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.install" />
+
+                <action
+                        android:name="com.zhihu.android.patch" />
+
+                <action
+                        android:name="com.zhihu.android.clean" />
+
+                <action
+                        android:name="com.zhihu.android.info" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f130286"
+                android:name="com.zhihu.android.telecom.TelecomLoginActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f130286"
+                android:name="com.zhihu.android.mobile.MobileLoginActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f130286"
+                android:name="com.zhihu.android.unicom.UnicomLoginActivity"
+                android:screenOrientation="1" />
+
+        <receiver
+                android:name="com.sdk.mobile.manager.login.cucc.ConnectionChangeReceiver"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.wosdk.mybroad" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f130514"
+                android:name="com.zhihu.android.app.ui.dialog.redpaket.RedPacketActivity"
+                android:windowSoftInputMode="0x14" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:label="@ref/0x7f1223ec"
+                android:name="com.zhihu.android.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:label="@ref/0x7f1223ec"
+                android:name="com.zhihu.vip.android.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:label="@ref/0x7f1223ec"
+                android:name="com.zhihu.explore.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.zhihu.android.mockpay.MockThirdActivity" />
+
+        <service
+                android:name="com.zhihu.android.app.report.daemon.SentryPulse"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":sentry" />
+
+        <service
+                android:name="com.zhihu.android.app.report.daemon.SentryDaemon"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":ds" />
+
+        <provider
+                android:name="com.zhihu.android.appcloudsdk.AppCloudProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.appcloudsdk"
+                android:initOrder="98" />
+
+        <service
+                android:name="com.amap.api.location.APSService" />
+
+        <service
+                android:name="com.taobao.accs.ChannelService"
+                android:exported="false"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.START_SERVICE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.taobao.accs.data.MsgDistributeService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.taobao.accs.EventReceiver"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.taobao.accs.ServiceReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="org.android.agoo.accs.AgooService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.UmengIntentService"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.XiaomiIntentService"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.taobao.agoo.AgooCommondReceiver"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.UmengMessageIntentReceiverService"
+                android:exported="false" />
+
+        <service
+                android:name="com.kwai.kanas.services.KanasService"
+                android:enabled="true"
+                android:exported="true" />
+
+        <provider
+                android:name="com.zhihu.android.za.ZaProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.ZaCenterProvider"
+                android:initOrder="99" />
+
+        <provider
+                android:name="com.zhihu.android.abcenter.AbCenterProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.abcenter"
+                android:initOrder="99" />
+
+        <activity
+                android:name="com.didi.virtualapk.delegate.StubActivity"
+                android:exported="false"
+                android:launchMode="0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.A$1"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f13056d"
+                android:name="com.didi.virtualapk.core.A$2"
+                android:exported="false"
+                android:launchMode="0"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$1"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$2"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$3"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$4"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$5"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$6"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$7"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.B$8"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$1"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$2"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$3"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$4"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$5"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$6"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$7"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.C$8"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$1"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$2"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$3"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$4"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$5"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$6"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$7"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:name="com.didi.virtualapk.core.D$8"
+                android:exported="false"
+                android:launchMode="3"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:configChanges="0xfa0" />
+
+        <service
+                android:name="com.didi.virtualapk.delegate.LocalService"
+                android:exported="false" />
+
+        <service
+                android:name="com.didi.virtualapk.delegate.RemoteService"
+                android:exported="false"
+                android:process=":daemon">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.intent.ACTION_DAEMON_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.didi.virtualapk.delegate.RemoteContentProvider"
+                android:exported="false"
+                android:process=":daemon"
+                android:authorities="com.zhihu.android.VirtualAPK.Provider" />
+
+        <provider
+                android:name="com.zhihu.android.zhplayerbase.provider.AppProvider"
+                android:enabled="true"
+                android:exported="false"
+                android:authorities="com.zhihu.android.base.AppProvider" />
+
+        <provider
+                android:name="com.zhihu.android.memory_saver.leak.LeakWatcherInstaller"
+                android:exported="false"
+                android:authorities="com.zhihu.android_memory_saver_leak_watcher" />
+
+        <service
+                android:label="dexopt"
+                android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+                android:process=":dexopt" />
+
+        <provider
+                android:name="com.zhihu.android.apm.lifecycle_provider.ApmLifecycleProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.monitor" />
+
+        <activity
+                android:theme="@ref/0x7f130286"
+                android:name="com.zhihu.android.data.analytics.report.ui.ReportShowActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.zhihu.android.push.hwpush.HuaweiMessageService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+                android:permission="com.zhihu.android.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushReceiver"
+                android:permission="com.zhihu.android.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f1302c8"
+                android:name="com.zhihu.android.push.mipush.PushEmptyActivity"
+                android:exported="true"
+                android:taskAffinity=":MiPushEmptyActivity"
+                android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="zhihu.intent.action.mipush.EMPTY_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.zhihu.android.push.mipush.MiPushActivity"
+                android:launchMode="2" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMPushService"
+                android:enabled="true"
+                android:process=":mipushservice" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":mipushservice" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+                android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+                android:enabled="true"
+                android:exported="true" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+                android:enabled="true" />
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.PingReceiver"
+                android:exported="false"
+                android:process=":mipushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.zhihu.android.push.mipush.MiMessageReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.zhihu.android.push.oppo.CompatibleOppoPushService"
+                android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.zhihu.android.push.oppo.OppoPushService"
+                android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                        android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:name="com.zhihu.android.push.oppo.OppoPushActivity" />
+
+        <service
+                android:name="com.vivo.push.sdk.service.CommandClientService"
+                android:permission="com.push.permission.UPSTAGESERVICE"
+                android:exported="true" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+                android:exported="true"
+                android:screenOrientation="1" />
+
+        <receiver
+                android:name="com.zhihu.android.push.vivo.VivoPushMessageReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.zhihu.android.push.meizu.MeiZuPushReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                        android:name="com.zhihu.android" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.zhihu.android.push.hipush.HiPushService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.hihonor.push.app_id"
+                android:value="103383997" />
+
+        <service
+                android:theme="@ref/0x01030010"
+                android:label="PushService"
+                android:name="com.zhihu.android.push.getui.GetuiProcessCareService"
+                android:exported="true"
+                android:process=":pushservice"
+                android:excludeFromRecents="true" />
+
+        <service
+                android:label="PushService"
+                android:name="com.zhihu.android.push.getui.GetuiPushService"
+                android:exported="true"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.zhihu.android.push.getui.GetuiIntentService" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.zhihu.android.push.getui.GetuiProcessCareActivity"
+                android:exported="true"
+                android:process=":pushservice"
+                android:taskAffinity="com.zhihu.android.GetuiActivity"
+                android:excludeFromRecents="true" />
+
+        <provider
+                android:name="com.zhihu.android.face_off.PreLoadContentProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.face_off" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:ads-identifier"
+                android:value="ads-identifier:3.4.39.302" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.alibaba.baichuan.trade.biz.auth.AlibcAuthActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <receiver
+                android:name="com.alibaba.baichuan.trade.biz.login.LoginBroadcastReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="NOTIFY_LOGIN_SUCCESS" />
+
+                <action
+                        android:name="NOTIFY_LOGIN_FAILED" />
+
+                <action
+                        android:name="NOTIFY_LOGIN_CANCEL" />
+
+                <action
+                        android:name="NOTIFY_LOGOUT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.alibaba.baichuan.android.trade.ui.AlibcWebViewActivity"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+                android:name="android.test.runner" />
+
+        <activity
+                android:theme="@ref/0x0103000d"
+                android:name="com.ali.auth.third.ui.webview.BaseWebViewActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x0103000d"
+                android:name="com.ali.auth.third.ui.LoginWebViewActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.ali.auth.third.ui.LoginActivity"
+                android:configChanges="0xe0" />
+
+        <activity
+                android:name="com.ali.auth.third.ui.QrLoginConfirmActivity" />
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.ali.auth.third.ui.QrLoginActivity" />
+
+        <activity
+                android:theme="@ref/0x01030055"
+                android:name="com.zhihu.android.base.activity.AgentActivity" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f150007" />
+        </provider>
+
+        <provider
+                android:name="com.zhihu.android.cloudid.CloudIdProvider"
+                android:exported="true"
+                android:authorities="com.zhihu.android.cloud.id" />
+
+        <activity
+                android:name="com.zhihu.android.app.ui.activity.HostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:windowSoftInputMode="0x12"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:theme="@ref/0x7f130185"
+                android:name="com.zhihu.android.picture.activity.ImagesViewerActivity"
+                android:launchMode="1"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:theme="@ref/0x7f130287"
+                android:name="com.zhihu.android.picture.activity.ImageClipActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021" />
+
+        <activity
+                android:theme="@ref/0x7f130180"
+                android:name="com.zhihu.android.picture.editor.ImageEditorActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:theme="@ref/0x7f130180"
+                android:name="com.zhihu.android.picture.editor.publisher.ImageEditorNewActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f130180"
+                android:name="com.zhihu.android.picture.editor.clip.ImageClipperActivity"
+                android:launchMode="2"
+                android:screenOrientation="@ref/0x7f0b0021"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+
+        <activity
+                android:name="com.zhihu.matisse.v2.ui.MatisseNewActivity" />
+
+        <activity
+                android:name="com.zhihu.matisse.v2.ui.AlbumPreviewActivity" />
+
+        <activity
+                android:name="com.zhihu.matisse.v3.ui.MatisseActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13056a"
+                android:name="com.megvii.meglive.LaunchActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13055f"
+                android:name="com.megvii.meglive_sdk.detect.fmp.FmpLivenessActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f13055f"
+                android:name="com.megvii.meglive_sdk.detect.action.ActionLivenessActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f13055f"
+                android:name="com.megvii.meglive_sdk.detect.color.FmpColorfulActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x0103000d"
+                android:name="com.megvii.meglive_sdk.detect.guide.GrantActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x0103000d"
+                android:name="com.megvii.meglive_sdk.detect.agreement.UserAgreementActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f1301e2"
+                android:name="com.sina.weibo.sdk.web.WebActivity"
+                android:exported="false"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareStoryActivity"
+                android:exported="false"
+                android:launchMode="3"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareResultActivity"
+                android:exported="true"
+                android:launchMode="1"
+                android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.zhihu.android.base.receiver.CommunicationReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.zhihu.android.EVENT" />
+
+                <category
+                        android:name="com.zhihu.android.EVENT_CAT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+                android:name="com.zhihu.android.module.InnerContextProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.inner.useless" />
+
+        <service
+                android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+
+        <service
+                android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+                android:process=":filedownloader" />
+
+        <provider
+                android:name="com.liulishuo.okdownload.OkDownloadProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.com.liulishuo.okdownload" />
+
+        <activity
+                android:name="com.zhihu.adx.debug.AdxTestActivity" />
+
+        <service
+                android:name="androidx.room.MultiInstanceInvalidationService"
+                android:exported="false"
+                android:directBootAware="true" />
+
+        <meta-data
+                android:name="GETUI_APPID"
+                android:value="PYcmpWAzT46f7UD9xy6UQ2" />
+
+        <meta-data
+                android:name="ZX_CHANNEL_ID"
+                android:value="C01-GEztJH0JLdBC" />
+
+        <meta-data
+                android:name="ZX_APPID_GETUI"
+                android:value="913e6a50-c3b6-4989-8ac6-1ecb53649be3" />
+
+        <service
+                android:label="NotificationCenter"
+                android:name="com.igexin.sdk.PushService"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.igexin.sdk.PushActivity"
+                android:process=":pushservice"
+                android:excludeFromRecents="true" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.igexin.sdk.GActivity"
+                android:exported="true"
+                android:process=":pushservice"
+                android:taskAffinity="com.zhihu.android.GActivity"
+                android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.getui.sdk.action" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.igexin.sdk.GTIntentService" />
+
+        <service
+                android:name="com.igexin.sdk.GService"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.getui.sdk.action" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.igexin.sdk.GetuiActivity"
+                android:exported="true"
+                android:process=":pushservice"
+                android:excludeFromRecents="true" />
+
+        <meta-data
+                android:name="BJHLLivePlayerCoreVersion"
+                android:value="3.20.1-zxt2" />
+
+        <meta-data
+                android:name="dualTeacher"
+                android:value="0" />
+
+        <meta-data
+                android:name="sdk_version_vivo"
+                android:value="484" />
+
+        <meta-data
+                android:name="local_iv"
+                android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+                android:name="ZEUS_PLUGIN_com.volcengine.fresco.plugin"
+                android:value="{                 apiVersionCode:1,packageName: com.volcengine.fresco.plugin,                 minPluginVersion:1,maxPluginVersion:999999999,                 signature:'MIICxTCCAa2gAwIBAgIEWDiIDzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDEwh2ZWltYWdleDAeFw0yMzAzMTYwOTI5MDlaFw00ODAzMDkwOTI5MDlaMBMxETAPBgNVBAMTCHZlaW1hZ2V4MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAreiYbjzvuZ5cnx+5zZh0rtIi10HirEeB0GchMnCP2jo0dY05CXsqFxwWdlsy2JaiH9zXCsQF/kCdfevWw9gCoXxF/UZpWmAoDXvVDDAxVgjhW7GoqkygupV/JO/VOJwIT4EVHiwVWWy0fCicvVQN55z/HQFEIyl/OOOde00eZdELBFgAhwYbcdYo8ehKljg8cWwILreDDsqtwrjbMF0E5SQV8keAnMC0Fr8sbbwP/778pLyTNX8/ppO+FpRAZNMMzLPzDVD8MxAOhTOudbS/P1gJgF1fG39mSf6qO9I++wmAGY536RYPeM2I0v3uHtklipXEIvT9nkSKBQipdzKNdwIDAQABoyEwHzAdBgNVHQ4EFgQUed7fwCEhrB3n1v1mPMR7lcpevkswDQYJKoZIhvcNAQELBQADggEBAHNh4IAWgMkFECSo1YGYJ32hmeKY6k8fuDcY5GkfPAv1QDZHSmFp4DAfEUSg11+Nc62zMiNuxWAEUzamdBAluxtJVBJQp1Y3MbveOSWOjxnRh9zx4AYi5LhVD/sc7LlgHwU8sFalttL4LQ9/kNNPd9kL5EZySysk33lPt2SW89/J1w83h9Pxl9y3IHPxdVPGH1jk7K/e9fNzr9Yxa+UvIO8dzLKNrptrKnw6KgMIZ6xE5CPiuInRYiWq/msnJnBdQl4ISU+OIsLc8+M1/+uJLRpJMUKpbAkwKTB15q+9fX+M0CyoXyjJISKdHJNl1H5SeSV/KbRMlGp8Ol5npPdckm0=',                 internalPath:'',internalVersionCode:-1,                 appKey:'35a6ff67f6d22bac4872c07f892b592b',appSecretKey:'63de49e1319cfbc3461be1304b5cbde1'             }" />
+
+        <provider
+                android:name="io.sentry.android.core.SentryPerformanceProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.SentryPerformanceProvider"
+                android:initOrder="200" />
+
+        <provider
+                android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.zhihu.android.lifecycle-process" />
+
+        <provider
+                android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.WsChannelMultiProcessSharedProvider" />
+
+        <activity
+                android:name="com.bytedance.applog.migrate.MigrateDetectorActivity"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.bytedance.applog.collector.Collector"
+                android:enabled="true"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.component.UmengIntentService"
+                android:exported="false"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.component.UmengMessageReceiverService"
+                android:exported="false"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.component.UmengMessageHandlerService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.action" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.umeng.message.component.UmengMessageProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.umeng.message" />
+
+        <receiver
+                android:name="com.umeng.message.component.UmengNotificationReceiver"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.message.component.UmengNotificationClickActivity"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.message.notify.UPushMessageNotifyActivity"
+                android:exported="false"
+                android:taskAffinity="com.zhihu.android.u_push"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:screenOrientation="3" />
+
+        <activity-alias
+                android:name="com.umeng.message.UMessageNotifyActivity"
+                android:exported="true"
+                android:targetActivity="com.umeng.message.notify.UPushMessageNotifyActivity">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.action.notify" />
+            </intent-filter>
+        </activity-alias>
+
+        <service
+                android:name="com.taobao.accs.ChannelService$KernelService"
+                android:exported="false"
+                android:process=":channel" />
+
+        <service
+                android:name="com.taobao.accs.internal.AccsJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <service
+                android:name="com.hpplay.sdk.source.process.LelinkSdkService"
+                android:exported="false"
+                android:process=":lelinkps">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hpplay.sdk.source.LelinkSdkService.ACTION" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.hpplay.sdk.source.permission.PermissionBridgeActivity"
+                android:exported="false"
+                android:process=":lelinkps"
+                android:excludeFromRecents="true" />
+
+        <receiver
+                android:name="com.hpplay.sdk.source.process.LelinkReceiver"
+                android:exported="false"
+                android:process=":lelinkps">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hpplay.source.service.close" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":pushservice"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                        android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.huawei.hms.support.api.push.PushProvider"
+                android:readPermission="com.zhihu.android.permission.PUSH_PROVIDER"
+                android:writePermission="com.zhihu.android.permission.PUSH_WRITE_PROVIDER"
+                android:exported="true"
+                android:authorities="com.zhihu.android.huawei.push.provider" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:push"
+                android:value="push:6.11.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:push:push"
+                android:value="1" />
+
+        <activity
+                android:name="com.huawei.hms.support.api.push.TransActivity"
+                android:exported="false" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_CODE"
+                android:value="50300" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_NAME"
+                android:value="5_3_0-C" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+                android:enabled="true"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:launchMode="3">
+
+            <meta-data
+                    android:name="supportStyle"
+                    android:value="scene|voip" />
+        </activity>
+
+        <meta-data
+                android:name="sdkVersion"
+                android:value="3100" />
+
+        <service
+                android:name="com.meizu.cloud.pushsdk.NotificationService"
+                android:exported="true" />
+
+        <receiver
+                android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+                android:permission="com.meizu.flyme.permission.PUSH"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="com.hihonor.push.sdk_version"
+                android:value="7.0.39.303" />
+
+        <service
+                android:name="com.getui.gtc.GtcService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.getui.gtc.sdk.service.action" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.getui.gtc.base.GtcProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.getui.gtc.provider" />
+
+        <activity
+                android:theme="@ref/0x01030071"
+                android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ExtContainerActivity"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323" />
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323" />
+
+                <action
+                        android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="com.alibaba-inc.check.login.status.resume"
+                    android:value="0" />
+        </activity>
+
+        <provider
+                android:name="com.huawei.hms.aaid.InitProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.aaidinitprovider"
+                android:initOrder="500" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:opendevice"
+                android:value="opendevice:6.11.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:opendevice:push"
+                android:value="1" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5AuthActivity"
+                android:exported="false"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.PayResultActivity"
+                android:exported="true"
+                android:launchMode="3"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.AlipayResultActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0x40003df4"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.APayEntranceActivity"
+                android:exported="false"
+                android:configChanges="0x40003df4" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:base"
+                android:value="base:6.9.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:base:hmscore"
+                android:value="1" />
+
+        <meta-data
+                android:name="availableLoaded"
+                android:value="yes" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+                android:exported="false"
+                android:process=":downloader">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.ss.android.socialbase.downloader.remote" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" />
+
+        <activity
+                android:theme="@ref/0x7f1300f4"
+                android:name="com.huawei.hms.activity.BridgeActivity"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:screenOrientation="3"
+                android:configChanges="0x40002f84"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+                android:name="com.huawei.hms.activity.EnableServiceActivity"
+                android:exported="false"
+                android:configChanges="0xda0" />
+
+        <provider
+                android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+                android:exported="false"
+                android:authorities="com.zhihu.android.AGCInitializeProvider" />
+
+        <service
+                android:name="com.huawei.agconnect.core.ServiceDiscovery"
+                android:exported="false" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.appid"
+                android:value="appid=10047082" />
+    </application>
+</manifest>

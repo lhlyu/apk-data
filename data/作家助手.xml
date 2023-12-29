@@ -1,0 +1,2376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1427"
+    android:versionName="3.61.0.1427"
+    android:installLocation="0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.yuewen.authorapp"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <queries>
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="com.tencent.mobileqq" />
+
+        <package
+            android:name="com.eg.android.AlipayGphone" />
+
+        <package
+            android:name="com.sina.weibo" />
+
+        <intent>
+
+            <action
+                android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <permission
+        android:name="com.yuewen.authorapp.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.yuewen.authorapp.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.yuewen.authorapp.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.yuewen.authorapp.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.yuewen.authorapp.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <permission
+        android:name="com.yuewen.authorapp.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.yuewen.authorapp.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <permission
+        android:name="com.yuewen.authorapp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.yuewen.authorapp.permission.JPUSH_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+        android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:theme="@ref/0x7f120008"
+        android:label="@ref/0x7f110059"
+        android:icon="@ref/0x7f0e000b"
+        android:name="com.app.application.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f150005"
+        android:roundIcon="@ref/0x7f0e000d"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150002" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent1105297200" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120008"
+            android:name="com.yuewen.ywlogin.YWBrowserActivity"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.app.report.EventService"
+            android:exported="false"
+            android:process=":event" />
+
+        <service
+            android:name="com.app.report.LogReportIntentService"
+            android:exported="false" />
+
+        <service
+            android:name="com.app.service.LazyInitService"
+            android:exported="false" />
+
+        <service
+            android:name="com.app.update.UploadIntentService"
+            android:exported="false" />
+
+        <service
+            android:name="com.zlw.main.recorderlib.recorder.RecordService" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSendPlatformActivity" />
+
+        <activity
+            android:name="com.app.main.base.activity.BASEActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f120111"
+            android:name="com.app.main.write.activity.StartActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200cf"
+            android:name="com.app.main.common.activity.MainPageActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x33">
+
+            <intent-filter>
+
+                <action
+                    android:name="writer.mainpage" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.yuewen.authorapp.wxapi.WXEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ListChapterActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ListDraftActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.message.activity.ConsultActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                    android:name="consult.addconsult" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.base.activity.MenuActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:label="@string/0x37"
+            android:name="com.app.main.common.activity.WebMenuRewardThankActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.FollowListActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.FollowerListActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="authorapp.myfollowList" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.UserHomePageActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="authorapp.authorHomePage" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.SendRewardThankAudioActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.SendRewardThankPlainTextActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSendActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="hongbao.sendHB" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.FragmentActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="consult.myconsult" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSingleDetailActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="hongbao.getHBusedList" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.MessageListAscendActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.MessageListDescendActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="authorapp.getMessageList" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.RegionChooseActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CountryChooseActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.EditAuthorWordsActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.EditAuthorWordsOriginActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.AddRecommendBookActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.SearchRecommendBookActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.discover.activity.DiscoverSearchActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.discover.activity.DiscoverSearchCourseActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.discover.activity.HotReplyCommentListActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.EditTagActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.RandomNameActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ManageChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.view.write.FindAndReplaceActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ManageNewChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.Setting2Activity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.PushMessageActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.InformationActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.me.activity.EditNickNameActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.videouploader.VideoUploadActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.me.activity.EditEmailActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.me.activity.EditContactQQActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.BankCardInfoListActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.GuideViewActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.GuideViewForUpdateActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ManageRecycleChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ManagePublishedChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ApplyRemoveBanActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ManageHistoryChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.EditRichHistoryActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.PublishChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ChapterSettingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.GesturesPasswordActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.SettingGesturesActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.VerifyGesturesActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSendNormalActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSendCommandActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopeSendResultActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.EnvelopePostScriptActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertSelectActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertOnlineTelActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertOnlineNameActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertArtificialActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.CertBaseActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.MessageSettingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.message.activity.MessageTopActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.login.activity.LoginAcountActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.login.activity.LoginNewActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.login.activity.LoginBindActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.NovelSiteSwitchActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelCompetitionActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelCompetitionCustomizeActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelBriefActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelEditorGroupActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.write.activity.NovelPageMessageActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelBriefCreateActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelTypeSwitchActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelSaleTypeActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.write.activity.NovelTitleActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeManage2Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeCreateActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeCreateNameActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeCreateBriefActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeUpdateActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeUpdateBriefActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.VolumeSelectActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.WebViewAuthActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.MessageListWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CropActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.PublishResultActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ListHistoryChapterActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.EditRichDraftActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.EditRichNewActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.EditRichPublishActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.EditRichRecycleActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.richeditor.InsertVideoActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.BaseWebViewActivity"
+            android:configChanges="0x680"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.PaymentWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:name="com.app.view.dialog.ChapterUploadReminderDialog"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:name="com.app.view.dialog.ChapterOptionReminderDialog"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.ResetVipPwdActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertTelActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertIdActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.SetTelActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.SetTelLandingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CaptureActivity"
+            android:exported="false"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.MissSessionActivity"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="authorapp" />
+
+                <data
+                    android:host="user" />
+
+                <data
+                    android:path="/missSession" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.JumpActivity"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="authorapp" />
+
+                <data
+                    android:host="writer" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.ScanWebViewActivity"
+            android:configChanges="0x680" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.DesignCoverWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CountryCodeActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelAgreementActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:label="@string/0x37"
+            android:name="com.app.view.dialog.ForceUpdateActivity"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.app.service.ForceUpdateService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.AddBookCommentActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.SelectBookActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.GodTalkListActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="geniusTalk.qalist" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.GodTalkDetailActivity"
+            android:exported="false"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="geniusTalk.qadetail" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.ReplyGodTalkCommentActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:label="@string/0x37"
+            android:name="com.app.main.message.activity.GodTalkCommentActivity"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertInfoActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.me.activity.LocalAddressActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200d1"
+            android:name="com.app.main.me.activity.UniversityActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200d0"
+            android:name="com.app.main.common.activity.CaringCardActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.app.photo.author.identity.camera.activity.CameraActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writeplan.activity.WritePlanActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writeplan.activity.WritePlanDisplayActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelSettingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.AddSettingActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelSettingManageActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.NovelSettingGuideActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelSettingsActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.MessageListNewModeActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.floatwindow.FloatActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WriteCompetitionActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WCRoomSettingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WCRoomActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WCInviteAuthorActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WCResultActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writecompetition.activity.WCHistoryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writeplan.activity.WritePlanAdjustActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writeplan.activity.WriteRemindActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.writeplan.activity.WriteRemindSettingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.BaseModelActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.TurnAdoptVPActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.SendVPActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.SendReplyActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.SendCommendActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.midpage.activity.MidPageListActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.AddIntermediatePagesActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.AddMidPageVoteActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.EditBookGroupNameActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.ManageBookGroupActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.BookLabelActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.SendConversationActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.message.activity.SelectChapterActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.author.modelpage.activity.SendDynamicActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.ShareBookPosterActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200d3"
+            android:name="com.app.main.common.activity.PhotoBrowseActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DiaryHistoryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DiaryCardActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DiaryUpdateActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DiaryInfoActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DiaryWriteNewActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.AtAuthorDiaplayActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.discover.activity.HotTopicSearchActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.discover.activity.ViewPointWallListActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.SearchChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.SearchChapterMoreActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CertVipPwdActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.NativeWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelBookStatusGuideActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.common.activity.InputModalPageActivity"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.NovelListManageActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepOneActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepOneTransitionActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepFourActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepThreeActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepTwoActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.DecorateCenterActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.PrivacySettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1201b3"
+            android:name="com.app.main.me.activity.WritingHelperActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.me.activity.FansTotalActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.NovelBuildingTipsActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b3"
+            android:name="com.app.main.me.activity.DarkModeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120172"
+            android:name="com.app.view.dialog.DarkModeReminderDialog"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.RepairsActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.RepairsCallBackActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.common.activity.PurchaseActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.write.activity.ManageConflictChapterActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.CalendarNewActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:label="@string/0x37"
+            android:name="com.app.main.me.activity.CalendarShareActivity"
+            android:exported="false"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.NewYearActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.HistoryChapterActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.SpellingWebViewActivity"
+            android:launchMode="2"
+            android:configChanges="0x200"
+            android:windowSoftInputMode="0x3"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.base.activity.SettingsWebViewActivity"
+            android:launchMode="2"
+            android:configChanges="0x680"
+            android:windowSoftInputMode="0x13"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.CorrectSettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.me.activity.ManageVipActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.PublishRemindActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.app.main.write.activity.EditPublishRemindWordsActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.CreateNovelStepTwoNewActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1201b2"
+            android:name="com.app.main.write.activity.NovelSiteSwitchNewActivity"
+            android:launchMode="1" />
+
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3100" />
+
+        <meta-data
+            android:name="com.hihonor.push.sdk_version"
+            android:value="7.0.41.301" />
+
+        <activity
+            android:name="com.yuewen.push.proxy.YWPushProxyActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.yuewen.push.proxy.YWPushProxyActivity" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.yuewen.push.event.report.disk.db.YWDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.YWDataContentProvider" />
+
+        <service
+            android:name="com.yuewen.push.service.YWCommonService"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.yuewen.push.receiver.JPushExtendReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.yuewen.push.receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTRATION" />
+
+                <action
+                    android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.yuewen.push.activity.KeepActiveActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:taskAffinity="com.yuewen.push.activie" />
+
+        <receiver
+            android:name="com.yuewen.push.receiver.KeepActiveReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.WakedReceiver" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="YW_PUSH_APPKEY"
+            android:value="256" />
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="348ffeb42d94671da2edaf73" />
+
+        <activity
+            android:name="com.yuewen.pay.YWPayChannelsActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.yuewen.pay.YWPayDetailActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.yuewen.pay.YWPayBrowserActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.yuewen.pay.YWPayResultActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x4e0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:exported="true"
+            android:launchMode="3"
+            android:configChanges="0x4e0">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.zhihu.matisse.ui.MatisseActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1200ce"
+            android:name="com.zhihu.matisse.internal.ui.BasePreviewOnLineActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f120268"
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:screenOrientation="6"
+            android:windowSoftInputMode="0x3" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.yuewen.authorapp.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.yuewen.authorapp.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.yuewen.authorapp.permission.PUSH_PROVIDER"
+            android:writePermission="com.yuewen.authorapp.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.yuewen.authorapp.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120113"
+            android:name="com.tencent.captchasdk.TCaptchaPopupActivity"
+            android:exported="false"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.activity.LoginActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerStatusActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerAgeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerPasswordActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerAppealActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.takephoto.crop.CropImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneCodeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneAreaActivity"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.yuewen.ywlogin.ui.takephoto.YWLoginFileProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.YWLoginFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150007" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f1200d5"
+            android:name="com.geetest.onelogin.activity.OneLoginActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:theme="@ref/0x7f1200d5"
+            android:name="com.geetest.onelogin.activity.OneLoginWebActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.yuewen.pay.core.callback.wxapi.WXPayCallbackActivity"
+            android:launchMode="1" />
+
+        <activity-alias
+            android:name="com.yuewen.authorapp.wxapi.WXPayEntryActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.yuewen.pay.core.callback.wxapi.WXPayCallbackActivity" />
+
+        <activity
+            android:name="com.yuewen.pay.core.callback.qpayapi.QPayCallbackActivity"
+            android:exported="true"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="com.yuewen.pay.qwallet" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WebActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.sina.weibo.sdk.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f12025b"
+            android:name="com.tencent.upgrade.ui.UpgradeDialogActivity" />
+
+        <activity
+            android:name="com.tencent.upgrade.ui.UpgradeActiveActivity" />
+
+        <provider
+            android:name="com.tencent.upgrade.download.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.UpdateFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150006" />
+        </provider>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.rmonitor-installer" />
+
+        <meta-data
+            android:name="XIAOMI_APPID"
+            android:value="MI-2882303761517501112" />
+
+        <meta-data
+            android:name="XIAOMI_APPKEY"
+            android:value="MI-5101750170112" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3">
+
+            <meta-data
+                android:name="supportStyle"
+                android:value="scene|voip" />
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PluginHuaweiPlatformsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.PluginOppoPushService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="OPPO_APPKEY"
+            android:value="OP-3r1cER4G7Ko4wcs4SOOwOs0Sg" />
+
+        <meta-data
+            android:name="OPPO_APPID"
+            android:value="OP-3292256" />
+
+        <meta-data
+            android:name="OPPO_APPSECRET"
+            android:value="OP-5FfAbb4e538028D1AAF52D809B525147" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginVivoMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="484" />
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="f0e29e20-8b27-4fdf-a1cd-98d9e97e0752" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="13131" />
+
+        <service
+            android:name="cn.jpush.android.service.JHonorService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="104409054" />
+
+        <activity
+            android:theme="@ref/0x7f1200e7"
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="cn.jpush.android.ui.PopWinActivity" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:exported="true"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTER" />
+
+                <action
+                    android:name="cn.jpush.android.intent.REPORT" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PushService" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="cn.jpush.android.service.SchedulerReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            android:process=":pushcore"
+            android:authorities="com.yuewen.authorapp.DataProvider" />
+
+        <activity
+            android:theme="@ref/0x7f1200d6"
+            android:name="cn.jpush.android.service.JNotifyActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x37">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.JNotifyActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1200d6"
+            android:name="cn.android.service.JTransitActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x37">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.android.service.JTransitActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.yuewen.authorapp" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.jpush.android.asus.AsusPushMessageReceiver" />
+
+        <provider
+            android:name="cn.jpush.android.service.InitProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.jiguang.InitProvider" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.yuewen.authorapp.lifecycle-process" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.9.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:theme="@ref/0x7f1200c8"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.yuewen.authorapp.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100020517" />
+    </application>
+</manifest>

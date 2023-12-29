@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="6242"
+    android:versionName="8.5.0"
+    android:installLocation="1"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.tencent.qqpinyin"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:label="@ref/0x7f0e025b"
+        android:name="com.tencent.qqpinyin.permission.PROVIDER"
+        android:protectionLevel="0x2"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@ref/0x7f0e025b" />
+
+    <uses-permission
+        android:name="com.tencent.qqpinyin.permission.PROVIDER" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:label="@ref/0x7f0e025b"
+        android:icon="@ref/0x7f080329"
+        android:name="com.tencent.qqpinyin.TinkerSimpleApplication"
+        android:debuggable="false"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f11000b"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+
+        <provider
+            android:name="com.tencent.qqpinyin.api.provider.AppApiContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.api.data_provider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.api.skin.SkinContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.SkinContentProvider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.api.words.StatisticCommitWordsCountsContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.app.StatisticCommitWordsCountsContentProvider" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:label="@ref/0x7f0e05bb"
+            android:name="com.tencent.qqpinyin.QQPYInputMethodService"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="android.view.InputMethod" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@ref/0x7f11000a" />
+        </service>
+
+        <service
+            android:name="com.tencent.qqpinyin.CoreService"
+            android:enabled="true"
+            android:process="com.tencent.qqpinyin.core">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.qqpinyin.coreservice" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tencent.qqpinyin.tinker.service.SampleResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.tencent.qqpinyin.AlarmReceiver" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.chat_bubble.view.BubbleListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e0075"
+            android:name="com.tencent.qqpinyin.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="@ref/0x7f0e0075"
+            android:name="com.tencent.qqpinyin.activity.AboutSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="@ref/0x7f0e0030"
+            android:name="com.tencent.qqpinyin.activity.PrivacyInfoActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.FileListActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.HtmlActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:label="@ref/0x7f0e0075"
+            android:icon="@ref/0x7f080329"
+            android:name="com.tencent.qqpinyin.activity.GuideDialogActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.thirdexp"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.skin"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.usercenter"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.third"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.quickphrase"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.voicepackage"
+                    android:host="*" />
+
+                <data
+                    android:scheme="com.tencent.qqpinyin.home"
+                    android:host="*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\.qis" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\.qisx" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\.ssf" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="content"
+                    android:host="*"
+                    android:pathPattern=".*\.qis" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="content"
+                    android:host="*"
+                    android:pathPattern=".*\.qisx" />
+
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="content"
+                    android:host="*"
+                    android:pathPattern=".*\.ssf" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0f0109"
+            android:label="@ref/0x7f0e0075"
+            android:icon="@ref/0x7f080329"
+            android:name="com.tencent.qqpinyin.activity.guide.SplashActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.guide.WelcomeGuideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:label="@ref/0x7f0e0161"
+            android:name="com.tencent.qqpinyin.activity.ContactDictActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e03ed"
+            android:name="com.tencent.qqpinyin.activity.InputSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e03d9"
+            android:name="com.tencent.qqpinyin.activity.AboutInputSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e03e7"
+            android:name="com.tencent.qqpinyin.activity.FeedBackHtmlActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.FeedBackInfoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.FeedBackDetailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.KeyEasterFeedBackActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="@ref/0x7f0e015e"
+            android:name="com.tencent.qqpinyin.activity.CateDictFrtCataActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.FileGridActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0190"
+            android:name="com.tencent.qqpinyin.custom_skin.HaveATryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.qqpinyin.intent.action.HAVE_TRY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0e02fa"
+            android:name="com.tencent.qqpinyin.activity.CustomPhraseEditActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e02aa"
+            android:name="com.tencent.qqpinyin.activity.WebSiteMgrActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.tencent.qqpinyin.action.WEBSITEMGR" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.PhraseActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.clipboard.FullScreenClipActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.clipboard.SelectCloudClipActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.clipboard.SelectLocalClipActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f0e02b5"
+            android:name="com.tencent.qqpinyin.activity.FuzzySettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e0245"
+            android:name="com.tencent.qqpinyin.activity.HandWriteRecognizeRangeSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e03ef"
+            android:name="com.tencent.qqpinyin.activity.KeyboardSettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e002d"
+            android:name="com.tencent.qqpinyin.activity.VersionInfoActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f0e0160"
+            android:name="com.tencent.qqpinyin.activity.CateDictActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f0e0335"
+            android:name="com.tencent.qqpinyin.activity.SymbolFileManagerSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.FontActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.FontOnlineActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.VoiceSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.HandwriteSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.OtherSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.PrivacyModeSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.PermissionSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.UserInfoSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.DeviceInfoSettingActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e082d"
+            android:name="com.tencent.qqpinyin.activity.VoiceIntroductionActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.tencent.qqpinyin.activity.DownloadService"
+            android:enabled="true"
+            android:process="com.tencent.qqpinyin.download" />
+
+        <service
+            android:name="com.tencent.qqpinyin.voice.DownloadApkService"
+            android:process=":remote">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.qqpinyin.download.apk" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.ThirdExpInfoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.ThirdExpListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.ThirdExpMgrActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.ThirdExpSortActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.UserExImproveActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.QQBrowserActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x32"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:label="@ref/0x7f0e025c"
+            android:name="com.tencent.qqpinyin.activity.QQBrowserOuterProcessActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x32"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.DictManagerMainActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.catedict.SubCateDictActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.SearchActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.activity.StatisticsWordsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDetailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinSearchActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinHaveATryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="资源导入"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinHaveATryNewActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.toolbar.ToolbarActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.activity.KeyEasterShareActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x1" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.activity.EmotionAddActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.activity.EmotionDownloadDialogActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.activity.exp.EmotionGalleryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f0f0108"
+            android:name="com.tencent.qqpinyin.activity.exp.EmotionTextActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.activity.exp.EmotionShareActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f0f000c"
+            android:name="com.tencent.qqpinyin.util.share.ShareActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.exp.EmotionWordCloudActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f0f0226"
+            android:name="com.tencent.qqpinyin.activity.RequestPermissionActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="0"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYCropActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYFilterActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYPhotoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYPublishActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYTagListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYOriginalActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.SkinDIYReportActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.QuickPhraseShareActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.DIYUnPublishActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.QuickPhraseMyCateActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.DIYThemeActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.DIYPublishActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.quickphrase.DIYNameEditorActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.BubbleDetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.activity.crazydoutu.CrazyDoutuDIYActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhraseListActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhraseDetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0190"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhraseDetailTryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhraseSearchActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhraseWordDetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.QuickPhrasePublishListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0190"
+            android:name="com.tencent.qqpinyin.skinstore.activity.InputPrivacyActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.skinstore.activity.PrivacyMoreInfoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0190"
+            android:name="com.tencent.qqpinyin.activity.EmptyActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0190"
+            android:name="com.tencent.qqpinyin.activity.PrivacySettingActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.tencent.qqpinyin.settings.QQInputActivateService" />
+
+        <service
+            android:name="com.tencent.qqpinyin.settings.LocalSkinInstallService" />
+
+        <service
+            android:name="com.tencent.qqpinyin.settings.AppProcessService" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.catedict.DownloadedDictProvider"
+            android:authorities="com.tencent.qqinput.dictprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.data.FeedBackProvider"
+            android:authorities="com.tencent.qqinput.feedbackprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.data.KeyEasterProvider"
+            android:authorities="com.tencent.qqinput.keyeasterprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.provider.ClipBoardProvider"
+            android:authorities="com.tencent.qqinput.clipboardprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.expression.db.YanFavoriteProvider"
+            android:authorities="com.tencent.qqinput.yanfavoriteprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.expression.db.ThirdFavoriteProvider"
+            android:authorities="com.tencent.qqinput.thirdfavoriteprovider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.provider.MultiProcessSharedPreferences"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:exported="true"
+            android:authorities="com.tencent.qqinput.provider.MultiProcessSharedPreferences" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.qqpinyin.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f11000d" />
+        </provider>
+
+        <provider
+            android:name="com.tencent.qqpinyin.quickphrase.repository.QuickPhraseProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.quickphrase.repository.QuickPhraseProvider" />
+
+        <meta-data
+            android:name="sg_passport_sdk_version"
+            android:value="1068708672.000000" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <service
+            android:name="com.tencent.qqpinyin.accessibility.EmotionHelperService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@ref/0x7f110003" />
+        </service>
+
+        <receiver
+            android:name="com.tencent.qqpinyin.skinstore.manager.DownloadAPkReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+
+                <action
+                    android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <service
+            android:name="com.tencent.qqpinyin.athena.SyncDataIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.home.api.provider.HomeApiContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.home.api.provider.HomeApiContentProvider" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.activity.TopicDetailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x13"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.activity.TopicListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.activity.CommonWebActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:label="@ref/0x7f0e079a"
+            android:name="com.tencent.qqpinyin.home.activity.SelectorPreviewActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:label="@ref/0x7f0e079a"
+            android:name="com.tencent.qqpinyin.home.activity.PreviewActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.media_selector.MediaSelectorActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.activity.AbstractWebActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.home.activity.EditorActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f0f0109"
+            android:name="com.tencent.qqpinyin.home.activity.HomeActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f0f0013"
+            android:name="com.tencent.qqpinyin.home.activity.UserInfoOtherActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f0f0013"
+            android:name="com.tencent.qqpinyin.home.activity.TestWebActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x30"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.home.activity.VoicePackageSearchActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.home.activity.VoicePackageListActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.home.activity.VoicePackageDetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.account.provider.AccountContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.account.provider.AccountContentProvider" />
+
+        <activity
+            android:theme="@ref/0x7f0f0000"
+            android:name="com.tencent.qqpinyin.account.activity.UserCenterLoginActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.account.activity.BindPhoneActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f0f0226"
+            android:name="com.tencent.qqpinyin.account.activity.BindPhoneTipActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20" />
+
+        <activity
+            android:name="com.tencent.qqpinyin.account.activity.CropPortraitActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.account.activity.UserCenterDetailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.account.activity.AccountDeleteDeclareActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.account.activity.AccountDeleteActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.account.activity.AccountDeleteResultActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.sogou.passportsdk.activity.LoginV2Activity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.sogou.passportsdk.activity.WebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.sogou.passportsdk.activity.SmsCodeV2Activity"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.tencent.qqpinyin.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sogou.passportsdk.activity.WeiboAssistActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sogou.passportsdk.activity.WeiboShareAssistActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.sogou.passportsdk.service.PassportService"
+            android:process=".webloginpassport">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sogou.passport.service.aidl" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sogou.passportsdk.activity.QQShareAssistActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sogou.passportsdk.activity.QQAssistActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent100686906" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.tencent.qqpinyin.pingback.jsonclass.JsonClassContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.qqpinyin.JsonClassLogger" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.pingback.LoggerFileContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.tencent.qqpinyin.provider.LoggerFileContentProvider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.exp.provider.ExpContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.provider.ExpContentProvider" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.tencent.qqpinyin.voice.activity.MagicPackageListEditActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.voice.provider.VoiceContentProvider"
+            android:permission="com.tencent.qqpinyin.permission.PROVIDER"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.tencent.qqpinyin.voice.provider.VoiceContentProvider" />
+
+        <provider
+            android:name="com.tencent.qqpinyin.voice.provider.MagicVoiceProvider"
+            android:authorities="com.tencent.qqpinyin.voice.provider.MagicVoiceProvider" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.sogou.bu.permission.dialog.PermissionDialogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.sogou.bu.permission.bridge.BridgeActivity"
+            android:taskAffinity="com.sogou.bu.permission"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.sogou.bu.permission.bridge.ClearTopActivity"
+            android:taskAffinity="com.sogou.bu.permission"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.sogou.lib.common.permission.PermissionActivity"
+            android:exported="false"
+            android:taskAffinity="com.sohu.inputmethod.requestpermission"
+            android:multiprocess="true"
+            android:excludeFromRecents="true"
+            android:launchMode="0"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sogou.lib.common.permission.InstallApkPermissionActiviity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.sogou.base.permission.bridge.BridgeReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sogou.permission_action" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sogou.passportsdk.permission.RequestActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f0f0106"
+            android:name="com.sina.weibo.sdk.web.WebActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+            android:exported="false"
+            android:launchMode="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareStoryActivity"
+            android:exported="false"
+            android:launchMode="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareResultActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+            android:launchMode="3" />
+
+        <meta-data
+            android:name="tinker_version"
+            android:value="1.9.13.2" />
+
+        <provider
+            android:name="com.just.agentweb.AgentWebFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.qqpinyin.AgentWebFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f110012" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f0f0220"
+            android:name="com.just.agentweb.ActionActivity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <meta-data
+            android:name="TINKER_ID"
+            android:value="tinker_id_6242" />
+    </application>
+</manifest>

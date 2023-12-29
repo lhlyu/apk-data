@@ -1,0 +1,3673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1136"
+    android:versionName="7.9.324"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.qidian.QDReader"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher2.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher3.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher2.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher3.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adw.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.lge.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.fede.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.miui.mihome2.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.miui.mihome2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="telecom.mdesk.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="net.oneplus.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="net.oneplus.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.zte.mifavor.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.zte.mifavor.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.google.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.google.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.bbk.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.bbk.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.yulong.android.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.yulong.android.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="com.android.permission.GET_INSTALLED_APPS" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission
+        android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-permission
+        android:name="freemme.permission.msa" />
+
+    <uses-permission
+        android:name="freemme.permission.msa.SECURITY_ACCESS" />
+
+    <uses-permission
+        android:name="oplus.permission.settings.LAUNCH_FOR_EXPORT" />
+
+    <queries>
+
+        <package
+            android:name="com.android.creator" />
+
+        <package
+            android:name="com.zhuoyi.security.lite" />
+
+        <package
+            android:name="com.freeme.secureguard" />
+
+        <package
+            android:name="com.android.secureguard" />
+
+        <package
+            android:name="com.mdid.msa" />
+
+        <package
+            android:name="com.samsung.android.deviceidservice" />
+
+        <package
+            android:name="com.coolpad.deviceidsupport" />
+
+        <package
+            android:name="com.heytap.openid" />
+
+        <intent>
+
+            <action
+                android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+
+    <uses-permission
+        android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <permission
+        android:name="com.qidian.QDReader.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qidian.QDReader.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <permission
+        android:name="com.qidian.QDReader.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qidian.QDReader.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qidian.QDReader.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qidian.QDReader.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.qidian.QDReader.permission.PUSH_PROVIDER" />
+
+    <permission
+        android:name="com.qidian.QDReader.permission.JPUSH_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qidian.QDReader.permission.JPUSH_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:theme="@ref/0x7f120192"
+        android:label="@ref/0x7f1101f6"
+        android:icon="@ref/0x7f0e0005"
+        android:name="com.qidian.QDReader.QDApplication"
+        android:description="@ref/0x7f1101f6"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@ref/0x7f140006"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <meta-data
+            android:name="android.supports_size_changes"
+            android:value="true" />
+
+        <meta-data
+            android:name="android.vivo_nightmode_support"
+            android:value="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="APPKEY_DENGTA"
+            android:value="0I000JZU8B16UN21" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+        <meta-data
+            android:name="hide_qidian_floatview"
+            android:value="true" />
+
+        <meta-data
+            android:name="is_qd_sdk_release"
+            android:value="true" />
+
+        <meta-data
+            android:name="EasyGoClient"
+            android:value="true" />
+
+        <receiver
+            android:name="com.qq.reader.component.gamedownload.cservice.GameInstallBroadcastReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140001" />
+        </provider>
+
+        <provider
+            android:name="com.qidian.QDReader.other.KlevinFileProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.klevin.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140004" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f1202f5"
+            android:name="com.qidian.QDReader.flutter.BaseFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400037b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120131"
+            android:name="com.qidian.QDReader.flutter.BaseTransparentFlutterActivity"
+            android:configChanges="0x400037b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1202f5"
+            android:name="com.qidian.QDReader.flutter.FlutterDressUpCenterPageBizActivity"
+            android:configChanges="0x400037b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1202f5"
+            android:name="com.qidian.QDReader.flutter.DailyReadingMainPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400037b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120131"
+            android:name="com.qidian.QDReader.flutter.FansClubPlotBranchLineActivity"
+            android:configChanges="0x400037b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120189"
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent100736949" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CenterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TopicCardShareActivity"
+            android:description="@ref/0x7f110145" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SubjectCardMainActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CardTenHitPreviewActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SubjectCardSingleResultActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CardAnimatorActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CardTenHitResultActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleCardSingleResultActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleStarExplainActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookLevelAssistanceActivity"
+            android:description="@ref/0x7f110026" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleStarRankDetailActivity"
+            android:description="@ref/0x7f110121" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleLastWeekRankActivity"
+            android:description="@ref/0x7f11011f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.booklevel.QDFamousBookHallActivity"
+            android:description="@ref/0x7f110073" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.booklevel.QDBookLevelActivity"
+            android:description="@ref/0x7f110027" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0xe0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CallbackActivity"
+            android:exported="true"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwalletcom.qidian.QDReader" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDCrashHandleActivity"
+            android:process=":crash" />
+
+        <activity
+            android:theme="@ref/0x7f1201f4"
+            android:name="com.qidian.QDReader.ui.activity.SplashActivity"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f1113ac"
+            android:alwaysRetainTaskState="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="QDGame"
+                    android:host="*" />
+
+                <data
+                    android:scheme="qdgame"
+                    android:host="*" />
+
+                <data
+                    android:scheme="qdreader"
+                    android:host="*" />
+
+                <data
+                    android:scheme="QDReader"
+                    android:host="*" />
+
+                <data
+                    android:scheme="android-app"
+                    android:host="com.qidian.QDReader" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="file"
+                    android:host="@string/0x39" />
+
+                <data
+                    android:pathPattern=".*\.epub" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.umd" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="XGQDReader"
+                    android:host="com.qidian.xg.push"
+                    android:path="/homepage" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120134"
+            android:name="com.qidian.QDReader.ui.activity.SplashH5Activity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f1113ae" />
+
+        <activity
+            android:theme="@ref/0x7f120133"
+            android:name="com.qidian.QDReader.ui.activity.SplashImageActivity"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f1113af" />
+
+        <activity
+            android:theme="@ref/0x7f120133"
+            android:name="com.qidian.QDReader.ui.activity.SplashVideoActivity"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f1113b0" />
+
+        <activity
+            android:theme="@ref/0x7f120133"
+            android:name="com.qidian.QDReader.ui.activity.SplashADActivity"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f1113ad" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.LabelBookListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.debug.ReaderThemeImportDebugActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDReaderThemeListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MidPagePostDanmakuActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDReaderThemeMoreActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDReaderThemeDetailActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GuidanceActivity"
+            android:description="@ref/0x7f1100c6"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.newuser.NewUserTrainingDetailActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnListActivity"
+            android:description="@ref/0x7f1100b9" />
+
+        <activity
+            android:theme="@ref/0x7f120145"
+            android:name="com.qidian.QDReader.ui.activity.MainGroupActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x7a0"
+            android:description="@ref/0x7f11009b"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/*" />
+
+                <data
+                    android:mimeType="application/epub+zip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDVipChooseChannelActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDVipMonthPayActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ShareActivity"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110135" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookStoreActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDFreeHomeActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLookForDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11009a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLookForDetailActivityV2"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11009a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDSanJiangActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110022" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLimitListActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110023" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioLimitListActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11000c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookCategoryActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ShareWeiboActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110134">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_SHARE_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDDirectoryActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100e4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookDirectoryActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100e4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.DiscussAreaActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11005b"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.DiscussAreaManageActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11005a"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SendHongBaoActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110132"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SendHourHongBaoActivity"
+            android:description="@ref/0x7f110133" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ChooseHongbaoTypeActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.hongbao_square.NewHongBaoSquareActivity"
+            android:description="@ref/0x7f110086" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.HourHongBaoSquareActivity"
+            android:launchMode="1"
+            android:description="@ref/0x7f110088" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyHongBaoActivity"
+            android:description="@ref/0x7f1100b7" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyHourHongBaoActivity"
+            android:description="@ref/0x7f1100b8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GetHongBaoResultActivity"
+            android:description="@ref/0x7f11007f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GetHourHongBaoResultActivity"
+            android:description="@ref/0x7f110080" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GetMyHourHongBaoResultActivity"
+            android:description="@ref/0x7f110082" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.HongBaoRichTopActivity"
+            android:description="@ref/0x7f110085" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.HongBaoBookTopActivity"
+            android:description="@ref/0x7f110084" />
+
+        <activity
+            android:theme="@ref/0x7f12015c"
+            android:name="com.qidian.QDReader.ui.activity.QDReaderActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:description="@ref/0x7f1100f7"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ChapterCommentEditActivity"
+            android:configChanges="0xa0"
+            android:description="@ref/0x7f110030"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ChapterCommentActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110032" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.ChapterCommentEndActivity"
+            android:description="@ref/0x7f110032" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLoginNoDisplayActivity"
+            android:description="@ref/0x7f1100ed" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDAccountLoginActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100ee"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLoginActivity"
+            android:exported="false"
+            android:description="@ref/0x7f1100ee"
+            android:windowSoftInputMode="0x32">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qidian.QDReader.action.ACTION_LOGIN_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLoginDialogActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RegisterActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110111"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookShelfGroupActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11001e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookShelfActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11001f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.bookshelf.BookShelfManagerActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11001f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.bookshelf.BookGroupActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11001e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookListActivity"
+            android:description="@ref/0x7f11001c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookSelectionActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.FileBrowserActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SweepActivity"
+            android:description="@ref/0x7f110143" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100d3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110118" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.fanscamp.FansClubPageActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110118" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDAudioDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110007" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ShowBookForNotQdActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLastPageActivity"
+            android:description="@ref/0x7f110019" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ComicLastPageActivity"
+            android:description="@ref/0x7f11004f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ShowLostBookActivity"
+            android:launchMode="2"
+            android:description="@ref/0x7f110137" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLastPageBookShortageActivity"
+            android:description="@ref/0x7f110018" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookStoreSpecialTopicActivity"
+            android:description="@ref/0x7f110025" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.newuser.NewUserQaDetailActivity"
+            android:description="@ref/0x7f1100c8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.newuser.NewUserMustReadActivity"
+            android:description="@ref/0x7f1100c7" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.newuser.UserGiftActivity"
+            android:configChanges="0x480"
+            android:description="@ref/0x7f110155" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListAddBookActivity"
+            android:description="@ref/0x7f1100f9" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListEditOrAddBookActivity"
+            android:description="@ref/0x7f1100fa" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookListTipsActivity"
+            android:description="@ref/0x7f11001b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListFlowersActivity"
+            android:description="@ref/0x7f11001b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewBookZoneActivity"
+            android:description="@ref/0x7f1100bf" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomSquareActivity"
+            android:description="@ref/0x7f1100fe" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CreateRecomBookListActivity"
+            android:description="@ref/0x7f110050"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookListLastWeekDetailActivity"
+            android:description="@ref/0x7f1100d5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookListLabelActivity"
+            android:description="@ref/0x7f1100d4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecomBookListDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11010b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDSearchActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110100"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageAuthorBooksActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDSearchListActivity"
+            android:description="@ref/0x7f1100ff" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDAuthorFansActivity"
+            android:description="@ref/0x7f1100d1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookShelfCategoryEditActivity"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.dialog.BookShelfMoveBookDialog" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecomBookListMoreDataActivity"
+            android:description="@ref/0x7f11010d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyBookListActivity"
+            android:description="@ref/0x7f1100b2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListRelationActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBooksCommentsActivity"
+            android:description="@ref/0x7f1100fd"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBooksCommentsDialogActivity"
+            android:description="@ref/0x7f1100fc"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120193"
+            android:name="com.qidian.QDReader.ui.activity.QDFansClubPlotBranchCommentActivity"
+            android:description="@ref/0x7f1100fc"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecomBookListDeleteActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110109" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecomBookListDetailAbnormalActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11010a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookActionTopActivity"
+            android:description="@ref/0x7f1100f8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListActionActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRecomBookListCategoryActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qidian.QDReader.ui.activity.InteractionActivity"
+            android:description="@ref/0x7f11008b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogTrendCommentDeliverActivity"
+            android:launchMode="1"
+            android:description="@ref/0x7f1100a6"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.dynamic.DynamicCommentDetailActivity"
+            android:description="@ref/0x7f11005d"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.HotFollowActivity"
+            android:description="@ref/0x7f110087" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.FansListActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110074" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BrowserHistoryActivity"
+            android:description="@ref/0x7f110029" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.DailyReadingActivity"
+            android:description="@ref/0x7f110059" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.WallOfferGameActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.WallOfferGameDetailActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.recharge.QDRechargeActivity"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.recharge.QDRechargeChannelActivity"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleRelationCreateActivity"
+            android:description="@ref/0x7f110123" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleHonorActivity"
+            android:description="@ref/0x7f11011e" />
+
+        <activity
+            android:theme="@ref/0x7f120199"
+            android:name="com.qidian.QDReader.ui.activity.EmptyActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qidian.QDReader.WXEntryActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="1" />
+
+        <activity-alias
+            android:name="com.qidian.QDReader.wxapi.WXEntryActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.qidian.QDReader.WXEntryActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.yuewen.pay.core.callback.wxapi.WXPayCallbackActivity"
+            android:launchMode="1" />
+
+        <activity-alias
+            android:name="com.qidian.QDReader.wxapi.WXPayEntryActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.yuewen.pay.core.callback.wxapi.WXPayCallbackActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BuyActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11002b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ImageScanActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.BookGradeShareActivity"
+            android:description="@ref/0x7f110015" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookHonorListActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110016" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AboutActivity"
+            android:description="@ref/0x7f110190" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TestActivity"
+            android:description="@ref/0x7f110190" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.IntroActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CheckNetworkActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ReadPageSettingActivity"
+            android:description="@ref/0x7f1100f6" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDReaderNoteActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100f5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.EyeProtectionSettingActivity"
+            android:description="@ref/0x7f110aaa" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDDebugSettingActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDDebugActionActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDAutoBuyManagerActivity"
+            android:description="@ref/0x7f1100d2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyBorrowActivity"
+            android:description="@ref/0x7f1100f1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AutoBuyActivity"
+            android:description="@ref/0x7f110012" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MsgSettingActivity"
+            android:description="@ref/0x7f1100ae" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.UpDateActivity"
+            android:description="@ref/0x7f110151" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLocalDirectoryActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100ec" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MsgListActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100ad"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.msg.MsgCenterActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100ac"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.msg.MsgsListActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100ad"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MsgActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100af"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.new_msg.NewMsgCenterActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100c3"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.new_msg.SystemMsgListActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100c5"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.new_msg.SocialMsgListActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100c4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBrowserActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100d6"
+            android:windowSoftInputMode="0x12"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.douyinapi.DouYinEntryActivity"
+            android:exported="true"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBottomSheetBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100d6"
+            android:windowSoftInputMode="0x12"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BrowserActivity"
+            android:description="@ref/0x7f1100d6"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDSimpleBrowserActivity"
+            android:exported="false"
+            android:description="@ref/0x7f1100d6"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TabBrowserActivity"
+            android:exported="false"
+            android:description="@ref/0x7f1100d6"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GameBrowserActivity"
+            android:exported="false"
+            android:process=":game"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11007b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.GamePayBrowserActivity"
+            android:process=":game"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDUserFeedBugActivity"
+            android:description="@ref/0x7f110102" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RankingActivity"
+            android:description="@ref/0x7f110105" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RankingPastRecordActivity"
+            android:description="@ref/0x7f110106" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.FreeReadListActivity"
+            android:description="@ref/0x7f110078" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MissBookWeekActivity"
+            android:description="@ref/0x7f1100a7" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.UserTaskActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDPersonalFileActivity"
+            android:description="@ref/0x7f110ee3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RegisterCountryCodeActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MoreActivity"
+            android:description="@ref/0x7f1100aa" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDFontSettingActivity"
+            android:description="@ref/0x7f1100ab" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ClearCacheActivity"
+            android:description="@ref/0x7f1110d2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioPlayActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11000a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.playpage.NewAudioPlayActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11000a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ImageStickerManagerActivity"
+            android:launchMode="2"
+            android:description="@ref/0x7f11008a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioDirectoryActivity"
+            android:description="@ref/0x7f110008" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioTopicActivity"
+            android:description="@ref/0x7f11000d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioAllActivity"
+            android:description="@ref/0x7f110005" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioListActivity"
+            android:description="@ref/0x7f110009" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioUpdateListActivity"
+            android:description="@ref/0x7f11000e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AudioBuyActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110006" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnEditActivity"
+            android:description="@ref/0x7f11013d"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnSquareActivity"
+            android:description="@ref/0x7f11013e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnDetailActivity"
+            android:description="@ref/0x7f11013c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnTopicListActivity"
+            android:description="@ref/0x7f110140" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnTopicDetailsActivity"
+            android:launchMode="2"
+            android:description="@ref/0x7f11013f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.bookshelf.BookSingleSelectActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnCommentsActivity"
+            android:description="@ref/0x7f110139"
+            android:windowSoftInputMode="0x10" />
+
+        <receiver
+            android:name="com.qidian.QDReader.audiobook.receiver.AudioReceiver" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDModifyUserNameActivity"
+            android:description="@ref/0x7f1100f0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDEpubDirectoryActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100e5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDModifySelfIntroActivity"
+            android:description="@ref/0x7f1100ef" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyAttentionAutherActivity"
+            android:description="@ref/0x7f1100b0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicSquareActivity"
+            android:description="@ref/0x7f1100e1" />
+
+        <activity
+            android:theme="@ref/0x7f120199"
+            android:name="com.qidian.QDReader.ui.activity.ComicBarrageInputActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicSquareItemDetailActivity"
+            android:description="@ref/0x7f1100df" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicSquareUpdateLogDetailActivity"
+            android:description="@ref/0x7f1100e0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicTopicListActivity"
+            android:description="@ref/0x7f1100e3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicTopicDetailsActivity"
+            android:description="@ref/0x7f1100e2" />
+
+        <activity
+            android:theme="@ref/0x7f12019b"
+            android:name="com.qidian.QDReader.ui.activity.QDComicSectionPayActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100de" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicDirectoryActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100d8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicDetailActivity"
+            android:description="@ref/0x7f1100d7" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicReadRecommendActivity"
+            android:description="@ref/0x7f1100dd" />
+
+        <activity
+            android:theme="@ref/0x7f12035e"
+            android:name="com.qd.ui.component.modules.imagepreivew.QDUIGalleryActivity"
+            android:description="@ref/0x7f1100dc" />
+
+        <activity
+            android:theme="@ref/0x7f12035e"
+            android:name="com.qidian.QDReader.ui.activity.VapGalleryActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120193"
+            android:name="com.qidian.QDReader.ui.activity.BookStatisticsActivity"
+            android:description="@ref/0x7f110020" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyCommentListActivity"
+            android:description="@ref/0x7f1100b5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyCirclePostListActivity"
+            android:description="@ref/0x7f1100b3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostDetailPreviewActivity"
+            android:description="@ref/0x7f110044" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyCommentDetailActivity"
+            android:description="@ref/0x7f1100b4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDComicDownloadActivity"
+            android:description="@ref/0x7f1100d9" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.UserDynamicListActivity"
+            android:description="@ref/0x7f110153" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDUserFollowActivity"
+            android:description="@ref/0x7f110153" />
+
+        <activity
+            android:label="@ref/0x7f111773"
+            android:name="com.qidian.QDReader.ui.activity.QDPrivateStatSettingActivity"
+            android:description="@ref/0x7f1100f3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogRecomActivity"
+            android:description="@ref/0x7f1100a4" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogTrendDetailActivity"
+            android:description="@ref/0x7f1100a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogMineActivity"
+            android:description="@ref/0x7f1100a2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogRBLUpdateActivity"
+            android:description="@ref/0x7f1100a3" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MicroBlogFeedDetailActivity"
+            android:description="@ref/0x7f1100a1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.fascicle.QDFascicleBuyActivity"
+            android:description="@ref/0x7f110075" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.PhotoPickerActivity"
+            android:description="@ref/0x7f1100ce" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDUserDynamicPublishActivity"
+            android:description="@ref/0x7f110154"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookRoleListActivity"
+            android:description="@ref/0x7f110120" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleGalleryCommentActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110119" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleGiftRankActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f11011d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleStoryDetailActivity"
+            android:description="@ref/0x7f110125" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleTagCreateActivity"
+            android:description="@ref/0x7f110051" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RoleTagListActivity"
+            android:description="@ref/0x7f110144" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookRoleAddTagActivity"
+            android:description="@ref/0x7f110115"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRolePictureListActivity"
+            android:description="@ref/0x7f110118" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleRelationCommentActivity"
+            android:description="@ref/0x7f110122" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleRelationDetailActivity"
+            android:description="@ref/0x7f110124" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.PublishRoleRelationCommentActivity"
+            android:description="@ref/0x7f1100d0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleTongRenListActivity"
+            android:description="@ref/0x7f110126" />
+
+        <activity
+            android:theme="@ref/0x7f12035e"
+            android:name="com.qidian.QDReader.ui.activity.QDRoleImageGalleryActivity"
+            android:description="@ref/0x7f11011b" />
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.qidian.QDReader.ui.activity.QDRoleGalleryCropActivity"
+            android:description="@ref/0x7f11011c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleGalleryPublishActivity"
+            android:description="@ref/0x7f11011a"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ProfilePicFrameListActivity"
+            android:description="@ref/0x7f1100cf" />
+
+        <activity
+            android:theme="@ref/0x7f12035e"
+            android:name="com.qidian.QDReader.ui.activity.QDReaderLiteActivity"
+            android:description="@ref/0x7f1100f4" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.YWBrowserActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f1100cc" />
+
+        <activity
+            android:theme="@ref/0x7f120191"
+            android:name="com.qidian.QDReader.ui.activity.BrowserDialogInputActivity"
+            android:description="@ref/0x7f110028" />
+
+        <activity
+            android:theme="@ref/0x7f120191"
+            android:name="com.qidian.QDReader.ui.activity.BrowserUploadPictureActivity"
+            android:description="@ref/0x7f11002a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageInfoActivity"
+            android:description="@ref/0x7f1100f2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageChatperReviewsActivity"
+            android:description="@ref/0x7f1100e7" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageBookReviewsActivity"
+            android:description="@ref/0x7f1100e6" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageColumnsActivity"
+            android:description="@ref/0x7f1100e8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnCommentReplyActivity"
+            android:description="@ref/0x7f11013a"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SpecialColumnAuthersActivity"
+            android:description="@ref/0x7f110138" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecommendRedpacketListActivity"
+            android:description="@ref/0x7f11010e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePoolActivity"
+            android:description="@ref/0x7f110041" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleMemberActivity"
+            android:description="@ref/0x7f11003d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleMyContributionActivity"
+            android:description="@ref/0x7f11003f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleStorySelectChapterActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDRoleStoryContributeActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDParagraphCommentListActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDParagraphCommentListReplyActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewBookCollectionActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.ParagraphDubbingActivity"
+            android:description="@ref/0x7f1100cd" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.ParagraphDubbingRoleActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120199"
+            android:name="com.qidian.QDReader.ui.activity.chapter.ReaderHotCommentActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120199"
+            android:name="com.qidian.QDReader.ui.activity.chapter.ParagraphRewardActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDChampionCalendarActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleHomePageActivity"
+            android:description="@ref/0x7f11003b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.circle.CircleSearchActivity"
+            android:description="@ref/0x7f110048"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostEditActivity"
+            android:description="@ref/0x7f110046" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostReEditActivity"
+            android:description="@ref/0x7f110047" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RewardUserActivity"
+            android:description="@ref/0x7f110114" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostDetailActivity"
+            android:description="@ref/0x7f110045" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostCommentDetailActivity"
+            android:description="@ref/0x7f110043" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostCommentDeliverActivity"
+            android:description="@ref/0x7f110042" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleSquareActivity"
+            android:description="@ref/0x7f110049" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleApplyAddTagActivity"
+            android:description="@ref/0x7f11004c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleApplyActivity"
+            android:description="@ref/0x7f11004a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleApplyLogoCropActivity"
+            android:description="@ref/0x7f11004b" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleOpeningDetailActivity"
+            android:description="@ref/0x7f110040" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.ChapterShareActivity"
+            android:description="@ref/0x7f110034" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.ChapterCommentShareActivity"
+            android:description="@ref/0x7f110031" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.ChapterImageShareActivity"
+            android:description="@ref/0x7f110033" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.MarkShareActivity"
+            android:description="@ref/0x7f11009d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.MidPageShareActivity"
+            android:description="@ref/0x7f1100a5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleATSearchActivity"
+            android:description="@ref/0x7f11004d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleRewardConfigActivity"
+            android:description="@ref/0x7f11004e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyNewBookInvestActivity"
+            android:description="@ref/0x7f1100c2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewBookInvestDetailActivity"
+            android:description="@ref/0x7f1100c1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookSearchActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewBookBetDetailActivity"
+            android:description="@ref/0x7f1100c0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDDressUpCenterActivity"
+            android:description="@ref/0x7f11005c" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDStickersCenterActivity"
+            android:description="@ref/0x7f110141" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDStickersDetailActivity"
+            android:description="@ref/0x7f110142" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDHomePageAudioActivity"
+            android:description="@ref/0x7f1100b1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.FindVoteSheetActivity" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qidian.QDReader.ui.activity.game.YWGameLoginActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.yw.game.sdk.qd.login.action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qdreader"
+                    android:host="game_login"
+                    android:path="/login" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLocalBookManageActivity"
+            android:description="@ref/0x7f1100eb" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NotificationSettingTransparentActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyPublishCollectionActivity"
+            android:exported="false"
+            android:description="@ref/0x7f1100bb" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyFollowCollectionActivity"
+            android:description="@ref/0x7f1100ba" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDAddPowerByWatchVideoActivity"
+            android:description="@ref/0x7f110004" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ValidPostActivity"
+            android:description="@ref/0x7f11156a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDDiscountCouponBookListActivity"
+            android:description="@ref/0x7f11071e" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AuthorRecommendSelfActivity"
+            android:description="@ref/0x7f11000f" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.list.NewParagraphCommentListActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.PublishCommentActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.my_voice.MyVoiceActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.page_detail.NewParagraphCommentDetailActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.ModifyDubbingRoleActivity"
+            android:description="@ref/0x7f1100a8" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ReadTimeMainPageActivity"
+            android:description="@ref/0x7f110108" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ReadTimeTestPage" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewChapterCommentActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110e18" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SelectDiscountCouponActivity"
+            android:description="@ref/0x7f110130" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.activity.SelectAudioCouponActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CircleComplaintActivity"
+            android:description="@ref/0x7f11003a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MyMarkListActivity"
+            android:description="@ref/0x7f1115e2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RewardCommentActivity"
+            android:description="@ref/0x7f110efb" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLevelAndHonorActivity"
+            android:description="@ref/0x7f111a2d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.splash_config.QDSplashConfigActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.splash_config.QDSplashConfigPreviewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewPreferenceSettingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDParagraphImageGalleryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDParagraphSingleImageGalleryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.ParagraphImageShareActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.qidian.QDReader.service.WallOfferGameDownLoadService" />
+
+        <service
+            android:name="com.qidian.QDReader.service.MsgService"
+            android:persistent="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.qidian.QDReader.service.DailyWorksService" />
+
+        <service
+            android:name="com.qidian.QDReader.audiobook.core.AudioPlayerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qidian.QDReader.audiobook.IAudioPlayerService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.qidian.QDReader.service.TaskIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.qidian.QDReader.component.util.AppRegister">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.qidian.QDReader.receiver.ShortcutReceiver" />
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <service
+            android:name="com.qidian.QDReader.debug.AutoTrackerDebugService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.ads.PortraitADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.ads.LandscapeADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.tg.ADActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.tg.PortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.qq.e.tg.LandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDVideoActivity"
+            android:configChanges="0x4b0"
+            android:description="@ref/0x7f110169" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDInformationDetailActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110a90" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.OperatingTeamActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f111842" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.VestRoleSelectActivity"
+            android:description="@ref/0x7f1116c5" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.VestRoleSelectSheetActivity"
+            android:description="@ref/0x7f1116be" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.VestBookSelectActivity"
+            android:description="@ref/0x7f111217" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.ShareCardActivity"
+            android:description="@ref/0x7f110136" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.sticker.YWImageStickerEditActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.sticker.YWTextStickerEditActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CirclePostRelevantActivity"
+            android:description="@ref/0x7f1109a2" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.newuser.NewUserHandpickActivity"
+            android:description="@ref/0x7f111683" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SingleMidPageActivity"
+            android:description="@ref/0x7f11042a" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.MemePreviewActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.debug.ZeusMainActivity"
+            android:taskAffinity="com.yuewen.qd.autotracker"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.qidian.QDReader.debug.AutoTrackerDebugActivity"
+            android:taskAffinity="com.yuewen.qd.autotracker"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.qidian.QDReader.debug.AutoDebugDetailActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDLocalH5Activity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SuperFansGroupActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.circle.CircleValidPostActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewFansListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TopicSearchSheetActivity"
+            android:configChanges="0x4a0"
+            android:description="@ref/0x7f110147"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TopicGatherActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AddLinkSheetActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.bookpage.QDBookPageActivity"
+            android:description="@ref/0x7f11001d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.activity_center.QDActivityCenterActivity"
+            android:exported="false"
+            android:configChanges="0xd80"
+            android:description="@ref/0x7f110003" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.QDCrowdFundingPayActivity"
+            android:description="@ref/0x7f110054" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingSpecificationsActivity"
+            android:description="@ref/0x7f110056" />
+
+        <activity
+            android:theme="@ref/0x7f120133"
+            android:name="com.qidian.QDReader.ui.activity.CustomVideoADActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookRecommendSheetActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.PublishLiveCommentActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingUpdateInfoActivity"
+            android:description="@ref/0x7f110057" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingProcessActivity"
+            android:description="@ref/0x7f110055" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingCommentListActivity"
+            android:description="@ref/0x7f110053" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.crowdfunding.CrowdFundingCommentDetailActivity"
+            android:description="@ref/0x7f110052" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.PocketSquareActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecyclerViewExposeTestActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.youzan.YouzanActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDTagSortActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookTagActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ActionActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLastPageNewActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLastPagePosterActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.recharge.QDRechargeTaskActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QuickPayActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ReadingPagDetailActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RecommendManageActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.AdvManageActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.TopicRankActivity"
+            android:description="@ref/0x7f110146" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDUserCapsuleFictionActivity"
+            android:description="@ref/0x7f110101" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.capsule.CapsuleEditActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.topic.TopicSquareActivity"
+            android:description="@ref/0x7f110148" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.capsule.CapsuleSendGiftActivity"
+            android:description="@ref/0x7f11002d" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.derivative.outline.QDBookDerivativeOutlinePublishActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.derivative.content.QDBookDerivativeContentPublishActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.derivative.content.QDSimpleChapterListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.derivative.content.BookChapterSelectActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDTagSortActivity1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.BookLibraryActivity1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBookCategoryPageActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDNewBookInStoreActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.NewBookListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.MonthTicketMemorialBookActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:name="com.qidian.QDReader.ui.activity.AddBookShelfDialogActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.bookpage.QDSingleBookPageActivity" />
+
+        <activity
+            android:name="leakcanary.internal.activity.LeakActivity"
+            android:exported="false" />
+
+        <activity-alias
+            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+            android:exported="false"
+            android:targetActivity="leakcanary.internal.activity.LeakActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.SimilarRecomActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.FansClubShareActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.chapter.publish.ErrorCorrectActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBindChooseActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBindChooseDialogActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBindPhoneActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.QDBindPhoneDialogActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.activity.LoginActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerStatusActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerPasswordActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerAppealActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.takephoto.crop.CropImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneCodeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerAgeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12015d"
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneAreaActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.FansClubRankActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.CommonSettingActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.ProtectBackgroundPlayActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.UGCRecomActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120189"
+            android:name="com.qidian.QDReader.AudioCarActivity"
+            android:launchMode="2"
+            android:screenOrientation="4"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.share.BookListDetailShareActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.activity.RaiseNewBookActivity" />
+
+        <activity
+            android:theme="@ref/0x7f12019e"
+            android:name="com.qidian.QDReader.ui.activity.QDReaderImageGalleryActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.activity.QDListeningMoreBaseActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.newbook.activity.NewBookSquareActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.listeningRank.audioHotSearchRank.activity.ListeningSearchListActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.listeningRank.audioRank.activity.ListeningRankActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.listeningRank.audioRank.activity.ListeningRankListDetailShareActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.detail.activity.ListeningDetailActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.detail.activity.ListeningLostContactActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.detailbrowser.ListeningDetailBrowserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.activity.ListeningCombineMemberActivity" />
+
+        <activity
+            android:name="com.qidian.QDReader.ui.modules.listening.playpage.NewAudioPlayDirectoryActivity"
+            android:screenOrientation="1"
+            android:description="@ref/0x7f110de3" />
+
+        <service
+            android:label="@ref/0x7f1101f6"
+            android:name="com.qidian.QDReader.livewallpaper.YWWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@ref/0x7f140011" />
+        </service>
+
+        <receiver
+            android:name="com.qidian.QDReader.widget.NewAppWidget41"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f140009" />
+        </receiver>
+
+        <receiver
+            android:name="com.qidian.QDReader.widget.NewAppWidget42"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f14000a" />
+        </receiver>
+
+        <receiver
+            android:name="com.qidian.QDReader.widget.NewAppWidget21"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f140008" />
+        </receiver>
+
+        <service
+            android:name="com.qidian.QDReader.widget.AppWidgetRequestService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.qidian.QDReader.other.ADFileProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140000" />
+        </provider>
+
+        <provider
+            android:name="com.qidian.QDReader.other.InitApplicationProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.qidian.QDReader.InitApplicationProvider" />
+
+        <service
+            android:label="dexopt"
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:process=":dexopt" />
+
+        <receiver
+            android:name="com.qidian.QDReader.audiobook.receiver.QDMediaButtonReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <property
+            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f1201a6"
+            android:name="com.qidian.QDReader.comic.ui.QDComicReadingVerticalActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1201a6"
+            android:name="com.qidian.QDReader.comic.ui.QDComicReadingLandActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.qidian.QDReader.live.ui.activity.QDAudienceActivity" />
+
+        <activity
+            android:name="com.yuewen.readercore.ImageViewActivity"
+            android:process=":reader.image"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <service
+            android:name="com.qidian.QDReader.component.game.GameCommunicateService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.qidian.QDReader.component.tts.TTSReceiver" />
+
+        <provider
+            android:name="com.yuewen.midpage.YWMidPageProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.midPageContentProvider" />
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.rmonitor-installer" />
+
+        <meta-data
+            android:name="flutterProjectType"
+            android:value="module" />
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:name="com.bytedance.sdk.open.douyin.ui.DouYinWebAuthorizeActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x480" />
+
+        <receiver
+            android:name="com.qq.reader.component.gamedownload.cservice.DownloadBroadcastReceiver4Game" />
+
+        <activity
+            android:theme="@ref/0x7f120506"
+            android:name="com.tencent.upgrade.ui.UpgradeDialogActivity" />
+
+        <activity
+            android:name="com.tencent.upgrade.ui.UpgradeActiveActivity" />
+
+        <provider
+            android:name="com.tencent.upgrade.download.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140007" />
+        </provider>
+
+        <provider
+            android:name="com.tencent.upgrade.util.ApkInstallProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140007" />
+        </provider>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+
+        <service
+            android:name="com.yw.networkmonitor.QDNetWorkMonitorService" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:name="com.qq.e.tg.WebAdActivity"
+            android:process=":tangramweb"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.TransPortraitADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.bun.miitmdid.utilsforrequestpermission.PermissionTransparentActivity" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-identifier"
+            android:value="ads-identifier:3.4.62.300" />
+
+        <activity
+            android:theme="@ref/0x7f1204e6"
+            android:name="com.tencent.klevin.ads.view.InterstitialAdActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f1204e7"
+            android:name="com.tencent.klevin.ads.view.RewardAdActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f1204e7"
+            android:name="com.tencent.klevin.ads.view.SplashAdActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f1204e6"
+            android:name="com.tencent.klevin.ads.view.AlertDialogActivity"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f1204e7"
+            android:name="com.tencent.klevin.ads.view.InteractiveActivity"
+            android:configChanges="0xda0" />
+
+        <receiver
+            android:name="com.tencent.klevin.ads.receiver.NotificationBroadcastReceiver" />
+
+        <activity
+            android:theme="@ref/0x7f120201"
+            android:name="com.tencent.captchasdk.TCaptchaPopupActivity"
+            android:exported="false"
+            android:configChanges="0xe0" />
+
+        <provider
+            android:name="com.yuewen.ywlogin.ui.takephoto.YWLoginFileProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.YWLoginFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140012" />
+        </provider>
+
+        <activity
+            android:name="com.yuewen.pay.core.callback.qpayapi.QPayCallbackActivity"
+            android:exported="true"
+            android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="com.yuewen.pay.qwallet" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x4e0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:exported="true"
+            android:launchMode="3"
+            android:configChanges="0x4e0">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.yuewen.push.proxy.YWPushProxyActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.yuewen.push.proxy.YWPushProxyActivity" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.yuewen.push.event.report.disk.db.YWDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.YWDataContentProvider" />
+
+        <service
+            android:name="com.yuewen.push.service.YWCommonService"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.yuewen.push.receiver.JPushExtendReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.yuewen.push.receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTRATION" />
+
+                <action
+                    android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.yuewen.push.activity.KeepActiveActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:taskAffinity="com.yuewen.push.activie" />
+
+        <receiver
+            android:name="com.yuewen.push.receiver.KeepActiveReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.WakedReceiver" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="YW_PUSH_APPKEY"
+            android:value="2" />
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="5fd68b446edee2c8749df19d" />
+
+        <meta-data
+            android:name="com.hihonor.push.sdk_version"
+            android:value="7.0.41.301" />
+
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3100" />
+
+        <activity
+            android:theme="@ref/0x7f120137"
+            android:name="com.geetest.onelogin.activity.OneLoginActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:theme="@ref/0x7f120137"
+            android:name="com.geetest.onelogin.activity.OneLoginWebActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WebActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareStoryActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareChatActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareResultActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.qidian.QDReader.qmethod.pandoraex.provider.PandoraExProvider"
+            android:permission="com.qidian.QDReader.qmethod.permission.pandoraex"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.pandoraprovider"
+            android:grantUriPermissions="true" />
+
+        <provider
+            android:name="org.extra.tools.ContextProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.org.libpag.contextprovider" />
+
+        <meta-data
+            android:name="XIAOMI_APPID"
+            android:value="MI-2882303761517135785" />
+
+        <meta-data
+            android:name="XIAOMI_APPKEY"
+            android:value="MI-5311713551785" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3">
+
+            <meta-data
+                android:name="supportStyle"
+                android:value="scene|voip" />
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PluginHuaweiPlatformsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.PluginOppoPushService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="OPPO_APPKEY"
+            android:value="OP-cJC31BYzdmo0GoWGkssOCK80g" />
+
+        <meta-data
+            android:name="OPPO_APPID"
+            android:value="OP-15491" />
+
+        <meta-data
+            android:name="OPPO_APPSECRET"
+            android:value="OP-a503F7e2546E8032700777e0E1eDf382" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginVivoMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="484" />
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="ea70b3df-31c9-4c05-a8c7-19d55b84026e" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="13913" />
+
+        <service
+            android:name="cn.jpush.android.service.JHonorService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="100100391" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.qidian.QDReader.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.qidian.QDReader.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.qidian.QDReader.permission.PUSH_PROVIDER"
+            android:writePermission="com.qidian.QDReader.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.qidian.QDReader.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f12015a"
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="cn.jpush.android.ui.PopWinActivity" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:exported="true"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTER" />
+
+                <action
+                    android:name="cn.jpush.android.intent.REPORT" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PushService" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="cn.jpush.android.service.SchedulerReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            android:process=":pushcore"
+            android:authorities="com.qidian.QDReader.DataProvider" />
+
+        <activity
+            android:theme="@ref/0x7f120140"
+            android:name="cn.jpush.android.service.JNotifyActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x39">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.JNotifyActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120140"
+            android:name="cn.android.service.JTransitActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x39">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.android.service.JTransitActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qidian.QDReader" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.jpush.android.asus.AsusPushMessageReceiver" />
+
+        <provider
+            android:name="cn.jpush.android.service.InitProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.jiguang.InitProvider" />
+
+        <activity
+            android:name="com.tencent.qcloud.logutils.LogActivity" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.11.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.9.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:theme="@ref/0x7f120111"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.qidian.QDReader.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=1084826" />
+    </application>
+</manifest>
