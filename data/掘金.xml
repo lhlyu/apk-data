@@ -1,0 +1,3367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="66200"
+        android:versionName="6.6.2"
+        android:compileSdkVersion="30"
+        android:compileSdkVersionCodename="11"
+        package="com.daimajia.gold"
+        platformBuildVersionCode="30"
+        platformBuildVersionName="11">
+
+    <uses-sdk
+            android:minSdkVersion="23"
+            android:targetSdkVersion="30" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.INTERNET" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.CAMERA" />
+
+    <uses-permission
+            android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                    android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <package
+                android:name="com.tencent.mm" />
+
+        <package
+                android:name="com.tencent.mobileqq" />
+
+        <package
+                android:name="com.sina.weibo" />
+
+        <package
+                android:name="com.tencent.mm" />
+
+        <intent>
+
+            <action
+                    android:name="android.intent.action.SEND" />
+
+            <data
+                    android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="*" />
+
+            <data
+                    android:scheme="tbopen" />
+        </intent>
+
+        <package
+                android:name="com.eg.android.AlipayGphone" />
+
+        <package
+                android:name="com.eg.android.AlipayGphoneRC" />
+
+        <package
+                android:name="hk.alipay.wallet" />
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-permission
+            android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+            android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+            android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+
+    <uses-permission
+            android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+            android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+            android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+            android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+            android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+            android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+            android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-permission
+            android:name="android.permission.UPDATE_APP_BADGE" />
+
+    <uses-permission
+            android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+            android:name="com.vivo.abe.permission.launcher.notification.num" />
+
+    <instrumentation
+            android:name="com.bytedance.common.component.CommonInstrumentation"
+            android:targetPackage="com.daimajia.gold"
+            android:targetProcesses="com.daimajia.gold:smp" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+            android:name="com.daimajia.gold.push.permission.MESSAGE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.push.permission.MESSAGE" />
+
+    <uses-permission
+            android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <permission
+            android:name="com.daimajia.gold.permission.C2D_MESSAGE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.permission.C2D_MESSAGE" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+            android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+            android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+            android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+            android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+            android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+            android:name="android.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="android.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.aliyun.homeshell.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.aliyun.homeshell.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lenovo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lenovo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.iLoong.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.iLoong.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="cn.nubia.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="cn.nubia.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.smartisanos.launcher.WRITE_DATABASE" />
+
+    <uses-permission
+            android:name="com.smartisanos.launcher.READ_DATABASE" />
+
+    <uses-permission
+            android:name="com.smartisanos.launcher.data.ExportDataProvider" />
+
+    <uses-permission
+            android:name="com.teslacoilsw.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.teslacoilsw.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ztemt.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ztemt.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.lqsoft.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.lqsoft.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.baoruan.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.baoruan.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.fineos.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.fineos.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ibingo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ibingo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zui.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zui.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.mifavor.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.mifavor.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.tpwlauncher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.tpwlauncher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.sprdlauncher1.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.sprdlauncher1.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.s.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.s.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.mobile.ZteLauncher3D.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.zte.mobile.ZteLauncher3D.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher23.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher23.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mgyun.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mgyun.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.asus.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.asus.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.hola.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.hola.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.qihoo360.home.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.qihoo360.home.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.slim.slimlauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.slim.slimlauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huaqin.launcherEx.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huaqin.launcherEx.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.epic.launcher.tw.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.epic.launcher.tw.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.lewalauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.lewalauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.Dean.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.Dean.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="app.cobo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="app.cobo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.alphalp.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.alphalp.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lollipop.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lollipop.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.l.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.l.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.dlto.atom.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.dlto.atom.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.sprdlauncher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.sprdlauncher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.konka.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.konka.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mycheering.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mycheering.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.microsoft.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.microsoft.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.nicelauncher.lolauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.nicelauncher.lolauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.jui.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.jui.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lge.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="telecom.mdesk.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.modaco.android.launchergb.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.modaco.android.launchergb.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.bbk.launcher2.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.bbk.launcher2.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.twlauncher.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.app.twlauncher.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adw.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.gau.go.launcherex.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.gau.go.launcherex.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.fede.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.nd.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.nd.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mx.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.mx.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.google.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.google.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-feature
+            android:name="android.hardware.camera" />
+
+    <uses-feature
+            android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.miniapp.PROCESS_COMMUNICATION" />
+
+    <permission
+            android:name="com.daimajia.gold.miniapp.PROCESS_COMMUNICATION"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.vivo.aiengine.permission.READ_AWARE_PROVIDER" />
+
+    <uses-permission
+            android:name="com.vivo.aiengine.permission.WRITE_AWARE_PROVIDER" />
+
+    <uses-permission
+            android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+            android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-feature
+            android:name="android.hardware.camera.front"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.camera.flash"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.screen.landscape"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.wifi"
+            android:required="false" />
+
+    <uses-permission
+            android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <permission
+            android:name="com.daimajia.gold.permission.PROCESS_PUSH_MSG"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.daimajia.gold.permission.PUSH_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.daimajia.gold.permission.PUSH_WRITE_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+            android:name="com.daimajia.gold.permission.PUSH_PROVIDER" />
+
+    <permission
+            android:name="com.daimajia.gold.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="0x2" />
+
+    <supports-screens
+            android:anyDensity="true"
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true" />
+
+    <application
+            android:theme="@ref/0x7f13000c"
+            android:label="@ref/0x7f1200bf"
+            android:icon="@ref/0x7f0e0002"
+            android:name="com.bytedance.mpaas.app.JJApplication"
+            android:allowBackup="false"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:resizeableActivity="true"
+            android:networkSecurityConfig="@ref/0x7f16000a"
+            android:roundIcon="@ref/0x7f0e0004"
+            android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+            android:requestLegacyExternalStorage="true"
+            android:preserveLegacyExternalStorage="true">
+
+        <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+        <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape" />
+
+        <meta-data
+                android:name="_mp_privacySwitcher"
+                android:value="true" />
+
+        <meta-data
+                android:name="UPDATE_VERSION_CODE"
+                android:value="66200" />
+
+        <meta-data
+                android:name="io.flutter.embedding.android.EnableTrimVM"
+                android:value="true" />
+
+        <activity
+                android:theme="@ref/0x7f13000d"
+                android:name="im.juejin.android.ui.SplashActivity"
+                android:configChanges="0x200">
+
+            <intent-filter
+                    android:autoVerify="true">
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="snssdk2606" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="im.juejin.android.ui.MainActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="com.yalantis.ucrop.UCropActivity"
+                android:screenOrientation="1" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f160008" />
+        </provider>
+
+        <receiver
+                android:name="com.ss.android.message.MessageReceiver"
+                android:enabled="false"
+                android:exported="true"
+                android:process=":push"
+                android:priority="2147483647" />
+
+        <activity
+                android:theme="@ref/0x7f130010"
+                android:name="im.juejin.android.modules.note.impl.MDInfoActivity"
+                android:exported="false"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.note.impl.LongNoteActivity"
+                android:exported="false"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f130010"
+                android:name="im.juejin.android.modules.note.impl.ShortNoteActivity"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.profile.FollowColumnsActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.setting.SettingsActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.DiggActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.NotificationActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.NotificationCenterActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.profile.UserProfileActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40002fff" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.author.AuthorRankActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.setting.DebugSettingActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.DarkModeActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.CharacterSettingActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.TransitionDarkModeActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.notification.ui.ChatRoomActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x23" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.notification.ui.ConversationSettingActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.notification.ui.IMSettingsActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.ui.ScanAuthorizeActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.mine.impl.profile.UserProfileSearchActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.section.CourseReadActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40002fff"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.section.ByteCourseChapterDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40002fff"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.pay.CoursePayActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.detail.CourseDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.detail.ByteCourseDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.CommentListActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.CoursePosterActionActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f13000e"
+                android:name="im.juejin.android.modules.course.impl.ui.CoursePopularizeDialogActivity"
+                android:exported="false"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.course.impl.ui.CoursePopularizeWithdrawActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.column.ColumnDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f13000e"
+                android:name="im.juejin.android.modules.home.impl.webview.collect.CollectionDialogActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f130010"
+                android:name="im.juejin.android.modules.home.impl.webview.collect.CreateCollectionActivity" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.TTDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.ArticleRankActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:theme="@ref/0x7f13027e"
+                android:name="im.juejin.android.modules.home.impl.ui.detail.DetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.search.SearchActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.event.EventActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.tag.TagActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.tag.TagDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.collections.CollectionActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.collections.CollectionDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.column.ArticleColumnActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.ArticleHistoryActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.ArticleHistorySearchActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.ui.more.MoreTagActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.home.impl.webview.FullScreenWebViewActivity"
+                android:screenOrientation="6"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.ChoicenessPinsListActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.PinsDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.topic.TopicListActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.CommentDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:theme="@ref/0x7f130276"
+                android:name="im.juejin.android.modules.pins.impl.ui.TransCommentActivity"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.PostPinActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:theme="@ref/0x7f130149"
+                android:name="im.juejin.android.modules.pins.impl.ui.PickThemeActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.PickTopicActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.topic.TopicOrThemeDetailActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.users.UserListActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.topic.TopicMainActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.pins.impl.ui.users.DiggerListActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x40000f80" />
+
+        <activity
+                android:name="im.juejin.android.modules.flutter.impl.MyFlutterActivity"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="im.juejin.android.modules.recruitment.impl.ui.groupList.GroupListActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.recruitment.impl.ui.groupProfile.GroupProfileMainActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f130011"
+                android:name="com.bytedance.tech.platform.base.views.share.ShareCardActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f130276"
+                android:name="com.bytedance.tech.platform.base.views.comment.TransparentCommentActivityNew"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x15" />
+
+        <activity
+                android:name="io.flutter.embedding.android.FlutterActivity"
+                android:configChanges="0x400037b4"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.views.privacy.ProtocolWebViewActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.views.privacy.PrivacySettingsActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f1301f5"
+                android:name="com.bytedance.tech.platform.base.views.privacy.PrivacyProtectionActivity"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.views.editor.ArticleEditorActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.views.editor.ArticlePublishActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.views.ScanActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f13027e"
+                android:name="com.bytedance.tech.platform.base.web.OutSideWebActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x7f13035e"
+                android:name="im.juejin.android.modules.preview.impl.PreviewPictureActivity"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.daimajia.gold.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="1" />
+
+        <activity
+                android:name="im.juejin.android.modules.account.impl.view.GithubAuthActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:name="im.juejin.android.modules.account.impl.view.CertificationActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f130277"
+                android:name="com.daimajia.gold.wxapi.WXEntryActivity"
+                android:exported="true" />
+
+        <activity
+                android:name="com.bytedance.tech.platform.base.route.InterfaceActivity">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="openjj" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="2"
+                android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="tencent100290348" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:screenOrientation="3"
+                android:configChanges="0xa0" />
+
+        <service
+                android:name="com.ss.android.message.NotifyService"
+                android:exported="true"
+                android:process=":push">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.ss.android.message.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.ss.android.message.log.LogService"
+                android:exported="false"
+                android:process=":push" />
+
+        <activity
+                android:theme="@ref/0x7f1300ef"
+                android:name="com.bytedance.push.notification.PushActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="3">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.daimajia.gold.pushsdk.action" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1300ef"
+                android:name="com.bytedance.push.notification.PassThoughActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:screenOrientation="3" />
+
+        <provider
+                android:name="com.ss.android.push.PushFileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.push.file_provider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f16000c" />
+        </provider>
+
+        <service
+                android:name="com.xiaomi.push.service.XMPushService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+                android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+                android:enabled="true"
+                android:exported="true" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.SmpPushMessageHandler"
+                android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":smp" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+                android:enabled="true"
+                android:exported="false" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.SmpMessageHandleService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":smp" />
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.PingReceiver"
+                android:exported="false"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.MIPushMessageHandler"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.SmpMIPushMessageHandler"
+                android:enabled="false"
+                android:exported="true"
+                android:process=":smp">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.taobao.accs.ChannelService"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.taobao.accs.data.MsgDistributeService"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.taobao.accs.EventReceiver"
+                android:exported="true"
+                android:process=":pushservice" />
+
+        <receiver
+                android:name="com.taobao.accs.ServiceReceiver"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.taobao.accs.internal.AccsJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.taobao.accs.ChannelService$KernelService"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="org.android.agoo.accs.AgooService"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.UmengIntentService"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.XiaomiIntentService"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.taobao.agoo.AgooCommondReceiver"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.daimajia.gold.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.umeng.message.UmengMessageIntentReceiverService"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.message.sendmessage.action" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.UmengMessageHandler"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.UmengDownloadResourceService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.bytedance.notification.NotificationDeleteBroadcastReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.daimajia.gold.pushsdk.notification.delete.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f130274"
+                android:name="com.bytedance.notification.activity.BannerActivity"
+                android:taskAffinity="com.daimajia.gold.push.banner"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x7f130274"
+                android:name="com.bytedance.notification.activity.SmpBannerActivity"
+                android:process=":smp"
+                android:taskAffinity="com.daimajia.gold.push.banner"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x7f130274"
+                android:name="com.bytedance.notification.activity.PushBannerActivity"
+                android:process=":push"
+                android:taskAffinity="com.daimajia.gold.push.banner"
+                android:launchMode="3" />
+
+        <service
+                android:name="com.ss.android.newmedia.redbadge.RedbadgeHandler"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.ss.android.redbadge.message" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.ss.android.newmedia.redbadge.RedBadgePushProcessService"
+                android:exported="false"
+                android:process=":push" />
+
+        <provider
+                android:name="com.ss.android.pushmanager.setting.PushMultiProcessSharedProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.push.SHARE_PROVIDER_AUTHORITY" />
+
+        <service
+                android:name="com.bytedance.common.process.service.CrossProcessServiceForMain"
+                android:exported="false" />
+
+        <service
+                android:name="com.bytedance.common.process.service.CrossProcessServiceForPush"
+                android:exported="false"
+                android:process=":push" />
+
+        <service
+                android:name="com.bytedance.common.process.service.CrossProcessServiceForPushService"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.bytedance.common.process.service.CrossProcessServiceForSmp"
+                android:exported="false"
+                android:process=":smp" />
+
+        <service
+                android:name="com.bytedance.push.service.PushProcessService"
+                android:process=":push" />
+
+        <service
+                android:name="com.bytedance.push.service.PushServiceProcessService"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.huawei.MessageService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+                android:permission="com.daimajia.gold.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushReceiver"
+                android:permission="com.daimajia.gold.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.meizu.message.MzMessageReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                        android:name="com.daimajia.gold" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+                android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                        android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+                android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.heytap.msp.push.service.SmpDataMessageCallbackService"
+                android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":smp">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                        android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.heytap.msp.push.service.SmpCompatibleDataMessageCallbackService"
+                android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":smp">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="sdk_version_vivo"
+                android:value="484" />
+
+        <meta-data
+                android:name="local_iv"
+                android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <service
+                android:name="com.vivo.push.sdk.service.CommandClientService"
+                android:permission="com.push.permission.UPSTAGESERVICE"
+                android:exported="true"
+                android:process=":smp" />
+
+        <service
+                android:name="com.vivo.push.sdk.service.MainCommandClientService"
+                android:permission="com.push.permission.UPSTAGESERVICE"
+                android:exported="true" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <receiver
+                android:name="com.vivo.VivoPushMessageReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.vivo.SmpVivoPushMessageReceiver"
+                android:exported="true"
+                android:process=":smp">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.vivo.pushclient.action.RECEIVE_SMP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.ss.android.update.UpdateProgressActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f13020b"
+                android:name="com.bytedance.flutter.vessel.panel.FlutterInfoPanelActivity"
+                android:configChanges="0x400035b4"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13020b"
+                android:name="com.bytedance.flutter.vessel.route.v2.BaseDynamicFlutterActivity"
+                android:configChanges="0x400035b4"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f13020b"
+                android:name="com.bytedance.flutter.vessel.impl.dynamic.DynamicShowCaseActivity"
+                android:configChanges="0x400035b4"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="isTranslucent"
+                    android:value="true" />
+        </activity>
+
+        <meta-data
+                android:name="io.flutter.embedded_views_preview"
+                android:value="true" />
+
+        <provider
+                android:name="io.flutter.plugins.share.ShareFileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.flutter.share_provider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f160009" />
+        </provider>
+
+        <meta-data
+                android:name="flutterProjectType"
+                android:value="module" />
+
+        <meta-data
+                android:name="flutterEmbedding"
+                android:value="2" />
+
+        <activity
+                android:theme="@ref/0x7f13020a"
+                android:name="com.bytedance.account.sdk.login.ui.SelectAreaCodeActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f130336"
+                android:name="com.bytedance.account.sdk.login.ui.XAccountHostActivity"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f130337"
+                android:name="com.bytedance.account.sdk.login.ui.XAccountHostHalfActivity"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f130277"
+                android:name="com.bytedance.account.sdk.login.entry.DouyinEntryActivity"
+                android:exported="true"
+                android:launchMode="3"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f130277"
+                android:name="com.bytedance.account.sdk.login.entry.TTEntryActivity"
+                android:exported="true"
+                android:launchMode="3"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f13020a"
+                android:name="com.bytedance.account.sdk.login.ui.webauth.WebAuthActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f13036d"
+                android:name="com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity"
+                android:exported="false"
+                android:multiprocess="true"
+                android:launchMode="1"
+                android:windowSoftInputMode="0x10" />
+
+        <provider
+                android:name="com.bytedance.bdturing.ttnet.BdTuringInitProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.bdturing.InitProvider"
+                android:initOrder="9" />
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.ss.android.ShowDialogActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.integrated.counter.activity.CJPayCounterActivity"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f1300ff"
+                android:name="com.android.ttcjpaysdk.ttcjpayactivity.TTCJPayTransActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.base.h5.CJPayH5Activity"
+                android:configChanges="0xda0"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.base.h5.CJPayChooseMediaCallBackActivity"
+                android:configChanges="0x4b0" />
+
+        <provider
+                android:name="com.android.ttcjpaysdk.base.h5.provider.CJPayFileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.ttcjpay.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f160004" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.front.mybankcard.activity.CJPayBankCardActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.front.mybankcard.activity.CJPayBankCardDetailActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.front.mybankcard.activity.CJPayAllBankCardActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.front.cardlist.activity.CJPayFrontCardListMethodActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.supplementarysign.activity.CJPaySSUpdateCardInfoActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.supplementarysign.activity.CJPaySSSmsVerifyActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.supplementarysign.activity.CJPaySSAgreementActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bdpay.bindcard.normal.ui.activity.CJPayCardBinActivity"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bdpay.bindcard.normal.ui.activity.CJPayFourElementsSafeActivity"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.base.ui.CJPaySmsCodeCheckActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bdpay.bindcard.normal.ui.activity.CJPayIDSelectorActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bdpay.bindcard.normal.ui.activity.CJPayIndependentMainActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.quickbind.ui.SelectBankCardType2Activity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.quickbind.ui.TwoElementAuth3Activity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.quickbind.ui.SmsFullPageActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.base.ui.SetPwdActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.base.pay.CJPayNewCardActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bindcard.base.ui.activity.AllBankSelectActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.facelive.view.CJPayFaceLiveSignActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.counter.activity.CJPayCheckoutCounterActivity"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.fingerprint.CJPayInputPasswordActivity"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.base.auth.activity.CJPayRealNameAuthActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.bdpay.paymentmethod.ui.PaymentMethodActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.agreement.activity.CJPayAgreementActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.activity.CJPayLimitErrorActivity"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.thirdparty.activity.CJPayH5ActivateActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.android.ttcjpaysdk.thirdparty.demo.DemoActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.ocr.activity.CJPayOCRIDCardActivity"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.ocr.activity.CJPayOCRBankCardActivity"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f130113"
+                android:name="com.android.ttcjpaysdk.ocr.activity.CJPayOCRIdentityActivity"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.android.ttcjpaysdk.base.framework.CJPayAlipaySignReturnActivity">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="cjsign"
+                        android:host="com.daimajia.gold" />
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name="com.ss.android.token.AuthTokenMultiProcessSharedProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.auth_token.SHARE_PROVIDER_AUTHORITY" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabActivity0"
+                android:process=":miniapp0"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI0"
+                android:launchMode="2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleActivity0"
+                android:process=":miniapp0"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI0"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity0"
+                android:process=":miniapp0"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleHostStackActivity0"
+                android:process=":miniapp0"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.MiniappService0"
+                android:process=":miniapp0"
+                android:stopWithTask="true" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabActivity1"
+                android:process=":miniapp1"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI1"
+                android:launchMode="2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleActivity1"
+                android:process=":miniapp1"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI1"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity1"
+                android:process=":miniapp1"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleHostStackActivity1"
+                android:process=":miniapp1"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.MiniappService1"
+                android:process=":miniapp1"
+                android:stopWithTask="true" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabActivity2"
+                android:process=":miniapp2"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI2"
+                android:launchMode="2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleActivity2"
+                android:process=":miniapp2"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI2"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity2"
+                android:process=":miniapp2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleHostStackActivity2"
+                android:process=":miniapp2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.MiniappService2"
+                android:process=":miniapp2"
+                android:stopWithTask="true" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabActivity3"
+                android:process=":miniapp3"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI3"
+                android:launchMode="2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleActivity3"
+                android:process=":miniapp3"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI3"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity3"
+                android:process=":miniapp3"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleHostStackActivity3"
+                android:process=":miniapp3"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.MiniappService3"
+                android:process=":miniapp3"
+                android:stopWithTask="true" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabActivity4"
+                android:process=":miniapp4"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI4"
+                android:launchMode="2"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleActivity4"
+                android:process=":miniapp4"
+                android:taskAffinity="com.daimajia.gold.MiniAppUI4"
+                android:launchMode="2"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity4"
+                android:process=":miniapp4"
+                android:screenOrientation="14"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <activity
+                android:theme="@ref/0x7f13034f"
+                android:name="com.tt.miniapphost.placeholder.MiniappTabFloatStyleHostStackActivity4"
+                android:process=":miniapp4"
+                android:configChanges="0xfb0"
+                android:windowSoftInputMode="0x30" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.MiniappService4"
+                android:process=":miniapp4"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.tt.miniapphost.process.base.HostCrossProcessCallService"
+                android:exported="false"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.tt.miniapphost.feedback.FeedbackRecordService"
+                android:process=":miniapp100"
+                android:stopWithTask="true" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.chooser.PickerActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.chooser.PreviewActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f13034d"
+                android:name="com.tt.miniapp.document.AppbrandOpenDocumentActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.map.AppbrandMapActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.map.AppbrandChooseLocationActivity"
+                android:launchMode="1"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.permission.PermissionSettingActivity"
+                android:multiprocess="true"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.settings.ProjectSettingsActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130351"
+                android:name="com.tt.miniapp.feedback.entrance.FAQActivity"
+                android:multiprocess="true"
+                android:screenOrientation="1"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.about.AboutActivity"
+                android:launchMode="1"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.about.MicroAppSubjectInfoActivity"
+                android:launchMode="1"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.feedback.FeedbackRecordActivity"
+                android:process=":miniapp100"
+                android:launchMode="3"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.activity.OpenSchemaRelayActivity"
+                android:configChanges="0x580" />
+
+        <activity
+                android:theme="@ref/0x7f130353"
+                android:name="com.tt.miniapp.activity.OpenSchemaHostStackRelayActivity"
+                android:screenOrientation="14"
+                android:configChanges="0x580" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.business.extra.launchapp.LaunchAppMiddleActivity"
+                android:configChanges="0x480"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130352"
+                android:name="com.tt.miniapp.activity.MoveHostFrontActivity"
+                android:configChanges="0x500"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.facialverify.FacialVerifyProtocolActivity"
+                android:configChanges="0x580"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.subscribe.SubscriptionSettingsActivity"
+                android:multiprocess="true"
+                android:configChanges="0x580"
+                android:allowTaskReparenting="false" />
+
+        <activity
+                android:theme="@ref/0x7f130355"
+                android:name="com.tt.miniapp.activity.KeepActivity" />
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.unity3d.player.UCPlayerActivity0"
+                android:process=":miniapp200"
+                android:taskAffinity="com.daimajia.gold.UcAppUI0"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1">
+
+            <meta-data
+                    android:name="unityplayer.UnityActivity"
+                    android:value="true" />
+
+            <meta-data
+                    android:name="android.notch_support"
+                    android:value="true" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.unity3d.player.UCPlayerActivity1"
+                android:process=":miniapp201"
+                android:taskAffinity="com.daimajia.gold.UcAppUI1"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1">
+
+            <meta-data
+                    android:name="unityplayer.UnityActivity"
+                    android:value="true" />
+
+            <meta-data
+                    android:name="android.notch_support"
+                    android:value="true" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.unity3d.player.UCPlayerActivity2"
+                android:process=":miniapp202"
+                android:taskAffinity="com.daimajia.gold.UcAppUI2"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1">
+
+            <meta-data
+                    android:name="unityplayer.UnityActivity"
+                    android:value="true" />
+
+            <meta-data
+                    android:name="android.notch_support"
+                    android:value="true" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.unity3d.player.UCPlayerActivity3"
+                android:process=":miniapp203"
+                android:taskAffinity="com.daimajia.gold.UcAppUI3"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1">
+
+            <meta-data
+                    android:name="unityplayer.UnityActivity"
+                    android:value="true" />
+
+            <meta-data
+                    android:name="android.notch_support"
+                    android:value="true" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.bytedance.bdp.unitycontainer.launch.UCLaunchActivity0"
+                android:process=":miniapp200"
+                android:taskAffinity="com.daimajia.gold.UcAppUI0"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.bytedance.bdp.unitycontainer.launch.UCLaunchActivity1"
+                android:process=":miniapp201"
+                android:taskAffinity="com.daimajia.gold.UcAppUI1"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.bytedance.bdp.unitycontainer.launch.UCLaunchActivity2"
+                android:process=":miniapp202"
+                android:taskAffinity="com.daimajia.gold.UcAppUI2"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1" />
+
+        <activity
+                android:theme="@ref/0x7f130356"
+                android:name="com.bytedance.bdp.unitycontainer.launch.UCLaunchActivity3"
+                android:process=":miniapp203"
+                android:taskAffinity="com.daimajia.gold.UcAppUI3"
+                android:excludeFromRecents="false"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="true"
+                android:documentLaunchMode="1" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.UcAppService200"
+                android:process=":miniapp200"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.UcAppService201"
+                android:process=":miniapp201"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.UcAppService202"
+                android:process=":miniapp202"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.tt.miniapphost.placeholder.UcAppService203"
+                android:process=":miniapp203"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.bytedance.bdp.bdpbase.ipc.extention.MainDefaultIpcService"
+                android:exported="false"
+                android:stopWithTask="true" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.appid"
+                android:value="appid=10346049" />
+
+        <meta-data
+                android:name="APPKEY"
+                android:value="10346049" />
+
+        <meta-data
+                android:name="com.vivo.push.app_id"
+                android:value="103773142" />
+
+        <meta-data
+                android:name="com.vivo.push.api_key"
+                android:value="49ec0fafecad0cb13d095f75db87d802" />
+
+        <provider
+                android:name="com.bytedance.apm.battery.dao.MonitorContentProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.apm" />
+
+        <service
+                android:name="com.bytedance.common.wschannel.server.WsChannelService"
+                android:exported="false"
+                android:process=":push"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.bytedance.common.wschannel.client.WsClientService"
+                android:exported="false"
+                android:stopWithTask="true" />
+
+        <provider
+                android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.WsChannelMultiProcessSharedProvider" />
+
+        <provider
+                android:name="com.bytedance.reparo.provider.ReparoProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.reparo" />
+
+        <activity
+                android:theme="@ref/0x0103000d"
+                android:name="com.bytedance.reparo.ReparoInfoActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.CustomOccasionActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoGlobalSettingsActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoNetDetailActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoNetRequestListActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoXUpdateTargetChannelActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoFilePreviewActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoLocalFileActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.ChannelUpdateInfoActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:name="com.bytedance.geckox.debugtool.ui.ChannelUpdateDetailActivity" />
+
+        <activity
+                android:theme="@ref/0x7f13012a"
+                android:label="@ref/0x7f1200bf"
+                android:name="com.bytedance.geckox.debugtool.ui.GeckoDebugMenuActivity" />
+
+        <service
+                android:name="com.bytedance.boost_multidex.OptimizeService"
+                android:exported="false"
+                android:process=":boost_multidex" />
+
+        <activity
+                android:name="com.ss.android.deviceregister.AActivity" />
+
+        <provider
+                android:name="com.bytedance.push.settings.storage.MainProcessSettingsProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.push.settings" />
+
+        <provider
+                android:name="com.bytedance.push.settings.storage.SmpProcessSettingsProvider"
+                android:exported="false"
+                android:process=":smp"
+                android:authorities="com.daimajia.gold.push.settings.smp" />
+
+        <receiver
+                android:name="com.bytedance.applog.collector.Collector"
+                android:enabled="true"
+                android:exported="false" />
+
+        <provider
+                android:name="com.bytedance.frankie.provider.FrankieProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.frankie" />
+
+        <activity
+                android:name="com.bytedance.bdinstall.migrate.MigrateDetectorActivity" />
+
+        <provider
+                android:name="com.bytedance.bdinstall.BDInstallProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.bdinstall.provider" />
+
+        <provider
+                android:name="com.luck.picture.lib.basic.PictureFileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.luckProvider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f16000b" />
+        </provider>
+
+        <service
+                android:name="com.luck.picture.lib.service.ForegroundService"
+                android:enabled="true"
+                android:foregroundServiceType="0x8" />
+
+        <activity
+                android:theme="@ref/0x7f130073"
+                android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130145"
+                android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f130375"
+                android:name="com.journeyapps.barcodescanner.CaptureActivity"
+                android:clearTaskOnLaunch="true"
+                android:stateNotNeeded="true"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x7f130375"
+                android:name="com.ss.android.qrcode.QrCodeScanActivity"
+                android:clearTaskOnLaunch="true"
+                android:stateNotNeeded="true"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.AlipayResultActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:configChanges="0x40003df4">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="cj_pay_alipay_sign" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f130112"
+                android:name="com.ss.android.caijing.cjpay.env.permission.PermissionHandlerActivity"
+                android:screenOrientation="3" />
+
+        <provider
+                android:name="com.squareup.picasso.PicassoProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.com.squareup.picasso" />
+
+        <activity
+                android:name="com.ss.android.dynamicart.homepage.HomepageActivity"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.ss.android.dynamicart.homepage" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name="com.bytedance.ug.sdk.share.impl.provider.ShareSdkProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.ug.sdk.share.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f160012" />
+        </provider>
+
+        <provider
+                android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.daimajia.gold.lifecycle-process" />
+
+        <service
+                android:name="androidx.room.MultiInstanceInvalidationService"
+                android:exported="false"
+                android:directBootAware="true" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.bytedance.sdk.open.douyin.ui.DouYinWebAuthorizeActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x480" />
+
+        <service
+                android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":pushservice"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                        android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.huawei.hms.support.api.push.PushProvider"
+                android:readPermission="com.daimajia.gold.permission.PUSH_PROVIDER"
+                android:writePermission="com.daimajia.gold.permission.PUSH_WRITE_PROVIDER"
+                android:exported="true"
+                android:authorities="com.daimajia.gold.huawei.push.provider" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:push"
+                android:value="push:6.10.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:push:push"
+                android:value="1" />
+
+        <activity
+                android:name="com.huawei.hms.support.api.push.TransActivity"
+                android:exported="false" />
+
+        <service
+                android:name="com.meizu.cloud.pushsdk.NotificationService"
+                android:exported="true" />
+
+        <receiver
+                android:name="com.meizu.cloud.pushsdk.SystemReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.cloud.pushservice.action.PUSH_SERVICE_START" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="sdkVersion"
+                android:value="3000" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_CODE"
+                android:value="50300" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_NAME"
+                android:value="5_3_0-C" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+                android:enabled="true"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:launchMode="3">
+
+            <meta-data
+                    android:name="supportStyle"
+                    android:value="scene|voip" />
+        </activity>
+
+        <provider
+                android:name="com.umeng.message.provider.MessageProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.umeng.message">
+
+            <grant-uri-permission
+                    android:pathPattern=".*" />
+        </provider>
+
+        <meta-data
+                android:name="com.bytedance.org.chromium.content.browser.SANDBOXED_SERVICES_NAME"
+                android:value="com.bytedance.org.chromium.content.app.SandboxedProcessService" />
+
+        <meta-data
+                android:name="com.bytedance.org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+                android:value="10" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService0"
+                android:exported="false"
+                android:process=":sandboxed_process1" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService1"
+                android:exported="false"
+                android:process=":sandboxed_process2" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService2"
+                android:exported="false"
+                android:process=":sandboxed_process3" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService3"
+                android:exported="false"
+                android:process=":sandboxed_process4" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService4"
+                android:exported="false"
+                android:process=":sandboxed_process5" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService5"
+                android:exported="false"
+                android:process=":sandboxed_process6" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService6"
+                android:exported="false"
+                android:process=":sandboxed_process7" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService7"
+                android:exported="false"
+                android:process=":sandboxed_process8" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService8"
+                android:exported="false"
+                android:process=":sandboxed_process9" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService9"
+                android:exported="false"
+                android:process=":sandboxed_process10" />
+
+        <meta-data
+                android:name="com.bytedance.org.chromium.content.browser.PRIVILEGED_SERVICES_NAME"
+                android:value="com.bytedance.org.chromium.content.app.PrivilegedProcessService" />
+
+        <meta-data
+                android:name="com.bytedance.org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+                android:value="5" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.PrivilegedProcessService0"
+                android:exported="false"
+                android:process=":privileged_process0" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.PrivilegedProcessService1"
+                android:exported="false"
+                android:process=":privileged_process1" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.PrivilegedProcessService2"
+                android:exported="false"
+                android:process=":privileged_process2" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.PrivilegedProcessService3"
+                android:exported="false"
+                android:process=":privileged_process3" />
+
+        <service
+                android:name="com.bytedance.org.chromium.content.app.PrivilegedProcessService4"
+                android:exported="false"
+                android:process=":privileged_process4" />
+
+        <meta-data
+                android:name="org.chromium.content.browser.SANDBOXED_SERVICES_NAME"
+                android:value="org.chromium.content.app.SandboxedProcessService" />
+
+        <meta-data
+                android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+                android:value="10" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService0"
+                android:exported="false"
+                android:process=":sandboxed_process1" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService1"
+                android:exported="false"
+                android:process=":sandboxed_process2" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService2"
+                android:exported="false"
+                android:process=":sandboxed_process3" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService3"
+                android:exported="false"
+                android:process=":sandboxed_process4" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService4"
+                android:exported="false"
+                android:process=":sandboxed_process5" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService5"
+                android:exported="false"
+                android:process=":sandboxed_process6" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService6"
+                android:exported="false"
+                android:process=":sandboxed_process7" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService7"
+                android:exported="false"
+                android:process=":sandboxed_process8" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService8"
+                android:exported="false"
+                android:process=":sandboxed_process9" />
+
+        <service
+                android:name="org.chromium.content.app.SandboxedProcessService9"
+                android:exported="false"
+                android:process=":sandboxed_process10" />
+
+        <activity
+                android:name="com.bytedance.lynx.webview.internal.TTWebSDKDebug"
+                android:launchMode="2"
+                android:configChanges="0xa0"
+                android:windowSoftInputMode="0x22" />
+
+        <provider
+                android:name="com.just.agentweb.AgentWebFileProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.AgentWebFileProvider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f160013" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x7f13033d"
+                android:name="com.just.agentweb.AgentActionFragment"
+                android:exported="false"
+                android:launchMode="0"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:theme="@ref/0x0103000b"
+                android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000b"
+                android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+                android:launchMode="2" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+                android:exported="false"
+                android:process=":downloader">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.ss.android.socialbase.downloader.remote" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" />
+
+        <service
+                android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" />
+
+        <provider
+                android:name="com.huawei.hms.aaid.InitProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.aaidinitprovider"
+                android:initOrder="500" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:opendevice"
+                android:value="opendevice:6.9.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:opendevice:push"
+                android:value="1" />
+
+        <activity
+                android:name="com.sina.weibo.sdk.web.WebActivity"
+                android:exported="false"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareStoryActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareChatActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareResultActivity"
+                android:launchMode="1"
+                android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" />
+
+        <service
+                android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="false" />
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:exported="false"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5AuthActivity"
+                android:exported="false"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.PayResultActivity"
+                android:exported="true"
+                android:launchMode="3"
+                android:configChanges="0x40003df4" />
+
+        <activity
+                android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0x40003df4"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.APayEntranceActivity"
+                android:exported="false"
+                android:configChanges="0x40003df4" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:base"
+                android:value="base:6.8.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:base:hmscore"
+                android:value="1" />
+
+        <meta-data
+                android:name="availableLoaded"
+                android:value="yes" />
+
+        <activity
+                android:name="com.bytedance.sdk.account.open.tt.impl.TTWebAuthorizeActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1300ec"
+                android:name="com.huawei.hms.activity.BridgeActivity"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:screenOrientation="3"
+                android:configChanges="0x40002f84"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+                android:name="com.huawei.hms.activity.EnableServiceActivity"
+                android:exported="false"
+                android:configChanges="0xda0" />
+
+        <provider
+                android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+                android:exported="false"
+                android:authorities="com.daimajia.gold.AGCInitializeProvider" />
+
+        <service
+                android:name="com.huawei.agconnect.core.ServiceDiscovery"
+                android:exported="false" />
+
+        <meta-data
+                android:name="_mp_channel"
+                android:value="update" />
+
+        <meta-data
+                android:name="_mp_locationUrl"
+                android:value="https://is.snssdk.com" />
+
+        <meta-data
+                android:name="_mp_routerScheme"
+                android:value="openjj" />
+
+        <meta-data
+                android:name="_mp_appId"
+                android:value="2606" />
+
+        <meta-data
+                android:name="_mp_lastCommitId"
+                android:value="7e5fbf1e4" />
+    </application>
+</manifest>

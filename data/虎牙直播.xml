@@ -1,0 +1,4788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="85546"
+        android:versionName="11.10.4"
+        android:compileSdkVersion="30"
+        android:compileSdkVersionCodename="11"
+        package="com.duowan.kiwi"
+        platformBuildVersionCode="30"
+        platformBuildVersionName="11">
+
+    <uses-sdk
+            android:minSdkVersion="21"
+            android:targetSdkVersion="31" />
+
+    <uses-permission
+            android:name="android.permission.INTERNET" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+            android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+            android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+            android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+            android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+            android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+            android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+            android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+            android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+            android:name="android.permission.CAMERA" />
+
+    <uses-permission
+            android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+            android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+            android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+            android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+            android:name="com.duowan.kiwi.openadsdk.permission.TT_PANGOLIN"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.duowan.kiwi.openadsdk.permission.TT_PANGOLIN" />
+
+    <uses-permission
+            android:name="ohos.permission.ACCESS_SEARCH_SERVICE" />
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true" />
+
+    <uses-feature
+            android:name="android.hardware.camera.front"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="true" />
+
+    <uses-feature
+            android:name="android.hardware.camera.flash"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.screen.landscape" />
+
+    <uses-feature
+            android:name="android.hardware.wifi"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.touchscreen" />
+
+    <permission
+            android:name="com.duowan.kiwi.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.duowan.kiwi.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+            android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <uses-permission
+            android:name="com.android.permission.GET_INSTALLED_APPS" />
+
+    <uses-permission
+            android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <supports-screens
+            android:anyDensity="true"
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true"
+            android:xlargeScreens="true" />
+
+    <queries>
+
+        <package
+                android:name="com.tencent.mm" />
+
+        <package
+                android:name="com.tencent.mobileqq" />
+
+        <package
+                android:name="com.ss.android.ugc.aweme" />
+
+        <package
+                android:name="com.ss.android.ugc.aweme.lite" />
+
+        <package
+                android:name="com.eg.android.AlipayGphone" />
+
+        <package
+                android:name="com.sina.weibo" />
+
+        <package
+                android:name="com.tencent.android.qqdownloader" />
+
+        <package
+                android:name="com.android.creator" />
+
+        <package
+                android:name="com.zhuoyi.security.lite" />
+
+        <package
+                android:name="com.freeme.secureguard" />
+
+        <package
+                android:name="com.android.secureguard" />
+
+        <package
+                android:name="com.mdid.msa" />
+
+        <package
+                android:name="com.samsung.android.deviceidservice" />
+
+        <package
+                android:name="com.coolpad.deviceidsupport" />
+
+        <package
+                android:name="com.heytap.openid" />
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                    android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-permission
+            android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-permission
+            android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+            android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+            android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+            android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+            android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+            android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+            android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+            android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+            android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <meta-data
+            android:name="ns_version"
+            android:value="1.10.1475" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+
+    <uses-permission
+            android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+
+    <uses-permission
+            android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+            android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+            android:name="com.duowan.kiwi.push.permission.MESSAGE"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.duowan.kiwi.push.permission.MESSAGE" />
+
+    <uses-permission
+            android:name="com.meizu.flyme.permission.PUSH" />
+
+    <uses-permission
+            android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+            android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+            android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+            android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+            android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <permission
+            android:name="com.duowan.kiwi.permission.PROCESS_PUSH_MSG"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.duowan.kiwi.permission.PUSH_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <permission
+            android:name="com.duowan.kiwi.permission.PUSH_WRITE_PROVIDER"
+            android:protectionLevel="0x2" />
+
+    <uses-permission
+            android:name="com.duowan.kiwi.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+            android:name="com.duowan.kiwi.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+            android:name="com.huya.pitayamock.permission.RECORD_BROADCAST" />
+
+    <uses-permission
+            android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <uses-feature
+            android:glEsVersion="0x30000" />
+
+    <uses-feature
+            android:name="android.hardware.microphone"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.touchscreen.multitouch"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.touchscreen.multitouch.distinct"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.location.gps"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.location"
+            android:required="false" />
+
+    <uses-feature
+            android:name="android.hardware.sensor.accelerometer"
+            android:required="false" />
+
+    <uses-permission
+            android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-permission
+            android:name="freemme.permission.msa" />
+
+    <uses-permission
+            android:name="freemme.permission.msa.SECURITY_ACCESS" />
+
+    <uses-permission
+            android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+            android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <uses-permission
+            android:name="mediatek.permission.ACCESS_APU_SYS" />
+
+    <application
+            android:theme="@ref/0x7f12035f"
+            android:label="@ref/0x7f110175"
+            android:icon="@ref/0x7f0e0000"
+            android:name="com.duowan.kiwi.TinkerApp"
+            android:allowBackup="false"
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:resizeableActivity="true"
+            android:networkSecurityConfig="@ref/0x7f140019"
+            android:roundIcon="@ref/0x7f0e0000"
+            android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+            android:allowAudioPlaybackCapture="true"
+            android:requestLegacyExternalStorage="true">
+
+        <meta-data
+                android:name="DYNAMIC_RES_PROJECT_ID"
+                android:value="kiwi" />
+
+        <meta-data
+                android:name="DYNAMIC_RES_ASSETS"
+                android:value="true" />
+
+        <meta-data
+                android:name="DYNAMIC_RES_SO"
+                android:value="true" />
+
+        <meta-data
+                android:name="DYNAMIC_RES_All32BITSO"
+                android:value="true" />
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+
+        <meta-data
+                android:name="pushsdkversion"
+                android:value="214.1.939" />
+
+        <meta-data
+                android:name="YY_TOKEN"
+                android:value="yym08and" />
+
+        <meta-data
+                android:name="YY_TOKEN_CRASH"
+                android:value="yym08and" />
+
+        <meta-data
+                android:name="HY_CHANNEL"
+                android:value="dev" />
+
+        <meta-data
+                android:name="HY_APPID"
+                android:value="@ref/0x7f1109ed" />
+
+        <meta-data
+                android:name="HY_APPKEY"
+                android:value="@ref/0x7f1109ee" />
+
+        <meta-data
+                android:name="YYPushRestart"
+                android:value="false" />
+
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="yAXFLmlgtNMG4RMmQORNXMm24Bl1YSRL" />
+
+        <meta-data
+                android:name="BRANCH_NAME"
+                android:value="default" />
+
+        <meta-data
+                android:name="IS_PRE_RELEASE"
+                android:value="1" />
+
+        <meta-data
+                android:name="CHECKOUT_REVISION"
+                android:value="0" />
+
+        <meta-data
+                android:name="BUILDER"
+                android:value="Linux#4.15.0-133-generic#amd64#root" />
+
+        <meta-data
+                android:name="BUILD_OWNER"
+                android:value="root" />
+
+        <meta-data
+                android:name="BUILD_DATE"
+                android:value="2023-12-25 11:16:07" />
+
+        <meta-data
+                android:name="HEAD_COMMIT"
+                android:value="275a767a8f55d4cdca07d576f7566c7f37c6741e" />
+
+        <meta-data
+                android:name="IS_WHITEBOX_TEST"
+                android:value="none" />
+
+        <meta-data
+                android:name="ABI_TYPE"
+                android:value="__ABI_TYPE_OF_NONE__" />
+
+        <meta-data
+                android:name="DEVELOP_BITRATE"
+                android:value="__DEVELOP_BITRATE_OF_NONE__" />
+
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="1074161280.000000" />
+
+        <meta-data
+                android:name="com.google.ar.core"
+                android:value="optional" />
+
+        <meta-data
+                android:name="VivoMultiWindow"
+                android:value="true" />
+
+        <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote" />
+
+        <meta-data
+                android:name="Mob-AppKey"
+                android:value="38823111786d1" />
+
+        <meta-data
+                android:name="Mob-AppSecret"
+                android:value="6f46d1cee2797b72c75963bcf93c3208" />
+
+        <meta-data
+                android:name="CMCC-AppKey"
+                android:value="300011876762" />
+
+        <meta-data
+                android:name="CMCC-AppSecret"
+                android:value="87D4378ACDA3A401F0D0EBD96EA27741" />
+
+        <activity
+                android:theme="@ref/0x7f120332"
+                android:name="com.duowan.kiwi.homepage.Homepage"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0"
+                android:hardwareAccelerated="@ref/0x7f050003">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="yykiwi"
+                        android:host="homepage" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="http"
+                        android:host="*"
+                        android:pathPattern=".*kw_dispatch_url.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="yykiwi"
+                        android:host="openurl" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="yykiwi"
+                        android:host="channel" />
+
+                <data
+                        android:scheme="kiwi"
+                        android:host="live" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="yykiwi"
+                        android:host="recordedVideo" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.debug.DebugSoftwareSetting"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120361"
+                android:name="com.duowan.biz.ui.DebugModeActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f120366"
+                android:name="com.duowan.kiwi.adsplash.view.SecondAdSplashActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.debug.DebugDialogTaskActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.debug.DebugHomePageGuideActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.debug.DebugRevenueFeatureActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.debug.DebugDiskCacheActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.props.impl.fragment.PropsDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.noble.impl.debug.PrivilegeDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.userpet.impl.debug.UserPetDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.props.impl.fragment.RichTextSampleActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120023"
+                android:label="@ref/0x7f1114f1"
+                android:name="com.duowan.kiwi.pay.debug.GoldBeanDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12036c"
+                android:name="com.duowan.kiwi.simpleactivity.SplashActivity"
+                android:exported="true"
+                android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MAIN" />
+
+                <category
+                        android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f120368"
+                android:name="com.duowan.kiwi.appstartintercept.impl.CrashRecoveryModActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x470" />
+
+        <activity
+                android:theme="@ref/0x7f120368"
+                android:name="com.duowan.kiwi.appstartintercept.impl.PrivacyDlgActivity"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x470" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:label="@ref/0x7f110333"
+                android:name="com.duowan.kiwi.appstartintercept.impl.BrowseModeActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x470" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.homepage.BrowseModeHomePage"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0xfa0" />
+
+        <activity
+                android:theme="@ref/0x7f12033e"
+                android:name="com.duowan.kiwi.liveroom.BrowseModeChannelPage"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x2fa0"
+                android:windowSoftInputMode="0x12"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120022"
+                android:name="com.duowan.kiwi.app.ClearTasktivity"
+                android:excludeFromRecents="true"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x01030055"
+                android:name="com.duowan.kiwi.app.MediateActivity" />
+
+        <activity
+                android:label="@ref/0x7f110261"
+                android:name="com.duowan.kiwi.barrage.api.debug.BarrageConfigActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110508"
+                android:name="com.duowan.kiwi.live.debug.VRConfigActivity"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.duowan.kiwi.launch.GangUpRebootService"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.duowan.kiwi.ui.utils.AppErrorActivity"
+                android:process=":dummy" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.list.homepage.SortList"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f12036e"
+                android:label="@ref/0x7f1113c0"
+                android:name="com.duowan.kiwi.search.impl.SearchHomeActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x34" />
+
+        <activity
+                android:label="@ref/0x7f111556"
+                android:name="com.duowan.biz.subscribe.impl.tab.subscribedetail.MomentDetailActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f1112db"
+                android:name="com.duowan.kiwi.game.recorder.RecordRankActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f111262"
+                android:name="com.duowan.kiwi.personalpage.pages.userweekrank.UserWeekRank"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f11065a"
+                android:name="com.duowan.kiwi.personalpage.pages.userbadge.UserFansBadgeList"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f11185f"
+                android:name="com.duowan.kiwi.userinfo.UserInfoActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f12035f"
+                android:label="@ref/0x7f111265"
+                android:name="com.duowan.kiwi.personalpage.pages.FavoriteAnchorActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f1110b7"
+                android:name="com.duowan.kiwi.personalpage.pages.UserPrivacySetting"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f111163"
+                android:name="com.duowan.kiwi.personalpage.pages.PrivacySetting"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f12035f"
+                android:label="@ref/0x7f1110bc"
+                android:name="com.duowan.kiwi.personalpage.pages.PersonalPrivacySetting"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f1118a6"
+                android:name="com.duowan.kiwi.personalpage.pages.HighLightMarkActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.duowan.kiwi.list.hotcategory.HotCategory" />
+
+        <activity
+                android:label="@ref/0x7f111099"
+                android:name="com.duowan.kiwi.personalpage.pages.UserPrivacyPermissionSetting"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f111870"
+                android:name="com.duowan.kiwi.userinfo.ModifySex"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.immersevideo.impl.ImmerseVideoActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.login.OakLoginVerifyWebActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.feedback.OakFeedBackActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.verification.OakVerifyActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:name="com.duowan.kiwi.hybrid.activity.webview.bindphone.OakBindPhoneActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120366"
+                android:name="com.duowan.kiwi.listactivity.favoritem.KeywordsChoiceActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12034a"
+                android:name="com.duowan.biz.upgrade.UpgradeActivity"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f12036c"
+                android:name="com.duowan.kiwi.feedback.impl.FaqMainActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:label="@ref/0x7f1106a3"
+                android:name="com.duowan.kiwi.feedback.impl.FaqDetailsActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12036c"
+                android:name="com.duowan.kiwi.feedback.impl.FaqListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12036c"
+                android:name="com.duowan.kiwi.feedback.impl.FeedbackDetailActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.list.entertainment.MobileLiveSingleFragmentActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x14" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.presentationui.KiwiWebRemoteActivity"
+                android:process=":remoteweb"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.presentationui.RemoteTransformActivity"
+                android:process=":remoteweb"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10" />
+
+        <service
+                android:label="CoreService"
+                android:name="com.duowan.kiwi.services.downloadservice.DownloadService"
+                android:enabled="true"
+                android:exported="false"
+                android:priority="1000" />
+
+        <meta-data
+                android:name="PushServiceAction"
+                android:value="com.yy.pushsvc.IPushSvc.com.duowan.kiwi" />
+
+        <receiver
+                android:name="com.igexin.sdk.PushReceiver"
+                android:enabled="false"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.kiwi.push.dummy" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.duowan.kiwi.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.duowan.kiwi.qqapi.QQPayEntryActivity"
+                android:exported="true"
+                android:launchMode="1">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="qwallet1101115626" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:label="@ref/0x7f110175"
+                android:name="com.duowan.kiwi.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:taskAffinity="com.duowan.kiwi"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="tencent1101115626" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="tencent1103317792" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:screenOrientation="3"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+                android:exported="false"
+                android:configChanges="0xa0" />
+
+        <activity
+                android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+                android:exported="false"
+                android:configChanges="0xa0"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareResultActivity"
+                android:exported="true"
+                android:launchMode="1"
+                android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.duowan.plugin.base.activity.DWProxyActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x490" />
+
+        <activity
+                android:name="com.duowan.plugin.base.activity.DWProxyFragmentActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x490" />
+
+        <service
+                android:name="com.duowan.plugin.base.service.DWProxyService" />
+
+        <meta-data
+                android:name="appKey"
+                android:value="18" />
+
+        <meta-data
+                android:name="SendMsgSavely"
+                android:value="true" />
+
+        <meta-data
+                android:name="SendMsgSavely"
+                android:value="true" />
+
+        <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="52a92d1b56240b901a0cd772" />
+
+        <meta-data
+                android:name="UMENG_MESSAGE_SECRET"
+                android:value="bff3fb887dcf7a8204853f735e5ccc4e" />
+
+        <meta-data
+                android:name="com.vivo.push.app_id"
+                android:value="10639" />
+
+        <meta-data
+                android:name="com.vivo.push.api_key"
+                android:value="99c794b9-77a5-4e01-b10a-5a6670456026" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.appid"
+                android:value="10132507" />
+
+        <meta-data
+                android:name="EasyGoClient"
+                android:value="true" />
+
+        <activity
+                android:theme="@ref/0x01030055"
+                android:name="com.huya.mtp.pushsvc.impl.PushHuaweiActivity"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="customscheme-18"
+                        android:host="com.yy.pushsvc.impl"
+                        android:path="/notify_detail" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="com.duowan.kiwi"
+                        android:host="com.yy.pushsvc.impl"
+                        android:path="/notify_detail" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.list.active.ActiveEventActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.category.ui.SingleCategoryDialogActivity"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.baidu.speech.VoiceRecognitionService"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x0103000b"
+                android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+                android:exported="false"
+                android:screenOrientation="1"
+                android:configChanges="0x1a0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.duowan.kiwi.im.ui.base.IMSingleFragmentActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:label="@ref/0x7f1110af"
+                android:name="com.duowan.kiwi.personalpage.PersonalPageActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.huya.debug.TestSharePreferenceActivity" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.videopage.ui.HighlightMarkEditActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2fa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.immersiveplayer.impl.ImmersiveplayActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2fa0"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.videopage.complex.ComplexMomentActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:label="@ref/0x7f1109cf"
+                android:name="com.duowan.kiwi.videopage.hotrecvideos.HotRecVideoActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:label="@ref/0x7f1109ce"
+                android:name="com.duowan.kiwi.videopage.hotrecvideos.HotRecVideoListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x01030005"
+                android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+                android:multiprocess="true"
+                android:screenOrientation="1"
+                android:configChanges="0x4b0" />
+
+        <activity
+                android:theme="@ref/0x01030005"
+                android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+                android:multiprocess="true"
+                android:screenOrientation="0"
+                android:configChanges="0x4b0" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140012" />
+        </provider>
+
+        <provider
+                android:name="com.duowan.kiwi.download.provider.GameDownloadProvider"
+                android:exported="true"
+                android:authorities="com.duowan.kiwi.gameProvider"
+                android:grantUriPermissions="true" />
+
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f14000d" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x7f1203a8"
+                android:name="com.duowan.kiwi.presentationui.RemoteWebActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.duowan.kiwi.game.notlive.FreezeActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.webank.facelight.ui.FaceVerifyActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.webank.facelight.ui.FaceProtocalActivity"
+                android:exported="false"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.ar.impl.sceneform.activity.ArLiveActivity"
+                android:exported="false"
+                android:screenOrientation="0"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f12033f"
+                android:name="com.duowan.kiwi.ar.impl.sceneform.activity.ArSceneActivity"
+                android:exported="false"
+                android:screenOrientation="0"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.duowan.kiwi.ar.impl.unity.activity.VirtualRoomActivity"
+                android:exported="false"
+                android:screenOrientation="0"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x12"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.ar.impl.unity.activity.VirtualMatchActivity"
+                android:exported="false"
+                android:screenOrientation="0"
+                android:configChanges="0x480"
+                android:windowFullscreen="true"
+                android:windowSoftInputMode="0x30"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.ar.impl.unity.activity.UnityAppActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="0"
+                android:configChanges="0x480"
+                android:windowFullscreen="true"
+                android:windowSoftInputMode="0x30"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.duowan.kiwi.hybrid.react.mock.RNExtensionMockActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.hybrid.lizard.debug.LizardDebugActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.hybrid.lizard.list.LZGeneralListActivity" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.hybrid.flutter.KiwiCrossPlatformActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.hybrid.miniapp.MiniAppFragmentHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.duowan.kiwi.hybrid.HybridCrashViewer" />
+
+        <activity
+                android:name="com.duowan.kiwi.pluginbase.debug.PluginDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.pluginbase.debug.QigsawInstallerPage"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f1203a8"
+                android:label="@ref/0x7f11022d"
+                android:name="com.duowan.kiwi.base.login.ui.LoginAndAuthActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.huyaudbunify.activity.InnerAuthLoginActivity"
+                android:enabled="true"
+                android:exported="true" />
+
+        <provider
+                android:name="com.huyaudbunify.provider.InnerAuthLoginProvider"
+                android:enabled="true"
+                android:exported="true"
+                android:authorities="com.duowan.kiwi.InnerAuthLoginProvider" />
+
+        <activity
+                android:theme="@ref/0x7f120360"
+                android:label="@ref/0x7f11022d"
+                android:name="com.duowan.kiwi.base.login.ui.AuthActivity"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="kiwi"
+                        android:host="auth" />
+
+                <data
+                        android:scheme="kiwi_udb"
+                        android:host="auth" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f1203a8"
+                android:label="@ref/0x7f110c23"
+                android:name="com.duowan.kiwi.loginui.impl.activity.LoginActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f1203a8"
+                android:label="@ref/0x7f110c23"
+                android:name="com.duowan.kiwi.loginui.impl.pages.MobileAreaPickActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f1201d5"
+                android:name="com.duowan.kiwi.loginui.impl.activity.LoginTransferActivity"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:name="com.duowan.kiwi.loginui.impl.activity.ThirdLoginTransferActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f1107e7"
+                android:name="com.duowan.kiwi.loginui.impl.gamesdk.GameSdkLoginActivity"
+                android:exported="true"
+                android:screenOrientation="1"
+                android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.kiwi.sdk.action.login" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="huya"
+                        android:host="gamesdklogin" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.duowan.debug.RefDebugTestActivity" />
+
+        <activity
+                android:name="com.duowan.debug.refcheck.ReportCheckDebugActivity" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.ad.page.ui.AdWithVideoActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f12036a"
+                android:name="com.duowan.kiwi.adsplash.view.GuidanceActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f111378"
+                android:name="com.duowan.kiwi.scan.impl.CaptureActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x1400" />
+
+        <service
+                android:label="虎牙直播"
+                android:name="com.duowan.kiwi.services.kiwiaccessibilityservice.KiwiAccessibilityService"
+                android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.accessibilityservice"
+                    android:resource="@ref/0x7f140000" />
+        </service>
+
+        <meta-data
+                android:name="miuiWidgetVersion"
+                android:value="1" />
+
+        <activity
+                android:theme="@ref/0x7f12036c"
+                android:name="com.duowan.kiwi.game.xiaomiwidget.WidgetTransferActivity"
+                android:exported="true"
+                android:finishOnTaskLaunch="false"
+                android:configChanges="0x470">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.kiwi.appwidget.action.WIDGET_CLICK" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f120336"
+                android:name="com.duowan.kiwi.game.recorder.NewRecordRankActivity" />
+
+        <activity
+                android:theme="@ref/0x7f12036e"
+                android:name="com.duowan.kiwi.search.impl.SearchResultActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.search.impl.HotSearchWordActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:name="com.huya.kiwi.im.impl.messagelist.IMMessageListActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.huya.kiwi.im.impl.messagelist.AIIMMessageListActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.debug.ImDebugActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.interact.ImInteractSettingActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.interact.IMInteractActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.share.IMShareActivity"
+                android:finishOnTaskLaunch="false"
+                android:excludeFromRecents="true"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f120151"
+                android:name="com.duowan.kiwi.im.ui.conversation.IMConversationListActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.ui.conversation.ImStrangerConversationActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:name="com.duowan.kiwi.im.ui.ImReportActivity"
+                android:launchMode="0"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:label="@ref/0x7f110ad1"
+                android:name="com.duowan.kiwi.im.ui.ImUnSubscriberChoiceActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f110ad1"
+                android:name="com.duowan.kiwi.im.ui.ImUnSubscriberSettingActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f110aba"
+                android:name="com.duowan.kiwi.im.ui.ImSettingActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:theme="@ref/0x7f120374"
+                android:name="com.huya.kiwi.loveletter.impl.ui.LoveLetterActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.listplayer.topic.TopicVideoActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:name="com.duowan.kiwi.matchcommunity.impl.activity.MatchCommunityCommunityPublisherActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.matchcommunity.impl.activity.MatchCommunityPublisherActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.matchcommunity.impl.activity.MatchCommunityActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.matchcommunity.impl.community.CommunityContentDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.matchcommunity.impl.community.CommunityReplyDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12032c"
+                android:name="com.duowan.kiwi.matchcommunity.impl.community.CommunityTopicSelectActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.base.moment.activity.CommentDetailListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.base.moment.activity.PublisherActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.base.moment.activity.TopicActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.base.moment.activity.DraftsActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110e00"
+                android:name="com.duowan.kiwi.base.moment.activity.MomentLotterySettingsActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110dff"
+                android:name="com.duowan.kiwi.base.moment.activity.MomentLotteryDetailActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:label="@ref/0x7f1100d8"
+                android:name="com.duowan.kiwi.base.moment.activity.AtSubsctibeActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.base.moment.feed.topic.TopicDetailActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.base.moment.feed.keyword.KeywordDetailActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:label="@ref/0x7f110c64"
+                android:name="com.duowan.kiwi.lottery.impl.activity.LotteryDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.VoucherListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.UnionVouchersListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.accompany.ui.MyCouponPageActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.order.AccompanyOrderDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.AppealActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.RefundActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.order.OrderToPayActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.SkillsActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.accompany.ui.SkillDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.accompany.ui.SkillPersonalActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.accompany.ui.PitayaSkillDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120338"
+                android:name="com.duowan.kiwi.accompany.ui.PitayaEvaluateListActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.debug.AccompanyMainActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.debug.AccompanyTestActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.debug.IMOrderStatusDebugActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.accompany.ui.debug.AccompanySkillListActivity" />
+
+        <activity
+                android:theme="@ref/0x7f120215"
+                android:name="com.duowan.kiwi.accompany.ui.order.evaluate.ui.EvaluationPopupWindow"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="我的照片墙"
+                android:name="com.duowan.kiwi.accompany.ui.MyPhotoWallActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120330"
+                android:name="com.duowan.kiwi.ranklist.rankinteraction.RankListActivity"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.duowan.kiwi.recorder.module.RecorderService"
+                android:enabled="true"
+                android:foregroundServiceType="0x20" />
+
+        <activity
+                android:theme="@ref/0x7f1203ab"
+                android:name="com.duowan.kiwi.springboard.impl.pages.H5JumpNativeActivity" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.list.hotcategory.HotCategoryActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.list.shake.ShakeActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120373"
+                android:name="com.duowan.kiwi.immersepage.impl.ImmersePageActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2fa0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:label="@ref/0x7f110e93"
+                android:name="com.duowan.kiwi.my.mypackage.MyPackageActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f12035f"
+                android:name="com.duowan.kiwi.gamecenter.impl.wechatsetting.WeChatReminderSettingActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.gamecenter.impl.downloadmgr.DownloadManagerApkActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f1107cc"
+                android:name="com.duowan.kiwi.gamecenter.impl.downloadmgr.DownloadManagerSettingActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.tvscreen.impl.lebo.LeboTestActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.discovery.LeagueMatchesActivity"
+                android:exported="false" />
+
+        <activity
+                android:label="@ref/0x7f110144"
+                android:name="com.duowan.kiwi.discovery.AllMatchesDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f11199d"
+                android:name="com.duowan.kiwi.discovery.page.DiscoveryExt"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:label="@ref/0x7f111522"
+                android:name="com.duowan.biz.subscribe.impl.mysubscribe.MySubscribeNotifySettingActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:label="@ref/0x7f110e91"
+                android:name="com.duowan.biz.subscribe.impl.mysubscribe.MySubscribe"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110e8c"
+                android:name="com.duowan.biz.subscribe.impl.myfans.MyFansNew"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f111588"
+                android:name="com.duowan.biz.subscribe.impl.tab.SingleSubscribe"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.biz.subscribe.impl.search.SubscribeSearchActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.personalpage.PersonalPortraitActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.personalpage.pages.PersonalCoverActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.duowan.kiwi.personalpage.pages.UserScenePermissionSetting"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.teenager.impl.activity.TeenagerLockActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.teenager.impl.activity.TeenagerActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.hybrid.activity.KiwiCrossPlatformActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x2da0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f120333"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.KiwiOakWebActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.huyaid.OakPropShopActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:theme="@ref/0x7f120365"
+                android:name="com.duowan.kiwi.hybrid.activity.webview.feedback.CustomerServiceActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="@ref/0x7f050003" />
+
+        <activity
+                android:label="@ref/0x7f111456"
+                android:name="com.duowan.kiwi.settings.MyNewsPromptSetting"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f111223"
+                android:name="com.duowan.kiwi.settings.PushNotificationActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f11145e"
+                android:name="com.duowan.kiwi.settings.Setting"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f111899"
+                android:name="com.duowan.kiwi.settings.Version"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f1116d6"
+                android:name="com.duowan.kiwi.settings.License"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:label="@ref/0x7f111479"
+                android:name="com.duowan.kiwi.settings.DarkModeSettingsActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x200" />
+
+        <activity
+                android:theme="@ref/0x7f120336"
+                android:name="com.duowan.kiwi.userinfo.PitayaUserInfoActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1203a8"
+                android:name="com.duowan.kiwi.userinfo.FillNickActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f110dbf"
+                android:name="com.duowan.kiwi.userinfo.ModifyHuyaIdActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.my.video.MyVideoActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.my.video.MyVideoEditActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:label="@ref/0x7f110de2"
+                android:name="com.duowan.kiwi.userinfo.nickname.ModifyNickname"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110de5"
+                android:name="com.duowan.kiwi.userinfo.ModifySign"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120336"
+                android:label="@ref/0x7f1109ab"
+                android:name="com.duowan.kiwi.userinfo.historywatch.MyHistoryFavour"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110dac"
+                android:name="com.duowan.kiwi.userinfo.ModifyAnchorAnnouncement"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f1116db"
+                android:name="com.duowan.kiwi.base.activity.GoldenTicketDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f1102df"
+                android:name="com.duowan.kiwi.base.activity.BillDetailActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="@ref/0x7f110ed1"
+                android:name="com.duowan.kiwi.base.activity.NewPayActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:label="@ref/0x7f110e9c"
+                android:name="com.duowan.kiwi.base.activity.MyPrize"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:theme="@ref/0x7f120330"
+                android:name="com.yalantis.ucrop.UCropActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f12033e"
+                android:name="com.duowan.kiwi.liveroom.ChannelPage"
+                android:exported="true"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x2fa0"
+                android:windowSoftInputMode="0x12"
+                android:hardwareAccelerated="@ref/0x7f050003">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.kiwi.CHANNEL_ACTIVITY" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x7f120331"
+                android:label="@ref/0x7f110954"
+                android:name="com.duowan.kiwi.heartroom.impl.HeartRoomActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.kiwi.heartroom.impl.Return2HeartRoomActivity" />
+
+        <service
+                android:name="com.duowan.kiwi.heartroom.impl.HeartRoomService"
+                android:enabled="true"
+                android:exported="false"
+                android:foregroundServiceType="0x80" />
+
+        <activity
+                android:theme="@ref/0x7f120320"
+                android:name="com.kiwi.phoenix.picker.ui.camera.CameraActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120320"
+                android:name="com.kiwi.phoenix.picker.ui.picker.PickerActivity"
+                android:screenOrientation="4"
+                android:configChanges="0x7b0" />
+
+        <activity
+                android:theme="@ref/0x7f120320"
+                android:name="com.kiwi.phoenix.picker.ui.picker.PreviewActivity"
+                android:screenOrientation="4"
+                android:configChanges="0x7b0" />
+
+        <activity
+                android:theme="@ref/0x7f120320"
+                android:name="com.kiwi.phoenix.picker.ui.PreviewMomentActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x7b0" />
+
+        <activity
+                android:theme="@ref/0x7f120320"
+                android:name="com.kiwi.phoenix.picker.ui.editor.PictureEditActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120593"
+                android:name="com.kiwi.phoenix.picker.ui.editor.TextInputActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x15" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.duowan.kiwi.yybcloudsdk.impl.login.CloudGameWXEntryActivity"
+                android:exported="true"
+                android:taskAffinity="com.tencent.android.qqdownloader"
+                android:launchMode="2"
+                android:configChanges="0x4f0" />
+
+        <activity
+                android:name="com.duowan.kiwi.yybcloudsdk.impl.yybdebug.CloudGameDebugMainActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x01030007"
+                android:name="com.duowan.kiwi.yybcloudsdk.impl.yybdebug.CloudGameDebugPlayActivity"
+                android:screenOrientation="11"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.kiwi.yybcloudsdk.impl.YybCloudGameLaunchActivity"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0xd80"
+                android:supportsPictureInPicture="true" />
+
+        <activity
+                android:name="com.duowan.kiwi.push.fakepush.HeadsUpDemoActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.push.debug.PushDebugSettingActivity" />
+
+        <activity
+                android:theme="@ref/0x7f1203ab"
+                android:name="com.duowan.kiwi.push.fakepush.PushTransparentActivity"
+                android:finishOnTaskLaunch="false"
+                android:excludeFromRecents="true"
+                android:configChanges="0x4f0" />
+
+        <activity
+                android:theme="@ref/0x7f1203ab"
+                android:name="com.duowan.kiwi.push.PushTransferActivity"
+                android:exported="true"
+                android:finishOnTaskLaunch="false"
+                android:excludeFromRecents="true"
+                android:configChanges="0x470" />
+
+        <activity
+                android:name="com.duowan.kiwi.background.impl.Return2AppActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="yykiwi"
+                        android:host="return" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.duowan.kiwi.background.impl.KeepAliveService"
+                android:exported="false"
+                android:stopWithTask="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:name="com.duowan.kiwi.common.TestActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.waterwaveprogress.TestWaveActivity" />
+
+        <activity
+                android:name="com.duowan.kiwi.ui.widget.SingleFragmentActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f120338"
+                android:name="com.duowan.kiwi.ui.widget.SingleFragmentV4Activity"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:theme="@ref/0x7f1203ab"
+                android:name="com.duowan.kiwi.ui.widget.DialogActivity" />
+
+        <provider
+                android:name="com.huya.component.user.helper.SPContentProvider_Decorated_livesdkdynamic"
+                android:exported="false"
+                android:process=":sphelper"
+                android:authorities="com.duowan.kiwi.live.sphelper" />
+
+        <service
+                android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="com.huya.mtp.hyhotfix.tinker.service.SampleResultService"
+                android:exported="false" />
+
+        <service
+                android:name="com.huya.mtp.hyhotfix.basic.HotFixService"
+                android:exported="false"
+                android:process=":cloudpatch" />
+
+        <service
+                android:name="com.huya.mtp.hyhotfix.basic.HotFixReportService"
+                android:exported="false" />
+
+        <activity
+                android:label="@ref/0x7f111130"
+                android:name="com.google.zxing.client.android.PreferencesConsts"
+                android:stateNotNeeded="true" />
+
+        <activity
+                android:label="@ref/0x7f111376"
+                android:name="com.google.zxing.client.android.book.SearchBookContentsActivity"
+                android:exported="false"
+                android:stateNotNeeded="true"
+                android:screenOrientation="6">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.google.zxing.client.android.share.ShareActivity"
+                android:exported="false"
+                android:stateNotNeeded="true"
+                android:screenOrientation="2">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.google.zxing.client.android.SHARE" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:label="@ref/0x7f110302"
+                android:name="com.google.zxing.client.android.share.BookmarkPickerActivity"
+                android:stateNotNeeded="true" />
+
+        <activity
+                android:label="@ref/0x7f110177"
+                android:name="com.google.zxing.client.android.share.AppPickerActivity"
+                android:stateNotNeeded="true" />
+
+        <service
+                android:name="com.kiwi.kapm.AnalyzerService"
+                android:exported="false"
+                android:process=":kAPMAnalyzer" />
+
+        <provider
+                android:name="com.huya.picture.lib.basic.PictureFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.luckProvider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140028" />
+        </provider>
+
+        <service
+                android:name="com.huya.picture.lib.service.ForegroundService"
+                android:enabled="true"
+                android:foregroundServiceType="0x8" />
+
+        <activity
+                android:theme="@ref/0x7f12008c"
+                android:name="com.huya.picture.lib.basic.PictureSelectorSupporterActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f12020f"
+                android:name="com.huya.picture.lib.basic.PictureSelectorTransparentActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f12008c"
+                android:name="com.huya.gallery.activity.BeautyCameraActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f12008c"
+                android:name="com.huya.gallery.activity.FaceDetectActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huya.mtp.pushsvc.impl.KeepAliveActivity"
+                android:exported="true"
+                android:process=":pushservice"
+                android:taskAffinity="com.igexin.sdk.PushActivityTask"
+                android:excludeFromRecents="true" />
+
+        <service
+                android:name="com.huya.mtp.pushsvc.JobSchedulerService"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+                android:name="com.huya.mtp.pushsvc.services.RemoteService"
+                android:exported="true" />
+
+        <receiver
+                android:name="com.huya.mtp.pushsvc.WakeUpReceiver"
+                android:enabled="false"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.yy.pushsvc.WakeUpBroadcast" />
+
+                <action
+                        android:name="android.intent.action.USER_PRESENT" />
+
+                <action
+                        android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:label="PushService"
+                android:name="com.huya.mtp.pushsvc.PushService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <receiver
+                android:name="com.huya.mtp.push.YYPushReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.pushsrv.18" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.huya.mtp.pushsvc.thirdparty.HuaweiPushService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.taobao.accs.ChannelService"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.taobao.accs.data.MsgDistributeService"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.taobao.accs.EventReceiver"
+                android:exported="true"
+                android:process=":channel" />
+
+        <receiver
+                android:name="com.taobao.accs.ServiceReceiver"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.taobao.accs.internal.AccsJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false"
+                android:process=":channel" />
+
+        <service
+                android:name="com.taobao.accs.ChannelService$KernelService"
+                android:exported="false"
+                android:process=":channel" />
+
+        <service
+                android:name="org.android.agoo.accs.AgooService"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.taobao.agoo.AgooCommondReceiver"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.kiwi.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.umeng.message.UmengIntentService"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.XiaomiIntentService"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.message.sendmessage.action" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.umeng.message.UmengDownloadResourceService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <service
+                android:name="com.umeng.message.UmengMessageIntentReceiverService"
+                android:exported="true"
+                android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                        android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.umeng.message.provider.MessageProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.umeng.message">
+
+            <grant-uri-permission
+                    android:pathPattern=".*" />
+        </provider>
+
+        <service
+                android:name="com.xiaomi.push.service.XMJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.xiaomi.push.service.XMPushService"
+                android:enabled="true"
+                android:process=":pushservice" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+                android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+                android:enabled="true"
+                android:exported="true" />
+
+        <service
+                android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+                android:enabled="true" />
+
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.PingReceiver"
+                android:exported="false"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.huya.mtp.pushsvc.thirdparty.PushXiaomiPushReceiver"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                        android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huya.mtp.pushsvc.impl.PushOppoActivity"
+                android:exported="true"
+                android:process=":oppoPush">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.pushsdk.OPPO.CKLICK_NOTIFYMESSAGE" />
+
+                <action
+                        android:name="com.coloros.opush.action.TEST_INNER" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name="com.huya.mtp.pushsvc.thirdparty.PushMeizuPushReceiver"
+                android:permission="com.meizu.cloud.push.permission.MESSAGE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                        android:name="com.duowan.kiwi" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.vivo.push.sdk.service.CommandClientService"
+                android:permission="com.push.permission.UPSTAGESERVICE"
+                android:exported="true" />
+
+        <receiver
+                android:name="com.huya.mtp.pushsvc.thirdparty.PushVivoPushReceiver"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+                android:exported="true" />
+
+        <activity
+                android:theme="@ref/0x01030055"
+                android:name="com.huya.mtp.pushsvc.impl.PushVivoActivity"
+                android:exported="true"
+                android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <category
+                        android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="com.duowan.kiwi"
+                        android:host="com.vivo.push.sdk"
+                        android:path="/detail" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+                android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+                android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                        android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+                android:permission="com.duowan.kiwi.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                        android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name="com.huawei.hms.support.api.push.PushReceiver"
+                android:permission="com.duowan.kiwi.permission.PROCESS_PUSH_MSG"
+                android:exported="true"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                        android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:theme="@ref/0x7f120196"
+                android:name="com.huya.permissions.bridge.BridgeActivity"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:launchMode="2" />
+
+        <provider
+                android:name="com.huya.permissions.PermissionFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140011" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.yy.open.activity.BridgeActivity" />
+
+        <activity
+                android:theme="@ref/0x7f12008c"
+                android:name="com.huya.lib.camerax.PictureCameraActivity"
+                android:configChanges="0x4a0" />
+
+        <uses-library
+                android:name="androidx.window.extensions"
+                android:required="false" />
+
+        <uses-library
+                android:name="androidx.window.sidecar"
+                android:required="false" />
+
+        <service
+                android:name="androidx.camera.core.impl.MetadataHolderService"
+                android:enabled="false"
+                android:exported="false">
+
+            <meta-data
+                    android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                    android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <provider
+                android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.duowan.kiwi.lifecycle-process" />
+
+        <service
+                android:label="NewDownloadService"
+                android:name="com.huya.downloadmanager.service.NewDownloadService"
+                android:enabled="true"
+                android:exported="false"
+                android:priority="1000" />
+
+        <service
+                android:label="NewRemoteDownloadService"
+                android:name="com.huya.downloadmanager.service.NewRemoteDownloadService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":download"
+                android:priority="1000" />
+
+        <service
+                android:name="com.meizu.cloud.pushsdk.NotificationService"
+                android:exported="true" />
+
+        <receiver
+                android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+                android:permission="com.meizu.flyme.permission.PUSH"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="androidx.room.MultiInstanceInvalidationService"
+                android:exported="false"
+                android:directBootAware="true" />
+
+        <service
+                android:name="com.huya.android.qigsaw.core.splitinstall.remote.SplitInstallService"
+                android:exported="false">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huya.android.play.core.splitinstall.BIND_SPLIT_INSTALL_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name="com.huya.android.qigsaw.core.splitinstall.SplitCleanService"
+                android:exported="false" />
+
+        <service
+                android:name="com.huya.android.qigsaw.core.splitrequest.splitinfo.SplitUpdateService"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x7f120317"
+                android:name="com.huya.android.qigsaw.core.DefaultObtainUserConfirmationDialog"
+                android:exported="false"
+                android:screenOrientation="3" />
+
+        <activity
+                android:name="com.huya.hybrid.floatwindow.FloatActivity" />
+
+        <activity
+                android:name="com.huya.hybrid.react.ui.impl.OAKReactHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xda0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+        <activity
+                android:theme="@ref/0x7f12016c"
+                android:label="@ref/0x7f1116c5"
+                android:name="com.neo1946.fpsmonitor.KayzingActivity" />
+
+        <meta-data
+                android:name="SDK_VERSION"
+                android:value="1.24.231" />
+
+        <service
+                android:name="com.hpplay.sdk.source.process.LelinkSdkService"
+                android:exported="false"
+                android:process=":lelinkps">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hpplay.sdk.source.LelinkSdkService.ACTION" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.hpplay.sdk.source.permission.PermissionBridgeActivity"
+                android:exported="false"
+                android:process=":lelinkps"
+                android:excludeFromRecents="true" />
+
+        <receiver
+                android:name="com.hpplay.sdk.source.process.LelinkReceiver"
+                android:exported="false"
+                android:process=":lelinkps">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.hpplay.source.service.close" />
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name="com.duowan.logcat.LogcatService"
+                android:exported="false"
+                android:process=":logcat" />
+
+        <meta-data
+                android:name="flutterProjectType"
+                android:value="module" />
+
+        <meta-data
+                android:name="flutterEmbedding"
+                android:value="2" />
+
+        <activity
+                android:name="com.huya.hybrid.flutter.ui.impl.HYFlutterHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.huya.oak.miniapp.app.MiniAppGlobalHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0xda0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.huya.lizard.sdk.devHelpers.LZTestActivity" />
+
+        <service
+                android:name="com.huya.sm.manager.HServiceManagerService" />
+
+        <provider
+                android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140005" />
+        </provider>
+
+        <provider
+                android:name="com.RNFetchBlob.RNFetchBlobFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.provider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140027" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+                android:exported="false"
+                android:configChanges="0x480">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+
+            <meta-data
+                    android:name="hnc-theme"
+                    android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar" />
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+                android:exported="false"
+                android:configChanges="0x4a0">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+
+            <meta-data
+                    android:name="hnc-theme"
+                    android:value="androidhnext:style/Theme.Magic.Translucent" />
+        </activity>
+
+        <provider
+                android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.updateSdk.fileProvider"
+                android:grantUriPermissions="true" />
+
+        <activity
+                android:theme="@ref/0x7f1201ef"
+                android:name="com.huya.hybrid.webview.activity.impl.OAKWebViewHostActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:name="com.huya.hybrid.webview.activity.RedBoxActivity" />
+
+        <uses-library
+                android:name="com.huawei.nb.searchmanager"
+                android:required="false" />
+
+        <uses-library
+                android:name="com.huawei.searchservice"
+                android:required="false" />
+
+        <service
+                android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":patch" />
+
+        <service
+                android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:exported="false" />
+
+        <uses-library
+                android:name="libai_fmk_dnnacl.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libcpucl.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_binary_model_runtime.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_enhance.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_hcl_model_runtime.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_ir_build.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_ir_infershape.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_ir.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai_v1cl.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libhiai.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmodelcrypto.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libai_client.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libai_hidl_request_client.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libai_fmk_memory_manager.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libcdsprpc.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libneuronusdk_adapter.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libapuwareutils_v2.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libapuwareapusys_v2.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libapuwarexrp_v2.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libapuwareutils.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libapuwarehmp.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libcmdl_ndk.mtk.vndk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libcmdl_ndk.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libnir_neon_driver_ndk.mtk.vndk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libarmnn_ndk.mtk.vndk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libVkLayer_mtk_rt_sdk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmvpuop_mtk_nn.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmvpuop_mtk_cv.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmvpu_runtime_pub.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmvpu_engine_pub.mtk.so"
+                android:required="false" />
+
+        <uses-library
+                android:name="libmvpu_pattern_pub.mtk.so"
+                android:required="false" />
+
+        <receiver
+                android:name="com.umeng.message.UmengNotificationReceiver"
+                android:exported="false" />
+
+        <activity
+                android:name="com.umeng.message.UmengNotificationClickActivity"
+                android:exported="false" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.message.notify.UPushMessageNotifyActivity"
+                android:exported="false"
+                android:taskAffinity="com.duowan.kiwi.u_push"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:screenOrientation="3" />
+
+        <activity-alias
+                android:name="com.umeng.message.UMessageNotifyActivity"
+                android:exported="true"
+                android:taskAffinity="com.duowan.kiwi.u_push"
+                android:targetActivity="com.umeng.message.notify.UPushMessageNotifyActivity">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.umeng.message.action.notify" />
+            </intent-filter>
+        </activity-alias>
+
+        <provider
+                android:name="com.umeng.union.component.UMUnionProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.umeng.union" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.union.component.UMUnionActivity"
+                android:exported="false"
+                android:taskAffinity="com.duowan.kiwi.u_union"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:screenOrientation="3" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.union.component.UMWebViewActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0x4e0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.union.component.UMDownloadInfoActivity"
+                android:exported="false"
+                android:launchMode="2"
+                android:configChanges="0x4e0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.umeng.union.component.UMDownloadNtfClickActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="3"
+                android:configChanges="0x4e0" />
+
+        <receiver
+                android:name="com.umeng.union.component.UMUnionReceiver"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.umeng.union.component.UMDownloadReceiver"
+                android:exported="false" />
+
+        <provider
+                android:name="com.umeng.union.component.UMUnionFileProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.um_file_provider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140030" />
+        </provider>
+
+        <meta-data
+                android:name="sdk_version_vivo"
+                android:value="484" />
+
+        <meta-data
+                android:name="local_iv"
+                android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_CODE"
+                android:value="50602" />
+
+        <meta-data
+                android:name="MIPUSH_SDK_VERSION_NAME"
+                android:value="5_6_2-C" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+                android:enabled="true"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:launchMode="3">
+
+            <meta-data
+                    android:name="supportStyle"
+                    android:value="scene|voip" />
+        </activity>
+
+        <meta-data
+                android:name="sdkVersion"
+                android:value="3100" />
+
+        <service
+                android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+                android:enabled="true"
+                android:exported="true"
+                android:process=":pushservice"
+                android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                        android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.huawei.hms.support.api.push.PushProvider"
+                android:readPermission="com.duowan.kiwi.permission.PUSH_PROVIDER"
+                android:writePermission="com.duowan.kiwi.permission.PUSH_WRITE_PROVIDER"
+                android:exported="true"
+                android:authorities="com.duowan.kiwi.huawei.push.provider" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:push"
+                android:value="push:6.10.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:push:push"
+                android:value="1" />
+
+        <activity
+                android:name="com.huawei.hms.support.api.push.TransActivity"
+                android:exported="false" />
+
+        <service
+                android:name="com.qq.e.comm.DownloadService"
+                android:exported="false"
+                android:multiprocess="true" />
+
+        <activity
+                android:name="com.qq.e.tg.ADActivity"
+                android:configChanges="0x4b0" />
+
+        <activity
+                android:name="com.qq.e.tg.WebAdActivity"
+                android:process=":tangramweb"
+                android:configChanges="0x4b0" />
+
+        <activity
+                android:name="com.qq.e.tg.PortraitADActivity"
+                android:multiprocess="true"
+                android:screenOrientation="1"
+                android:configChanges="0x4b0" />
+
+        <activity
+                android:name="com.qq.e.tg.LandscapeADActivity"
+                android:multiprocess="true"
+                android:screenOrientation="0"
+                android:configChanges="0x4b0" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.qq.e.tg.TransPortraitADActivity"
+                android:multiprocess="true"
+                android:configChanges="0x4b0" />
+
+        <receiver
+                android:name="com.huya.mock.MockRecordReceiver"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.huya.pitayamock.action.record_broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="wb_version_WbCloudFaceLiveSdk"
+                android:value="v4.5.5.0-50930867" />
+
+        <activity
+                android:theme="@ref/0x7f1205a6"
+                android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceVerifyActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xd00" />
+
+        <activity
+                android:theme="@ref/0x7f1205a3"
+                android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceGuideActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:theme="@ref/0x7f1205a6"
+                android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceProtocalActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <meta-data
+                android:name="android.webkit.WebView.EnableSafeBrowsing"
+                android:value="true" />
+
+        <meta-data
+                android:name="wb_version_WbCloudFaceSdk"
+                android:value="v4.5.5.0-50930867" />
+
+        <meta-data
+                android:name="wb_version_WbCloudNormal-noBugly"
+                android:value="v5.1.3-0f08e6d" />
+
+        <provider
+                android:name="com.noober.background.BackgroundContentProvider"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.duowan.kiwi.backgroundLibrary" />
+
+        <activity
+                android:theme="@ref/0x7f120402"
+                android:name="com.huya.unity.UnityActivity"
+                android:exported="false"
+                android:process=":Unity"
+                android:taskAffinity="com.duowan.kiwi.virtualroom"
+                android:excludeFromRecents="true"
+                android:launchMode="2"
+                android:configChanges="0x40003fff"
+                android:windowSoftInputMode="0x10"
+                android:hardwareAccelerated="true" />
+
+        <service
+                android:name="com.huya.unity.service.UnityService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":Unity">
+
+            <intent-filter>
+
+                <action
+                        android:name="android.intent.action.UnityService" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:theme="@ref/0x7f12018e"
+                android:name="com.huya.unity.UnityFrontActivity"
+                android:exported="false"
+                android:screenOrientation="0"
+                android:configChanges="0x480"
+                android:windowFullscreen="true"
+                android:windowSoftInputMode="0x30"
+                android:hardwareAccelerated="true" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:exported="false"
+                android:configChanges="0x4e0" />
+
+        <activity
+                android:theme="@ref/0x01030006"
+                android:name="com.alipay.sdk.app.H5AuthActivity"
+                android:exported="false"
+                android:configChanges="0x4e0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.PayResultActivity"
+                android:exported="true"
+                android:launchMode="3"
+                android:configChanges="0x4e0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.AlipayResultActivity"
+                android:exported="true"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+                android:exported="false"
+                android:screenOrientation="3"
+                android:configChanges="0x4e0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.alipay.sdk.app.APayEntranceActivity"
+                android:exported="false"
+                android:configChanges="0x4e0" />
+
+        <meta-data
+                android:name="com.google.ar.core.min_apk_version"
+                android:value="191106000" />
+
+        <activity
+                android:theme="@ref/0x0103023a"
+                android:name="com.google.ar.core.InstallActivity"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x7f120401"
+                android:name="com.unity3d.player.UnityPlayerActivity"
+                android:launchMode="2"
+                android:screenOrientation="10"
+                android:configChanges="0x40003fff"
+                android:hardwareAccelerated="false">
+
+            <meta-data
+                    android:name="unityplayer.UnityActivity"
+                    android:value="true" />
+        </activity>
+
+        <meta-data
+                android:name="unity.splash-mode"
+                android:value="0" />
+
+        <meta-data
+                android:name="unity.splash-enable"
+                android:value="true" />
+
+        <meta-data
+                android:name="unity.build-id"
+                android:value="8d8de83f-545d-4e7f-bf28-d3cbad6d59fc" />
+
+        <meta-data
+                android:name="unityplayer.SkipPermissionsDialog"
+                android:value="true" />
+
+        <activity
+                android:name="com.sina.weibo.sdk.web.WebActivity"
+                android:exported="false"
+                android:configChanges="0x480"
+                android:windowSoftInputMode="0x10" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareStoryActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.sina.weibo.sdk.share.ShareChatActivity"
+                android:exported="false"
+                android:launchMode="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.lizard.devtools.LZAssertActivity" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:ads-identifier"
+                android:value="ads-identifier:3.4.62.300" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.metahub.sdk.permissioneverywhere.PermissionActivity"
+                android:launchMode="2"
+                android:screenOrientation="3"
+                android:alwaysRetainTaskState="false" />
+
+        <provider
+                android:name="com.huawei.hms.aaid.InitProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.aaidinitprovider"
+                android:initOrder="500" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:opendevice"
+                android:value="opendevice:6.9.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:opendevice:push"
+                android:value="1" />
+
+        <meta-data
+                android:name="com.huawei.hms.client.service.name:base"
+                android:value="base:6.8.0.300" />
+
+        <meta-data
+                android:name="com.huawei.hms.min_api_level:base:hmscore"
+                android:value="1" />
+
+        <meta-data
+                android:name="availableLoaded"
+                android:value="yes" />
+
+        <meta-data
+                android:name="componentverify_ag_cbg_root"
+                android:value="@ref/0x7f1100fb" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+                android:launchMode="1" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+                android:launchMode="1" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+                android:launchMode="2" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+                android:launchMode="2" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+                android:launchMode="3" />
+
+        <activity
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+                android:launchMode="3" />
+
+        <activity
+                android:theme="@ref/0x0103000f"
+                android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+                android:launchMode="3" />
+
+        <meta-data
+                android:name="tinker_version"
+                android:value="1.9.14.23.1" />
+
+        <service
+                android:name="com.mob.MobACService"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.service.action.MOB_AC_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.mob.id.MobIDActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.id.app_30000" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.mob.id.MobIDSYActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.id.app_lk" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.mob.id.MobIDService"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.intent.MOB_ID_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="mob_guard_version"
+                android:value="30000" />
+
+        <meta-data
+                android:name="mob_id_ver"
+                android:value="30000" />
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.mob.guard.MobTranPullUpActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.open.app_20000" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:theme="@ref/0x01030011"
+                android:name="com.mob.guard.MobTranPullLockActivity"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.open.app_lk" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.mob.guard.MobGuardPullUpService"
+                android:enabled="true"
+                android:exported="true">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.mob.intent.MOB_GUARD_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <provider
+                android:name="com.mob.MobProvider"
+                android:exported="false"
+                android:multiprocess="true"
+                android:authorities="com.duowan.kiwi.com.mob.MobProvider" />
+
+        <activity
+                android:theme="@ref/0x7f120108"
+                android:name="com.huawei.hms.activity.BridgeActivity"
+                android:exported="false"
+                android:excludeFromRecents="true"
+                android:screenOrientation="3"
+                android:configChanges="0x40002f84"
+                android:hardwareAccelerated="true">
+
+            <meta-data
+                    android:name="hwc-theme"
+                    android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+                android:name="com.huawei.hms.activity.EnableServiceActivity"
+                android:exported="false"
+                android:configChanges="0xda0" />
+
+        <provider
+                android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.AGCInitializeProvider" />
+
+        <service
+                android:name="com.huawei.agconnect.core.ServiceDiscovery"
+                android:exported="false" />
+
+        <activity
+                android:name="com.duowan.live.voicechat.password.SetPasswordActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.liveroom.live.living.cl2d.CL2dDemoActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huya.livingend.EndShareActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.livingend.LivingEndActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x2" />
+
+        <activity
+                android:name="com.duowan.liveroom.LiveRoomActivity"
+                android:launchMode="1"
+                android:screenOrientation="5"
+                android:configChanges="0xda0"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.duowan.live.anchor.AboutHUYAActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.AnchorActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.AnchorAnnouncementActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.anchor.AnchorGiftsActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.AnchorLiveHistoryActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.HuyaRulesActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.nickname.ModifyNicknameActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.duowan.live.anchor.PersonalInfoActionActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.anchor.SettingActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.anchor.SuperviseActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <service
+                android:name="com.huya.live.game.media.GameMediaService"
+                android:enabled="true"
+                android:foregroundServiceType="0xe0" />
+
+        <service
+                android:name="com.huya.live.pcplay.screen.LivePcToolService"
+                android:enabled="true"
+                android:configChanges="0x4a0"
+                android:foregroundServiceType="0xe0" />
+
+        <activity
+                android:name="com.huya.live.pcplay.camera.PhoneCameraActivity"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.pcplay.camera.PhoneCameraPortraitActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.pcplay.LivingPcActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.pcplay.camera.RtspConnectFailActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.huya.live.pcplay.PushSelectActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.live.pcplay.screen.ScreenPushActivity"
+                android:screenOrientation="5"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.debug.activity.DebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.debug.activity.TestCrashActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.debug.activity.MockSettingActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.debug.activity.KApmSettingActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.debug.activity.LiveSdkTestActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.live.hyext.mock.HyExtExtensionDebugActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.live.hyext.ui.HyRnTestActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.live.rn.HyReactActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:name="com.huya.live.rn.HyWebExtActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x32" />
+
+        <activity
+                android:name="com.duowan.live.feedback.FeedBackActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.huya.live.cloudgame.CloudGamePlayActivity"
+                android:launchMode="1"
+                android:screenOrientation="0"
+                android:configChanges="0xda0"
+                android:windowSoftInputMode="0x13" />
+
+        <service
+                android:name="com.huya.live.beginlive.keepalive.KeepAliveService$LastingInnerService"
+                android:enabled="true"
+                android:foregroundServiceType="0xe0" />
+
+        <service
+                android:name="com.huya.live.beginlive.keepalive.KeepAliveService"
+                android:enabled="true"
+                android:foregroundServiceType="0xe0" />
+
+        <activity
+                android:name="com.duowan.liveroom.channelsetting.LivingTipActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.activecenter.ActiveCenterActivity"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <meta-data
+                android:name="CLIENT_TYPE"
+                android:value="adr_zs" />
+
+        <activity
+                android:name="com.duowan.live.user.WebViewActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.user.RemoteWebViewActivity"
+                android:process=":liveweb"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.user.PrivacyWebViewActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.AudioCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.ComicCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.FaceScoreCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.StarShowCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.VoiceChatCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.cover.ui.multi.MultiCoverActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.foreshow.ForeshowActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x010300f0"
+                android:name="com.huya.live.qrscan.QRScanActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:name="com.huya.live.fs.FSOperateActivity"
+                android:excludeFromRecents="true" />
+
+        <activity
+                android:name="com.huya.live.assist.activity.SmartAssistantActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.assist.activity.LandSmartAssistantActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.live.channelinfo.activity.ChannelTypeChoosePreActvity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:label="主题模板"
+                android:name="com.huya.live.themelive.ThemeActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.huya.live.textwidget.activity.PluginEditActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:name="com.huya.live.textwidget.activity.PluginEditLandActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.huya.live.textwidget.activity.PluginEditGameActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:name="com.huya.live.textwidget.activity.PluginEditLandGameActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x13" />
+
+        <activity
+                android:name="com.huya.live.textwidget.activity.PluginEditCastActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0"
+                android:windowSoftInputMode="0x33" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoTagActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x20" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.MyPublishedVideoActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoHomeActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.HYVideoReleaseActivity"
+                android:taskAffinity="@string/0x3f"
+                android:launchMode="3"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x23" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.mvvm.ui.material.view.HYChangePlayActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x23" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoPlayActivity"
+                android:exported="true"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.live.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:scheme="content" />
+
+                <data
+                        android:scheme="asset" />
+
+                <data
+                        android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.cropplay.VideoCropPlayActivityNew"
+                android:exported="true"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0xfb0">
+
+            <intent-filter>
+
+                <action
+                        android:name="com.duowan.live.action.VIEW" />
+
+                <category
+                        android:name="android.intent.category.DEFAULT" />
+
+                <data
+                        android:scheme="http" />
+
+                <data
+                        android:scheme="https" />
+
+                <data
+                        android:scheme="content" />
+
+                <data
+                        android:scheme="asset" />
+
+                <data
+                        android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoAllListActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoTemplateListActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoEditActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoCropActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoPhotoMovementActivity"
+                android:screenOrientation="1" />
+
+        <service
+                android:name="com.duowan.live.anchor.uploadvideo.service.UploadVideoService"
+                android:enabled="true" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoTemplateActivity"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoAddAssetActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoCoverActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoMaterialActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.LotterySettingsActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.LiveRecordVideoActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.mvvm.ui.material.view.CustomMaterialListActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.changehead.VideoChangeHeadActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.mvvm.ui.material.view.PlayWayInfoActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.anchor.uploadvideo.activity.VideoDraftActivity"
+                android:launchMode="2"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.huya.game.virtual.VirtualImageSetActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.game.virtual.VirtualImageSetLandActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.game.virtual.VirtualImageSelectActivity"
+                android:launchMode="2"
+                android:screenOrientation="0"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.push.PushTransferActivity"
+                android:finishOnTaskLaunch="false"
+                android:excludeFromRecents="true"
+                android:configChanges="0x4f0" />
+
+        <service
+                android:name="com.duowan.live.upgrade.downloadservice.DownloadService"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.speed.view.SpeedTestActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.huya.anchor.imagepick.cropimg.NewCropImageActivity"
+                android:screenOrientation="0"
+                android:configChanges="0x80" />
+
+        <activity
+                android:name="com.duowan.live.common.ImagePickerActivity"
+                android:launchMode="1"
+                android:screenOrientation="1" />
+
+        <activity
+                android:name="com.duowan.live.cropimg.CropImage"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.duowan.live.cropimg.NewCropImageActivity"
+                android:launchMode="1"
+                android:screenOrientation="1"
+                android:configChanges="0x4a0" />
+
+        <meta-data
+                android:name="com.coloros.ocs.hyper.AUTH_CODE"
+                android:value="ATBFAiEAxtHB4z2Je7SNBa7FzRqRGfMT3h7Czk/ViHoSXl5h1osCIGoK22ywGZBn3Bd0GUZ5yhIu2DahWN8m0pxrLIb/0xMtarjBimAAAAA=" />
+
+        <provider
+                android:name="com.huya.videoedit.selector.basic.PictureFileProvider_Decorated_livesdkdynamic"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.VePsProvider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140031" />
+        </provider>
+
+        <service
+                android:name="com.huya.videoedit.selector.service.ForegroundService"
+                android:enabled="true"
+                android:foregroundServiceType="0x8" />
+
+        <activity
+                android:name="com.huya.videoedit.selector.basic.PictureSelectorSupporterActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:name="com.huya.videoedit.selector.basic.PictureSelectorTransparentActivity"
+                android:configChanges="0x4a0" />
+
+        <activity
+                android:theme="@ref/0x01030010"
+                android:name="com.duowan.live.wxapi.WXEntryActivity"
+                android:exported="true"
+                android:taskAffinity="com.duowan.kiwi"
+                android:launchMode="2"
+                android:configChanges="0x4a0" />
+
+        <provider
+                android:name="com.huya.live.share.impl.ShareFileProvider_Decorated_livesdkdynamic"
+                android:exported="false"
+                android:authorities="com.duowan.kiwi.fileprovider"
+                android:grantUriPermissions="true">
+
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@ref/0x7f140010" />
+        </provider>
+
+        <activity
+                android:theme="@ref/0x010300f0"
+                android:name="com.huya.live.zxing.client.android.CaptureActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x3" />
+
+        <activity
+                android:name="com.huya.live.zxing.client.android.PreferencesActivity"
+                android:stateNotNeeded="true" />
+
+        <uses-library
+                android:name="com.oppo.hyberboost.unit.sdk"
+                android:required="false" />
+
+        <activity
+                android:name="com.huya.svkit.edit.TestGLActivity" />
+
+        <activity
+                android:name="com.huya.svkit.basic.activity.TestPlayerActivity" />
+
+        <activity
+                android:name="com.huya.svkit.basic.activity.SimpleVideoActivity" />
+
+        <uses-library
+                android:name="com.oppo.camera.unit.sdk"
+                android:required="false" />
+
+        <uses-library
+                android:name="com.huawei.camerakit.impl"
+                android:required="false" />
+
+        <activity
+                android:name="com.huya.fig.gamingroom.impl.ui.FigGamingRoomActivity"
+                android:launchMode="2"
+                android:screenOrientation="1"
+                android:configChanges="0x4f0"
+                android:windowSoftInputMode="0x12" />
+
+        <activity
+                android:name="com.huya.fig.gamingroom.impl.ui.EmptyActivity" />
+
+        <activity
+                android:name="com.huya.fig.gamingroom.autologin.FigRememberPwdActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <activity
+                android:name="com.huya.fig.gamingroom.teenager.FigTeenagerVerifiedActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x25" />
+
+        <activity
+                android:name="com.huya.fig.gamingroom.teenager.FigTeenagerVerifiedResultActivity"
+                android:screenOrientation="1"
+                android:windowSoftInputMode="0x22" />
+
+        <service
+                android:name="com.huya.fig.gamingroom.impl.service.FigGamingRoomService"
+                android:exported="false"
+                android:process=":sync" />
+
+        <meta-data
+                android:name="editor_version"
+                android:value="13" />
+
+        <meta-data
+                android:name="TINKER_ID"
+                android:value="tinker_id_85546" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPchannel"
+                android:exported="false"
+                android:process=":channel"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPlogcat"
+                android:exported="false"
+                android:process=":logcat"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPUnity"
+                android:exported="false"
+                android:process=":Unity"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPremote"
+                android:exported="false"
+                android:process=":remote"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPcloudpatch"
+                android:exported="false"
+                android:process=":cloudpatch"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPsync"
+                android:exported="false"
+                android:process=":sync"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPdummy"
+                android:exported="false"
+                android:process=":dummy"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPpushservice"
+                android:exported="false"
+                android:process=":pushservice"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPkAPMAnalyzer"
+                android:exported="false"
+                android:process=":kAPMAnalyzer"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPtangramweb"
+                android:exported="false"
+                android:process=":tangramweb"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPpatch"
+                android:exported="false"
+                android:process=":patch"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPoppoPush"
+                android:exported="false"
+                android:process=":oppoPush"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPlelinkps"
+                android:exported="false"
+                android:process=":lelinkps"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPliveweb"
+                android:exported="false"
+                android:process=":liveweb"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPdownload"
+                android:exported="false"
+                android:process=":download"
+                android:stopWithTask="true" />
+
+        <service
+                android:name="com.huya.sm.hservice.HPremoteweb"
+                android:exported="false"
+                android:process=":remoteweb"
+                android:stopWithTask="true" />
+    </application>
+</manifest>

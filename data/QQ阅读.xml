@@ -1,0 +1,3968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="323"
+    android:versionName="8.0.6.890"
+    android:installLocation="0"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.qq.reader"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <uses-permission
+        android:name="com.qq.reader.theme.permission" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.qq.reader.permission.READER_PUSH" />
+
+    <permission
+        android:name="com.qq.reader.theme.permission"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qq.reader.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qq.reader.permission.READER_PUSH"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qq.reader.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES" />
+
+    <permission
+        android:name=".push.permission.MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name=".push.permission.MESSAGE" />
+
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name=".permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-permission
+        android:name="freemme.permission.msa" />
+
+    <uses-permission
+        android:name="freemme.permission.msa.SECURITY_ACCESS" />
+
+    <uses-permission
+        android:name="oplus.permission.settings.LAUNCH_FOR_EXPORT" />
+
+    <queries>
+
+        <package
+            android:name="com.android.creator" />
+
+        <package
+            android:name="com.zhuoyi.security.lite" />
+
+        <package
+            android:name="com.freeme.secureguard" />
+
+        <package
+            android:name="com.android.secureguard" />
+
+        <package
+            android:name="com.mdid.msa" />
+
+        <package
+            android:name="com.samsung.android.deviceidservice" />
+
+        <package
+            android:name="com.coolpad.deviceidsupport" />
+
+        <package
+            android:name="com.heytap.openid" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="IYW.GAME.PACKAGE" />
+        </intent>
+
+        <package
+            android:name="com.tencent.portfolio" />
+
+        <package
+            android:name="com.tencent.qbx" />
+
+        <package
+            android:name="com.tencent.qbx5" />
+
+        <package
+            android:name="com.tencent.mtt.x86" />
+
+        <package
+            android:name="com.tencent.portfolio" />
+
+        <package
+            android:name="com.sina.weibo" />
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="com.tencent.mobileqq" />
+
+        <package
+            android:name="com.tencent.minihd.qq" />
+
+        <package
+            android:name="com.tencent.qqlite" />
+
+        <package
+            android:name="com.qzone" />
+
+        <package
+            android:name="com.tencent.tim" />
+
+        <package
+            android:name="com.xiaomi.xmsf" />
+
+        <intent>
+
+            <action
+                android:name="com.mcs.action.RECEIVE_SDK_MESSAGE" />
+        </intent>
+
+        <package
+            android:name="com.tencent.qqpimsecure" />
+
+        <package
+            android:name="com.samsung.android.providers.context" />
+
+        <package
+            android:name="com.iflytek.vflynote" />
+
+        <package
+            android:name="cn.wps.moffice_eng" />
+
+        <package
+            android:name="com.miui.securitycore" />
+
+        <package
+            android:name="com.miui.enterprise.service.EntInstallService" />
+
+        <package
+            android:name="com.android.vending" />
+
+        <package
+            android:name="com.jingdong.app.mall" />
+
+        <package
+            android:name="com.google.android.webview" />
+
+        <package
+            android:name="com.android.webview" />
+
+        <package
+            android:name="com.heytap.openid.IdentifyService" />
+
+        <package
+            android:name="action.com.heytap.openid.OPEN_ID_SERVICE" />
+
+        <package
+            android:name="com.heytap.openid.IOpenID" />
+
+        <package
+            android:name="com.unionpay" />
+
+        <package
+            android:name="com.qidea.dldl.yuewen" />
+
+        <package
+            android:name="com.acewebgames.oceantradekings.yuewen" />
+
+        <package
+            android:name="com.boxoff.king.yuewen" />
+
+        <package
+            android:name="com.jbdfw.yuewen" />
+
+        <package
+            android:name="com.shandagames.shelter.yuewen" />
+
+        <package
+            android:name="com.sy.jlsd.yuewen" />
+
+        <package
+            android:name="com.youzu.snsgz2.yuewen" />
+
+        <package
+            android:name="com.tencent.tmgp.wuxia" />
+
+        <package
+            android:name="com.netease.skzdhlr.yuewen" />
+
+        <package
+            android:name="com.youzu.ss0.yuewen" />
+
+        <package
+            android:name="com.tencent.vega" />
+
+        <package
+            android:name="com.tencent.tmgp.cod" />
+
+        <package
+            android:name="com.sqw.rydts.yuewen" />
+
+        <package
+            android:name="com.qidian.dldlwhjx.official" />
+
+        <package
+            android:name="com.tencent.tmgp.tmsk.qj3" />
+
+        <package
+            android:name="com.sqw.jwdzg.yuewen" />
+
+        <package
+            android:name="com.sy.dldlhsdj.yuewen" />
+
+        <package
+            android:name="com.tencent.tmgp.lv" />
+
+        <package
+            android:name="com.youzu.xdmbj.yuewen" />
+
+        <package
+            android:name="com.tencent.tmgp.dpcq" />
+
+        <package
+            android:name="com.tencent.tmgp.pubgmhd" />
+
+        <package
+            android:name="com.tencent.tmgp.cf" />
+
+        <package
+            android:name="com.tencent.lzhx" />
+
+        <package
+            android:name="com.tencent.tmgp.vgame" />
+
+        <package
+            android:name="com.tencent.pao" />
+
+        <package
+            android:name="com.tencent.peng" />
+
+        <package
+            android:name="com.tencent.forest" />
+
+        <package
+            android:name="com.netease.lglr.yuewen" />
+
+        <package
+            android:name="com.tencent.sgwsba" />
+
+        <package
+            android:name="com.tencent.jkchess" />
+
+        <package
+            android:name="com.tencent.tmgp.sgame" />
+
+        <package
+            android:name="com.tencent.dm" />
+
+        <package
+            android:name="com.tencent.tls2" />
+
+        <package
+            android:name="com.tencent.lolm" />
+
+        <package
+            android:name="com.shengqugames.qyn.yuewen" />
+
+        <package
+            android:name="com.cmge.xfrxxz.yuewen" />
+
+        <package
+            android:name="com.hardtime.yzycj.yuewen" />
+
+        <package
+            android:name="com.tencent.txyx" />
+
+        <package
+            android:name="com.tencent.tmaoe" />
+
+        <package
+            android:name="com.bilibili.hunter3.yuewen" />
+
+        <package
+            android:name="com.hardtime.gjsj.yuewen" />
+
+        <package
+            android:name="com.tencent.cqtxsy" />
+
+        <package
+            android:name="com.tencent.egame" />
+
+        <package
+            android:name="com.tencent.tkw" />
+
+        <package
+            android:name="com.xinxin.mhj.yuewen" />
+
+        <package
+            android:name="com.game.frsjz.dhd.yuewen" />
+
+        <package
+            android:name="com.hnsb.fscs.yuewen" />
+
+        <package
+            android:name="com.sy.xxyg.yuewen" />
+
+        <package
+            android:name="com.sy.mrdh.yuewen" />
+
+        <package
+            android:name="com.sy.gmmx.yuewen" />
+
+        <package
+            android:name="com.hxmjl.yuewen" />
+
+        <package
+            android:name="com.game.cahx.yuewen" />
+
+        <package
+            android:name="com.tx.cqfs.yuewen" />
+
+        <package
+            android:name="com.game.lmqy.yuewen" />
+
+        <package
+            android:name="com.tencent.toaa" />
+
+        <package
+            android:name="com.cmge.tsxklm.yuewen" />
+
+        <package
+            android:name="com.tencent.fiftyone.yc" />
+
+        <package
+            android:name="com.ahlh.sylj.yuewen" />
+
+        <package
+            android:name="com.tencent.msgame" />
+
+        <package
+            android:name="com.youzu.zhyyh.yuewen" />
+
+        <package
+            android:name="com.hnzh.zhdysr.yuewen" />
+
+        <package
+            android:name="com.dca.xblr.yuewen" />
+
+        <package
+            android:name="com.sqw.yjz.yuewen" />
+
+        <package
+            android:name="com.sy.frxxzrjp.yuewen" />
+
+        <package
+            android:name="com.hermes.nvwa.jh.yuewen" />
+
+        <package
+            android:name="com.dca.zhjwsjxhf.yuewen" />
+
+        <package
+            android:name="com.tencent.baiye" />
+
+        <package
+            android:name="com.sy.zmsl.yuewen" />
+
+        <package
+            android:name="com.sqw.myld.yuewen" />
+
+        <package
+            android:name="com.echo.lsf.absy.yuewen" />
+
+        <package
+            android:name="com.tencent.tmgp.maplem" />
+
+        <package
+            android:name="com.doupo.yuewen.com" />
+
+        <package
+            android:name="com.tencent.tmgp.xtlbb" />
+
+        <package
+            android:name="com.tencent.tmgp.gnyx" />
+
+        <package
+            android:name="com.tencent.sevensin" />
+
+        <package
+            android:name="com.tencent.jyhx" />
+
+        <package
+            android:name="com.sy.fyym.yuewen" />
+
+        <package
+            android:name="com.game.cztx.yuewen" />
+
+        <package
+            android:name="com.hermes.p6game.jh.yuewen" />
+
+        <intent>
+
+            <action
+                android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.media2.session.MediaSessionService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.media2.session.MediaLibraryService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.hihonor.push.action.BIND_PUSH_SERVICE" />
+        </intent>
+
+        <package
+            android:name="com.huawei.android.pushagent" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+
+        <package
+            android:name="com.huawei.works" />
+    </queries>
+
+    <uses-permission
+        android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <permission
+        android:name="com.qq.reader.openadsdk.permission.TT_PANGOLIN"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qq.reader.openadsdk.permission.TT_PANGOLIN" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <permission
+        android:name="com.qq.reader.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qq.reader.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.qq.reader.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qq.reader.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.qq.reader.permission.PUSH_PROVIDER" />
+
+    <permission
+        android:name="com.qq.reader.permission.JPUSH_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.qq.reader.permission.JPUSH_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:theme="@ref/0x7f110013"
+        android:label="@ref/0x7f100076"
+        android:icon="@ref/0x7f0806e1"
+        android:name="com.qq.reader.ReaderApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@ref/0x7f130004"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:allowNativeHeapPointerTagging="false"
+        android:preserveLegacyExternalStorage="true">
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="android.vendor.full_screen"
+            android:value="true" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="EasyGoClient"
+            android:value="true" />
+
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="android.vivo_nightmode_support"
+            android:value="false" />
+
+        <receiver
+            android:name="com.qq.reader.widget.ReaderWidget"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qq.reader.appwidget.action.REFRESH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f130008" />
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.audio.player.QRAudioActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.SpeakerSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.ad.view.webview.AdWebViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.MedalHallActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.MedalDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.audio.activity.NativeAudioZoneActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.audio.activity.AudioPanicGiftsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.activity.CommentSquareActivityRankActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f110013"
+            android:name="com.qq.reader.activity.LocalSearchBooksActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f110013"
+            android:name="com.qq.reader.activity.CategoryBooksActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f11014f"
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneAreaActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.common.login.view.PhoneLoginActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e4"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ReaderPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0">
+
+            <meta-data
+                android:name="android.vendor.home_indicator"
+                android:value="dark_dim" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.UserCenterNewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.OnlineHistoryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.NewChapterViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.CheckOriginalContentActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.qq.reader.weiboapi.WeiboShareActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f110221"
+            android:name="com.qq.reader.widget.picbrowser.PictureActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.activity.WebBrowser"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.qq.reader.activity.VIPBrowser"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.WebBrowserForContents"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.ScanLoginWebBrowserForContents"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.UserProtocolActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.YoungerLawActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.WebRadioBrowserForContents"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.WebBrowserForFullScreenContents"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.activity.RankWebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.activity.WebBookDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.activity.WebBookRewardActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100560"
+            android:name="com.qq.reader.activity.SuggestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x5" />
+
+        <activity
+            android:name="com.qq.reader.activity.OneBookNoteActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <service
+            android:name="com.qq.reader.flow.FileObserverService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f110232"
+            android:name="com.qq.reader.activity.SplashActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f110232"
+            android:name="com.qq.reader.activity.SplashADVActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.reader.activity.SwitchViewActivity"
+            android:exported="true"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="com.qq.reader.activity.ClassifySelectActivity"
+            android:exported="true"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100b2"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.PersonalityEmptyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.TypeContext"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0">
+
+            <intent-filter>
+
+                <data
+                    android:scheme="AndroidQQReader" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="androidqqreader" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="androidqqreader50" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="uniteqqreader" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/*" />
+
+                <data
+                    android:mimeType="application/epub+zip" />
+
+                <data
+                    android:mimeType="application/zip" />
+
+                <data
+                    android:mimeType="application/rar" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="file"
+                    android:host="@string/0x37" />
+
+                <data
+                    android:pathPattern=".*\.epub" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="file"
+                    android:host="@string/0x37" />
+
+                <data
+                    android:pathPattern=".*\.chm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:mimeType="*/*" />
+
+                <data
+                    android:pathPattern=".*\.chm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="content" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.chm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.umd" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.rar" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.zip" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:host="*" />
+
+                <data
+                    android:pathPattern=".*\.qb" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x7f1100ce"
+            android:name="com.qq.reader.activity.MainActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.ProfileSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.EyeCareConfigActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="format.chm.ChmReaderPage"
+            android:process=":reader.chm"
+            android:screenOrientation="3"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.LocalBookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.LocalBookActivity2"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.SearchLoaclBookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.qq.reader.plugin.PlugInDefaultActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.PrivacyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.StoragePermissionSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.CameraPermissionSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.PrivacyDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="com.qq.reader.plugin.PlugInFontsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.plugin.PlugInListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="format.archive.ArchiveFileBrowser"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.cservice.cloud.big.CloudBookListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookchapter.online.OnlineChapterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.ChapterBatDownloadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.AudioBookDownloadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <service
+            android:name="com.qq.reader.plugin.audiobook.core.QQPlayerService"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="com.qq.reader.plugin.audiobook.core.IQQPlayerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.qq.reader.cservice.bookfollow.OrderBookReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.qq.reader.common.receiver.UploadLogService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qq.reader.crash_uploadlog" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.qq.reader.activity.CalendarEventRedirectActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.provider.calendar.action.HANDLE_CUSTOM_EVENT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/event" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f110219"
+            android:name="com.qq.reader.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="APPKEY_DENGTA"
+            android:value="0I300MNJT80SAS0D" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:name="com.qq.reader.common.charge.PayBridgeActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa4"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.SettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent100686853" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.NativeBookStoreSearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStorePreviousJournalActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.activity.ProfileLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.module.usercenter.activity.ProfileGrowLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.module.usercenter.activity.ProfileQQRankActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.module.usercenter.activity.UserFollowListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100112"
+            android:name="com.qq.reader.activity.ProfileAccountActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookstore.charge.NativeBookStoreChargeAcitivty"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.bookstore.charge.NativeBookStoreMonthlyChargeAcitivty"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1100b2"
+            android:name="com.qq.reader.common.charge.BookPayVipActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeSkinManageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeSkinDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeAuthorWXBindActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreTwoLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreTwoLevelActivityWithNewTabs"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeLimitTimeDiscountBuyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.fansclub.activity.FansRankActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.feed.activity.FeedSearchOptionActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeNewTabTwoLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeSearchToolMainActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeLocalPopTwoLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreConfigDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeAudioBookDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreEndPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreSelectedCommentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeSearchResultsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeMonthAreaActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.CommitCommentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ParaCommentReplyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ParaCommentReplyNewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ChapterCommentDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.VideoCommentDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.qmessage.MessageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.QaAndListenActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f11015e"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.GuideActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f11015e"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.guide.activity.GuideSelectInterestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100b2"
+            android:name="com.qq.reader.activity.AppUpdateActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.H5GameActivity"
+            android:process=":game_process"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f110232"
+            android:name="com.qq.reader.activity.PluginBrigeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="com.dynamicload.DLProxyActivity"
+            android:process=":dl"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.dynamicload.DLProxyFragmentActivity"
+            android:process=":dl"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.dynamicload.DLProxyActivityTransparent"
+            android:process=":dl"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.dynamicload.DLProxyFragmentActivityTransparent"
+            android:process=":dl"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.dynamicload.DLProxyActivitySingleIns"
+            android:process=":dl"
+            android:launchMode="3"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.dynamicload.internal.DLAbsPluginService"
+            android:process=":dl" />
+
+        <receiver
+            android:name="com.dynamicload.internal.DLAbsPluginBroadCastReceiver" />
+
+        <receiver
+            android:name="com.qq.reader.common.utils.ShortCutPendingReceiver" />
+
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.enable"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.multiinstance.enable"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.STYLE"
+            android:value="fixedRatio" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeAuthorPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBackRefreshTwoLevelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.question.activity.FamousAuthorSayActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.question.activity.NativeAudioQuestionQuizActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.question.activity.NativeAudioQuestionDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.question.activity.QAIntroductionEditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.reader.module.game.activity.GameLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.yw.game.sdk.login.action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qqreader"
+                    android:host="game_login"
+                    android:path="/login" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f110013"
+            android:name="com.qq.reader.activity.CheckNetWorkActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <service
+            android:name="com.qq.reader.common.conn.socket.PushMessageHandleService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.qq.reader.common.conn.socket.PushService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.qq.reader.cservice.download.app.AppDownloadReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qq.reader.ad.download.action.cancel" />
+
+                <action
+                    android:name="com.qq.reader.ad.download.action.click" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.qq.reader.module.videoplay.NativeVideoPlayerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="com.qq.reader.module.videoplay.WebViewVideoPlayActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreRankBActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ClearCacheActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.redpacket.square.RedPacketSquareActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.redpacket.singlebookpacket.RedPacketSingleBookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.feed.activity.FamousAuthorActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.chaptercomment.activity.ChapterCommentAreaActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.redpacket.sendpacket.RedpacketTypeSelectActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.redpacket.sendpacket.SendRedpacketActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f1100b2"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.redpacket.sendpacket.ReceiveRedPacketActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicDownloadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicDirActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicSectionPayActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicMainPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicWatchingFocusActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookStoreComicDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeComicFreeAreaActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeComicMonthlyAreaActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeComicReadEndActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.comic.activity.NativeBookLibraryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booklist.editbooklist.view.BookListEditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.booklist.detail.activity.BookListTopicActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booklist.editbooklist.BookListAddBookActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booklist.editbooklist.view.BookListBookSearchActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booklist.mybooklist.NativeMyBookListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booklist.square.view.NativeBookListSquareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.TopicNewAllListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.module.booklist.detail.activity.BookListDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreSecondpageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreSecondpageTabActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.UserInfoEditorActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.usercenter.view.UserCenterCropAvatarAndUploadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.NativeBookStoreFragmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.activity.CommitContactInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.bookcomment.activity.NewBookCommentSquareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.common.charge.PayMonthH5Activity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.findpage.activity.FindPageBookCommentSquareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.fansclub.activity.NativeBookstoreFansClubActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.sns.officialclub.activity.NativeBookstoreOfficialClubActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.ReplyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f11015e"
+            android:label="@ref/0x7f100076"
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.LogManagerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.feed.activity.tabfragment.FeedTabOrderModifyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreADVBookStackActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.feed.activity.FeedMonthSecondActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.AudioMainPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.activity.FindActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.booksquare.mine.BookSquareMineSquareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.module.qrcommunity.message.activity.CommunityMsgActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qq.reader.module.gift.activity.DecorateGiftActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.qq.reader.module.gift.activity.FansGiftActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.tencent.tads.splash.AdLandingPageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103006d"
+            android:name="com.tencent.ads.canvasad.AdCanvasActivity"
+            android:screenOrientation="3" />
+
+        <receiver
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.downloader.GdtAppInstallReceiver" />
+
+        <service
+            android:name="com.qq.e.downloader.DownloadService"
+            android:exported="false" />
+
+        <service
+            android:name="com.qq.reader.common.web.service.GameAidlService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="com.qq.reader.common.web.service.GameAidlService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.qq.reader.module.game.activity.H5GameProcessService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":game_process">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="com.qq.reader.module.game.activity.H5GameProcessService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.qq.reader.common.imagepicker.ImagePickerProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130006" />
+        </provider>
+
+        <meta-data
+            android:name="APP_ID"
+            android:value="112512" />
+
+        <meta-data
+            android:name="APP_KEY"
+            android:value="ccea7be3e6d34a59b1c830ab412984d8" />
+
+        <meta-data
+            android:name="HMT_APPKEY"
+            android:value="UA-yuewen-260001" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130007" />
+        </provider>
+
+        <activity
+            android:name="com.qq.reader.statistics.SelectorSettingActivity"
+            android:screenOrientation="3">
+
+            <intent-filter>
+
+                <data
+                    android:scheme="spider0i300mnjt80sas0d" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.qq.reader.activity.ScrollerVideoActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x0103006d"
+            android:name="com.qq.reader.view.web.UserNoticeWebViewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4a4" />
+
+        <service
+            android:label="dexopt"
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:process=":dexopt" />
+
+        <activity
+            android:theme="@ref/0x7f1100c8"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.kapai.KapaiShareActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.unionpay.UPPayWapActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+
+            <intent-filter
+                android:priority="1000">
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="io.flutter.embedding.android.FlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.module.player.speaker.PlayerSpeakerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1100e1"
+            android:name="com.qq.reader.plugin.PdfPluginActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="io.flutter.embedding.android.FlutterFragmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.UserHomePageFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.SecondaryPageActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.OrganHomePageFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.CommonSimpleFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:name="com.qq.reader.activity.flutter.CommonTransparentFlutterActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.MineCreatedFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.BookCommentMainFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.readpage.media.comment.ImageCommentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.FeedAudioFlutterActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.FeedComicFlutterActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:name="com.qq.reader.activity.flutter.AudioSecondaryFlutterActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100ce"
+            android:name="com.qq.reader.activity.TrialModeDefaultActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100ca"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.module.readpage.media.comment.ImageCommentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f1100cb"
+            android:name="com.qq.reader.activity.flutter.PersonNotePageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f11023f"
+            android:name="com.qq.reader.activity.flutter.BookStoreDislikeFlutterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.bun.miitmdid.utilsforrequestpermission.PermissionTransparentActivity" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:ads-identifier"
+            android:value="ads-identifier:3.4.62.300" />
+
+        <meta-data
+            android:name="supportGetAndroidID"
+            android:value="false" />
+
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3400" />
+
+        <meta-data
+            android:name="com.hihonor.push.sdk_version"
+            android:value="7.0.61.302" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:process=":midasPay"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:exported="true"
+            android:process=":midasPay"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:exported="true"
+            android:process=":midasPay"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwallet100703379" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"
+            android:exported="false"
+            android:authorities="com.qq.reader.rmonitor-installer" />
+
+        <activity
+            android:theme="@ref/0x7f1100e5"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.rewardvote.RewardVoteActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100cc"
+            android:name="com.qq.reader.login.client.impl.QRLoginActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100cc"
+            android:name="com.qq.reader.login.client.impl.bind.QRBindPhoneActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:name="com.qq.reader.qrbookstore.secondary.BookStoreSecondaryActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:name="com.qq.reader.qrbookstore.thirdly.BookStoreThirdlyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:name="com.qq.reader.community.topicSecond.CommunityTopicSecondActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:name="com.qq.reader.pageframe.CommonPageFrameActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <provider
+            android:name="org.extra.tools.ContextProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.org.libpag.contextprovider" />
+
+        <activity
+            android:theme="@ref/0x01030009"
+            android:name="com.qq.reader.qrlightdark.NightModeChangeMaskTestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1100d2"
+            android:name="com.qq.reader.qrlightdark.NightModeChangeMaskActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <meta-data
+            android:name="flutterProjectType"
+            android:value="module" />
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <activity
+            android:theme="@ref/0x7f1100e2"
+            android:name="com.qrcomic.activity.reader.QRComicReadingVerticalActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f1100e2"
+            android:name="com.qrcomic.activity.reader.QRComicReadingLandActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.qrcomic.activity.QRComicDownloadChoiceActivity" />
+
+        <activity
+            android:name="com.qrcomic.activity.QRComicDownloadManagerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1100b6"
+            android:name="com.qrcomic.activity.fastread.ComicFastReadActivity"
+            android:screenOrientation="3" />
+
+        <service
+            android:name="com.shadow.pluginservice.PluginProcessPPS"
+            android:process=":shadow" />
+
+        <activity
+            android:theme="@ref/0x7f11022d"
+            android:name="com.tencent.shadow.sample.plugin.runtime.PluginDefaultProxyActivity"
+            android:multiprocess="true"
+            android:launchMode="0"
+            android:screenOrientation="3"
+            android:configChanges="0x40002fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f11022d"
+            android:name="com.tencent.shadow.sample.plugin.runtime.PluginSingleTask1ProxyActivity"
+            android:multiprocess="true"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x40002fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f11022d"
+            android:name="com.tencent.shadow.sample.plugin.runtime.PluginSingleInstance1ProxyActivity"
+            android:multiprocess="true"
+            android:launchMode="3"
+            android:screenOrientation="3"
+            android:configChanges="0x40002fff"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.shadow.pluginservice.MainProcessPPS" />
+
+        <activity
+            android:theme="@ref/0x7f11022d"
+            android:name="com.tencent.shadow.sample.plugin.runtime.KapaiPluginDefaultProxyActivity"
+            android:multiprocess="true"
+            android:launchMode="0"
+            android:screenOrientation="3"
+            android:configChanges="0x40002fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000a"
+            android:name="format.epub.ImageViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.common.imagepicker.activity.ImageGridActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.common.imagepicker.activity.ImagePreviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1100c5"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.common.imagepicker.activity.ImagePreviewSaveActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f11015d"
+            android:label="@ref/0x7f100076"
+            android:name="com.qq.reader.common.imagepicker.activity.ImageCropActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x12" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x7f110000"
+            android:name="com.yuewen.cooperate.adsdk.activity.WebActivity" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.yuewen.cooperate.adsdk.activity.AdRewardVideoActivity" />
+
+        <receiver
+            android:name="com.qq.reader.component.gamedownload.cservice.DownloadBroadcastReceiver4Game" />
+
+        <activity
+            android:theme="@ref/0x7f11024f"
+            android:name="com.tencent.upgrade.ui.UpgradeDialogActivity" />
+
+        <activity
+            android:name="com.tencent.upgrade.ui.UpgradeActiveActivity" />
+
+        <provider
+            android:name="com.tencent.upgrade.download.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.UpdateFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130005" />
+        </provider>
+
+        <service
+            android:name="com.yuewen.ting.tts.keepalive.TtsForegroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.yuewen.cooperate.adsdk.yuewensdk.provider.YWADFileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.ywad.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130009" />
+        </provider>
+
+        <receiver
+            android:name="com.yuewen.cooperate.adsdk.yuewensdk.download.AppDownloadReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.qq.reader.ad.download.action.cancel" />
+
+                <action
+                    android:name="com.qq.reader.ad.download.action.click" />
+
+                <action
+                    android:name="com.qq.reader.ad.download.action.statuschangebutton" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1100fd"
+            android:name="com.tencent.captchasdk.TCaptchaPopupActivity"
+            android:exported="false"
+            android:configChanges="0xe0" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.qq.reader.lifecycle-process" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.YWBrowserActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.activity.LoginActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerStatusActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerAgeActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.teenager.TeenagerPasswordActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.yuewen.ywlogin.ui.phone.PhoneCodeActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1100c4"
+            android:name="com.geetest.onelogin.activity.OneLoginActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:theme="@ref/0x7f1100c4"
+            android:name="com.geetest.onelogin.activity.OneLoginWebActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000dff" />
+
+        <activity
+            android:theme="@ref/0x7f1100f9"
+            android:name="com.qq.reader.statistics.InfoInputActivity" />
+
+        <activity
+            android:name="com.yuewen.push.proxy.YWPushProxyActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.yuewen.push.proxy.YWPushProxyActivity" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.yuewen.push.event.report.disk.db.YWDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.qq.reader.YWDataContentProvider" />
+
+        <service
+            android:name="com.yuewen.push.service.YWCommonService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.yuewen.push.service.JPushExtendService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.SERVICE_MESSAGE" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.yuewen.push.receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTRATION" />
+
+                <action
+                    android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <action
+                    android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.yuewen.push.activity.KeepActiveActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:taskAffinity="com.yuewen.push.activie" />
+
+        <receiver
+            android:name="com.yuewen.push.receiver.KeepActiveReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.WakedReceiver" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="YW_PUSH_APPKEY"
+            android:value="1" />
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="24" />
+
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1419e36cadfef79df3fdae87" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.TTFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130000" />
+        </provider>
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.TTMultiProvider" />
+
+        <provider
+            android:name="com.yuewen.cooperate.adsdk.gdt.provider.GDTFileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.gdtfileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130002" />
+        </provider>
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.qq.e.tg.ADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.PortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.LandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WebActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.ShareTransActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.sina.weibo.sdk.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130001" />
+        </provider>
+
+        <meta-data
+            android:name="XIAOMI_APPID"
+            android:value="MI-2882303761517455450" />
+
+        <meta-data
+            android:name="XIAOMI_APPKEY"
+            android:value="MI-5221745588450" />
+
+        <meta-data
+            android:name="MIPUSH_SDK_VERSION_CODE"
+            android:value="50909" />
+
+        <meta-data
+            android:name="MIPUSH_SDK_VERSION_NAME"
+            android:value="5_9_9-C" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3">
+
+            <meta-data
+                android:name="supportStyle"
+                android:value="scene|voip" />
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PluginHuaweiPlatformsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.PluginOppoPushService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="OPPO_APPKEY"
+            android:value="OP-9BfBm54a2wowsW4g0G80Skw8k" />
+
+        <meta-data
+            android:name="OPPO_APPID"
+            android:value="OP-14817" />
+
+        <meta-data
+            android:name="OPPO_APPSECRET"
+            android:value="OP-691256fAA991915734AB401D50e4F64A" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PluginVivoMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="488" />
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.support_monitor"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="d7c64116-ce7c-43a0-9ee9-f1ec1b358379" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="12966" />
+
+        <service
+            android:name="cn.jpush.android.service.JHonorService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="104409041" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.qq.reader.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.qq.reader.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.qq.reader.permission.PUSH_PROVIDER"
+            android:writePermission="com.qq.reader.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.qq.reader.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.12.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1100d0"
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="cn.jpush.android.ui.PopWinActivity" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:exported="true"
+            android:configChanges="0xa0">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.REGISTER" />
+
+                <action
+                    android:name="cn.jpush.android.intent.REPORT" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PushService" />
+
+                <action
+                    android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="cn.jpush.android.service.SchedulerReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            android:process=":pushcore"
+            android:authorities="com.qq.reader.DataProvider" />
+
+        <activity
+            android:theme="@ref/0x7f1100c7"
+            android:name="cn.jpush.android.service.JNotifyActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x37">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.jpush.android.intent.JNotifyActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1100c7"
+            android:name="cn.android.service.JTransitActivity"
+            android:exported="true"
+            android:taskAffinity="@string/0x37">
+
+            <intent-filter>
+
+                <action
+                    android:name="cn.android.service.JTransitActivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="com.qq.reader" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.jpush.android.asus.AsusPushMessageReceiver" />
+
+        <provider
+            android:name="cn.jpush.android.service.InitProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.jiguang.InitProvider" />
+
+        <meta-data
+            android:name="ZEUS_PLUGIN_PANGLE"
+            android:value="{                 apiVersionCode:5637,                 packageName:com.byted.pangle,                 minPluginVersion:5637,                 internalPath:1853283259,                 internalVersionCode:5637             }" />
+
+        <meta-data
+            android:name="ZEUS_PLUGIN_com.byted.csj.ext"
+            android:value="{apiVersionCode:999,packageName:com.byted.csj.ext,minPluginVersion:1000,maxPluginVersion:999999999,internalPath:'',internalVersionCode:-1, appKey:'',appSecretKey:''}" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x6e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T"
+            android:exported="false"
+            android:launchMode="0"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity"
+            android:exported="false"
+            android:launchMode="0"
+            android:screenOrientation="0"
+            android:configChanges="0x6e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity"
+            android:exported="false"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager"
+            android:exported="false"
+            android:process=":downloader"
+            android:authorities="com.qq.reader.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"
+            android:exported="false"
+            android:authorities="com.qq.reader.pangle.servermanager.main" />
+
+        <provider
+            android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"
+            android:exported="false"
+            android:authorities="com.qq.reader.pangle.provider.proxy.main" />
+
+        <provider
+            android:name="com.bytedance.pangle.FileProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.pangle.fileprovider"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.ss.android.downloadlib.activity.TTDelegateActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.ss.android.downloadlib.activity.JumpKllkActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <receiver
+            android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+            android:exported="false"
+            android:process=":downloader">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.socialbase.downloader.remote" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <meta-data
+            android:name="ZEUS_PLUGIN_LIVE"
+            android:value="{                 apiVersionCode:2112,                 packageName:com.byted.live.lite,                 minPluginVersion:211200,                 maxPluginVersion:211999,                 appKey:'9f64a31d9d0456d845733718c4c6934d',                 appSecretKey:'eb7fc60ac5ed4708e13d9c7f8e4096a7',                 isSupportLibIsolate:true,                 internalPath:'plugins/zeusliveplugin.apk',                 internalVersionCode:5,                 signature:'MIIDSTCCAjGgAwIBAgIEaLy5tzANBgkqhkiG9w0BAQsFADBVMQswCQYDVQQGEwIxMTEMMAoGA1UECBMDMTExMQ4wDAYDVQQHEwUxMTExMTEMMAoGA1UEChMDMTExMQwwCgYDVQQLEwMxMTExDDAKBgNVBAMTAzExMTAeFw0yMDEyMDMxMjQyMTJaFw00NTExMjcxMjQyMTJaMFUxCzAJBgNVBAYTAjExMQwwCgYDVQQIEwMxMTExDjAMBgNVBAcTBTExMTExMQwwCgYDVQQKEwMxMTExDDAKBgNVBAsTAzExMTEMMAoGA1UEAxMDMTExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA45E52YdkJm4gPCXZq7KDoM1h6pgSswllC/CwDOmh8pDGvX4ROaYP1vr2biRlXMHg7G0iXpxWVdlTtx+4QFd3dC+cGJQk0f6apGo2n2RpMA0zIsSf0VO1a3GjWLei5INo+4RDdciqJ4jfsoqBIjZETRkky+UU4eO/oyrAwOu4KdMln3Bg3u7eHWU4kMFrXxrRruT3Q/9gzlO90yQa0CZPWVDrk6cGJtJwJGhWm+62S3U8D26HE++eGP7ve83QBDGtKqx7HpCAFWUiYBgXGq12H0amQDkKcPcr/EFCaBlombSgkN0t6zBX80m+wcUPC75IBTmMV/DT2dXcgjZ2I1JSCQIDAQABoyEwHzAdBgNVHQ4EFgQUPDyIeKI0KhZFPHyn36gMMIYrpukwDQYJKoZIhvcNAQELBQADggEBAHkl0DoCRwn+XKsDJE+wGMpBBqUDzL6DSOnJx4SNqb7YZZU0ThcDK7jY4If3QRkvMio6ODrVZc2U/m/Tc3VeMk5h2W2UZRUWHNH3k9Xe0720uL20ZeH2Y6IG4L5HG8kIbTbFtX3gJpPG/xAcez+CzyCFLWQAZt1N+csG0syWkXJ0Nryq8VrgSCyCXD1KzFxrOe+65wtu50Vi68Vlbk7BZe/G8Qm0RhKmxq5BPMBJ4uY3be+03Ba5qC//o1XQHOEAjrJKXcN5wqHdFZTkmuxVyIPogZOzx4JlNl0zOrYGDJxp7aZfKF9FkXQyF7x0Ns3mZEtjx/+flXRzAAU9MDhPr/0='             }" />
+
+        <meta-data
+            android:name="LIVE_API_VERSION_CODE"
+            android:value="2112" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity"
+            android:exported="false"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat"
+            android:exported="false"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T"
+            android:exported="false"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T_SingleTask1"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T_SingleTop1"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Behind"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T"
+            android:exported="false"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_Portrait"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.Stub_Standard_Activity_DouyinWebAuthorizeActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x0103000d"
+            android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_SingleTask2"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.qq.e.tg.WebAdActivity"
+            android:process=":tangramweb"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.TransPortraitADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.12.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.11.0.302" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:theme="@ref/0x7f1100b0"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.qq.reader.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=1002510" />
+    </application>
+</manifest>

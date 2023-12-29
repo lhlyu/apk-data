@@ -1,0 +1,4728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="356"
+    android:versionName="7.13.71"
+    android:installLocation="0"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.taobao.idlefish"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="com.android.email.permission.READ_ATTACHMENT" />
+
+    <uses-permission
+        android:name="com.android.email.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="com.ut.permission.DEVICE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="org.agoo.android.permission.MESSAGE" />
+
+    <uses-permission
+        android:name="com.taobao.fleamarket.intent.action.START" />
+
+    <uses-permission
+        android:name="com.taobao.fleamarket.intent.action.COCKROACH" />
+
+    <uses-permission
+        android:name="com.taobao.fleamarket.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.UPDATE_APP_OPS_STATS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="com.android.permission.GET_INSTALLED_APPS" />
+
+    <uses-permission
+        android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission
+        android:name="oppo.permission.USE_FACE" />
+
+    <uses-permission
+        android:name="android.permission.USE_FACERECOGNITION" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <permission
+        android:name="com.taobao.idlefish.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.taobao.idlefish.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <uses-permission
+        android:name="freemme.permission.msa" />
+
+    <uses-permission
+        android:name="cn.cyberidentity.certification.AUTH" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="com.hihonor.security.permission.ACCESS_THREAT_DETECTION" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="cn.org.ifaa.permission.USE_IFAA_MANAGER" />
+
+    <uses-permission
+        android:name="com.huawei.permission.USE_TSM_AGENT" />
+
+    <uses-permission
+        android:name="android.permission.SMARTCARD" />
+
+    <uses-permission
+        android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRIN" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+
+    <uses-permission
+        android:name="android.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="com.samsung.android.authservice.permission.READ_CONTENT_PROVIDER" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI" />
+
+    <uses-permission
+        android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI" />
+
+    <uses-permission
+        android:name="com.meizu.flyme.permission.PUSH" />
+
+    <uses-permission
+        android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+        android:name="com.taobao.idlefish.push.permission.MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.taobao.idlefish.push.permission.MESSAGE" />
+
+    <uses-permission
+        android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <permission
+        android:name="com.taobao.idlefish.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.taobao.idlefish.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.taobao.idlefish.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.taobao.idlefish.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.taobao.idlefish.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+        android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.taobao.idlefish.permission.MIPUSH_RECEIVE" />
+
+    <permission
+        android:name="com.taobao.idlefish.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x3" />
+
+    <uses-permission
+        android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <uses-permission
+        android:name="com.taobao.taobao.permission.C2D_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <application
+        android:theme="@ref/0x01030006"
+        android:label="@ref/0x7f110453"
+        android:icon="@ref/0x7f0805d8"
+        android:name="com.taobao.idlefish.TaoBaoApplication"
+        android:debuggable="false"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="@ref/0x7f050006"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:theme="@ref/0x7f120024"
+            android:name="com.taobao.idlefish.debug.DebugActivity"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.aliyun.alivc_license.licensekey"
+            android:value="box4Oabyz21Jg5Ncb0666213c94984c09b1fa41092b0887fa" />
+
+        <meta-data
+            android:name="com.aliyun.alivc_license.licensefile"
+            android:value="assets/cert/alivc_license_release.crt" />
+
+        <meta-data
+            android:name="io.flutter.automatically-register-plugins"
+            android:value="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="miuiWidgetVersion"
+            android:value="2" />
+
+        <meta-data
+            android:name="UCSDKAppKey"
+            android:value="ZHmouBxBWd5RzHO/jAY+g1ea+L3qc+TuRhhkMvRaPouXowXCvlTxGmKMSZRWj8aEIcs9N3+pRs9b
+HrnAuhU9kw==
+" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@ref/0x7f1101df" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="522698b056240be8cc09878e" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="all" />
+
+        <meta-data
+            android:name="DATABASE_VERSION"
+            android:value="20" />
+
+        <meta-data
+            android:name="MESSAGE_DATABASE_VERSION"
+            android:value="10" />
+
+        <meta-data
+            android:name="com.taobao.idlefish.ui.imageLoader.impl.glide.module.FishGlideModule"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="10666536" />
+
+        <meta-data
+            android:name="org.android.agoo.xiaomi.app_id"
+            android:value="appid=2882303761517245189" />
+
+        <meta-data
+            android:name="org.android.agoo.xiaomi.app_key"
+            android:value="appkey=5461724563189" />
+
+        <meta-data
+            android:name="org.android.agoo.oppo.app_key"
+            android:value="9Liet592I2o08ksc0cowo0SsS" />
+
+        <meta-data
+            android:name="org.android.agoo.oppo.app_secret"
+            android:value="67E2320Bdeeaf277b0A4AF27d41530E4" />
+
+        <meta-data
+            android:name="org.android.agoo.meizu.app_id"
+            android:value="appid=112661" />
+
+        <meta-data
+            android:name="org.android.agoo.meizu.app_key"
+            android:value="appkey=00778ca9e7534165a1a8255735793fe2" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="10666536" />
+
+        <meta-data
+            android:name="com.hihonor.push.app_id"
+            android:value="104413943" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="a5652c93-e6e0-4934-a001-20d04d6a7f99" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="11594" />
+
+        <meta-data
+            android:name="com.duanqu.appname"
+            android:value="FM" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="android.min_aspect"
+            android:value="1065353216.000000" />
+
+        <meta-data
+            android:name="android.allow_multiple_resumed_activities"
+            android:value="false" />
+
+        <meta-data
+            android:name="EasyGoClient"
+            android:value="true" />
+
+        <meta-data
+            android:name="io.flutter.embedding.android.OldGenHeapSize"
+            android:value="1024" />
+
+        <meta-data
+            android:name="msp_app_id"
+            android:value="FLEAMARKET_AND" />
+
+        <activity
+            android:name="com.taobao.fleamarket.advert.WebInitActivity" />
+
+        <activity
+            android:theme="@ref/0x7f12011d"
+            android:label="@ref/0x7f110453"
+            android:icon="@ref/0x7f0805d8"
+            android:name="com.taobao.fleamarket.home.activity.InitActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fleamarkets" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fleamarket" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="pages.goofish.com" />
+
+                <data
+                    android:scheme="http"
+                    android:host="pages.goofish.com" />
+
+                <data
+                    android:scheme="https"
+                    android:host="h5.m.goofish.com" />
+
+                <data
+                    android:scheme="http"
+                    android:host="h5.m.goofish.com" />
+
+                <data
+                    android:scheme="https"
+                    android:host="fleamarket.taobao.com" />
+
+                <data
+                    android:scheme="http"
+                    android:host="fleamarket.taobao.com" />
+
+                <data
+                    android:scheme="https"
+                    android:host="market.m.taobao.com" />
+
+                <data
+                    android:scheme="http"
+                    android:host="market.m.taobao.com" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.router.JumpActivity"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.router.so.SoDownloadActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.router.remote.AppResourceDownloadActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120136"
+            android:name="com.taobao.fleamarket.rent.appointment.activity.EntireRentAppointmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120136"
+            android:name="com.taobao.fleamarket.rent.appointment.activity.DayRentAppointmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.webview.SecurityInterceptorWebHybridActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120287"
+            android:name="com.taobao.idlefish.webview.WeexWebViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xca0"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110493" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110494" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110492" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120287"
+            android:name="com.taobao.idlefish.webview.WeexWebViewActivityO"
+            android:configChanges="0xca0"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110493" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110494" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110492" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120288"
+            android:name="com.taobao.idlefish.webview.WeexWebViewTransparentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xca0"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110493" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110494" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110492" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120288"
+            android:name="com.taobao.idlefish.webview.WeexWebViewTransparentActivityO"
+            android:configChanges="0xca0"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110493" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110494" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110492" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.webview.WebHybridActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110490" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110490" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110495" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110495" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110491" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120138"
+            android:name="com.taobao.idlefish.maincontainer.activity.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x20"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f11047e" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f11047e" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110481" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110481" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110486" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110486" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f11048c" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f11048c" />
+            </intent-filter>
+
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@ref/0x7f080666" />
+        </activity>
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.DevTestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f120024"
+            android:name="com.taobao.idlefish.debug.ImpaasTestActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.TrackVerifyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.login.LoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x80">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f110480" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f110480" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.zxing.activity.CaptureActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.zxing.activity.BarScanActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120274"
+            android:name="com.taobao.idlefish.post.floatinglayer.FloatingViewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12072c"
+            android:name="com.taobao.fleamarket.detail.activity.OfferPriceActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120277"
+            android:name="com.taobao.fleamarket.business.pay.ALipaySecuredActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.post.activity.NewPostDivisionActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120133"
+            android:name="com.taobao.fleamarket.call.ui.LaunchVideoPermissionActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.edit.SesameInfoCredit"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120222"
+            android:name="com.taobao.idlefish.live.activity.LiveRoomActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120255"
+            android:name="com.taobao.fleamarket.setting.activity.AboutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.devtest.DebugPoplayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120024"
+            android:name="com.taobao.idlefish.debug.pluginview.DebugMtopActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120024"
+            android:name="com.taobao.idlefish.debug.goldeneye.GoldenEyeTaskListActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120024"
+            android:name="com.taobao.idlefish.debug.pluginview.DebugMtopDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12014e"
+            android:name="com.taobao.fleamarket.setting.activity.FeedbackDialogActivity"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120255"
+            android:name="com.taobao.fleamarket.setting.activity.RtcAudioSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.detail.activity.FullScreenDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.detail.activity.SwipeFullScreenDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.address.AddressListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.trade.activity.ExpressInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.trade.activity.ShipmentActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.activity.logistics.activity.LogisticsCompanyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.rent.search.activity.PublishRentSearchMidActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.rent.search.activity.PoiSelectActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.idlefish.search.activity.HomeSearchActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120187"
+            android:name="com.taobao.idlefish.home.view.tab.TabManagerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.idlefish.category.CategoryPageActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.CommonViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.TabActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.commonview.UITestActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.UIManagerActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120136"
+            android:name="com.taobao.fleamarket.devtest.commonview.ImageLoaderActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.ColorActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120289"
+            android:name="com.taobao.idlefish.fun.share.FunShareActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.taobao.idlefish.post.restructure.test.TestComponentActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.AlertCommonViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.EmptyActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.TextViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.ButtonActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.LineActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.ImageViewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120186"
+            android:name="com.taobao.fleamarket.devtest.commonview.FeedsActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:name="com.taobao.fleamarket.zxing.activity.QrCaptureActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.guide.GuideActivity"
+            android:process=":guide"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.detail.activity.AuctBidListActivityV2"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12028a"
+            android:name="com.taobao.fleamarket.detail.activity.BidRuleActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.detail.activity.ItemDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarket"
+                    android:host="@ref/0x7f11047f" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="fleamarkets"
+                    android:host="@ref/0x7f11047f" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="@ref/0x7f110474"
+                    android:path="/item.htm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="https"
+                    android:host="@ref/0x7f110474"
+                    android:path="/item.htm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="@ref/0x7f11047d"
+                    android:path="/item.htm" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="https"
+                    android:host="@ref/0x7f11047d"
+                    android:path="/item.htm" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.SuperfavorListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.idlefish.permission.PermissionActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.idlefish.mms.v1.SystemMediaSelectActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.idlefish.alipay.AlipayCallServiceActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.meet.activity.MeetBusinessActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.fleamarket.business.meet.activity.AcceptPaymentActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.rent.activity.RentBusinessActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.business.rent.activity.LocalQrCodeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.devtest.TestCardListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent1101082016" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.BlackListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.debug.OnlineMonitorInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x40003df4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fleamarket_alipay" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.FavorListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.android.remoteobject.security.activity.ApiLockedVerifyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f120138"
+            android:name="com.taobao.fleamarket.devtest.RandomTestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.SettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.UploadActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.GdMapActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.taobao.fleamarket.devtest.MtopErrorTestActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.taobao.fleamarket.user.service.UpdateService"
+            android:exported="false"
+            android:process=":update" />
+
+        <service
+            android:name="anetwork.channel.aidl.NetworkService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="anetwork.channel.aidl.IRemoteNetworkGetter" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="mtopsdk.xstate.XStateService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="mtopsdk.xstate.aidl.IXState" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.idlefish.lbs.FishLbsService"
+            android:exported="false" />
+
+        <service
+            android:name="com.amap.api.location.APSService" />
+
+        <service
+            android:name="com.taobao.fleamarket.message.notification.NotifyService" />
+
+        <service
+            android:name="com.taobao.orange.accssupport.OrangeAccsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f120119"
+            android:label="出价框"
+            android:name="com.taobao.fleamarket.bid.activity.BidActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.user.activity.unshelve.UnShelveActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.taobao.accs.AccsIPCProvider"
+            android:process=":channel"
+            android:authorities="com.taobao.idlefish:channel" />
+
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category
+                    android:name="taobao" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:exported="false"
+            android:process=":channel" />
+
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.message.service.AccsTlogService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.event.TLogAndTrace" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.weex.WXGlobalEventReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+
+            <intent-filter />
+
+            <intent-filter>
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter />
+
+            <intent-filter />
+        </receiver>
+
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+
+        <service
+            android:name="com.taobao.fleamarket.pedometer.PedometerJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":channel" />
+
+        <receiver
+            android:label="闲鱼币小组件"
+            android:name="com.taobao.fleamarket.widget.fishcoin.FishCoinWidgetProvider"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f150000" />
+        </receiver>
+
+        <service
+            android:name="com.taobao.fleamarket.widget.fishcoin.FishCoinWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:enabled="true" />
+
+        <receiver
+            android:label="闲鱼小组件"
+            android:name="com.taobao.fleamarket.RemoteWidgetProvider"
+            android:process=":widgetProvider">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="miuiWidget"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f150007" />
+        </receiver>
+
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true"
+            android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.idlefish.TaobaoIntentService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.idlefish.intent.thirdPush.action.COMMAND" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.idlefish.intent.action.COMMAND" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.taobao.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.agoo.TaobaoMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":channel">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.message.notification.notify.DeleteNotifyService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.taobao.idlefish.wxapi.WXEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.taobao.idlefish.apshare.ShareEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.idlefish.WeiboShareActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.session.ui.share.XianyuShareActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.router.urlfirewall.UrlFirewallActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.session.ui.share.ShareGroupActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f120255"
+            android:name="com.taobao.fleamarket.user.activity.FlauntActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f120255"
+            android:name="com.taobao.idlefish.post.activity.CropPhotoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="android.taobao.windvane.runtimepermission.PermissionActivity" />
+
+        <activity
+            android:name="com.taobao.idlefish.powerpermission.PowerPermissionActivity" />
+
+        <activity
+            android:name="com.taobao.idlefish.ResultActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.taobao.idlefish.ddshare.DDShareActivity"
+            android:exported="true"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120277"
+            android:name="com.taobao.fleamarket.detail.activity.FloatingWebViewActivity"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.taobao.fleamarket.auction.test.TestLiveListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.taobao.fleamarket.auction.activity.TBLiveVideoActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <service
+            android:name="com.taobao.orange.service.OrangeApiService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.orange.service.OrangeApiService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.push.XPushService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.push.XAckService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.idlefish.live.powsermsg.AccsReceiverService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.push.XP2PService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.push.OmegaPushService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.idlefish.luxury.LuxuryAccsService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.fleamarket.message.service.ActionService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="android.taobao.windvane.extra.jsbridge.WVACCSService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="org.android.agoo.xiaomi.MiPushBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.taobao.idlefish.game.notification.NotifyClickReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.idlefish.receiver.game.click_notify" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.fleamarket.XiaoMiSystemMessageActivity"
+            android:exported="true"
+            android:configChanges="0xe0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.idlefish" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="agoo"
+                    android:host="com.taobao.idlefish"
+                    android:path="/thirdpush" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:exported="false"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.android.remoteobject.security.PenaltyActivity" />
+
+        <activity
+            android:theme="@ref/0x7f12011e"
+            android:name="com.taobao.idlefish.share.qrcode.QrCodeShareActivity" />
+
+        <activity
+            android:name="com.taobao.idlefish.recovery.RecoveryActivity"
+            android:process=":recoveryUI"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f12011c"
+            android:name="com.taobao.fleamarket.message.activity.detail.ChatItemDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f120000"
+            android:name="com.taobao.fleamarket.message.activity.selectidle.SelectMyIdleItemActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:theme="@ref/0x7f120126"
+            android:name="com.taobao.fleamarket.call.ui.FishRtcResponseActivity"
+            android:launchMode="2"
+            android:configChanges="0x80" />
+
+        <activity
+            android:name="com.taobao.fleamarket.call.ui.FishRtcCallActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f12011b"
+            android:name="com.taobao.idlefish.mms.activitys.MultiMediaEditorActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1200ec"
+            android:name="com.taobao.fleamarket.business.transferMoney.activity.TransferMoneyActivity"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x22" />
+
+        <receiver
+            android:name="com.taobao.fleamarket.function.network.NetworkReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.taobao.accs.intent.action.CONNECTINFO" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.taobao.idlefish.MeizuSystemPushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                    android:name="com.taobao.idlefish" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.idlefish.fishbus.BusService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.taobao.idlefish.recovery.RecoveryService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":recoveryModel" />
+
+        <provider
+            android:name="com.taobao.idlefish.storage.fishkv.storage.KVContentProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.kvcache" />
+
+        <service
+            android:name="com.taobao.idlefish.launcher.startup.blink.BlinkCheckService"
+            android:exported="false"
+            android:process=":blinkCheck" />
+
+        <activity
+            android:name="com.taobao.fleamarket.message.activity.group.AtListActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.file_provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150006" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f120287"
+            android:name="com.taobao.idlefish.upgrade.traceable.UpgradeActivity"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.idlefish.flutterbridge.flutterboost.IdleFishAVFlutterActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@ref/0x7f0807b1" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@ref/0x7f080666" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120190"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostSurfaceActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.FishAVFlutterBoostActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1206c3"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity"
+            android:configChanges="0xca0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.multiapp.FishFlutterMultiAppActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.idlefish.flutterbridge.flutterboost.boost.multiapp.FishAVFlutterMultiAppActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x40003db4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120115"
+            android:name="com.taobao.idlefish.publish.confirm.PublishConfirmActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120115"
+            android:name="com.taobao.idlefish.publish.group.GroupPublishConfirmActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1200fa"
+            android:name="com.taobao.idlefish.fun.imageviewer.FunImageViewerActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.taobao.fleamarket.message.activity.sku.SkuSelectActivity"
+            android:launchMode="0" />
+
+        <activity
+            android:name="com.taobao.fleamarket.rent.search.activity.PublishRentAddAddressActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120275"
+            android:name="com.taobao.idlefish.fun.detail.video.VideoUgcFeedsActivity"
+            android:configChanges="0xd00" />
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.preview.UGCGalleryActivity4Community"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.preview.UGCGalleryActivity4Message"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.preview.UGCGalleryActivity4Windvane"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.preview.UGCGalleryActivity4Scan"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12073e"
+            android:name="com.taobao.idlefish.editor.image.ImageEditActivity4Community"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12073e"
+            android:name="com.taobao.idlefish.editor.image.ImageEditActivity4Message"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12073e"
+            android:name="com.taobao.idlefish.editor.image.ImageEditActivity4Windvane"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12073e"
+            android:name="com.taobao.idlefish.editor.image.crop.activity.LCCropActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.videotemplate.choosemedia.ChooseMediaActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12013a"
+            android:name="com.taobao.idlefish.videotemplate.cut.VideoCaptureActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f12073e"
+            android:name="com.taobao.idlefish.mediadebug.reporter.DebugReporteMediaActivity"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120132"
+            android:name="com.taobao.flutterchannplugin.FlutterWrapperActivity"
+            android:launchMode="0"
+            android:screenOrientation="1"
+            android:configChanges="0x400035b4"
+            android:windowSoftInputMode="0x10"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f12011c"
+            android:name="com.taobao.pha.PHAActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f120277"
+            android:name="com.taobao.idlefish.independent.AlipayAgreementSignActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f1200f4"
+            android:name="com.idlefish.flutterbridge.AIOService.ApiService.handlers.cashier.CashierDialogActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120288"
+            android:name="com.taobao.idlefish.publish.confirm.draft.FunSelectItemActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.goosefish.GooseFishWebActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f120117"
+            android:name="com.taobao.idlefish.goosefish.activity.GooseFishSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.taobao.idlefish.lifecycle-process" />
+
+        <activity
+            android:theme="@ref/0x7f120229"
+            android:name="com.bytedance.scene.ui.SceneContainerActivity" />
+
+        <service
+            android:name="com.alibaba.android.halo.base.plugin.workbench.WorkbenchService" />
+
+        <activity
+            android:name="com.alipay.sdk.auth.H5OpenAuthActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x40003df4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f12001a"
+            android:name="com.ali.user.mobile.ability.AliUserProxyActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="http"
+                    android:host="login.taobao.com"
+                    android:path="/ability/proxy" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.ali.user.mobile.ability.webview.HtmlActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f12001a"
+            android:name="com.ali.user.mobile.ability.webview.AliUserWebTransparent"
+            android:launchMode="2"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.ali.user.mobile.ability.webview.WebViewActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.ali.user.mobile.ability.webview.RegisterWebviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ali.user.open.oauth.ui.OauthActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000a"
+            android:name="com.ali.user.open.oauth.ui.OAuthWebViewActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.taobao.login4android.scan.QrScanActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="youku"
+                    android:host="passport"
+                    android:path="/qrlogin" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000a"
+            android:name="com.ali.user.open.tbauth.ui.TbAuthWebViewActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ali.user.open.tbauth.ui.TbAuthActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ali.user.open.tbauth.ui.ICBUAuthActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1206b5"
+            android:name="com.ali.user.mobile.login.ui.UserTransparentLoginActivity"
+            android:launchMode="2"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f12000d"
+            android:name="com.ali.user.mobile.login.ui.UserLoginActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120015"
+            android:name="com.ali.user.mobile.login.ui.HalfTransparentUserLoginActivity"
+            android:launchMode="2"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.ali.user.mobile.register.ui.AliUserRegisterActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="reg.taobao.com"
+                    android:path="/member/new_register.jhtml" />
+
+                <data
+                    android:scheme="https"
+                    android:host="reg.taobao.com"
+                    android:path="/verify" />
+
+                <data
+                    android:scheme="http"
+                    android:host="reg.taobao.com"
+                    android:path="/verify" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000c"
+            android:name="com.ali.user.mobile.register.ui.AliUserRegisterChoiceRegionActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xde0"
+            android:windowSoftInputMode="0x12">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:pathPrefix="/go/openMobileArea" />
+
+                <data
+                    android:scheme="https"
+                    android:host="my.m.taobao.com"
+                    android:pathPrefix="/go/openMobileArea" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.taobao.login4android.activity.AlipaySSOResultActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x4e0"
+            android:windowSoftInputMode="0x22" />
+
+        <receiver
+            android:name="com.ali.user.open.receiver.SessionSyncReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="aliuser_sync_session" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="org.android.agoo.gcm.AgooFirebaseInstanceIDService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.android.agoo.gcm.AgooFirebaseMessagingService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b000a" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.firebaseinitprovider"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category
+                    android:name="com.taobao.idlefish" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:exported="false"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareResultActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.sina.weibo.sdk.share.WbShareToStoryActivity"
+            android:launchMode="2"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.alibaba.poplayer.aidlManager.PopAidlService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.action.aidl.poplayer" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x7f12021e"
+            android:name="com.idlefish.liveplayer.PermissionActivity" />
+
+        <meta-data
+            android:name="flutterProjectType"
+            android:value="module" />
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <activity
+            android:name="com.alibaba.poplayerconsole.PopLayerDebugActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="tb.cn"
+                    android:path="/n/poplayerdebug" />
+
+                <data
+                    android:scheme="poplayer"
+                    android:host="tb.cn"
+                    android:path="/n/poplayerdebug" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.alibaba.poplayerconsole.PopLayerConsole"
+            android:exported="false" />
+
+        <service
+            android:name="com.alibaba.android.bindingx.plugin.weex.WXBindingXModuleService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="bindingx" />
+
+                <action
+                    android:name="binding" />
+
+                <action
+                    android:name="expressionBinding" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f12016d"
+            android:name="com.alibaba.security.realidentity.ui.activity.RpLoadingActivity"
+            android:multiprocess="true" />
+
+        <activity
+            android:theme="@ref/0x7f12016d"
+            android:name="com.alibaba.security.realidentity.ui.activity.ALBiometricsActivity"
+            android:multiprocess="true"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.alibaba.security.realidentity.ui.activity.RPWebViewActivity"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.alibaba.security.realidentity.ui.activity.RPTakePhotoActivity"
+            android:multiprocess="true" />
+
+        <service
+            android:name="com.alibaba.security.rp.service.DynamicRPJsbridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="RP" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.tao.messagekit.base.AccsReceiverService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.taobao.idlefish.fish_log.FishLogProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.fishlog" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.taobao.android.pissarro.ImageChoiceActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120229"
+            android:name="com.taobao.android.pissarro.PissarroShellActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f120229"
+            android:name="com.taobao.android.preview.DXTemplatePreviewActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x20a4" />
+
+        <activity
+            android:name="com.alibaba.security.rp.activity.RPTakePhotoActivity" />
+
+        <activity
+            android:name="com.alibaba.security.biometrics.face.auth.FaceLivenessActivity" />
+
+        <activity
+            android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ContainerActivity"
+            android:exported="false"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323" />
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323" />
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030071"
+            android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ExtContainerActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323" />
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323" />
+
+                <action
+                    android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <service
+            android:name="com.taobao.android.community.comment.jsbridge.CommentBizJSBridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="TBCommunityCommitJSBridge" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="network_run_single_process"
+            android:value="true" />
+
+        <meta-data
+            android:name="only_bifrost_std_h2_module"
+            android:value="true" />
+
+        <meta-data
+            android:name="only_push_switch"
+            android:value="true" />
+
+        <meta-data
+            android:name="use_amnet_service"
+            android:value="true" />
+
+        <meta-data
+            android:name="use_amdc"
+            android:value="true" />
+
+        <meta-data
+            android:name="amdc.dg"
+            android:value="mqp" />
+
+        <meta-data
+            android:name="apnetwork.startup.listener"
+            android:value="com.alipay.ariver.network.NetworkStartupListener" />
+
+        <service
+            android:label="AmnetMainProcService"
+            android:name="com.alipay.mobile.common.amnet.service.AmnetMainProcService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f12025b"
+            android:name="com.taobao.android.miniimage.ui.SimpleImagePreviewActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120222"
+            android:name="com.alibaba.triver.alibaba.api.openlocation.AlibabaOpenLocationActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.alibaba.ariver.commonability.device.jsapi.nfc.service.TinyAppHostApduService"
+            android:permission="android.permission.BIND_NFC_SERVICE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@ref/0x7f150009" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f120217"
+            android:name="com.alibaba.triver.tools.LogcatListActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120217"
+            android:name="com.alibaba.triver.tools.TriverAnalyzerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120217"
+            android:name="com.alibaba.triver.tools.TriverEnvAnalyzerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.tools.debug.TriverDebugActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.triver.tools.debug.hotchange" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120217"
+            android:name="com.alibaba.triver.tools.TriverPrefetchToolActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.alibaba.triver.embed.video.album.SelectVideoActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.alibaba.triver.embed.video.video.RecordVideoActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverMainActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverMainActivity$TriverMainActivityTrans"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.server.IpcMsgServerService" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity"
+            android:process=":wml1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity1"
+            android:process=":wml1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity1Trans"
+            android:process=":wml1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.client.IpcMsgClientService$IpcMsgClientService1"
+            android:exported="false"
+            android:process=":wml1" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity2"
+            android:process=":wml2"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity2Trans"
+            android:process=":wml2"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.client.IpcMsgClientService$IpcMsgClientService2"
+            android:exported="false"
+            android:process=":wml2" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity3"
+            android:process=":wml3"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity3Trans"
+            android:process=":wml3"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.client.IpcMsgClientService$IpcMsgClientService3"
+            android:exported="false"
+            android:process=":wml3" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity4"
+            android:process=":wml4"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity4Trans"
+            android:process=":wml4"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.client.IpcMsgClientService$IpcMsgClientService4"
+            android:exported="false"
+            android:process=":wml4" />
+
+        <activity
+            android:theme="@ref/0x7f120258"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity5"
+            android:process=":wml5"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f120259"
+            android:name="com.alibaba.triver.container.TriverSubActivity$TriverSubActivity5Trans"
+            android:process=":wml5"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.alibaba.triver.ipc.client.IpcMsgClientService$IpcMsgClientService5"
+            android:exported="false"
+            android:process=":wml5" />
+
+        <activity
+            android:theme="@ref/0x7f12025a"
+            android:name="com.alibaba.triver.container.TriverProxyActivity"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.alibaba.triver.TRACCSService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f12000a"
+            android:name="com.ali.user.open.ucc.webview.UccWebViewActivity"
+            android:launchMode="1"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000a"
+            android:name="com.ali.user.open.ucc.webview.CloneUccWebViewActivity"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12022a"
+            android:name="com.ali.user.open.ucc.webview.WebViewDialogActivity"
+            android:launchMode="1">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12022a"
+            android:name="com.ali.user.open.ucc.webview.WebViewTransparentActivity"
+            android:launchMode="1">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ali.user.open.ucc.ui.UccActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:configChanges="0x4e0">
+
+            <meta-data
+                android:name="com.alibaba-inc.check.login.status.resume"
+                android:value="0" />
+        </activity>
+
+        <service
+            android:name="com.ali.user.open.ucc.remote.RemoteUccService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ali.user.open.ucc.IRemoteUccService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.taobao.android.minivideo.video.RecordVideoActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.taobao.android.minivideo.album.SelectVideoActivity" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.taobao.android.minivideo.video.VideoEditActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.miniapp.video.videoactivity" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="mycategory" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12000a"
+            android:name="com.ali.user.open.core.webview.BaseWebViewActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.alibaba.ariver.ipc.RemoteCallService" />
+
+        <uses-library
+            android:name="org.ifaa.android.manager.permissions"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.android.phone.seauthenticator.iotauth.face.FaceAuthActivity"
+            android:configChanges="0xe0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1200e8"
+            android:name="com.fleamarket.yunlive.LiveAdminActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1200e8"
+            android:name="com.fleamarket.yunlive.LiveAudienceFlowActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1200e8"
+            android:name="com.fleamarket.yunlive.LiveAnchorActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.alivc.rtc.share.ScreenShareControl$ScreenCaptureAssistantActivity" />
+
+        <provider
+            android:name="com.aliyun.aliinteraction.provider.ContextProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.provider.ContextProvider" />
+
+        <provider
+            android:name="com.aliyun.aliinteraction.common.base.provider.ContextProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.base.contextprovider" />
+
+        <meta-data
+            android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="CACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="REQDEFCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="REQTTMPCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="THREAD:com.alibaba.doraemon.impl.threadpool.ThreadFetcher"
+            android:value="LIFECYCLE" />
+
+        <meta-data
+            android:name="REQUEST:com.alibaba.doraemon.impl.request.VollyRequestFetcher"
+            android:value="CACHE" />
+
+        <meta-data
+            android:name="NAVIGATOR:com.alibaba.doraemon.impl.navigator.NavigatorFetcher"
+            android:value="@string/0x38" />
+
+        <meta-data
+            android:name="EVENTBUTLER:com.alibaba.doraemon.impl.eventbus.EventButlerFetcher"
+            android:value="LIFECYCLE" />
+
+        <meta-data
+            android:name="TRACE:com.alibaba.doraemon.impl.trace.TraceFetcher"
+            android:value="THREAD" />
+
+        <meta-data
+            android:name="TRACE2:com.alibaba.doraemon.impl.trace.TraceFetcher2"
+            android:value="THREAD" />
+
+        <meta-data
+            android:name="STATISTICS:com.alibaba.doraemon.impl.statistics.StatisticsFetcher"
+            android:value="THREAD;LIFECYCLE;EVENTBUTLER" />
+
+        <meta-data
+            android:name="FULL_FLOW_STATISTICS:com.alibaba.doraemon.impl.statistics.unify.FullFlowStatisticsFetcher"
+            android:value="THREAD;LIFECYCLE;EVENTBUTLER" />
+
+        <service
+            android:name="com.alibaba.dingtalk.accs.connection.AccsBridgeService">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f120151"
+            android:name="com.yanzhenjie.permission.bridge.BridgeActivity" />
+
+        <provider
+            android:name="com.yanzhenjie.permission.FileProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.file.path.share"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150005" />
+        </provider>
+
+        <service
+            android:name="com.alipay.mobile.common.amnet.service.AmnetService$InnerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":push" />
+
+        <service
+            android:name="com.taobao.android.evocation.jsbridge.DynamicJSBridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="WVEvocationAppPlugin" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f120256"
+            android:name="com.taobao.taolive.sdk.permisson.PermissionActivity" />
+
+        <service
+            android:name="com.taobao.artc.accs.ArtcAccsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.taobao.android.address.wrapper.AddressEntranceActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.taobao.address.intent.action.taobao.address.editor" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/edit_address.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.taobao.address.intent.action.taobao.address.add" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/add_address.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/select_address_list.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/wap_deliver_address_list.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/map.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/deliver/switch_address.htm" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.address.intent.action.taobao.address.book" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="mtopsdk.extra.antiattack.CheckCodeValidateActivity"
+            android:exported="false"
+            android:taskAffinity="mtopsdk.extra"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="mtopsdk.mtop.antiattack.checkcode.validate.activity_action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.taobao.alimama.AlimamaDynamicJsbridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="MunionWebViewJs" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.process.interaction.service.RemoteCallService" />
+
+        <service
+            android:name="com.taobao.process.interaction.service.RemoteMessageService" />
+
+        <service
+            android:name="com.taobao.process.interaction.service.RemoteStubService$RemoteStubService1"
+            android:process=":wml1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.dynamic.ui.DynamicActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.fingerprint.FingerprintCheckActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.password.pay.ui.PayPwdFullActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.password.pay.ui.PayPwdDialogActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.prodmanger.biopen.ui.BioDetailActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.prodmanger.biopen.ui.BioListActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:name="com.alipay.mobile.verifyidentity.prodmanger.biopen.ui.BioProtoActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.prodmanger.biopen.ui.BioOpenActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.internal.password.pay.ui.PayPwdHalfActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.internal.password.pay.ui.PayPwdFullActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <service
+            android:name="com.alipay.mobile.verifyidentity.alipay.H5Plugin.DynamicJsbridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="VITaoBaoJSAPIAdapter" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.prodmanger.biopen.ui.FromTaoActivity"
+            android:configChanges="0x40002de4">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.taobao.com"
+                    android:path="/finger.htm" />
+
+                <data
+                    android:scheme="taobao" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="my.m.ltao.com"
+                    android:path="/finger.htm" />
+
+                <data
+                    android:scheme="taobao" />
+
+                <data
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tmall.wireless.action.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="com.tmall.wireless.category.navigator.INTERNAL_NAVIGATION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="tmall"
+                    android:host="page.tm"
+                    android:path="/finger.htm" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.module.seccam.SecCamActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:name="com.alipay.mobile.verifyidentity.module.menu.ui.MenuActivity"
+            android:configChanges="0x40002de4"
+            android:windowSoftInputMode="0x22" />
+
+        <meta-data
+            android:name="com.alipay.mobile.verifyidentity.sentry.VerifyIdentitySentryModule"
+            android:value="SentryModule" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.ui.helper.DialogActivity"
+            android:configChanges="0x40002de4" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.mobile.verifyidentity.ui.helper.NoticeActivity"
+            android:configChanges="0x40002de4" />
+
+        <receiver
+            android:name="com.taobao.android.jarviswe.receiver.BehaviXIPVReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="BehaviX_Feature_IPV" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.taobao.highway.receiver.SendEventReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tmall.android.dai.intent.action.COMPUTE_COMPLETE" />
+
+                <data
+                    android:scheme="DAI_highway_data" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.taobao.tao.powermsg.PowerMsgReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="TAOBAO_DELAY_START_POWMSG" />
+
+                <action
+                    android:name="com.taobao.tao.messagkit.receive" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.tao.powermsg.outter.PowerMsg4WXService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="powermsg" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.taobao.idlefish.multimedia.call.ui.RtcCallActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <service
+            android:name="com.taobao.android.service.AidlBridgeService" />
+
+        <activity
+            android:theme="@ref/0x7f120144"
+            android:name="com.alipay.android.app.pay.MiniLaucherActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0xd80"
+            android:hardwareAccelerated="true">
+
+            <intent-filter
+                android:priority="800">
+
+                <action
+                    android:name="com.alipay.mobilepay.android" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.alipay.android.msp.framework.preload.LiveConnectReceiver"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="800">
+
+                <action
+                    android:name="com.alipay.android.app.pay.ACTION_CREATE_LIVE_CONNECT" />
+
+                <action
+                    android:name="com.alipay.phonecashier.prepay" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.alipay.sdk.api.JSBridgeService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="AlipaySDK" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f120144"
+            android:name="com.alipay.android.msp.biz.scheme.MspSchemeActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="alipay"
+                    android:host="merchantpay" />
+
+                <data
+                    android:scheme="alipay"
+                    android:host="processpaymentresult" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120145"
+            android:name="com.alipay.android.msp.ui.views.MspContainerActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f120144"
+            android:name="com.alipay.android.msp.ui.views.MspWebActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x9e0"
+            android:windowSoftInputMode="0x22">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.alipay.android.msp.biz.substitute.MspPaycodeChannelActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f12025d"
+            android:name="com.alipay.android.msp.ui.views.MspUniRenderActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x22"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.alipay.android.msp.core.component.CertPayReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alipay.android.app.pay.certpay" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.alipay.android.msp.framework.offline.CashierOperationReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alipay.android.app.sdk.ACTION_CASHIER_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x0103000b"
+            android:name="com.unionpay.UPPayWapActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+            android:value="1" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.SANDBOXED_SERVICES_NAME"
+            android:value="com.taobao.uc.service.SandboxedProcessService" />
+
+        <service
+            android:name="com.taobao.uc.service.SandboxedProcessService0"
+            android:process=":sandboxed_process0"
+            android:isolatedProcess="true" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.SANDBOXED_PRIVILEGED_SERVICES_NAME"
+            android:value="com.taobao.uc.service.SandboxedPrivilegedProcessService" />
+
+        <service
+            android:name="com.taobao.uc.service.SandboxedPrivilegedProcessService0"
+            android:process=":sandboxed_privilege_process0"
+            android:isolatedProcess="false" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.NUM_GPU_SERVICES"
+            android:value="1" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.GPU_SERVICES_NAME"
+            android:value="com.taobao.uc.service.GpuProcessService" />
+
+        <service
+            android:name="com.taobao.uc.service.GpuProcessService0"
+            android:process=":gpu_process"
+            android:isolatedProcess="false" />
+
+        <provider
+            android:name="com.taobao.idlefish.screenshotcapture.contentprovider.CaptureProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.screenshot_capture"
+            android:syncable="true" />
+
+        <service
+            android:name="com.taobao.taolive.FaceDetectorService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="FaceDetectorService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.edge.pcdn.PcdnLiveService"
+            android:exported="false"
+            android:process=":PcdnLiveService" />
+
+        <provider
+            android:name="com.taobao.idlefish.fish_block_trace.FishBlockTraceProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.fish_block_trace" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.taobao.android.address.miniapp.AddressTempActivity"
+            android:configChanges="0x4e0" />
+
+        <activity
+            android:theme="@ref/0x7f120131"
+            android:name="com.taobao.android.community.biz.imageviewer.activity.CommunityImageViewerActivity"
+            android:exported="false"
+            android:launchMode="1" />
+
+        <service
+            android:name="com.meizu.cloud.pushsdk.NotificationService"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+            android:permission="com.meizu.flyme.permission.PUSH">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="org.android.agoo.mezu.MeizuPushReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                    android:name="com.taobao.idlefish" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <provider
+            android:name="com.huawei.hms.device.provider.CheckHmsProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.hms.device.validate.spoofprovider"
+            android:grantUriPermissions="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+            android:exported="false"
+            android:configChanges="0x480">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+            android:exported="false"
+            android:configChanges="0x4a0">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <provider
+            android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.updateSdk.fileProvider"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:theme="@ref/0x7f1200ed"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <provider
+            android:name="com.huawei.hms.update.provider.UpdateProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.hms.update.provider"
+            android:grantUriPermissions="true" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:5.3.0.304" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.taobao.idlefish.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:5.1.1.306" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.taobao.idlefish.permission.PROCESS_PUSH_MSG"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.taobao.idlefish.permission.PROCESS_PUSH_MSG"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:permission="com.taobao.idlefish.permission.PUSH_PROVIDER"
+            android:readPermission="com.taobao.idlefish.permission.PUSH_PROVIDER"
+            android:writePermission="com.taobao.idlefish.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.taobao.idlefish.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:5.3.0.303" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <service
+            android:name="org.android.agoo.huawei.HuaweiRcvService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.hihonor.push.sdk_version"
+            android:value="7.0.61.302" />
+
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3400" />
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="488" />
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:exported="true" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.support_monitor"
+            android:value="1" />
+
+        <receiver
+            android:name="org.android.agoo.vivo.VivoReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.taobao.idlefish.home.power.SecondFloorActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.taobao.accs.windvane.BrowserACCSService" />
+
+        <meta-data
+            android:name="persistProductId"
+            android:value="alipaysdk_android" />
+
+        <service
+            android:name="com.taobao.tbliveweexvideo.TBLiveWeexService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="video" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="tbliveMiniRoom" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.alibaba.analytics.AnalyticsService"
+            android:exported="false"
+            android:process=":channel" />
+
+        <service
+            android:name="com.alibaba.ut.abtest.pipeline.accs.EvoAccsService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f12010f"
+            android:name="com.alipay.zoloz.toyger.workspace.ToygerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40002de4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.alipay.zoloz.toyger.workspace.GarfieldActivity"
+            android:configChanges="0x40002de4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.taobao.windmill.rt.runtimepermission.PermissionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:hardwareAccelerated="true" />
+
+        <meta-data
+            android:name="multidex_enable"
+            android:value="true" />
+    </application>
+</manifest>

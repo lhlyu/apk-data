@@ -1,0 +1,3720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2023560632"
+    android:versionName="3.21.20.443"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.tencent.wemeet.app"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="0x10000" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES" />
+
+    <uses-permission
+        android:name="READ_PHONE_NUMBERS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="com.oplus.ocs.permission.third" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.INSERT" />
+
+            <data
+                android:mimeType="vnd.android.cursor.item/event" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SENDTO" />
+
+            <data
+                android:scheme="mailto" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SENDTO" />
+
+            <data
+                android:scheme="smsto" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.tencent.wemeet.sdk.INIT" />
+
+            <category
+                android:name="android.intent.category.DEFAULT" />
+        </intent>
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.tencent.mobileqq" />
+
+        <package
+            android:name="com.tencent.wework" />
+
+        <package
+            android:name="com.tencent.qnet" />
+
+        <package
+            android:name="com.tencent.qqpimsecure" />
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="www.online157.com" />
+
+        <package
+            android:name="www.com.rel113" />
+
+        <package
+            android:name="www.tabcol166.com" />
+
+        <package
+            android:name="www.com.cctv50" />
+
+        <package
+            android:name="zxc.xyz.abc.msky" />
+
+        <package
+            android:name="sdr.edc.abc.msky" />
+
+        <package
+            android:name="www.com.answer114" />
+
+        <package
+            android:name="com.loan.test1" />
+
+        <package
+            android:name="com.hicorenational.antifraud" />
+
+        <package
+            android:name="com.bestmind.antifraud" />
+
+        <package
+            android:name="com.skycomm.anti.fraud" />
+
+        <package
+            android:name="com.gaibo.preventfraud" />
+
+        <package
+            android:name="com.tencent.docs" />
+
+        <package
+            android:name="com.tencent.qidian" />
+
+        <package
+            android:name="com.tencent.androidqqmail" />
+
+        <package
+            android:name="com.tencent.voov" />
+
+        <package
+            android:name="com.tencent.wemeet.app" />
+
+        <package
+            android:name="com.tencent.qqmusic" />
+
+        <package
+            android:name="com.tencent.android.qqdownloader" />
+
+        <package
+            android:name="com.tencent.wemeet.rooms" />
+
+        <package
+            android:name="com.coloros.ocs.opencapabilityservice" />
+
+        <package
+            android:name="com.oplus.ocs" />
+
+        <package
+            android:name="com.tencent.weworklocal" />
+
+        <package
+            android:name="com.tencent.wwgovernment" />
+
+        <package
+            android:name="com.tencent.wework.special" />
+
+        <package
+            android:name="com.tencent.weworkenterprise" />
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.READ_CALENDAR" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE " />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        android:protectionLevel="0x2" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.XGPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wemeet.app.permission.XGPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.receiver"
+        android:protectionLevel="0x3" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wemeet.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-permission
+        android:name="android.permission.RESTART_PACKAGES" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wemeet.app.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.tencent.wemeet.app.permission.PUSH_PROVIDER" />
+
+    <permission
+        android:name="com.tencent.wemeet.app.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.tencent.wemeet.app.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <application
+        android:theme="@ref/0x7f10000a"
+        android:label="@ref/0x7f0f035e"
+        android:icon="@ref/0x7f0d0000"
+        android:name="com.tencent.wemeet.app.WeMeetApp"
+        android:debuggable="false"
+        android:configChanges="0x40000000"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f130003"
+        android:roundIcon="@ref/0x7f0d0002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:gwpAsanMode="1"
+        android:enableOnBackInvokedCallback="false">
+
+        <property
+            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f10000f"
+            android:label="@ref/0x7f0f035e"
+            android:name="com.tencent.wemeet.app.StartupActivity"
+            android:exported="true"
+            android:screenOrientation="14">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.sdk.INIT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.app.ExternalAppLinkActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="ulink.meeting.tencent.com" />
+
+                <data
+                    android:pathPrefix="/ulink/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:label="@ref/0x7f0f035e"
+            android:name="com.tencent.wemeet.app.ExternalLinkActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f0280" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0306"
+                    android:host="@ref/0x7f0f0280" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0698"
+                    android:host="@ref/0x7f0f0280" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0698"
+                    android:host="@ref/0x7f0f0281" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f0281" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0286"
+                    android:host="@ref/0x7f0f0281" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0285"
+                    android:host="@ref/0x7f0f0281" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0284"
+                    android:host="@ref/0x7f0f0281" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f027e" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f005d" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f0320" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.app.push.ExternalPushActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="@ref/0x7f0f0283"
+                    android:host="@ref/0x7f0f0282" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f0f035e"
+            android:name="com.tencent.wemeet.app.wxapi.WXPayEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:label="@ref/0x7f0f035e"
+            android:name="com.tencent.wemeet.app.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:taskAffinity="com.tencent.wemeet.app"
+            android:launchMode="2"
+            android:allowTaskReparenting="true" />
+
+        <activity
+            android:label="@ref/0x7f0f035e"
+            android:name="com.tencent.voov.wxapi.WXEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.TpnsActivity"
+            android:exported="true"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.app.OPEN_TPNS_ACTIVITY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="tpns"
+                    android:host="com.tencent.wemeet.app" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.tencent.android.hwpush.HWPushMessageReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushEventReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.tencent.android.vivopush.VivoPushMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.vivo.pushclient.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libGLES_mali.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libPVROCL.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libllvm-a3xx.so"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.tencent.smtt.multiprocess.NUM_SANDBOXED_SERVICES"
+            android:value="10" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed0"
+            android:exported="false"
+            android:process=":sandboxed_process0"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed1"
+            android:exported="false"
+            android:process=":sandboxed_process1"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed2"
+            android:exported="false"
+            android:process=":sandboxed_process2"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed3"
+            android:exported="false"
+            android:process=":sandboxed_process3"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed4"
+            android:exported="false"
+            android:process=":sandboxed_process4"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed5"
+            android:exported="false"
+            android:process=":sandboxed_process5"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed6"
+            android:exported="false"
+            android:process=":sandboxed_process6"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed7"
+            android:exported="false"
+            android:process=":sandboxed_process7"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed8"
+            android:exported="false"
+            android:process=":sandboxed_process8"
+            android:isolatedProcess="true" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Sandboxed9"
+            android:exported="false"
+            android:process=":sandboxed_process9"
+            android:isolatedProcess="true" />
+
+        <meta-data
+            android:name="com.tencent.smtt.multiprocess.NUM_PRIVILEGED_SERVICES"
+            android:value="10" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged0"
+            android:exported="false"
+            android:process=":privileged_process0"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged1"
+            android:exported="false"
+            android:process=":privileged_process1"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged2"
+            android:exported="false"
+            android:process=":privileged_process2"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged3"
+            android:exported="false"
+            android:process=":privileged_process3"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged4"
+            android:exported="false"
+            android:process=":privileged_process4"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged5"
+            android:exported="false"
+            android:process=":privileged_process5"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged6"
+            android:exported="false"
+            android:process=":privileged_process6"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged7"
+            android:exported="false"
+            android:process=":privileged_process7"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged8"
+            android:exported="false"
+            android:process=":privileged_process8"
+            android:isolatedProcess="false" />
+
+        <service
+            android:name="com.tencent.smtt.services.ChildProcessService$Privileged9"
+            android:exported="false"
+            android:process=":privileged_process9"
+            android:isolatedProcess="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.coloros.ocs.olk.AUTH_CODE"
+            android:value="ATBFAiBRrKZX/MfpGu1wtGCp3vER4wVMhktQsdYuQRcbcxHohwIhALZh4eC/nwCgRomd2UFx/0bIkMoOeKBXJ0BcnRO2mBmFbFkmFvwAAAA=" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.profile.push.PushMsgDialogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.account.external_auth.ExternalAuthActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <service
+            android:label="dexopt"
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:process=":dexopt" />
+
+        <property
+            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.home.HomeActivity"
+            android:launchMode="2"
+            android:screenOrientation="14"
+            android:configChanges="0x40000fb4"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.home.HomeOperateAlertActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10000e"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0x40000fb4"
+            android:windowSoftInputMode="0x3"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f10000e"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.TogetherModelSettingActivity"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.schedule.InviteUserActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.push.PushRemindActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.ChooseCountryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10031f"
+            android:name="com.tencent.wemeet.sdk.push.PushDialogActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.historymeeting.LiveRecordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.historymeeting.PlayRecordBrowserActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.ReportViolationActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.view.OnlyPrivacyBrowserActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="0xe0" />
+
+        <activity
+            android:theme="@ref/0x7f1000d9"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.schedule.MeetingSubjectDetailActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activityguide.ExternalLinkBrowserActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.FinishGuideActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100010"
+            android:name="com.tencent.wemeet.sdk.meeting.qrcode.MeetingQRCodeActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingAwardActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingFeedbackMeetingExperienceActivity"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f100011"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingSummaryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingWebinarSummaryActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingPictureActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.meeting.aftermeeting.AfterMeetingThreeItemActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.call.SendInvitationActivity"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.meeting.premeeting.home.GuestGuideActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002b3"
+            android:name="com.tencent.wemeet.sdk.avatarpreview.AvatarPreviewActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002b3"
+            android:name="com.tencent.wemeet.sdk.avatarpreview.imagecrop.CropActivity"
+            android:configChanges="0x40000524" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.sdk.account.NXDevicePayGuideActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100480"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.NXMultiDeviceManageActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.AccountInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileAuthenticationActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.businesscard.BusinessCardListActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.businesscard.BusinessCardEditActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.businesscard.BusinessCardManageActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileEmailActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileRebindWeChatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileVerifyWeChatResultActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileEmailAuthenticationActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileNickNameActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileUnbindWeChatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ShortProfileActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileAccountAndSecureActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.ProfileActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.X5DebugActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.AppAboutActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.account.activity.HelpCenterActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.account.activity.UploadLogActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.module.activityspace.activity.LobbyBottomSheetActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:backgroundDimEnabled="false"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.advertisements.activity.AdvertisementActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.tg_fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f13000b" />
+        </provider>
+
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.qq.e.tg.ADActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.PortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.qq.e.tg.LandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoPortraitADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030005"
+            android:name="com.qq.e.tg.RewardvideoLandscapeADActivity"
+            android:multiprocess="true"
+            android:screenOrientation="0"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.ToolBoxBrowserActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.OpenAppPreferenceSettingActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.OpenAppPermissionSettingDetailActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.AfterMeetingAppActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1001f2"
+            android:name="com.tencent.wemeet.module.appbox.activity.MeetingIdeaActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.appbox.activity.VoteBrowserActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100309"
+            android:name="com.tencent.wemeet.module.appbox.activity.AiHelperBrowserActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.AIHelperSettingActivity"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.appbox.activity.AIHelperInMeetingSettingActivity"
+            android:launchMode="2"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.aravatar.activity.ArAvatarActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.aravatar.activity.ArAvatarCreateFaceActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.caption.activity.WholeCaptionWebActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x40000da4"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.caption.activity.RealtimeCaptionWebActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.caption.activity.CaptionSettingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.caption.activity.CaptionHotWordsActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.caption.activity.CaptionTranscriptionSettingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ae"
+            android:name="com.tencent.wemeet.module.chat.activity.ChattingImagePreviewActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.chat.activity.ChatRecordActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.chat.activity.ChatFilePreviewActivity"
+            android:process=":wemeet.preview"
+            android:configChanges="0x400005e4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.chat.activity.ChatRecordFilePreviewActivity"
+            android:process=":wemeet.preview"
+            android:screenOrientation="1"
+            android:configChanges="0x400005e4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.chat.activity.ChatRecordDownloadActivity"
+            android:configChanges="0x400005a4" />
+
+        <provider
+            android:name="com.tencent.smtt.utils.FileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130009" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.companycontacts.activity.CompanyContactsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.companycontacts.activity.ContactsInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.companycontacts.activity.ContactsInviteActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.companycontacts.activity.CompanyContactInviteActivity"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.companycontacts.activity.CompanyContactManageActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.docs.activity.DocsListWebViewActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x40000da4"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.docs.activity.DetailDocWebViewActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x40000da4"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.historicalmeetings.activity.HistoryMeetingActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.historicalmeetings.activity.HistoryMeetingDetailInfoActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100580"
+            android:name="com.tencent.wemeet.module.historicalmeetings.activity.HistoryMeetingJoinListActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.invite.activity.PSTNDialInviteActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.invite.activity.PSTNSelectOutNumberActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f1002ab"
+            android:name="com.tencent.wemeet.module.invite.activity.MeetingSharingActivity"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ab"
+            android:name="com.tencent.wemeet.module.invite.activity.AfterScheduleShareActivity"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.invite.activity.PSTNInviteWebViewActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.invite.activity.InviteListMeetingInfoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.invite.activity.CloudRecordShareSheetActivity" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.invite.activity.InmeetingWeworkInviteActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.joinmeeting.activity.JoinActivity"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f100119"
+            android:name="com.tencent.wemeet.module.joinmeeting.activity.RecognitionMeetingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.joinmeeting.activity.MeetingEnrollAccountCardActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.joinmeeting.activity.SelectJoinModeActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.joinmeeting.activity.WebinarWarmUpActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.RegisterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SmsCodeLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PasswordLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SSOEmailLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SSODomainLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.AccountSelectionActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.IdentitySwitchingActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.GuestCheckPhoneActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PasswordSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PhoneNumCheckingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.InputEmailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.EmailRegisterActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.EmailLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.EmailCodeLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PasswordReSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PhoneNumBindingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.LoginEmailAuthActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.VerCodeCheckingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.EmailVerCodeCheckingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.WxBindingConfirmActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.PasswordChangeActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.module.login.activity.NXProfileSwitchAccountActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10038b"
+            android:name="com.tencent.wemeet.module.login.activity.NXSwitchAccountGuideActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SafetyLoginVerifyTypeSelectionActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SafetyLoginVerifyPhoneBySmsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.SafetyLoginVerifyPhoneByPasswordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.login.activity.CreateOrganizationActivity"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f10031d"
+            android:name="com.tencent.wemeet.module.login.activity.LoginLoadingActivity"
+            android:launchMode="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f100301"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.UserFaceBeautyActivity"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.UserSettingVirtualbackground"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.PreviewScheduledBackgroundActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.UserFaceWebActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.ScheduleMeetingVirtualBgBrowserActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100314"
+            android:name="com.tencent.wemeet.module.mediaprocess.activity.BizGuideAlertActivity"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.meetingdashboard.activity.MeetingDashboardActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.meetinglive.activity.LivePlayerActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x24b0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.meetingroom.activity.MeetingRoomWebViewActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.member.activity.SelectMembersActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.member.activity.SelectedMembersActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ad"
+            android:name="com.tencent.wemeet.module.member.activity.HostKeyInputActivity"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.member.activity.InMeetingSafetySettingsActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.member.activity.InteractiveEmojiUpgradeActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.member.activity.InteractiveEmojiGuideActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.member.activity.InMeetingMoreSettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.member.activity.InMeetingMoreSubSettingsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100314"
+            android:name="com.tencent.wemeet.module.operatingactivities.activity.BlockingMeetingActivity"
+            android:exported="true"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100303"
+            android:name="com.tencent.wemeet.module.questionanswer.activity.QuestionAnswerBrowserActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.quickmeeting.activity.QuickMeetingSettingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.quickrecord.activity.MeetlogListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1001d0"
+            android:name="com.tencent.wemeet.module.quickrecord.activity.MeetLogInviteActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.record.activity.cloudrecord.HistoryCloudRecordActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.record.activity.cloudrecord.CloudRecordSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.record.activity.cloudrecord.CloudRecordShareSettingWebActivity"
+            android:process=":wemeet.web" />
+
+        <activity
+            android:theme="@ref/0x7f100315"
+            android:name="com.tencent.wemeet.module.record.activity.cloudrecord.CloudRecordSelectedDeviceActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10000c"
+            android:name="com.tencent.wemeet.module.redpacket.activity.BonusPayActivity"
+            android:launchMode="2"
+            android:screenOrientation="10"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f10011b"
+            android:name="com.tencent.wemeet.module.redpacket.activity.RedPacketGalleryActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1002fe"
+            android:name="com.tencent.wemeet.module.redpacket.activity.SingleRedPacketGalleryActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10011a"
+            android:name="com.tencent.wemeet.module.redpacket.activity.RedPacketGalleryDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1002aa"
+            android:name="com.tencent.wemeet.module.ring.activity.RingingActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f1002b5"
+            android:name="com.tencent.wemeet.module.ring.activity.RingActionActivity"
+            android:launchMode="1" />
+
+        <receiver
+            android:name="com.tencent.wemeet.module.ring.broadcast.RingNotificationBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.ring.action.decline" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.roomscontroller.activity.RoomsControllerWebActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.roomscontroller.activity.RoomsControllerActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.roomscontroller.activity.RoomsControllerPairedActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f100304"
+            android:name="com.tencent.wemeet.module.scanqrcode.activity.ScanActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:resizeableActivity="false"
+            android:supportsPictureInPicture="false" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.ScheduleActivity"
+            android:configChanges="0xd00"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.MeetingDetailInfoActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.ScheduleMeetingTypeSelectActivity"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.TimeZoneListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.AfterScheduledMeetingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.NotificationSettingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.ScheduleSelectVideoPlayerActivity"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.PeriodMeetingCustomRepeatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.PeriodMeetingListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.MeetingRepeatFrequencyChooseActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1000e3"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.MeetingFinishRepeatActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f10031f"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.NXScheduleConcurrentDialogActivity"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10030b"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.JoinBeforeAlertActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10030b"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.ScheduleCustomPopupActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f10057e"
+            android:name="com.tencent.wemeet.module.schedulemeeting.activity.ScheduleMeetingReminderAlertActivity" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.screenshare.activity.CooperationSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.screenshare.activity.ScreenShareWaterMarkActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f100013"
+            android:name="com.tencent.wemeet.module.screenshare.activity.RoomsMeetingSettingActivity"
+            android:exported="false"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.SettingActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.SettingInMeetingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.SettingNetworkDetectorActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.AppCacheCleanActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000524" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.PersonalMeetingSettingActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.PersonalMeetingPasswordSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.PersonalMeetingInfoSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.PersonalMeetingChangeRoomNameActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.LanguageSelectListActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.CalendarActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.chat.activity.ChattingSettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.chat.activity.UserListChattingActivity"
+            android:launchMode="2"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ab"
+            android:name="com.tencent.wemeet.module.settings.activity.CalendarSettingGuideActivity"
+            android:configChanges="0x400025a4" />
+
+        <activity
+            android:theme="@ref/0x7f100295"
+            android:name="com.tencent.wemeet.module.settings.activity.VocalEnhancementPermissionActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.SpeakerEnhanceSettingActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1002ab"
+            android:name="com.tencent.wemeet.module.settings.activity.SettingAlertActivity"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.NetworkProxyActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.PmiUploadImageBrowserActivity"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x580" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.settings.activity.CalendarSyncHomeActivity"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.siminterpret.activity.SimultaneousChannelActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.splash.activity.SplashActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.module.splash.activity.NewUserGuideActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.module.splash.activity.SplashWebActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ff"
+            android:name="com.tencent.wemeet.module.video.activity.VideoHdUpgradeTipsDialogActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1002ff"
+            android:name="com.tencent.wemeet.module.video.activity.VideoResolutionSwitchDialogActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.components.professional.activity.ProfessionalWebViewActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.components.webcore.activity.CommonBrowserActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.components.webcore.activity.GestureBrowserActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x40000da4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.components.webcore.activity.BackAwareWebViewActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x40000da4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.components.webcore.activity.PayBrowserActivity"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002ed"
+            android:name="com.tencent.wemeet.components.webcore.activity.WebCoverLayerBrowserActivity"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <service
+            android:name="com.tencent.wemeet.service.SampleResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1002f5"
+            android:name="com.tencent.wemeet.nxui.app.NXUIHostActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.SingleSelectActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1002ed"
+            android:name="com.tencent.wemeet.sdk.activity.SingleSelectActivity2"
+            android:screenOrientation="3"
+            android:configChanges="0x400005a4"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1002ae"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.view.photoview.ImagePreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1002ed"
+            android:name="com.tencent.wemeet.sdk.activity.NotificationRedirectActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10057d"
+            android:name="com.tencent.wemeet.sdk.os.RebootLoadingActivity"
+            android:process=":reboot" />
+
+        <provider
+            android:name="com.tencent.wemeet.sdk.fileprovider.WeMeetFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f130007" />
+        </provider>
+
+        <receiver
+            android:name="com.tencent.wemeet.sdk.upgrade.PackageNotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.package_upgrade.action.click" />
+
+                <action
+                    android:name="com.tencent.wemeet.package_upgrade.action.cancel_download" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.wemeet.sdk.notification.CommonNotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.package_notification.action.click" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:process=":midasPay"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:exported="true"
+            android:process=":midasPay"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:exported="true"
+            android:process=":midasPay"
+            android:launchMode="1"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="qwallet100703379" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.tencent.wemeet.module.login.activity.NXProfileSwitchAccountActivity2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity4"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity5"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity6"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity7"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity8"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultStubActivity9"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity4"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity5"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity6"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity7"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity8"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchDefaultTransparentStubActivity9"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskStubActivity1"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskStubActivity2"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskStubActivity3"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskStubActivity4"
+            android:launchMode="2"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskTransparentStubActivity1"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskTransparentStubActivity2"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskTransparentStubActivity3"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTaskTransparentStubActivity4"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopStubActivity1"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopStubActivity2"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopStubActivity3"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopStubActivity4"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopTransparentStubActivity1"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopTransparentStubActivity2"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopTransparentStubActivity3"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleTopTransparentStubActivity4"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceStubActivity1"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceStubActivity2"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceStubActivity3"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceStubActivity4"
+            android:launchMode="3"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceTransparentStubActivity1"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceTransparentStubActivity2"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceTransparentStubActivity3"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchSingleInstanceTransparentStubActivity4"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity1"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity2"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity3"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity4"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity5"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity6"
+            android:process=":wemeet.web"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity7"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity8"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessDefaultStubActivity9"
+            android:process=":wemeet.web"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity1"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity2"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity3"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity4"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity5"
+            android:process=":wemeet.web"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity6"
+            android:process=":wemeet.web"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity7"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity8"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentDefaultStubActivity9"
+            android:process=":wemeet.web"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTaskStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTaskStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTaskStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTaskStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTaskStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTaskStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTaskStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTaskStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="2"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTopStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTopStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTopStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleTopStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTopStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTopStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTopStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleTopStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleInstanceStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleInstanceStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleInstanceStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100012"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessSingleInstanceStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:screenOrientation="14"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleInstanceStubActivity1"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleInstanceStubActivity2"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:screenOrientation="0"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f100130"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleInstanceStubActivity3"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <activity
+            android:theme="@ref/0x7f1002f0"
+            android:name="com.tencent.wemeet.sdk.activity.HotPatchWebProcessTransparentSingleInstanceStubActivity4"
+            android:process=":wemeet.web"
+            android:launchMode="3"
+            android:configChanges="0x400005a4" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchStubService1" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchStubService2" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchStubService3" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchStubService4" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchStubService5" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchWebProcessStubService1"
+            android:process=":wemeet.web" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchWebProcessStubService2"
+            android:process=":wemeet.web" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchWebProcessStubService3"
+            android:process=":wemeet.web" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchWebProcessStubService4"
+            android:process=":wemeet.web" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.service.HotPatchWebProcessStubService5"
+            android:process=":wemeet.web" />
+
+        <meta-data
+            android:name="ITLoginAppKey"
+            android:value="987c2953fb9fc355dccf8a69fdc6a58e" />
+
+        <meta-data
+            android:name="ITLoginAppID"
+            android:value="WeMeet" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xa0" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tencent101828163" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.tencent.wemeet.sdk.auth.impl.wechat.WxLoginService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f100307"
+            android:name="com.tencent.wemeet.sdk.wework.WeWorkSelectActivity"
+            android:configChanges="0xa0" />
+
+        <provider
+            android:name="com.tencent.wemeet.sdk.sharing.ShareFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f13000c" />
+        </provider>
+
+        <meta-data
+            android:name="XG_SERVICE_PULL_UP_OFF"
+            android:value="true" />
+
+        <provider
+            android:name="com.tencent.android.tpush.XGPushProvider"
+            android:enabled="false"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.XGVIP_PUSH_AUTH" />
+
+        <provider
+            android:name="com.tencent.android.tpush.XGVipPushKAProvider"
+            android:enabled="false"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.AUTH_XGPUSH_KEEPALIVE" />
+
+        <receiver
+            android:name="com.tencent.wemeet.app.push.MessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.PUSH_MESSAGE" />
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:exported="false"
+            android:process=":xg_vip_service">
+
+            <intent-filter
+                android:priority="0x7fffffff">
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.SDK" />
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE" />
+
+                <action
+                    android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.tencent.wemeet.sdk.upgrade.delta.ipc.UpgradePatchService"
+            android:exported="false"
+            android:process=":wemeet.delta_upgrade" />
+
+        <service
+            android:name="com.tencent.wemeet.sdk.appcommon.remote.WebCommunicateService"
+            android:exported="false"
+            android:process=":wemeet.web" />
+
+        <service
+            android:name="com.tencent.wemeet.ipc.MainCommunicateService"
+            android:exported="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <provider
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.imagepicker.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f13000d" />
+        </provider>
+
+        <activity
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureSelectorActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureSelectorWeChatStyleActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f1000e7"
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureSelectorCameraEmptyActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PicturePreviewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureSelectorPreviewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.tencent.wemeet.sdk.meeting.inmeeting.imagepicker.PictureExternalPreviewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f10006c"
+            android:name="com.yalantis.ucrop.UCropActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10006c"
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f100197"
+            android:name="com.tencent.wework.api.view.H5Activity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xdf0" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tencent.rmonitor.launch.AppLaunchInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="com.tencent.rmonitor.natmem.NatMemReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.USAGE_DUMP" />
+
+                <action
+                    android:name="com.tencent.rmonitor.natmem.LEAK_DUMP" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.tencent.tbs.one.optional.TBSOneStandaloneService"
+            android:process=":standalone" />
+
+        <activity
+            android:name="com.qq.e.tg.WebAdActivity"
+            android:process=":tangramweb"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.qq.e.tg.TransPortraitADActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.InnerTpnsActivity"
+            android:exported="false"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.app.OPEN_TPNS_ACTIVITY_V2" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <data
+                    android:scheme="stpns"
+                    android:host="com.tencent.wemeet.app" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.tencent.android.tpush.inappmessage.InAppMessageActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.tencent.android.tpush.service.XGVipPushService"
+            android:exported="false"
+            android:process=":xg_vip_service" />
+
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tencent.wemeet.app.XGVIP_PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.tencent.android.tpush.SettingsContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.TPUSH_PROVIDER" />
+
+        <service
+            android:name="com.tencent.tpns.mqttchannel.services.MqttService"
+            android:exported="false"
+            android:process=":xg_vip_service" />
+
+        <provider
+            android:name="com.tencent.tpns.baseapi.base.SettingsContentProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.XG_SETTINGS_PROVIDER" />
+
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="1500004314" />
+
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A55ZLXLFIOXO" />
+
+        <service
+            android:name="com.huawei.android.hms.tpns.HWHmsMessageService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.tencent.wemeet.app.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.tencent.wemeet.app.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.tencent.wemeet.app.permission.PUSH_PROVIDER"
+            android:writePermission="com.tencent.wemeet.app.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.tencent.wemeet.app.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.3.0.304" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3">
+
+            <meta-data
+                android:name="supportStyle"
+                android:value="scene|voip" />
+        </activity>
+
+        <meta-data
+            android:name="supportGetAndroidID"
+            android:value="false" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tencent.android.mipush.XMPushMessageReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.vivo.push.sdk.service.CommandClientService"
+            android:permission="com.push.permission.UPSTAGESERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="sdk_version_vivo"
+            android:value="483" />
+
+        <meta-data
+            android:name="local_iv"
+            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="9adbc5af-15bd-4d81-9a96-225d5d9229fc" />
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="18840" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch" />
+
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <provider
+            android:name="com.tencent.qmethod.pandoraex.provider.PandoraExProvider"
+            android:permission="com.tencent.qmethod.permission.pandoraex"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.pandoraprovider"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:theme="@ref/0x7f1002f4"
+            android:name="com.tencent.wework.foundation.logic.wwlink.controller.BaseContentActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1002f7"
+            android:name="com.tencent.wework.foundation.logic.wwlink.controller.DialogActivityUtil"
+            android:exported="false"
+            android:taskAffinity=":dialog"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x12">
+
+            <meta-data
+                android:name="visible_to_user_never"
+                android:value="true" />
+        </activity>
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.3.0.304" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+            android:launchMode="3" />
+
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+            android:launchMode="3" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+            android:launchMode="3" />
+
+        <meta-data
+            android:name="tinker_version"
+            android:value="1.9.14.26.1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.4.0.302" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <activity
+            android:theme="@ref/0x7f1002b2"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.tencent.wemeet.app.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=101516707" />
+
+        <meta-data
+            android:name="TINKER_ID"
+            android:value="tinker_id_10220e4ddc7e8bb485cfbef0b0cb5d7a65a26964" />
+    </application>
+</manifest>
